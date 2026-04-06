@@ -229,6 +229,18 @@ table,
   border-color: rgba(212, 160, 74, 0.2);
 }
 
+/* Per-card themed hover — uses --card-glow and --card-line-color custom props */
+.feature-card {
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1),
+              box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1),
+              border-color 0.4s;
+}
+.feature-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 48px -12px var(--card-glow, rgba(212, 160, 74, 0.2));
+  border-color: color-mix(in srgb, var(--card-line-color, var(--accent)) 25%, transparent);
+}
+
 /* Gradient accent line — appears on hover */
 .accent-line-top {
   position: relative;
@@ -241,7 +253,7 @@ table,
   left: 10%;
   right: 10%;
   height: 1px;
-  background: linear-gradient(90deg, transparent, var(--accent), transparent);
+  background: linear-gradient(90deg, transparent, var(--card-line-color, var(--accent)), transparent);
   opacity: 0;
   transition: opacity 0.4s;
 }

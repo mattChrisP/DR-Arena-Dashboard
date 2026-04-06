@@ -53,28 +53,37 @@ const FEATURES = [
   {
     icon: Network,
     title: "Dynamic Trees",
-    desc: "Pre-crawled information trees across 6 domains with adaptive depth and breadth.",
+    desc: "Real-time information trees built from live web trends across 6 domains. Each tree adapts in depth and breadth to probe what agents can actually handle.",
     accent: "text-accent-2",
     accentBg: "bg-accent-2/10",
+    cardTint: "bg-bg-elevated/60",
+    glowColor: "rgba(45, 212, 191, 0.15)",
+    lineColor: "var(--accent-2)",
   },
   {
     icon: Scale,
     title: "Automated Judging",
-    desc: "LLM-based evaluation with Deep & Wide question generation — no human annotation needed.",
+    desc: "An LLM examiner generates questions that test both deep reasoning and wide coverage, then grades the answers against hidden checklists. No human annotators in the loop.",
     accent: "text-accent",
     accentBg: "bg-accent/10",
+    cardTint: "bg-bg-elevated/60",
+    glowColor: "rgba(212, 160, 74, 0.2)",
+    lineColor: "var(--accent)",
   },
   {
     icon: Trophy,
     title: "Elo Rankings",
-    desc: "Bradley-Terry model with bootstrap confidence intervals, aligned with LMSYS Search Arena.",
+    desc: "Head-to-head results feed into a Bradley-Terry model to produce Elo scores with confidence intervals. Our rankings track closely with LMSYS Search Arena.",
     accent: "text-data-4",
     accentBg: "bg-data-4/10",
+    cardTint: "bg-bg-elevated/60",
+    glowColor: "rgba(232, 100, 82, 0.15)",
+    lineColor: "var(--data-4)",
   },
 ];
 
 const STATS = [
-  { value: "0.94", label: "Spearman ρ", highlight: true },
+  { value: "0.94", label: "Human Alignment", highlight: true },
   { value: "6", label: "Models Evaluated", highlight: false },
   { value: "180+", label: "Matches Played", highlight: false },
   { value: "30", label: "Information Trees", highlight: false },
@@ -183,9 +192,10 @@ export default function HomePage() {
           className="animate-fade-in-up mt-6 max-w-2xl text-base leading-relaxed text-fg-muted md:text-lg"
           style={{ animationDelay: "0.2s" }}
         >
-          A live tournament of deep research agents, evaluated on dynamic
-          information trees with adaptive difficulty. State-of-the-art alignment
-          with human preference — no manual annotation.
+          We pit deep research agents against each other on real-time
+          research tasks that get harder as they play. Fully automated,
+          yet our rankings track almost perfectly with human judgment
+          (0.94 Spearman correlation with LMSYS Search Arena).
         </p>
 
         {/* CTA row */}
@@ -258,8 +268,12 @@ export default function HomePage() {
           {FEATURES.map((card, i) => (
             <div
               key={card.title}
-              className="animate-fade-in-up card-hover accent-line-top group rounded-xl border border-border bg-bg-elevated/60 px-6 py-7 backdrop-blur-sm"
-              style={{ animationDelay: `${0.5 + i * 0.1}s` }}
+              className={`animate-fade-in-up accent-line-top feature-card group rounded-xl border border-border ${card.cardTint} px-6 py-7 backdrop-blur-sm`}
+              style={{
+                animationDelay: `${0.5 + i * 0.1}s`,
+                "--card-line-color": card.lineColor,
+                "--card-glow": card.glowColor,
+              } as React.CSSProperties}
             >
               <div
                 className={`mb-4 inline-flex rounded-lg ${card.accentBg} p-2.5 ${card.accent} transition-transform group-hover:scale-110`}
