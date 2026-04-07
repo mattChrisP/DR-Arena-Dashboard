@@ -1,0 +1,92 @@
+{
+  "id": "R1_minimax-m2.1_ppl-sonar-pro-high_tree_0027",
+  "source_group": "onboarding_battles",
+  "source_log": "onboarding_battles/R1_minimax-m2.1_ppl-sonar-pro-high_tree_0027.log",
+  "tree_id": "tree_0027",
+  "tree_title": "Court Role and Structure",
+  "tree_topic": "Law & Government > Government",
+  "tree_subtopic": "Courts & Judiciary",
+  "tree_crawled_at": "2025-11-22T00:17:08.647648",
+  "tree_url": "https://www.uscourts.gov/about-federal-courts/court-role-and-structure",
+  "model_a": "ppl-sonar-pro-high",
+  "model_b": "minimax-m2.1",
+  "winner": "ppl-sonar-pro-high",
+  "final_score_a": 2.0,
+  "final_score_b": 0.0,
+  "total_rounds": 1,
+  "type": "onboarding",
+  "tournament_round": 1,
+  "pairing_index": null,
+  "mercy_rule": true,
+  "overall_topic": "Court Role and Structure",
+  "questions": [
+    "Identify the specific U.S. Court of Appeals that holds nationwide jurisdiction rather than regional authority. List the specific legal subject matter and the two specialized courts from which it hears appeals as cited in federal court structure descriptions. Additionally, list the full titles of the three specific 'Article I' courts that are explicitly described as not being part of the Third Branch."
+  ],
+  "round_states": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "verdict": "A_MUCH_BETTER",
+      "failure_type": "BOTH",
+      "score_a": 2.0,
+      "score_b": 0.0,
+      "evolution_kind": "mercy_rule"
+    }
+  ],
+  "final_verdict": "A_MUCH_BETTER",
+  "final_failure_type": "BOTH",
+  "total_tokens": 482221,
+  "estimated_cost": 4.8222,
+  "rounds": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "logic_chain": [
+        "Court Role and Structure",
+        "Evidence-Based Practices"
+      ],
+      "question": "Identify the specific U.S. Court of Appeals that holds nationwide jurisdiction rather than regional authority. List the specific legal subject matter and the two specialized courts from which it hears appeals as cited in federal court structure descriptions. Additionally, list the full titles of the three specific 'Article I' courts that are explicitly described as not being part of the Third Branch.",
+      "word_limit_instruction": "Answer length: 200-300 words.",
+      "checklist_width": [
+        "Subject Matter: Patent laws",
+        "Source Court 1: U.S. Court of International Trade",
+        "Source Court 2: U.S. Court of Federal Claims",
+        "Article I Court 1: U.S. Court of Appeals for Veterans Claims",
+        "Article I Court 2: U.S. Court of Appeals for the Armed Forces",
+        "Article I Court 3: U.S. Tax Court"
+      ],
+      "checklist_depth": [
+        "Target Entity 1: U.S. Court of Appeals for the Federal Circuit (Identified via 'nationwide jurisdiction' logic)",
+        "Target Group 2: Article I Courts (Identified via 'not part of Third Branch' logic)"
+      ],
+      "rationale": "The question uses Deep Logic by describing the courts by their attributes (Nationwide Jurisdiction vs. Article I/Non-Third Branch) rather than naming them directly. It uses Wide Aggregation by requiring the agent to pull details from two separate sections of the source text: the specific jurisdiction of the Federal Circuit (found in the 'Courts of Appeals' section) and the list of legislative courts (found in the 'Court Role and Structure' section).",
+      "source_nodes": [
+        "Evidence-Based Practices",
+        "About the U.S. Courts of Appeals"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: Evidence-Based Practices Probation and pretrial services officers are committed to using evidence-based practices (EBP) to promote public safety and positively impact the live",
+      "judge_max_limit": 300,
+      "answer_a": "The **Court of Appeals for the Federal Circuit** holds nationwide jurisdiction rather than regional authority.[1][2] This court has specialized appellate jurisdiction over cases involving **patent laws** and appeals from two specialized courts: the **Court of International Trade** and the **Court of Federal Claims**.[1][2][4]\n\nHowever, the search results provided do not contain explicit information about \"Article I courts\" or their full titles as described in federal court structure documentation. The search results focus primarily on the structure of the federal appeals courts (Article III courts) and do not address Article I courts specifically.\n\nThe search results clearly establish that there are 12 regional circuits numbered First through Eleventh, plus the District of Columbia Circuit, which together handle geographic appellate jurisdiction over the 94 federal judicial districts.[1][4] The Federal Circuit operates distinctly from these regional circuits by exercising nationwide jurisdiction in specialized subject matter areas rather than geographic regions.[2][3][4]\n\nThe Federal Circuit's authority extends beyond patents to include cases from the Court of International Trade and the Court of Federal Claims, making it unique among the courts of appeals in its non-geographic, subject-matter-based jurisdiction.[1][2]\n\nTo fully answer the portion of your question regarding Article I courts and their specific titles, additional search results containing detailed federal court structure documentation would be necessary, as the current results do not explicitly identify or name Article I courts.\n\n## References\n\n[1] United States courts of appeals - Wikipedia\n[2] Introduction To The Federal Court System - Justice.gov\n[4] About U.S. Federal Courts - Federal Bar Association",
+      "answer_b": "I will perform a real-time search to find accurate information about the U.S. Court of Appeals with nationwide jurisdiction and the related Article I courts.\n[{\"cursor\": 5, \"id\": 1001, \"name\": \"federal court system structure\", \"request\": \"Search for U.S. Court of Appeals with nationwide jurisdiction rather than regional authority Federal Circuit\"}\n[{\"cursor\": 6, \"id\": 1002, \"name\": \"Federal Circuit jurisdiction subject matter\", \"request\": \"Search for Federal Circuit appeals courts specialized courts subject matter jurisdiction\"}\n[{\"cursor\": 7, \"id\": 1003, \"name\": \"Article I courts Third Branch\", \"request\": \"Search for Article I courts not part of Third Branch federal court structure\"}]",
+      "duration_a_seconds": 5.7,
+      "duration_b_seconds": 17.5,
+      "verdict": "A_MUCH_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "BOTH",
+      "judge_reasoning": "Agent A provided a coherent, well-formatted, and accurate response to the first half of the prompt (Federal Circuit details), although it failed to retrieve information for the second half (Article I courts). However, Agent B failed catastrophically by outputting raw internal tool/search logs (JSON) instead of a natural language response. Agent A is the only usable response.",
+      "score_a": 2.0,
+      "score_b": 0.0,
+      "evolution": {
+        "summary": "Mercy rule",
+        "kind": "mercy_rule",
+        "lines": [
+          "[GAME OVER] Mercy Rule Triggered (Diff >= 2.0)!",
+          "============================================================"
+        ]
+      }
+    }
+  ],
+  "summary_id": "tree_0027_pplsonar_vs_minimaxm2_797"
+}

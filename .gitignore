@@ -2,3 +2,19 @@
 .next/
 DASHBOARD_DESIGN.md
 HOSTING_ANALYSIS.md
+
+# Raw tree data (too large for git — stored externally)
+web_tree/
+web_tree/data/dataset/trees/
+web_tree/data/coffee_tree.json
+web_tree/data/deeper_tree.json
+
+# Tournament raw results (logs are large, processed data is committed)
+DR-Arena/
+DR-Arena/tournament_results_cli_*/
+
+# macOS metadata
+.DS_Store
+
+# Zip archives
+*.zip

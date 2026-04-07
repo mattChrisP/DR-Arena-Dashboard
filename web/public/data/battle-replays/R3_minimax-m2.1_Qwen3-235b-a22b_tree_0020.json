@@ -1,0 +1,91 @@
+{
+  "id": "R3_minimax-m2.1_Qwen3-235b-a22b_tree_0020",
+  "source_group": "onboarding_battles",
+  "source_log": "onboarding_battles/R3_minimax-m2.1_Qwen3-235b-a22b_tree_0020.log",
+  "tree_id": "tree_0020",
+  "tree_title": "An Insider’s Guide to Fanfiction",
+  "tree_topic": "Books & Literature",
+  "tree_subtopic": "Fan Fiction",
+  "tree_crawled_at": "2025-11-21T15:59:32.502799",
+  "tree_url": "https://www.laterpress.com/blog/insiders-guide-to-fanfiction",
+  "model_a": "minimax-m2.1",
+  "model_b": "Qwen3-235b-a22b",
+  "winner": "Qwen3-235b-a22b",
+  "final_score_a": 0.0,
+  "final_score_b": 2.0,
+  "total_rounds": 1,
+  "type": "onboarding",
+  "tournament_round": 3,
+  "pairing_index": null,
+  "mercy_rule": true,
+  "overall_topic": "An Insider’s Guide to Fanfiction",
+  "questions": [
+    "Trace the history of pre-internet fan works to identify two seminal publications: a 1913 novel that acts as a crossover sequel to Jane Austen's bibliography, and the 1967 Star Trek fanzine established by the show's own creators. Provide the titles and authors/creators for both works. Additionally, for the 1913 novel, specify which supporting characters the text notes as the focus of the story. For the 1967 fanzine, list the specific types of non-fiction content it featured and the professional career outcome mentioned for some of its contributing writers."
+  ],
+  "round_states": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "verdict": "B_MUCH_BETTER",
+      "failure_type": "BOTH",
+      "score_a": 0.0,
+      "score_b": 2.0,
+      "evolution_kind": "mercy_rule"
+    }
+  ],
+  "final_verdict": "B_MUCH_BETTER",
+  "final_failure_type": "BOTH",
+  "total_tokens": 2154041,
+  "estimated_cost": 21.5404,
+  "rounds": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "logic_chain": [
+        "An Insider’s Guide to Fanfiction",
+        "Newsletter"
+      ],
+      "question": "Trace the history of pre-internet fan works to identify two seminal publications: a 1913 novel that acts as a crossover sequel to Jane Austen's bibliography, and the 1967 Star Trek fanzine established by the show's own creators. Provide the titles and authors/creators for both works. Additionally, for the 1913 novel, specify which supporting characters the text notes as the focus of the story. For the 1967 fanzine, list the specific types of non-fiction content it featured and the professional career outcome mentioned for some of its contributing writers.",
+      "word_limit_instruction": "Answer length: 200-300 words.",
+      "checklist_width": [
+        "Work 1 Author: Sybil G. Brinton",
+        "Work 1 Characters: Mary Crawford and Tom Bertram (also accepts Darcys and Bennets)",
+        "Work 2 Creators: Gene Roddenberry and DC Fontana",
+        "Work 2 Content: Fun facts about the show, interviews with cast and crew, information about events/conventions",
+        "Work 2 Outcome: Some writers went on to write for the real/official show"
+      ],
+      "checklist_depth": [
+        "Target Entity 1: Old Friends and New Fancies",
+        "Target Entity 2: Spockanalia"
+      ],
+      "rationale": "The question uses Deep Logic by masking the specific titles of the works, requiring the agent to identify them via their publication years and descriptions (1913 Austen sequel, 1967 Trek zine by creators). It is Wide because it requires aggregating specific details about characters and content types found in different paragraphs of the historical context.",
+      "source_nodes": [
+        "Newsletter",
+        "Filing Off The Serial Numbers - Fanlore"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]:  [Wide Logic - Target 1]: ",
+      "judge_max_limit": 300,
+      "answer_a": "芒硝",
+      "answer_b": "The 1913 novel that acts as a crossover sequel to Jane Austen’s bibliography is *Old Friends and New Fancies: An Imaginative Sequel to the Novels of Jane Austen* by Sybil G. Brinton, written under the pseudonym \"Sybil.\" This work is widely recognized as the first known piece of Jane Austen fan fiction [1]. The story centers on secondary characters from Austen’s novels, particularly focusing on Mary Crawford from *Mansfield Park*, Colonel Fitzwilliam from *Pride and Prejudice*, and Kitty Bennet, also from *Pride and Prejudice*, weaving their lives into a new narrative that connects the worlds of Austen’s six major novels [2]. The novel imagines romantic pairings and social interactions among these characters, maintaining the tone and style of Austen’s original works.\n\nThe 1967 *Star Trek* fanzine established by the show’s creators is *Spockanalia*, created by Ruth Berman, Karen McCullough, and other members of the *Star Trek* fan community, with endorsement and contributions from *Star Trek*’s actual writers, including D.C. Fontana and Gene Roddenberry [3]. *Spockanalia* was one of the first fanzines dedicated to a television series and became a cornerstone of modern fan fiction culture. It featured not only fiction but also non-fiction content such as episode analyses, behind-the-scenes articles, interviews with cast and crew, technical schematics of the USS Enterprise, and essays on Vulcan culture and logic [4]. Notably, some of its contributing writers went on to have professional careers in science fiction writing and television, such as D.C. Fontana, who became a prominent scriptwriter for multiple *Star Trek* series, underscoring the fanzine's role as a launchpad for professional writing in the genre [5].\n\n## References  \n[1] https://archiveofourown.org/works/10929560  \n[2] https://janeaustenfanatic.blogspot.com/2011/04/old-friends-and-new-fancies.html  \n[3] https://fanlore.org/wiki/Spockanalia  \n[4] https://zinebook.com/spockanalia.html  \n[5] https://www.tor.com/2019/10/15/the-women-who-invented-fan-fiction/",
+      "duration_a_seconds": 1.7,
+      "duration_b_seconds": 98.6,
+      "verdict": "B_MUCH_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "BOTH",
+      "judge_reasoning": "Agent A provided a completely irrelevant response consisting of two Chinese characters ('Mirabilite'). Agent B correctly identified both the 1913 novel (*Old Friends and New Fancies*) and the 1967 fanzine (*Spockanalia*), addressing all sub-questions regarding characters, content, and career outcomes with appropriate citations.",
+      "score_a": 0.0,
+      "score_b": 2.0,
+      "evolution": {
+        "summary": "Mercy rule",
+        "kind": "mercy_rule",
+        "lines": [
+          "[GAME OVER] Mercy Rule Triggered (Diff >= 2.0)!",
+          "============================================================"
+        ]
+      }
+    }
+  ],
+  "summary_id": "tree_0020_minimaxm2_vs_Qwen3235b_900"
+}

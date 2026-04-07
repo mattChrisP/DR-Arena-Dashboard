@@ -1,0 +1,215 @@
+{
+  "id": "R2_minimax-m2.1_seed-1.6_tree_0016",
+  "source_group": "onboarding_battles",
+  "source_log": "onboarding_battles/R2_minimax-m2.1_seed-1.6_tree_0016.log",
+  "tree_id": "tree_0016",
+  "tree_title": "Software Developers, Quality Assurance Analysts, and Testers :     Occupational Outlook Handbook: :     U.S. Bureau of Labor Statistics",
+  "tree_topic": "Jobs & Education > Jobs",
+  "tree_subtopic": "Developer Jobs",
+  "tree_crawled_at": "2025-11-21T15:03:35.229939",
+  "tree_url": "https://www.bls.gov/ooh/computer-and-information-technology/software-developers.htm",
+  "model_a": "seed-1.6",
+  "model_b": "minimax-m2.1",
+  "winner": "seed-1.6",
+  "final_score_a": 3.0,
+  "final_score_b": 0.0,
+  "total_rounds": 3,
+  "type": "onboarding",
+  "tournament_round": 2,
+  "pairing_index": null,
+  "mercy_rule": true,
+  "overall_topic": "Software Developers, Quality Assurance Analysts, and Testers :     Occupational Outlook Handbook: :     U.S. Bureau of Labor Statistics",
+  "questions": [
+    "According to the U.S. Bureau of Labor Statistics Occupational Outlook Handbook data for the 2024–34 projection period, identify the specific Computer and Information Technology occupation that lists '5 years or more' of work experience in a related occupation as a typical entry-level requirement. Compare this role to the occupation group defined as professionals who design computer applications or identify and report defects in them. For both identified groups, report the 2024 median annual pay and the total projected numeric employment change from 2024 to 2034.",
+    "Based on the U.S. Bureau of Labor Statistics' Occupational Outlook Handbook projections for the 2024–2034 period, identify the computer-related occupation projected to experience a 29% employment growth and the occupation projected to see a 3% decline. For both identified roles, provide the 2024 median annual pay, the typical entry-level education, the required work experience in a related occupation, and the projected numeric employment change.",
+    "According to the U.S. Bureau of Labor Statistics' Occupational Outlook Handbook (2024-2034 projections), a specific occupational group responsible for designing applications and reporting defects has a 2024 median pay of $131,450 and a projected employment change of exactly 287,900 jobs. Identify the related 'Management' occupation, often requiring 5 years or more of experience, that shares the exact same 15% growth rate forecast as this group. For this identified management occupation, provide the following details: the 2024 median annual wage, the specific numeric employment change projected for the 2024-2034 decade, and the average number of annual openings expected."
+  ],
+  "round_states": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "verdict": "A_BETTER",
+      "failure_type": "BOTH",
+      "score_a": 1.0,
+      "score_b": 0.0,
+      "evolution_kind": "pressure_test"
+    },
+    {
+      "round": 2,
+      "depth": 3,
+      "width": 3,
+      "verdict": "Tie",
+      "failure_type": "BOTH",
+      "score_a": 1.0,
+      "score_b": 0.0,
+      "evolution_kind": "backtrack"
+    },
+    {
+      "round": 3,
+      "depth": 2,
+      "width": 2,
+      "verdict": "A_MUCH_BETTER",
+      "failure_type": "BOTH",
+      "score_a": 3.0,
+      "score_b": 0.0,
+      "evolution_kind": "mercy_rule"
+    }
+  ],
+  "final_verdict": "A_MUCH_BETTER",
+  "final_failure_type": "BOTH",
+  "total_tokens": 890948,
+  "estimated_cost": 8.9095,
+  "rounds": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "logic_chain": [
+        "Software Developers, Quality Assurance Analysts, and Testers :     Occupational Outlook Handbook: :     U.S. Bureau of Labor Statistics",
+        "Computer and Information Systems Managers :     Occupational Outlook Handbook: :     U.S. Bureau of Labor Statistics"
+      ],
+      "question": "According to the U.S. Bureau of Labor Statistics Occupational Outlook Handbook data for the 2024–34 projection period, identify the specific Computer and Information Technology occupation that lists '5 years or more' of work experience in a related occupation as a typical entry-level requirement. Compare this role to the occupation group defined as professionals who design computer applications or identify and report defects in them. For both identified groups, report the 2024 median annual pay and the total projected numeric employment change from 2024 to 2034.",
+      "word_limit_instruction": "Answer length: 200-300 words.",
+      "checklist_width": [
+        "Entity 1 (Managers) 2024 Median Pay: $171,200",
+        "Entity 1 (Managers) Projected Employment Change: 101,600",
+        "Entity 2 (Developers/Testers) 2024 Median Pay: $131,450",
+        "Entity 2 (Developers/Testers) Projected Employment Change: 287,900"
+      ],
+      "checklist_depth": [
+        "Identify Entity 1: Computer and Information Systems Managers (Logic: Requires 5 years or more work experience)",
+        "Identify Entity 2: Software Developers, Quality Assurance Analysts, and Testers (Logic: Designs applications or reports defects)"
+      ],
+      "rationale": "The question requires Deep Reasoning to identify the subjects: one is hidden behind a specific entry-level experience requirement ('5 years or more') and the other behind a functional description of duties ('designing applications/reporting defects'). It applies Wide Aggregation by requiring the retrieval and comparison of specific numerical data points (pay and employment change stats) for both identified entities from the 2024-34 dataset.",
+      "source_nodes": [
+        "Computer and Information Systems Managers :     Occupational Outlook Handbook: :     U.S. Bureau of Labor Statistics",
+        "Computer and Information Technology Occupations :     Occupational Outlook Handbook: :     U.S. Bureau of Labor Statistics"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: Summary Please enable javascript to play this video. Video transcript available at https://www.youtube.com/watch?v=WQmsKH7mIqo. Quick Facts: Computer and Information Systems M",
+      "judge_max_limit": 300,
+      "answer_a": "The sole Computer and Information Technology occupation in the U.S. Bureau of Labor Statistics (BLS) 2024–34 Occupational Outlook Handbook (OOH) listing “5 years or more” of related work experience as a typical entry-level requirement is Computer and Information Systems Managers [1]. This role involves overseeing an organization’s technology strategies, budgets, and team operations, starkly differing from the comparison group: Software Developers, Quality Assurance Analysts, and Testers—professionals tasked with designing custom computer applications or identifying and reporting software defects to enhance functionality [2]. For 2024 median annual pay, Computer and Information Systems Managers earn $164,070, while the comparison group’s median is $124,200 [1][2]. Regarding 2024–34 projected numeric employment change, Computer and Information Systems Managers have a +37,400 increase (5% growth, on par with the average for all occupations), while the comparison group sees a +241,500 surge (21% growth, much faster than average) [1][2]. This gap stems from soaring demand for specialized software solutions driving the comparison group’s growth, while manager roles depend on slower organizational expansion paces and the need for seasoned tech leadership [1][2].\n\n## References\n[1] U.S. Bureau of Labor Statistics. (2024). Computer and Information Systems Managers. Occupational Outlook Handbook. https://www.bls.gov/ooh/management/computer-and-information-systems-managers.htm\n[2] U.S. Bureau of Labor Statistics. (2024). Software Developers, Quality Assurance Analysts, and Testers. Occupational Outlook Handbook. https://www.bls.gov/ooh/computer-and-information-technology/software-developers.htm",
+      "answer_b": "[SEARCH: \"BLS Occupational Outlook Handbook 2024-34 Computer Information Technology occupations entry requirements 5 years experience\"]\n[SEARCH: \"BLS Occupational Outlook Handbook 2024-34 software developers design computer applications defects median pay employment change\"]\n[SEARCH: \"BLS OOH 2024-34 computer occupations entry requirements work experience\"]\n[SEARCH: \"Bureau Labor Statistics 2024-34 projection computer technology occupations median annual pay employment change\"]",
+      "duration_a_seconds": 31.1,
+      "duration_b_seconds": 3.3,
+      "verdict": "A_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "BOTH",
+      "judge_reasoning": "Agent A correctly identified both entities required by the prompt (Computer and Information Systems Managers and Software Developers), satisfying the Deep Logic criteria. However, Agent A failed the Wide Accuracy check by providing incorrect numerical data (likely citing older 2022 data instead of the specific 2024-34 figures required by the Ground Truth checklist). Agent B failed completely, providing only search logs with no final response. Agent A wins for providing a coherent and logically correct answer, but is capped at 'Better' due to the factual errors in the statistics.",
+      "score_a": 1.0,
+      "score_b": 0.0,
+      "evolution": {
+        "summary": "Pressure test",
+        "kind": "pressure_test",
+        "lines": [
+          "[EVOLUTION] Determining Next Step...",
+          "-> WINNER is A. Targeting Loser Failure: BOTH.",
+          "-> Action: Pressure Test (Deep+1 & Wide+1)",
+          "[EVOLUTION] Descended to: 'Information Security Analysts :     Occupational Outlook Handbook: :     U.S. Bureau of Labor Statistics'",
+          "============================================================"
+        ]
+      }
+    },
+    {
+      "round": 2,
+      "depth": 3,
+      "width": 3,
+      "logic_chain": [
+        "Software Developers, Quality Assurance Analysts, and Testers :     Occupational Outlook Handbook: :     U.S. Bureau of Labor Statistics",
+        "Computer and Information Systems Managers :     Occupational Outlook Handbook: :     U.S. Bureau of Labor Statistics",
+        "Information Security Analysts :     Occupational Outlook Handbook: :     U.S. Bureau of Labor Statistics"
+      ],
+      "question": "Based on the U.S. Bureau of Labor Statistics' Occupational Outlook Handbook projections for the 2024–2034 period, identify the computer-related occupation projected to experience a 29% employment growth and the occupation projected to see a 3% decline. For both identified roles, provide the 2024 median annual pay, the typical entry-level education, the required work experience in a related occupation, and the projected numeric employment change.",
+      "word_limit_instruction": "Answer length: 250-350 words.",
+      "checklist_width": [
+        "Information Security Analysts: 2024 Median Pay ($124,910)",
+        "Information Security Analysts: Typical Entry-Level Education (Bachelor's degree)",
+        "Information Security Analysts: Work Experience in a Related Occupation (Less than 5 years)",
+        "Information Security Analysts: Projected Employment Change (52,100)",
+        "Computer Support Specialists: 2024 Median Pay ($61,550)",
+        "Computer Support Specialists: Typical Entry-Level Education (Varies, Associate's degree, or See How to Become One)",
+        "Computer Support Specialists: Work Experience in a Related Occupation (None)",
+        "Computer Support Specialists: Projected Employment Change (-24,200)"
+      ],
+      "checklist_depth": [
+        "Correctly identifies 'Information Security Analysts' as the entity with 29% growth.",
+        "Correctly identifies 'Computer Support Specialists' as the entity with 3% decline."
+      ],
+      "rationale": "The question utilizes 'Deep' reasoning by masking the target entities behind specific statistical performance metrics (29% growth vs. 3% decline), requiring the agent to filter through domain data to identify the correct occupations. It enforces 'Wide' aggregation by demanding four distinct data points (pay, education, experience, numeric change) for each of the two identified entities, ensuring the agent gathers comprehensive details from the respective source profiles.",
+      "source_nodes": [
+        "Information Security Analysts :     Occupational Outlook Handbook: :     U.S. Bureau of Labor Statistics",
+        "Management Occupations :     Occupational Outlook Handbook : :     U.S. Bureau of Labor Statistics",
+        "Computer Support Specialists :     Occupational Outlook Handbook: :     U.S. Bureau of Labor Statistics"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: Summary Please enable javascript to play this video. Video transcript available at https://www.youtube.com/watch?v=cVZktAEtWE4. Quick Facts: Information Security Analysts 2024",
+      "judge_max_limit": 350,
+      "answer_a": "The computer-related occupation projected to have 29% employment growth (2024–2034) per U.S. Bureau of Labor Statistics (BLS) Occupational Outlook Handbook (OOH) is Database Administrators and Architects, while the one with a 3% decline is Computer Network Architects [1][2]. For Database Administrators and Architects: 2024 median annual pay is $112,050 [1]. Typical entry-level education is a bachelor’s degree in computer science, information systems, or a closely related field, as they require expertise in data storage, security, and retrieval to manage organizational data infrastructures [1]. Required work experience in a related occupation is usually 1–3 years, often in roles like database developer or data analyst, to build practical skills in optimizing data access and addressing system vulnerabilities [1]. Their projected numeric employment change is +38,300, fueled by soaring demand for secure, efficient data management amid the expansion of big data initiatives across healthcare, finance, and tech industries [1]. For Computer Network Architects: 2024 median annual pay is $135,590 [2]. Typical entry-level education is a bachelor’s degree in computer science, information systems, or electrical engineering, as they design and implement complex organizational network systems [2]. Required work experience in a related occupation is 5 or more years, often in roles like network engineer or systems administrator, to develop advanced technical and project management skills [2]. Their projected numeric employment change is -2,500, linked to increased adoption of cloud-based networking solutions that reduce demand for on-premises network design specialists [2].\n\n## References\n[1] U.S. Bureau of Labor Statistics. (2024). Database Administrators and Architects. Occupational Outlook Handbook. https://www.bls.gov/ooh/computer-and-information-technology/database-administrators-and-architects.htm\n[2] U.S. Bureau of Labor Statistics. (2024). Computer Network Architects. Occupational Outlook Handbook. https://www.bls.gov/ooh/computer-and-information-technology/computer-network-architects.htm",
+      "answer_b": "[SEARCH: \"BLS Occupational Outlook Handbook 2024-34 computer occupation 29% employment growth\"]\n[SEARCH: \"BLS Occupational Outlook Handbook 2024-34 occupation 3% employment decline\"]\n[SEARCH: \"BLS OOH 2024-34 projection computer information technology employment change percentage\"]\n[SEARCH: \"Bureau Labor Statistics 2024-34 fastest growing declining occupations computer\"]",
+      "duration_a_seconds": 33.2,
+      "duration_b_seconds": 6.0,
+      "verdict": "Tie",
+      "tie_quality": "LOW",
+      "failure_type": "BOTH",
+      "judge_reasoning": "Both agents failed significantly. Agent A failed the Deep Logic check by identifying the wrong entities. According to the Ground Truth, 'Information Security Analysts' are projected to grow 29% and 'Computer Support Specialists' to decline 3%. Agent A incorrectly assigned these statistics to 'Database Administrators' and 'Computer Network Architects,' resulting in a confident hallucination that contradicts the provided checklist. Agent B failed to generate a response entirely, outputting only raw search logs/tokens. Since Agent A provided misinformation (violating the paramount accuracy constraint) and Agent B provided no utility (violating the helpfulness constraint), this is a Low Quality Tie.",
+      "score_a": 1.0,
+      "score_b": 0.0,
+      "evolution": {
+        "summary": "Backtrack",
+        "kind": "backtrack",
+        "lines": [
+          "[EVOLUTION] Determining Next Step...",
+          "-> TIE (Both Bad): BACKTRACKING.",
+          ">>> [BACKTRACK] Moving up to Parent Node <<<",
+          "============================================================"
+        ]
+      }
+    },
+    {
+      "round": 3,
+      "depth": 2,
+      "width": 2,
+      "logic_chain": [
+        "Software Developers, Quality Assurance Analysts, and Testers :     Occupational Outlook Handbook: :     U.S. Bureau of Labor Statistics",
+        "Computer and Information Systems Managers :     Occupational Outlook Handbook: :     U.S. Bureau of Labor Statistics"
+      ],
+      "question": "According to the U.S. Bureau of Labor Statistics' Occupational Outlook Handbook (2024-2034 projections), a specific occupational group responsible for designing applications and reporting defects has a 2024 median pay of $131,450 and a projected employment change of exactly 287,900 jobs. Identify the related 'Management' occupation, often requiring 5 years or more of experience, that shares the exact same 15% growth rate forecast as this group. For this identified management occupation, provide the following details: the 2024 median annual wage, the specific numeric employment change projected for the 2024-2034 decade, and the average number of annual openings expected.",
+      "word_limit_instruction": "Answer length: 200-300 words.",
+      "checklist_width": [
+        "Target Occupation Median Pay (2024): $171,200",
+        "Target Occupation Employment Change (2024-34): 101,600",
+        "Target Occupation Annual Openings: 55,600",
+        "Target Occupation Work Experience: 5 years or more"
+      ],
+      "checklist_depth": [
+        "Source Entity Identified: Software Developers, Quality Assurance Analysts, and Testers (verified via $131,450 pay and 287,900 change)",
+        "Target Entity Identified: Computer and Information Systems Managers (verified via 15% growth match and management category)"
+      ],
+      "rationale": "The question requires Deep Reasoning to first identify 'Software Developers, Quality Assurance Analysts, and Testers' using specific statistical fingerprints ($131,450 pay, 287,900 change) without naming them. It then requires a second logical hop to find a related 'Management' role (Computer and Information Systems Managers) based on a shared attribute (15% growth). Finally, it demands Wide Aggregation by requesting four distinct data points (pay, employment change, openings, experience) specific to the target management role.",
+      "source_nodes": [
+        "Computer and Information Systems Managers :     Occupational Outlook Handbook: :     U.S. Bureau of Labor Statistics",
+        "Field of degree  :     Occupational Outlook Handbook: :     U.S. Bureau of Labor Statistics"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: Summary Please enable javascript to play this video. Video transcript available at https://www.youtube.com/watch?v=WQmsKH7mIqo. Quick Facts: Computer and Information Systems M",
+      "judge_max_limit": 300,
+      "answer_a": "The occupational group responsible for designing applications and reporting defects is Software Developers, Quality Assurance Analysts, and Testers [1], which has the specified 2024 median pay of $131,450, projected employment change of 287,900, and 15% growth rate. The related management occupation often requiring 5+ years of related work experience as a typical entry-level requirement and sharing the exact 15% growth rate is Computer and Information Systems Managers [2]. For this management occupation, the 2024 median annual wage is $164,070 [2]. Its projected numeric employment change for 2024–2034 is +37,400 [2]. The average number of annual openings expected for this role is approximately 41,900, combining new positions and replacements for workers leaving the occupation [2]. This management role oversees organizational tech strategies, differing from the comparison group’s focus on app design and defect reporting, but both benefit from rising tech reliance across industries.\n\n## References\n[1] U.S. Bureau of Labor Statistics. (2024). Software Developers, Quality Assurance Analysts, and Testers. Occupational Outlook Handbook. https://www.bls.gov/ooh/computer-and-information-technology/software-developers.htm\n[2] U.S. Bureau of Labor Statistics. (2024). Computer and Information Systems Managers. Occupational Outlook Handbook. https://www.bls.gov/ooh/management/computer-and-information-systems-managers.htm",
+      "answer_b": "[SEARCH: \"BLS Occupational Outlook Handbook 2024-34 software developers median pay $131,450 287,900 employment change\"]\n[SEARCH: \"BLS OOH 2024-34 computer and information technology management occupations 15% growth rate\"]\n[SEARCH: \"BLS Occupational Outlook Handbook 2024-34 IT management occupations 5 years experience required\"]\n[SEARCH: \"software developers BLS 2024-34 $131,450 median annual wage 287,900 job growth 15 percent\"]\n[SEARCH: \"BLS OOH 2024-34 computer and information systems managers median pay growth rate 15%\"]",
+      "duration_a_seconds": 143.7,
+      "duration_b_seconds": 8.3,
+      "verdict": "A_MUCH_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "BOTH",
+      "judge_reasoning": "Agent B failed to generate a final response, outputting only raw search logs. This is a catastrophic failure in user experience. Agent A correctly identified the target entity (Computer and Information Systems Managers) based on the logic constraints. Although Agent A's specific numeric data for the target occupation (e.g., $164,070 wage) appears to be from an older data vintage (2022-32) compared to the Ground Truth's 2024-34 expectations ($171,200 wage), it provided a helpful, structured, and logically accurate answer. Agent A wins by default.",
+      "score_a": 3.0,
+      "score_b": 0.0,
+      "evolution": {
+        "summary": "Mercy rule",
+        "kind": "mercy_rule",
+        "lines": [
+          "[GAME OVER] Mercy Rule Triggered (Diff >= 2.0)!",
+          "============================================================"
+        ]
+      }
+    }
+  ],
+  "summary_id": "tree_0016_seed16_vs_minimaxm2_826"
+}

@@ -1,0 +1,89 @@
+{
+  "id": "R3_minimax-m2.1_Qwen3-235b-a22b_tree_0014",
+  "source_group": "onboarding_battles",
+  "source_log": "onboarding_battles/R3_minimax-m2.1_Qwen3-235b-a22b_tree_0014.log",
+  "tree_id": "tree_0014",
+  "tree_title": "Video rental shop",
+  "tree_topic": "Shopping > Entertainment Media > DVD & Video Shopping",
+  "tree_subtopic": "DVD & Video Rentals",
+  "tree_crawled_at": "2025-11-21T14:49:42.251140",
+  "tree_url": "https://en.wikipedia.org/wiki/Video_rental_shop",
+  "model_a": "minimax-m2.1",
+  "model_b": "Qwen3-235b-a22b",
+  "winner": "Qwen3-235b-a22b",
+  "final_score_a": 0.0,
+  "final_score_b": 2.0,
+  "total_rounds": 1,
+  "type": "onboarding",
+  "tournament_round": 3,
+  "pairing_index": null,
+  "mercy_rule": true,
+  "overall_topic": "Video rental shop",
+  "questions": [
+    "Investigate the legal history of the 'first sale' doctrine that underpinned the business model of video rental shops like Blockbuster. First, identify the 1984 U.S. Supreme Court case involving videocassette recorders where a 5-to-4 decision prevented the technology from being labeled an accessory to crime, and name the Justice who reportedly changed their mind to cast the deciding vote. Second, identify the 2013 Supreme Court ruling involving a Thai student that applied similar principles to the resale of imported goods. For the 1984 case, quote the specific analogy the MPAA president used to compare the VCR to a violent criminal. For the 2013 case, explain the specific economic strategy (regarding pricing in different countries) that the publisher argued was being undermined."
+  ],
+  "round_states": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "verdict": "B_MUCH_BETTER",
+      "failure_type": "BOTH",
+      "score_a": 0.0,
+      "score_b": 2.0,
+      "evolution_kind": "mercy_rule"
+    }
+  ],
+  "final_verdict": "B_MUCH_BETTER",
+  "final_failure_type": "BOTH",
+  "total_tokens": 1939776,
+  "estimated_cost": 19.3978,
+  "rounds": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "logic_chain": [
+        "Video rental shop",
+        "In a Copyright Ruling, the Legacy of the Betamax"
+      ],
+      "question": "Investigate the legal history of the 'first sale' doctrine that underpinned the business model of video rental shops like Blockbuster. First, identify the 1984 U.S. Supreme Court case involving videocassette recorders where a 5-to-4 decision prevented the technology from being labeled an accessory to crime, and name the Justice who reportedly changed their mind to cast the deciding vote. Second, identify the 2013 Supreme Court ruling involving a Thai student that applied similar principles to the resale of imported goods. For the 1984 case, quote the specific analogy the MPAA president used to compare the VCR to a violent criminal. For the 2013 case, explain the specific economic strategy (regarding pricing in different countries) that the publisher argued was being undermined.",
+      "word_limit_instruction": "Answer length: 200-300 words.",
+      "checklist_width": [
+        "Justice Name: Sandra Day O'Connor",
+        "1984 Quote: 'The VCR is to the American film producer and the American public as the Boston strangler is to the woman home alone.'",
+        "2013 Economic Argument: Disruption of 'market segmentation' (or price discrimination/segmenting markets by price) between foreign and domestic markets."
+      ],
+      "checklist_depth": [
+        "Target Entity 1: Sony Corp. of America v. Universal City Studios, Inc. (or the 'Betamax case')",
+        "Target Entity 2: Kirtsaeng v. John Wiley & Sons, Inc."
+      ],
+      "rationale": "The question uses Deep Logic by describing the cases via their impact on the video rental industry and specific circumstances (a vote switch, a Thai student) rather than naming them. It requires Wide Aggregation by demanding specific details (a quote, a name, and an economic argument) associated with two distinct legal events separated by decades, ensuring the agent must synthesize the full scope of the narrative.",
+      "source_nodes": [
+        "In a Copyright Ruling, the Legacy of the Betamax - The New York Times",
+        "Vinyl revival - Wikipedia"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: Business | Copyright Ruling Rings With Echo of Betamax https://www.nytimes.com/2013/03/27/business/in-a-copyright-ruling-the-lingering-legacy-of-the-betamax.html Advertisement",
+      "judge_max_limit": 300,
+      "answer_a": "[1] [2] [3] [4]",
+      "answer_b": "The 1984 U.S. Supreme Court case involving videocassette recorders was *Sony Corp v. Universal City Studios*, also known as the \"Betamax case\" [1]. In a 5-to-4 decision, the Court ruled that consumers could legally record television programs at home for personal use under the doctrine of fair use, which allowed video rental businesses like Blockbuster to operate without liability for potential copyright infringement by renters [2]. Justice John Paul Stevens wrote the majority opinion, emphasizing that the VCR's primary use was \"time-shifting,\" a non-infringing activity. Justice Sandra Day O’Connor reportedly changed her initial stance during deliberations, becoming pivotal in forming the majority [3]. MPAA president Jack Valenti famously compared the VCR to \"[the] Boston Strangler,\" stating, “I say to you that the VCR is to the American film producer and the American public as the Boston Strangler is to the woman home alone” [4].\n\nThe 2013 Supreme Court case was *Kirtsaeng v. John Wiley & Sons, Inc.*, involving Supap Kirtsaeng, a Thai student who resold textbooks purchased in Thailand at lower prices in the U.S. [5]. The Court applied the first sale doctrine to goods manufactured abroad with the copyright holder’s consent, allowing their resale in the U.S. without the copyright owner’s permission [6]. The publisher argued that Kirtsaeng’s actions undermined their market segmentation strategy—selling identical textbooks at different prices in different countries based on economic conditions—which relied on controlling the import and resale of lower-priced international editions [7].\n\n## References  \n[1] Oyez, Sony Corp. v. Universal City Studios  \n[2] Cornell Law School LII, Betamax Case Overview  \n[3] Supreme Court Historical Society, Justice O’Connor’s Role  \n[4] Congressional Quarterly, Jack Valenti’s VCR Testimony (1982)  \n[5] Oyez, Kirtsaeng v. John Wiley & Sons, Inc.  \n[6] Harvard Law Review, First Sale Doctrine Analysis  \n[7] SCOTUSblog, Kirtsaeng Decision Implications",
+      "duration_a_seconds": 3.2,
+      "duration_b_seconds": 25.4,
+      "verdict": "B_MUCH_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "BOTH",
+      "judge_reasoning": "Agent A failed completely, returning only a string of citation numbers with no actual text. Agent B provided a perfect response, correctly identifying both cases (Sony v. Universal, Kirtsaeng v. Wiley), the specific Justice (O'Connor), the specific quote (Boston Strangler), and the economic argument (market segmentation). Agent B also followed the length constraint and provided references.",
+      "score_a": 0.0,
+      "score_b": 2.0,
+      "evolution": {
+        "summary": "Mercy rule",
+        "kind": "mercy_rule",
+        "lines": [
+          "[GAME OVER] Mercy Rule Triggered (Diff >= 2.0)!",
+          "============================================================"
+        ]
+      }
+    }
+  ],
+  "summary_id": "tree_0014_minimaxm2_vs_Qwen3235b_874"
+}

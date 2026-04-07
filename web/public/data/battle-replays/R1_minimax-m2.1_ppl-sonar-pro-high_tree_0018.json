@@ -1,0 +1,93 @@
+{
+  "id": "R1_minimax-m2.1_ppl-sonar-pro-high_tree_0018",
+  "source_group": "onboarding_battles",
+  "source_log": "onboarding_battles/R1_minimax-m2.1_ppl-sonar-pro-high_tree_0018.log",
+  "tree_id": "tree_0018",
+  "tree_title": "UNIX / Linux Tutorial for Beginners",
+  "tree_topic": "Computers & Electronics > Software > Operating Systems",
+  "tree_subtopic": "Linux & Unix",
+  "tree_crawled_at": "2025-11-21T15:28:32.649618",
+  "tree_url": "https://info-ee.surrey.ac.uk/Teaching/Unix/",
+  "model_a": "minimax-m2.1",
+  "model_b": "ppl-sonar-pro-high",
+  "winner": "ppl-sonar-pro-high",
+  "final_score_a": 0.0,
+  "final_score_b": 2.0,
+  "total_rounds": 1,
+  "type": "onboarding",
+  "tournament_round": 1,
+  "pairing_index": null,
+  "mercy_rule": true,
+  "overall_topic": "UNIX / Linux Tutorial for Beginners",
+  "questions": [
+    "Locate the 'UNIX / Linux Tutorial for Beginners' authored by M. Stonebank (University of Surrey, circa 2001), which is structured into eight tutorials covering topics from file listing to UNIX variables. Follow the specific license link provided in the footer of this tutorial. Identify the exact version and type of the Creative Commons license governing this work. Then, based on the text of that specific license deed, detail the two primary 'Freedoms' granted to the user, the three specific 'Terms' (conditions) that must be met to use the material, and the specific recommendation the deed makes regarding the 4.0 version of the license."
+  ],
+  "round_states": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "verdict": "B_MUCH_BETTER",
+      "failure_type": "BOTH",
+      "score_a": 0.0,
+      "score_b": 2.0,
+      "evolution_kind": "mercy_rule"
+    }
+  ],
+  "final_verdict": "B_MUCH_BETTER",
+  "final_failure_type": "BOTH",
+  "total_tokens": 235022,
+  "estimated_cost": 2.3502,
+  "rounds": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "logic_chain": [
+        "UNIX / Linux Tutorial for Beginners",
+        "Deed"
+      ],
+      "question": "Locate the 'UNIX / Linux Tutorial for Beginners' authored by M. Stonebank (University of Surrey, circa 2001), which is structured into eight tutorials covering topics from file listing to UNIX variables. Follow the specific license link provided in the footer of this tutorial. Identify the exact version and type of the Creative Commons license governing this work. Then, based on the text of that specific license deed, detail the two primary 'Freedoms' granted to the user, the three specific 'Terms' (conditions) that must be met to use the material, and the specific recommendation the deed makes regarding the 4.0 version of the license.",
+      "word_limit_instruction": "Answer length: 200-300 words.",
+      "checklist_width": [
+        "License Type identified as Attribution-NonCommercial-ShareAlike (CC BY-NC-SA)",
+        "License Version identified as 2.0 (Generic or International)",
+        "Freedom 1: Share (copy and redistribute the material in any medium or format)",
+        "Freedom 2: Adapt (remix, transform, and build upon the material)",
+        "Term 1: Attribution (must give appropriate credit, provide link, indicate changes)",
+        "Term 2: NonCommercial (may not use for commercial purposes)",
+        "Term 3: ShareAlike (must distribute contributions under the same license)",
+        "Recommendation: The deed notes that 4.0 versions are more user-friendly/robust and recommends using 4.0 for licensing one's own work"
+      ],
+      "checklist_depth": [
+        "Target Entity: M. Stonebank's UNIX Tutorial (University of Surrey)",
+        "Logic Proof: Correctly follows the specific link from the 2001 tutorial to the older CC 2.0 deed rather than assuming a modern 4.0 license by default."
+      ],
+      "rationale": "The question requires Deep reasoning to identify a specific legacy tutorial by author and structure, and then traverse a link to a secondary source (the license deed). It requires Wide aggregation to extract multiple distinct categories of information (Version, Freedoms, Terms, Recommendations) from that secondary source.",
+      "source_nodes": [
+        "Deed - Attribution-NonCommercial-ShareAlike 2.0 Generic\n - Creative Commons"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: Notice This is an older version of this license. Compared to previous versions, the 4.0 versions of all CC licenses are more user-friendly and more internationally robust . If",
+      "judge_max_limit": 300,
+      "answer_a": "UNIX Linux Tutorial for Beginners M. Stonebank University of Surrey 2001\nI will search for the specific tutorial by M. Stonebank to locate the Creative Commons license information.",
+      "answer_b": "The **UNIX / Linux Tutorial for Beginners** by M. Stonebank is licensed under a **Creative Commons Attribution-NonCommercial-ShareAlike 2.0 License**[5]. This specific license governs the educational material covering eight tutorials from basic file operations to UNIX variables.\n\nThe two primary **Freedoms** granted under this Creative Commons license are: (1) the freedom to copy, distribute, and transmit the work, and (2) the freedom to adapt or remix the material for non-commercial purposes[5].\n\nThe three specific **Terms** (conditions) users must meet are: (1) **Attribution** – you must give credit to the original author M. Stonebank; (2) **NonCommercial** – the work cannot be used for commercial purposes; and (3) **ShareAlike** – if you alter, transform, or build upon this work, you must distribute the resulting work under an identical or compatible license[5].\n\nRegarding the **4.0 version recommendation**, the Creative Commons license deed for this work, established in 2001, predates the 4.0 iteration. However, Creative Commons recommends that users of older licenses consider upgrading to the more recent 4.0 versions, as they provide enhanced clarity, improved international applicability, and better alignment with modern digital distribution practices. The 4.0 versions offer clearer definitions of user rights and stronger legal protections across different jurisdictions[5].\n\nThis tutorial remains widely distributed across educational institutions, including adaptations at CMU, Duke University, James Madison University, and the University of Bristol, all maintaining proper attribution to Stonebank's original work[1][2][3][4][5].\n\n## References\n\n[1] https://www.chm.bris.ac.uk/unix/\n[2] https://linuxclass.heinz.cmu.edu/doc/Unix-Tutorial-surrey/\n[3] https://w3.cs.jmu.edu/spragunr/jmu_unix_tutorial/\n[4] https://users.cs.duke.edu/~alvy/courses/unixtut/\n[5] https://info-ee.surrey.ac.uk/Teaching/Unix/",
+      "duration_a_seconds": 10.1,
+      "duration_b_seconds": 7.5,
+      "verdict": "B_MUCH_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "BOTH",
+      "judge_reasoning": "Agent A failed completely to provide an answer, instead outputting what appears to be an internal search query or tool call. Agent B provided a perfect response: it correctly identified the specific entity and the older 2.0 license, accurately listed the freedoms and terms, and correctly noted the recommendation regarding the 4.0 version found on the deed. Agent B also utilized excellent formatting with bolding and citations.",
+      "score_a": 0.0,
+      "score_b": 2.0,
+      "evolution": {
+        "summary": "Mercy rule",
+        "kind": "mercy_rule",
+        "lines": [
+          "[GAME OVER] Mercy Rule Triggered (Diff >= 2.0)!",
+          "============================================================"
+        ]
+      }
+    }
+  ],
+  "summary_id": "tree_0018_minimaxm2_vs_pplsonar_781"
+}

@@ -1,0 +1,95 @@
+{
+  "id": "R1_minimax-m2.1_ppl-sonar-pro-high_tree_0004",
+  "source_group": "onboarding_battles",
+  "source_log": "onboarding_battles/R1_minimax-m2.1_ppl-sonar-pro-high_tree_0004.log",
+  "tree_id": "tree_0004",
+  "tree_title": "Sweepstake",
+  "tree_topic": "Games > Computer & Video Games > Gaming Media & Reference",
+  "tree_subtopic": "Game Cheats & Hints",
+  "tree_crawled_at": "2025-11-21T13:17:54.317079",
+  "tree_url": "https://gamefaqs.gamespot.com/",
+  "model_a": "ppl-sonar-pro-high",
+  "model_b": "minimax-m2.1",
+  "winner": "ppl-sonar-pro-high",
+  "final_score_a": 2.0,
+  "final_score_b": 0.0,
+  "total_rounds": 1,
+  "type": "onboarding",
+  "tournament_round": 1,
+  "pairing_index": null,
+  "mercy_rule": true,
+  "overall_topic": "Sweepstake",
+  "questions": [
+    "Identify the three original managing directors of the sweepstake established in the Irish Free State in 1930 to fund medical infrastructure, which became infamous for smuggling tickets into the United States and Great Britain. For each of the three individuals, specify their primary profession prior to joining the trust and describe their specific contribution to the organization's logistical setup or the origin of the concept."
+  ],
+  "round_states": [
+    {
+      "round": 1,
+      "depth": 3,
+      "width": 2,
+      "verdict": "A_MUCH_BETTER",
+      "failure_type": "BOTH",
+      "score_a": 2.0,
+      "score_b": 0.0,
+      "evolution_kind": "mercy_rule"
+    }
+  ],
+  "final_verdict": "A_MUCH_BETTER",
+  "final_failure_type": "BOTH",
+  "total_tokens": 72451,
+  "estimated_cost": 0.7245,
+  "rounds": [
+    {
+      "round": 1,
+      "depth": 3,
+      "width": 2,
+      "logic_chain": [
+        "Sweepstake",
+        "Advertising mail",
+        "Canada Post chief seeks to boost profit"
+      ],
+      "question": "Identify the three original managing directors of the sweepstake established in the Irish Free State in 1930 to fund medical infrastructure, which became infamous for smuggling tickets into the United States and Great Britain. For each of the three individuals, specify their primary profession prior to joining the trust and describe their specific contribution to the organization's logistical setup or the origin of the concept.",
+      "word_limit_instruction": "Answer length: 220-320 words.",
+      "checklist_width": [
+        "Entity 1 (Joseph McGrath): Identify prior profession as Politician, Minister, or Revolutionary (IRA).",
+        "Entity 1 (Joseph McGrath): Note contribution as providing political influence, leadership, or general management.",
+        "Entity 2 (Richard Duggan): Identify prior profession as a Bookmaker or Turf Accountant.",
+        "Entity 2 (Richard Duggan): Note contribution as the originator of the concept (based on his previous Mater Hospital sweepstake).",
+        "Entity 3 (Spencer Freeman): Identify prior profession as an Engineer or Captain.",
+        "Entity 3 (Spencer Freeman): Note contribution as handling logistics, advertising, or the design of the ticket mixing drum."
+      ],
+      "checklist_depth": [
+        "Identify the organization as the 'Irish Hospitals' Sweepstake' (or Irish Sweep).",
+        "Target Entity 1: Joseph McGrath (Correct Name Found).",
+        "Target Entity 2: Richard Duggan (Correct Name Found).",
+        "Target Entity 3: Spencer Freeman (Correct Name Found)."
+      ],
+      "rationale": "The question utilizes Deep Reasoning by describing the entity (Irish Hospitals' Sweepstake) via its founding context (1930, Irish Free State, hospital funding, smuggling) without naming it. This forces the agent to deduce the subject. The Wide Aggregation is achieved by requiring specific biographical data (prior profession) and organizational roles for all three distinct founders, ensuring the agent cannot rely on a single summary sentence but must synthesize details about each person.",
+      "source_nodes": [
+        "Canada Post chief seeks to boost profit | CBC News",
+        "RR Donnelley - Wikipedia"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]:  [Wide Logic - Target 1]: ",
+      "judge_max_limit": 320,
+      "answer_a": "The three original managing directors of the Irish Hospitals' Sweepstake, established in 1930 in the Irish Free State to fund hospitals, were **Richard Duggan**, **Captain Spencer Freeman**, and **Joe McGrath**. This lottery, run by the Irish Hospitals Trust Ltd., gained notoriety for illegally smuggling tickets into the United States and Great Britain, where gambling laws banned such sales, generating massive revenues through diaspora networks despite diplomatic tensions.[1][2][3]\n\n**Richard Duggan**, a prominent Dublin bookmaker prior to 1930, originated the concept. He had organized multiple sweepstakes on horse races in the preceding decade, providing the blueprint for tying lottery tickets to events like the Grand National or Derby. Duggan co-founded the Trust with McGrath, securing initial sanction under the Public Charitable Hospitals (Temporary Provisions) Act, 1930, and handled bookmaker expertise for ticket distribution logistics.[1][4]\n\n**Captain Spencer Freeman**, a Welsh-born engineer and former British Army captain, contributed theatrical staging to the operation. He masterminded the first draw on November 17, 1930, using blind children from St. Joseph’s School under Garda supervision for dramatic effect, later replaced by nurses in uniforms to emphasize charitable appeal. His flair enhanced marketing for illegal overseas smuggling.[1][2]\n\n**Joe McGrath**, a former politician and War of Independence veteran who served as Minister for Industry and Commerce (1922-1924), leveraged political connections for logistical expansion. A friend of Michael Collins, he orchestrated U.S. operations via allies like Joe McGarrity, enabling widespread ticket smuggling amid the Great Depression. McGrath also outsourced processing to firms like Dora Power's for efficient handling of millions of punch-cards per draw.[2][3][5]\n\nTheir efforts raised funds but enriched directors, with less than 10% reaching hospitals amid scams like past-posting using transatlantic time differences.[2]\n\n(Word count: 298)\n\n## References\n[1] https://scripophily.net/irish-free-state-hospitals-sweepstake-ticket-ireland-1937/  \n[2] https://mylesdungan.com/2017/11/17/on-this-day-17-november-1930-the-first-irish-hospital-sweepstakes-draw-takes-place/  \n[3] https://dorapower.co.uk/behind-the-scenes/irish-hospitals-trust/  \n[4] https://time.com/archive/6763207/sport-sweeps-end/  \n[5] https://seamusdubhghaill.com/tag/irish-hospitals-sweepstake/",
+      "answer_b": "[Search: Irish Hospitals Sweepstake 1930 original managing directors founders]\n\n[Search: Irish Free State sweepstake 1930 medical infrastructure founders]\n\n[Search: Irish Sweepstakes founders 1930 managing directors backgrounds]\n\n[Search: Irish Hospitals Sweepstake origin concept founders profession]",
+      "duration_a_seconds": 5.2,
+      "duration_b_seconds": 2.4,
+      "verdict": "A_MUCH_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "BOTH",
+      "judge_reasoning": "Agent A provided a perfect response that correctly identified all three individuals (McGrath, Duggan, Freeman), their prior professions, and their specific contributions, while adhering to the word count constraint and providing citations. Agent B failed completely, outputting only raw search queries with no actual answer.",
+      "score_a": 2.0,
+      "score_b": 0.0,
+      "evolution": {
+        "summary": "Mercy rule",
+        "kind": "mercy_rule",
+        "lines": [
+          "[GAME OVER] Mercy Rule Triggered (Diff >= 2.0)!",
+          "============================================================"
+        ]
+      }
+    }
+  ],
+  "summary_id": "tree_0004_pplsonar_vs_minimaxm2_762"
+}

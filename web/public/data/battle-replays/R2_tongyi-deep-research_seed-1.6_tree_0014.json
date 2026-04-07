@@ -1,0 +1,89 @@
+{
+  "id": "R2_tongyi-deep-research_seed-1.6_tree_0014",
+  "source_group": "onboarding_battles",
+  "source_log": "onboarding_battles/R2_tongyi-deep-research_seed-1.6_tree_0014.log",
+  "tree_id": "tree_0014",
+  "tree_title": "Video rental shop",
+  "tree_topic": "Shopping > Entertainment Media > DVD & Video Shopping",
+  "tree_subtopic": "DVD & Video Rentals",
+  "tree_crawled_at": "2025-11-21T14:49:42.251140",
+  "tree_url": "https://en.wikipedia.org/wiki/Video_rental_shop",
+  "model_a": "seed-1.6",
+  "model_b": "tongyi-deep-research",
+  "winner": "seed-1.6",
+  "final_score_a": 2.0,
+  "final_score_b": 0.0,
+  "total_rounds": 1,
+  "type": "onboarding",
+  "tournament_round": 2,
+  "pairing_index": null,
+  "mercy_rule": true,
+  "overall_topic": "Video rental shop",
+  "questions": [
+    "Identify the 2013 U.S. Supreme Court case involving a Thai student's textbook resale business that is legally significant for the operation of video rental companies like Redbox and Netflix. What specific legal doctrine did this ruling affirm regarding imported goods? Furthermore, drawing a parallel to the 1984 'Betamax' case mentioned in the context of this decision, provide the exact quote used by MPAA head Jack Valenti comparing the VCR to a notorious criminal, and state the final judicial vote count of the 2013 decision."
+  ],
+  "round_states": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "verdict": "A_MUCH_BETTER",
+      "failure_type": "WIDE",
+      "score_a": 2.0,
+      "score_b": 0.0,
+      "evolution_kind": "mercy_rule"
+    }
+  ],
+  "final_verdict": "A_MUCH_BETTER",
+  "final_failure_type": "WIDE",
+  "total_tokens": 240117,
+  "estimated_cost": 2.4012,
+  "rounds": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "logic_chain": [
+        "Video rental shop",
+        "In a Copyright Ruling, the Legacy of the Betamax"
+      ],
+      "question": "Identify the 2013 U.S. Supreme Court case involving a Thai student's textbook resale business that is legally significant for the operation of video rental companies like Redbox and Netflix. What specific legal doctrine did this ruling affirm regarding imported goods? Furthermore, drawing a parallel to the 1984 'Betamax' case mentioned in the context of this decision, provide the exact quote used by MPAA head Jack Valenti comparing the VCR to a notorious criminal, and state the final judicial vote count of the 2013 decision.",
+      "word_limit_instruction": "Answer length: 150-250 words.",
+      "checklist_width": [
+        "Identifies the legal doctrine as the 'First Sale' doctrine (or exhaustion doctrine)",
+        "Quotes Jack Valenti: 'The VCR is to the American film producer and the American public as the Boston strangler is to the woman home alone.'",
+        "States the 2013 decision vote count as 6-to-3 (or 6-3)"
+      ],
+      "checklist_depth": [
+        "Identifies the 2013 case as Kirtsaeng v. John Wiley & Sons",
+        "Identifies the 1984 precedent as the Sony Betamax case (Sony Corp. of America v. Universal City Studios)"
+      ],
+      "rationale": "The question requires Deep reasoning to identify the specific 2013 case ('Kirtsaeng v. John Wiley & Sons') based on the description of the student and the business model, without naming it. It requires Wide information aggregation to link this to the 'Video rental shop' domain via the 'First Sale' doctrine and retrieve specific historical details (Valenti's 'Boston Strangler' quote and the 2013 vote count) scattered throughout the source text.",
+      "source_nodes": [
+        "In a Copyright Ruling, the Legacy of the Betamax - The New York Times",
+        "Wilshire Boulevard - Wikipedia"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: Business | Copyright Ruling Rings With Echo of Betamax https://www.nytimes.com/2013/03/27/business/in-a-copyright-ruling-the-lingering-legacy-of-the-betamax.html Advertisement",
+      "judge_max_limit": 300,
+      "answer_a": "The 2013 U.S. Supreme Court case is Kirtsaeng v. John Wiley & Sons, Inc., centered on Thai student Supap Kirtsaeng’s resale of imported copyrighted textbooks he obtained from family in Thailand [1]. The ruling is legally significant for Redbox and Netflix because it affirmed the first-sale doctrine’s applicability to imported copyrighted goods, enabling these companies to continue renting or reselling copyrighted media (e.g., DVDs) without copyright holder approval for each transaction [1][2]. The decision referenced the 1984 Sony Corp. of America v. Universal City Studios, Inc. (Betamax case), which upheld consumer use of home recording devices [3]. MPAA head Jack Valenti’s quote from that case was: “I say to you that the VCR is to the American film producer and the American public as the Boston Strangler is to the woman home alone” [3]. The 2013 case’s final judicial vote count was 6-3, with the majority ruling that the first-sale doctrine’s “lawfully made under this title” language includes goods made abroad with copyright holder authorization [1].\n\n## References\n[1] Kirtsaeng v. John Wiley & Sons, Inc., 568 U.S. 519 (2013), Supreme Court of the United States.\n[2] “Kirtsaeng v. Wiley: What the Supreme Court’s First-Sale Doctrine Ruling Means for Businesses,” FindLaw, accessed October 24, 2024.\n[3] “Sony Corp. of America v. Universal City Studios, Inc.: The Betamax Case,” Library of Congress, accessed October 24, 2024.",
+      "answer_b": "Kirtsaeng v. John Wiley & Sons, Inc. (2013) was the Supreme Court case. It affirmed that the \"first sale\" doctrine (Section 109(c) of the Copyright Act) allows the resale of copyrighted works lawfully made abroad by the copyright owner, significantly impacting businesses like Redbox (reselling physical media) and Netflix (potentially reselling/licensing internationally made content). The decision paralleled the landmark 1984 Sony Corp. of America v. Universal City Studios, Inc. (\"Betamax\" case). MPAA head Jack Valenti famously testified before Congress comparing the VCR to a notorious criminal, stating: \"It is totally worthless. Worthless! It is a menace to the creativity of the motion picture industry... If we can outlaw the VCR we will do so.\" The 2013 decision was upheld by a 6-3 vote. [2][3][4]\n\n## References\n\n[1] Kirtsaeng v. John Wiley & Sons, Inc., 568 U.S. 519 (2013).\n[2] U.S. Copyright Office, Circular 1 Explanation of the United States Copyright Law (Section 109).\n[3] \"Jack Valenti Knows the Horror of Betamax\" (Forbes article referencing testimony).\n[4] NY Times: \"Justices Rule for Student Who Imported Textbooks\" (2013 Case Coverage).",
+      "duration_a_seconds": 23.4,
+      "duration_b_seconds": 10.1,
+      "verdict": "A_MUCH_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "WIDE",
+      "judge_reasoning": "Agent A correctly identified all components of the prompt, including the specific quote comparing the VCR to a 'notorious criminal' (the Boston Strangler). Agent B failed this specific constraint, providing a different quote by Jack Valenti that did not contain the required comparison. Agent A also correctly identified the case, doctrine, and vote count.",
+      "score_a": 2.0,
+      "score_b": 0.0,
+      "evolution": {
+        "summary": "Mercy rule",
+        "kind": "mercy_rule",
+        "lines": [
+          "[GAME OVER] Mercy Rule Triggered (Diff >= 2.0)!",
+          "============================================================"
+        ]
+      }
+    }
+  ],
+  "summary_id": "tree_0014_seed16_vs_tongyidee_982"
+}

@@ -1,0 +1,212 @@
+{
+  "models": {
+    "gpt-5.1-search": {
+      "counts": {
+        "DEEP": 37,
+        "WIDE": 35,
+        "BOTH": 35,
+        "NONE": 21
+      },
+      "total": 128,
+      "distribution": {
+        "DEEP": 0.2891,
+        "WIDE": 0.2734,
+        "BOTH": 0.2734,
+        "NONE": 0.1641
+      }
+    },
+    "gemini-2.5-pro-grounding": {
+      "counts": {
+        "DEEP": 46,
+        "WIDE": 30,
+        "BOTH": 38,
+        "NONE": 25
+      },
+      "total": 139,
+      "distribution": {
+        "DEEP": 0.3309,
+        "WIDE": 0.2158,
+        "BOTH": 0.2734,
+        "NONE": 0.1799
+      }
+    },
+    "o3-search": {
+      "counts": {
+        "DEEP": 28,
+        "WIDE": 44,
+        "BOTH": 56,
+        "NONE": 31
+      },
+      "total": 159,
+      "distribution": {
+        "DEEP": 0.1761,
+        "WIDE": 0.2767,
+        "BOTH": 0.3522,
+        "NONE": 0.195
+      }
+    },
+    "grok-4-search": {
+      "counts": {
+        "DEEP": 61,
+        "WIDE": 60,
+        "BOTH": 92,
+        "NONE": 38
+      },
+      "total": 251,
+      "distribution": {
+        "DEEP": 0.243,
+        "WIDE": 0.239,
+        "BOTH": 0.3665,
+        "NONE": 0.1514
+      }
+    },
+    "claude-opus-4-1-search": {
+      "counts": {
+        "DEEP": 75,
+        "WIDE": 59,
+        "BOTH": 97,
+        "NONE": 34
+      },
+      "total": 265,
+      "distribution": {
+        "DEEP": 0.283,
+        "WIDE": 0.2226,
+        "BOTH": 0.366,
+        "NONE": 0.1283
+      }
+    },
+    "Kimi-k2": {
+      "counts": {
+        "DEEP": 81,
+        "WIDE": 73,
+        "BOTH": 153,
+        "NONE": 17
+      },
+      "total": 324,
+      "distribution": {
+        "DEEP": 0.25,
+        "WIDE": 0.2253,
+        "BOTH": 0.4722,
+        "NONE": 0.0525
+      }
+    },
+    "ppl-sonar-pro-high": {
+      "counts": {
+        "DEEP": 87,
+        "WIDE": 67,
+        "BOTH": 95,
+        "NONE": 14
+      },
+      "total": 263,
+      "distribution": {
+        "DEEP": 0.3308,
+        "WIDE": 0.2548,
+        "BOTH": 0.3612,
+        "NONE": 0.0532
+      }
+    },
+    "deepseek-v3.2": {
+      "counts": {
+        "DEEP": 100,
+        "WIDE": 55,
+        "BOTH": 186,
+        "NONE": 14
+      },
+      "total": 355,
+      "distribution": {
+        "DEEP": 0.2817,
+        "WIDE": 0.1549,
+        "BOTH": 0.5239,
+        "NONE": 0.0394
+      }
+    },
+    "glm-4.7": {
+      "counts": {
+        "DEEP": 41,
+        "WIDE": 36,
+        "BOTH": 59,
+        "NONE": 12
+      },
+      "total": 148,
+      "distribution": {
+        "DEEP": 0.277,
+        "WIDE": 0.2432,
+        "BOTH": 0.3986,
+        "NONE": 0.0811
+      }
+    },
+    "Qwen3-235b-a22b": {
+      "counts": {
+        "DEEP": 101,
+        "WIDE": 59,
+        "BOTH": 162,
+        "NONE": 23
+      },
+      "total": 345,
+      "distribution": {
+        "DEEP": 0.2928,
+        "WIDE": 0.171,
+        "BOTH": 0.4696,
+        "NONE": 0.0667
+      }
+    },
+    "seed-1.6": {
+      "counts": {
+        "DEEP": 95,
+        "WIDE": 56,
+        "BOTH": 193,
+        "NONE": 11
+      },
+      "total": 355,
+      "distribution": {
+        "DEEP": 0.2676,
+        "WIDE": 0.1577,
+        "BOTH": 0.5437,
+        "NONE": 0.031
+      }
+    },
+    "tongyi-deep-research": {
+      "counts": {
+        "DEEP": 82,
+        "WIDE": 28,
+        "BOTH": 195,
+        "NONE": 3
+      },
+      "total": 308,
+      "distribution": {
+        "DEEP": 0.2662,
+        "WIDE": 0.0909,
+        "BOTH": 0.6331,
+        "NONE": 0.0097
+      }
+    },
+    "minimax-m2.1": {
+      "counts": {
+        "DEEP": 38,
+        "WIDE": 13,
+        "BOTH": 404,
+        "NONE": 2
+      },
+      "total": 457,
+      "distribution": {
+        "DEEP": 0.0832,
+        "WIDE": 0.0284,
+        "BOTH": 0.884,
+        "NONE": 0.0044
+      }
+    }
+  },
+  "population_average": {
+    "DEEP": 0.2494,
+    "WIDE": 0.1759,
+    "BOTH": 0.5047,
+    "NONE": 0.0701
+  },
+  "coverage": {
+    "logs_total": 1192,
+    "logs_with_verdicts": 1192,
+    "rounds_total": 3617,
+    "rounds_with_failure_type": 3042,
+    "attributed_events": 3497
+  }
+}

@@ -1,0 +1,91 @@
+{
+  "id": "R3_minimax-m2.1_Qwen3-235b-a22b_tree_0017",
+  "source_group": "onboarding_battles",
+  "source_log": "onboarding_battles/R3_minimax-m2.1_Qwen3-235b-a22b_tree_0017.log",
+  "tree_id": "tree_0017",
+  "tree_title": "Handheld game console",
+  "tree_topic": "Computers & Electronics > Consumer Electronics > Gadgets & Portable Electronics",
+  "tree_subtopic": "Handheld Game Consoles",
+  "tree_crawled_at": "2025-11-21T15:27:37.988167",
+  "tree_url": "https://en.wikipedia.org/wiki/Handheld_game_console",
+  "model_a": "Qwen3-235b-a22b",
+  "model_b": "minimax-m2.1",
+  "winner": "Qwen3-235b-a22b",
+  "final_score_a": 2.0,
+  "final_score_b": 0.0,
+  "total_rounds": 1,
+  "type": "onboarding",
+  "tournament_round": 3,
+  "pairing_index": null,
+  "mercy_rule": true,
+  "overall_topic": "Handheld game console",
+  "questions": [
+    "Identify the 8-bit handheld console released in 1989 that dominated the portable market against the Atari Lynx and Sega Game Gear, despite lacking a backlit or color screen. Name the specific 'block-stacking' puzzle game bundled with the device that heavily contributed to its sales figures. Furthermore, detail the technical differences between the original 1989 model and its 1996 'Pocket' revision specifically regarding: 1) the change in battery size and quantity, and 2) the specific visual improvement made to the tone of the monochrome display."
+  ],
+  "round_states": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "verdict": "A_MUCH_BETTER",
+      "failure_type": "BOTH",
+      "score_a": 2.0,
+      "score_b": 0.0,
+      "evolution_kind": "mercy_rule"
+    }
+  ],
+  "final_verdict": "A_MUCH_BETTER",
+  "final_failure_type": "BOTH",
+  "total_tokens": 2067030,
+  "estimated_cost": 20.6703,
+  "rounds": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "logic_chain": [
+        "Handheld game console",
+        "Game Boy — Nintendo dominates the portable market"
+      ],
+      "question": "Identify the 8-bit handheld console released in 1989 that dominated the portable market against the Atari Lynx and Sega Game Gear, despite lacking a backlit or color screen. Name the specific 'block-stacking' puzzle game bundled with the device that heavily contributed to its sales figures. Furthermore, detail the technical differences between the original 1989 model and its 1996 'Pocket' revision specifically regarding: 1) the change in battery size and quantity, and 2) the specific visual improvement made to the tone of the monochrome display.",
+      "word_limit_instruction": "Answer length: 200-300 words.",
+      "checklist_width": [
+        "Pack-in game: Tetris",
+        "Original Power: 4 AA batteries",
+        "Revision Power: Fewer batteries, switched to AAA size",
+        "Original Screen: Green-tinted monochrome",
+        "Revision Screen: 'True' black and white (removed green tint)"
+      ],
+      "checklist_depth": [
+        "Target Entity: Nintendo Game Boy",
+        "Logic Proof: Matches 1989 release, competitors (Lynx/Game Gear), lack of backlight/color, and 'block-stacking' bundle."
+      ],
+      "rationale": "The question uses deep logic by describing the console's market context, competitors, and technical limitations without naming it (Deep). It then requires wide aggregation by asking for specific comparative details (battery specs, screen tint) between the original model and a specific later revision found later in the text (Wide).",
+      "source_nodes": [
+        "Game Boy — Nintendo dominates the portable market | First Arkansas News (FAN) - reporting from across the Natural State",
+        "Survival horror - Wikipedia"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: Home » Headline , Retrogaming , Technology Game Boy — Nintendo dominates the portable market By: Ethan C. Nobles 22 January 2011 One Comment Kirby was popular on the Super Nin",
+      "judge_max_limit": 300,
+      "answer_a": "The 8-bit handheld console released in 1989 that dominated the portable gaming market against competitors like the Atari Lynx and Sega Game Gear is the Nintendo Game Boy. Despite lacking a backlit and color screen, its affordability, durability, and extended battery life gave it a significant market advantage [1]. The device was bundled with the iconic \"block-stacking\" puzzle game *Tetris*, which played a pivotal role in its widespread appeal and sales success, particularly among casual and non-traditional gamers [2]. *Tetris*’ addictive gameplay and universal accessibility helped sell millions of units worldwide, contributing significantly to the Game Boy's market dominance.\n\nIn 1996, Nintendo released the Game Boy Pocket, a revised version of the original model. One major technical improvement was the reduction in battery requirements: while the original 1989 Game Boy used four AA batteries, the Game Boy Pocket required only two AAA batteries, making it lighter and more portable [3]. Additionally, the Pocket model featured a significant visual enhancement in the form of a true black-and-white display, replacing the original’s greenish-gray \"pea soup\" monochrome screen. This improved screen offered higher contrast and reduced sprite blurring, greatly enhancing visibility and user experience [4]. Despite these changes, the core processing hardware remained largely unchanged, preserving backward compatibility with the existing Game Boy game library.\n\nThe combination of strategic bundling with *Tetris* and iterative hardware refinements ensured the Game Boy maintained its market leadership throughout the 1990s.\n\n## References\n[1] https://www.gsmarena.com/nintendo_game_boy_history-feature-2006.php  \n[2] https://www.ign.com/articles/2008/01/31/the-history-of-the-nintendo-game-boy  \n[3] https://www.nintendo.com/us/  \n[4] https://en.wikipedia.org/wiki/Game_Boy_Pocket",
+      "answer_b": "<minimax:tool_call>\ninvoke>\n<search>\n<query>Game Boy 1989 vs Pocket 1996 battery size technical differences display improvement</query>\n</invoke>\n</minimax:tool_call>\n</minimax:tool_call>",
+      "duration_a_seconds": 14.1,
+      "duration_b_seconds": 4.0,
+      "verdict": "A_MUCH_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "BOTH",
+      "judge_reasoning": "Agent A followed all instructions perfectly. It identified the Game Boy, Tetris, the specific battery changes (4 AA to 2 AAA), and the screen tone shift (green to true black/white). It also adhered to the word count constraint and provided citations. Agent B failed completely, outputting raw tool invocation code instead of a response.",
+      "score_a": 2.0,
+      "score_b": 0.0,
+      "evolution": {
+        "summary": "Mercy rule",
+        "kind": "mercy_rule",
+        "lines": [
+          "[GAME OVER] Mercy Rule Triggered (Diff >= 2.0)!",
+          "============================================================"
+        ]
+      }
+    }
+  ],
+  "summary_id": "tree_0017_Qwen3235b_vs_minimaxm2_879"
+}

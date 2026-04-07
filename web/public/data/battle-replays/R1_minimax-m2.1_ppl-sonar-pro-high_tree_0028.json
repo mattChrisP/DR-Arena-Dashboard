@@ -1,0 +1,95 @@
+{
+  "id": "R1_minimax-m2.1_ppl-sonar-pro-high_tree_0028",
+  "source_group": "onboarding_battles",
+  "source_log": "onboarding_battles/R1_minimax-m2.1_ppl-sonar-pro-high_tree_0028.log",
+  "tree_id": "tree_0028",
+  "tree_title": "Jeep History",
+  "tree_topic": "Games > Computer & Video Games > Gaming Media & Reference",
+  "tree_subtopic": "Game Cheats & Hints",
+  "tree_crawled_at": "2025-11-22T00:23:35.600327",
+  "tree_url": "https://gamefaqs.gamespot.com/",
+  "model_a": "ppl-sonar-pro-high",
+  "model_b": "minimax-m2.1",
+  "winner": "ppl-sonar-pro-high",
+  "final_score_a": 2.0,
+  "final_score_b": 0.0,
+  "total_rounds": 1,
+  "type": "onboarding",
+  "tournament_round": 1,
+  "pairing_index": null,
+  "mercy_rule": true,
+  "overall_topic": "Jeep History",
+  "questions": [
+    "Identify the three automobile manufacturers that produced prototypes in response to the U.S. Army's July 1940 solicitation for a 'light reconnaissance vehicle' to replace the motorcycle. For each of the three companies, provide the following specific details: \n1. The name of their respective prototype vehicle.\n2. A key development characteristic: specifically, the name of the engineer who designed the Willys entry, the origin of the engine used for the Ford entry, and the specific duration (in days) it took to build the Bantam entry.\n3. The final logistical outcome for their vehicles during the war, distinguishing which company was selected as the primary U.S. manufacturer and the specific destinations (countries) where the other two manufacturers' vehicles were predominantly sent under the Lend-Lease program."
+  ],
+  "round_states": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "verdict": "A_MUCH_BETTER",
+      "failure_type": "DEEP",
+      "score_a": 2.0,
+      "score_b": 0.0,
+      "evolution_kind": "mercy_rule"
+    }
+  ],
+  "final_verdict": "A_MUCH_BETTER",
+  "final_failure_type": "DEEP",
+  "total_tokens": 492380,
+  "estimated_cost": 4.9238,
+  "rounds": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "logic_chain": [
+        "Jeep History",
+        "Signup"
+      ],
+      "question": "Identify the three automobile manufacturers that produced prototypes in response to the U.S. Army's July 1940 solicitation for a 'light reconnaissance vehicle' to replace the motorcycle. For each of the three companies, provide the following specific details: \n1. The name of their respective prototype vehicle.\n2. A key development characteristic: specifically, the name of the engineer who designed the Willys entry, the origin of the engine used for the Ford entry, and the specific duration (in days) it took to build the Bantam entry.\n3. The final logistical outcome for their vehicles during the war, distinguishing which company was selected as the primary U.S. manufacturer and the specific destinations (countries) where the other two manufacturers' vehicles were predominantly sent under the Lend-Lease program.",
+      "word_limit_instruction": "Answer length: 200-300 words.",
+      "checklist_width": [
+        "Willys-Overland Prototype: Willys Quad",
+        "Willys Development Detail: Designed by Delmar G. Roos",
+        "Willys Fate: Selected as primary U.S. manufacturer (became the MA/MB / Jeep)",
+        "Ford Prototype: Model GP (or Pygmy)",
+        "Ford Development Detail: Powered by an adapted Ford/Ferguson tractor engine",
+        "Ford Fate: Sent to Great Britain and Russia (Lend-Lease)",
+        "American Bantam Prototype: Model 40 BRC (or Field Car)",
+        "Bantam Development Detail: Built within 49 days",
+        "Bantam Fate: Sent to Great Britain and Russia (Lend-Lease)"
+      ],
+      "checklist_depth": [
+        "Entity 1: Willys-Overland (identified via 1940 Army contract logic)",
+        "Entity 2: Ford Motor Company (identified via 1940 Army contract logic)",
+        "Entity 3: American Bantam Car Manufacturing Company (identified via 1940 Army contract logic)"
+      ],
+      "rationale": "The question utilizes 'Deep' reasoning by defining the subjects solely through historical context (the July 1940 U.S. Army solicitation for a reconnaissance vehicle) rather than naming them. It enforces 'Wide' aggregation by demanding a structured comparison of three distinct entities across three specific dimensions: prototype names, unique development trivia (engineer name, tractor engine, build time), and strategic deployment outcomes (Primary vs. Lend-Lease destinations).",
+      "source_nodes": [
+        "Signup | Jeep | Stellantis Media"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: Sign up for the newsletter Sign up for the Stellantis Communications Newsletter and stay updated on all the news. SIGN UP Signup Sign up by filling in all the fields in the fo",
+      "judge_max_limit": 300,
+      "answer_a": "Three automobile manufacturers—**Bantam**, **Willys-Overland**, and **Ford**—responded to the U.S. Army's July 1940 solicitation for a light reconnaissance vehicle[1].\n\n**Bantam** produced the **BRC-40** (Bantam Reconnaissance Car 40) prototype[1]. Karl Probst designed the vehicle, arriving on July 18, 1940, with the preliminary design completed the next day[1]. Bantam delivered its prototype in just **49 days**[4], making it the only manufacturer to meet the Army's demanding timeline[4].\n\n**Willys-Overland** developed the **Willys Quad**, delivered on November 11, 1940[1]. The Willys Quad used the same axles and transfer case from Spicer but featured a stronger in-house engine[1]. While specific engineer attribution isn't provided in available sources, the Willys design ultimately became the basis for the standardized jeep[1].\n\n**Ford** introduced the **Ford Pygmy** on November 23, 1940[1]. Ford's prototype incorporated innovations such as a wide, flat hood, which were later adapted for the Bantam and Willys designs[1]. The engine's specific origin isn't detailed in the search results.\n\nRegarding wartime production outcomes, **Willys secured the primary contract**, with the Willys MB becoming the standardized mass-produced jeep for U.S. forces[1]. The Army ordered 1,500 Willys MA units initially, followed by large-scale MB production[1]. Ford received orders for 1,500 GP vehicles and later produced the licensed Willys MB model as the GPW[1].\n\nBantam's vehicles saw limited production of approximately 2,642 units total and were used by the United States, United Kingdom, and Soviet Union[1], indicating Lend-Lease distribution. However, the search results do not specify detailed geographic distribution for Ford's vehicles under Lend-Lease arrangements.\n\n## References\n\n[1] Wikipedia - Bantam BRC\n[2] YouTube - 1940 American Bantam BRC40\n[3] National Museum of American History - Bantam Jeep Prototype, 1940\n[4] HowStuffWorks - 1940-1941 Jeep",
+      "answer_b": "[Search: \"U.S. Army July 1940 light reconnaissance vehicle solicitation three manufacturers prototypes Bantam Willys Ford\"]\n[Search: \"Willys MB engineer designer 1940 light reconnaissance vehicle\"]\n[Search: \"Ford Pygmy engine origin Bantam BRC prototype build time days\"]\n[Search: \"World War 2 Jeep production primary manufacturer Lend-Lease destinations countries Bantam Ford Willys\"]",
+      "duration_a_seconds": 7.5,
+      "duration_b_seconds": 2.1,
+      "verdict": "A_MUCH_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "DEEP",
+      "judge_reasoning": "Agent B failed completely to generate a response, outputting only internal search queries/plans. Agent A provided a structured, coherent answer that correctly identified the three manufacturers and their prototypes. While Agent A failed to retrieve some specific sub-details (the Willys engineer and Ford engine origin), it explicitly noted these gaps rather than hallucinating. As Agent A is the only functional response, it wins by a wide margin.",
+      "score_a": 2.0,
+      "score_b": 0.0,
+      "evolution": {
+        "summary": "Mercy rule",
+        "kind": "mercy_rule",
+        "lines": [
+          "[GAME OVER] Mercy Rule Triggered (Diff >= 2.0)!",
+          "============================================================"
+        ]
+      }
+    }
+  ],
+  "summary_id": "tree_0028_pplsonar_vs_minimaxm2_798"
+}

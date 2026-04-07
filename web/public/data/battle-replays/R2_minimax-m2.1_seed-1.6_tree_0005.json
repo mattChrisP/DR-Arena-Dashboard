@@ -1,0 +1,88 @@
+{
+  "id": "R2_minimax-m2.1_seed-1.6_tree_0005",
+  "source_group": "onboarding_battles",
+  "source_log": "onboarding_battles/R2_minimax-m2.1_seed-1.6_tree_0005.log",
+  "tree_id": "tree_0005",
+  "tree_title": "Racing game",
+  "tree_topic": "Games > Computer & Video Games",
+  "tree_subtopic": "Driving & Racing Games",
+  "tree_crawled_at": "2025-11-21T13:40:57.408356",
+  "tree_url": "https://en.wikipedia.org/wiki/Racing_game",
+  "model_a": "minimax-m2.1",
+  "model_b": "seed-1.6",
+  "winner": "seed-1.6",
+  "final_score_a": 0.0,
+  "final_score_b": 2.0,
+  "total_rounds": 1,
+  "type": "onboarding",
+  "tournament_round": 2,
+  "pairing_index": null,
+  "mercy_rule": true,
+  "overall_topic": "Racing game",
+  "questions": [
+    "Identify the organization that began donating its crawl data to the Internet Archive starting in 1996. Based on this identification, determine the current public accessibility status of the specific data collection donated by this organization that is designated with the suffix 'DR'."
+  ],
+  "round_states": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "verdict": "B_MUCH_BETTER",
+      "failure_type": "WIDE",
+      "score_a": 0.0,
+      "score_b": 2.0,
+      "evolution_kind": "mercy_rule"
+    }
+  ],
+  "final_verdict": "B_MUCH_BETTER",
+  "final_failure_type": "WIDE",
+  "total_tokens": 587809,
+  "estimated_cost": 5.8781,
+  "rounds": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "logic_chain": [
+        "Racing game",
+        "Wayback Machine"
+      ],
+      "question": "Identify the organization that began donating its crawl data to the Internet Archive starting in 1996. Based on this identification, determine the current public accessibility status of the specific data collection donated by this organization that is designated with the suffix 'DR'.",
+      "word_limit_instruction": "Answer length: 50-100 words.",
+      "checklist_width": [
+        "Organization: Alexa Internet",
+        "Collection Name: Alexa Crawls DR",
+        "Accessibility Status: Not publicly accessible"
+      ],
+      "checklist_depth": [
+        "Target Entity: Alexa Internet (Identified via 1996 donation logic)"
+      ],
+      "rationale": "The question requires Deep reasoning to first identify the organization ('Alexa Internet') based solely on the historical fact of their 1996 data donation partnership, without naming them directly. It then requires Wide aggregation to locate specific metadata (accessibility status) regarding a specific subset of their data ('DR' collection) provided in the source text. Note: The provided source text was exclusively about Web Archiving; the 'Racing game' topic label was disregarded to maintain strict grounding to the provided facts.",
+      "source_nodes": [
+        "Wayback Machine",
+        "Car controls - Wikipedia"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: Organization: Alexa Crawls Starting in 1996, Alexa Internet has been donating their crawl data to the Internet Archive. Flowing in every day, these data are added to the Wayba",
+      "judge_max_limit": 300,
+      "answer_a": "> Internet Archive crawl data donations 1996 organization\n\nThe organization that began donating its crawl data to the Internet Archive starting in 1996 was Alexa Internet. The specific data collection designated with the suffix 'DR' (likely \"Alexa-DR\" or similar) was made publicly accessible through the Internet Archive's Wayback Machine and associated archive collections, where it remained available for research and access until approximately 2022, when Amazon discontinued the Alexa web information service and the Internet Archive integrated and eventually restricted access to certain historical crawl datasets. [1][2][3]",
+      "answer_b": "The organization that began donating its crawl data to the Internet Archive in 1996 is Alexa Internet [1]. Its specific data collection with the “DR” suffix, the Alexa DR (Domain Rank) crawl data, is not publicly accessible to the general public [2]. Qualified researchers must submit a detailed formal request to the Internet Archive’s research access program for review to potentially gain access [1].\n\n## References\n[1] Internet Archive, \"Alexa Internet Crawl Data Donation and Access Guidelines\", https://archive.org/about/alexa-crawl-data, accessed May 22, 2024\n[2] TechCrunch, \"Updates on Alexa’s Domain Rank (DR) Crawl Data Accessibility\", https://techcrunch.com/2023/10/15/alexa-dr-data-access-details, accessed May 22, 2024",
+      "duration_a_seconds": 9.2,
+      "duration_b_seconds": 22.3,
+      "verdict": "B_MUCH_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "WIDE",
+      "judge_reasoning": "Both agents correctly identified the organization as Alexa Internet. However, Agent B correctly identified the accessibility status of the 'DR' collection as 'not publicly accessible,' aligning perfectly with the provided Ground Truth. Agent A incorrectly stated that the data was publicly accessible until 2022. Furthermore, Agent B followed the formatting guidelines by including citations, whereas Agent A provided none.",
+      "score_a": 0.0,
+      "score_b": 2.0,
+      "evolution": {
+        "summary": "Mercy rule",
+        "kind": "mercy_rule",
+        "lines": [
+          "[GAME OVER] Mercy Rule Triggered (Diff >= 2.0)!",
+          "============================================================"
+        ]
+      }
+    }
+  ],
+  "summary_id": "tree_0005_minimaxm2_vs_seed16_810"
+}

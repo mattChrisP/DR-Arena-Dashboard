@@ -1,0 +1,93 @@
+{
+  "id": "R1_tongyi-deep-research_deepseek-v3.2_tree_0009",
+  "source_group": "onboarding_battles",
+  "source_log": "onboarding_battles/R1_tongyi-deep-research_deepseek-v3.2_tree_0009.log",
+  "tree_id": "tree_0009",
+  "tree_title": "Understanding USAG Gymnastics Levels: A Complete Guide (2024)",
+  "tree_topic": "Sports > Individual Sports",
+  "tree_subtopic": "Gymnastics",
+  "tree_crawled_at": "2025-11-21T13:54:44.439021",
+  "tree_url": "https://gmgc.com/understanding-usag-gymnastics-levels-a-complete-guide-2024-2/",
+  "model_a": "tongyi-deep-research",
+  "model_b": "deepseek-v3.2",
+  "winner": "deepseek-v3.2",
+  "final_score_a": 0.0,
+  "final_score_b": 2.0,
+  "total_rounds": 1,
+  "type": "onboarding",
+  "tournament_round": 1,
+  "pairing_index": null,
+  "mercy_rule": true,
+  "overall_topic": "Understanding USAG Gymnastics Levels: A Complete Guide (2024)",
+  "questions": [
+    "Gold Medal Gymnastics & Ninja outlines three specific competitive team tiers catering to different levels of commitment. Based on their program descriptions, identify the specific program name that corresponds to each of the following athlete profiles: (1) An athlete seeking competition exclusively within the gym's internal network without external travel; (2) An advanced athlete seeking travel competition who specifically wishes to continue participating in other sports; and (3) An athlete pursuing the highest level of competition who is prohibited from participating in other activities. For each identified program, list the specific weekly training frequency (days/time) and the geographical scope of their competitions."
+  ],
+  "round_states": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "verdict": "B_MUCH_BETTER",
+      "failure_type": "DEEP",
+      "score_a": 0.0,
+      "score_b": 2.0,
+      "evolution_kind": "mercy_rule"
+    }
+  ],
+  "final_verdict": "B_MUCH_BETTER",
+  "final_failure_type": "DEEP",
+  "total_tokens": 178738,
+  "estimated_cost": 1.7874,
+  "rounds": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "logic_chain": [
+        "Understanding USAG Gymnastics Levels: A Complete Guide (2024)",
+        "Our Gymnastics Team Programs"
+      ],
+      "question": "Gold Medal Gymnastics & Ninja outlines three specific competitive team tiers catering to different levels of commitment. Based on their program descriptions, identify the specific program name that corresponds to each of the following athlete profiles: (1) An athlete seeking competition exclusively within the gym's internal network without external travel; (2) An advanced athlete seeking travel competition who specifically wishes to continue participating in other sports; and (3) An athlete pursuing the highest level of competition who is prohibited from participating in other activities. For each identified program, list the specific weekly training frequency (days/time) and the geographical scope of their competitions.",
+      "word_limit_instruction": "Answer length: 200-300 words.",
+      "checklist_width": [
+        "Club Team: Training is approx. 2 hours / a couple of times a week.",
+        "Club Team: Competition scope is 'In-House' or exclusively within the Gold Medal family of gyms.",
+        "USA-IGC (or College Bound) Team: Training is 2-3 days per week (or max 3).",
+        "USA-IGC (or College Bound) Team: Competition scope includes State, Regional, and National championships.",
+        "Junior Olympic (or USAG Development) Team: Training is 3-5 days per week (year-round).",
+        "Junior Olympic (or USAG Development) Team: Competition scope includes State, Regional, and National championships."
+      ],
+      "checklist_depth": [
+        "Correctly identifies Profile 1 as 'Club Team'.",
+        "Correctly identifies Profile 2 as 'USA-IGC Program' (or College Bound Team).",
+        "Correctly identifies Profile 3 as 'Junior Olympic Program' (or USAG Development Program)."
+      ],
+      "rationale": "The question requires Deep Logic to map the descriptive athlete profiles (e.g., 'prohibited from other activities') to the specific program names found in the text (Junior Olympic). It requires Wide Aggregation to retrieve the specific training days and competition scopes for all three distinct entities.",
+      "source_nodes": [
+        "Our Gymnastics Team Programs - Gold Medal Gymnastics Center %",
+        "Gymnastics & Ninja Classes in Smithtown, NY | Gold Medal Gymnastics"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: GMGC Gymnastics Team Programs Gold Medal has 3 gymnastics team programs for all types of athletes. Over the years we discover that gymnastics can be enjoyed as a sport no matt",
+      "judge_max_limit": 300,
+      "answer_a": "Gold Medal Gymnastics & Ninja offers three competitive team tiers matching the specified athlete profiles:  \n\n1. **Intramural Team**: Designed for athletes competing exclusively within the gym’s internal network, avoiding external travel. Competitions are limited to events hosted at Gold Medal Gymnastics & Ninja facilities. Training occurs **3 days per week (Monday/Wednesday/Thursday, 5:00-7:00 PM)**. [1]  \n\n2. **Travel Team**: Tailored for advanced athletes seeking regional/national competitions while allowing participation in other sports. Training is **4 days weekly (Monday/Tuesday/Thursday/Friday, 5:00-8:00 PM)**, with flexibility to accommodate multi-sport schedules. [2]  \n\n3. **Elite Team**: Targets athletes pursuing the highest competition level, prohibiting other sports during the season. Training requires **6 days per week (Sunday-Thursday, 9:00 AM-5:00 PM)**. Competitions include regional, national, and international meets. [3]  \n\n---\n\n## References  \n[1] \"Intramural Team Program Details – Gold Medal Gymnastics & Ninja,\" goldmedalgym.com/programs/intramural, accessed July 2024.  \n[2] \"Travel Team Training Schedule & Competition Scope,\" goldmedalgym.com/teams/travel, accessed July 2024.  \n[3] \"Elite Team Requirements & Annual Competition Calendar,\" goldmedalgym.com/teams/elite, accessed July 2024.",
+      "answer_b": "(1) The athlete seeking internal-only competition matches the **Recreational Team** program. Members compete in local intrasquad meets and an annual in-house championship. The weekly commitment is a 1.5 to 2-hour practice, once per week. The competition scope is exclusively within the gym[1][2].\n\n(2) The advanced, multi-sport athlete corresponds to the **Excel/Pre-Team** (or Developmental Team) program. This tier is designed for athletes advancing beyond recreational classes but wishing to balance gymnastics with other sports or activities. It requires a greater commitment of typically 2-3 practices per week, each lasting 2-3 hours. This team travels to compete, but within a **regional or state-level** geographical scope[1][2].\n\n(3) The athlete pursuing the highest level under an exclusive commitment aligns with the **Competitive Team** (often called JO—Junior Olympic—Team). This program involves the most rigorous training schedule, typically 4-6 days per week for 3-4 hours per session, and demands exclusive focus, prohibiting other sports or activities. These athletes travel extensively for competitions, with a geographical scope that is **statewide, regional, and national**[1][2].\n\n## References\n[1] Gold Medal Gymnastics & Ninja. (n.d.). *Team Programs*. Retrieved from https://www.goldmedalgymnasticsandninja.com/team-programs\n[2] Gold Medal Gymnastics & Ninja. (n.d.). *Competitive Team Information*. Retrieved from https://www.goldmedalgymnasticsandninja.com/competitive-team",
+      "duration_a_seconds": 3.8,
+      "duration_b_seconds": 16.6,
+      "verdict": "B_MUCH_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "DEEP",
+      "judge_reasoning": "Agent A failed the Deep Logic check significantly. It cited a fake or incorrect URL (`goldmedalgym.com` vs the correct `goldmedalgymnasticsandninja.com`) and hallucinated specific training schedules (e.g., listing specific days/times like 'Monday/Wednesday/Thursday' and an unrealistic '9:00 AM-5:00 PM' daily schedule for the Elite team) that contradict the Ground Truth. Agent B correctly identified the specific business entity and its website. While Agent B's terminology for the lower tiers (Recreational/Excel) differed slightly from the Ground Truth (Club/USA-IGC), it was grounded in the correct source material and accurately identified the Junior Olympic tier and the general scope of the programs. Agent A's response was a high-confidence hallucination.",
+      "score_a": 0.0,
+      "score_b": 2.0,
+      "evolution": {
+        "summary": "Mercy rule",
+        "kind": "mercy_rule",
+        "lines": [
+          "[GAME OVER] Mercy Rule Triggered (Diff >= 2.0)!",
+          "============================================================"
+        ]
+      }
+    }
+  ],
+  "summary_id": "tree_0009_tongyidee_vs_deepseekv_915"
+}

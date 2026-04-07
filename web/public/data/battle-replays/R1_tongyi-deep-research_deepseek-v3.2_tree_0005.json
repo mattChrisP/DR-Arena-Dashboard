@@ -1,0 +1,89 @@
+{
+  "id": "R1_tongyi-deep-research_deepseek-v3.2_tree_0005",
+  "source_group": "onboarding_battles",
+  "source_log": "onboarding_battles/R1_tongyi-deep-research_deepseek-v3.2_tree_0005.log",
+  "tree_id": "tree_0005",
+  "tree_title": "Racing game",
+  "tree_topic": "Games > Computer & Video Games",
+  "tree_subtopic": "Driving & Racing Games",
+  "tree_crawled_at": "2025-11-21T13:40:57.408356",
+  "tree_url": "https://en.wikipedia.org/wiki/Racing_game",
+  "model_a": "tongyi-deep-research",
+  "model_b": "deepseek-v3.2",
+  "winner": "deepseek-v3.2",
+  "final_score_a": 0.0,
+  "final_score_b": 2.0,
+  "total_rounds": 1,
+  "type": "onboarding",
+  "tournament_round": 1,
+  "pairing_index": null,
+  "mercy_rule": true,
+  "overall_topic": "Racing game",
+  "questions": [
+    "Identify the organization that began donating its web crawl data to the Internet Archive in 1996. While most of this data flows into the Wayback Machine, what is the specific public accessibility status of the subset collection labeled as 'DR Crawl data' donated by this entity?"
+  ],
+  "round_states": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "verdict": "B_MUCH_BETTER",
+      "failure_type": "DEEP",
+      "score_a": 0.0,
+      "score_b": 2.0,
+      "evolution_kind": "mercy_rule"
+    }
+  ],
+  "final_verdict": "B_MUCH_BETTER",
+  "final_failure_type": "DEEP",
+  "total_tokens": 75881,
+  "estimated_cost": 0.7588,
+  "rounds": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "logic_chain": [
+        "Racing game",
+        "Wayback Machine"
+      ],
+      "question": "Identify the organization that began donating its web crawl data to the Internet Archive in 1996. While most of this data flows into the Wayback Machine, what is the specific public accessibility status of the subset collection labeled as 'DR Crawl data' donated by this entity?",
+      "word_limit_instruction": "Answer length: 100-200 words.",
+      "checklist_width": [
+        "Identifies the specific subset collection as 'DR Crawl data'",
+        "States that the DR Crawl data is currently not publicly accessible",
+        "Notes that the organization's general data is usually added to the Wayback Machine after an embargo (optional context)"
+      ],
+      "checklist_depth": [
+        "Target Entity: Alexa Internet (or Alexa Crawls)",
+        "Logic Proof: Identified as the organization donating data to the Internet Archive starting in 1996"
+      ],
+      "rationale": "The question masks the entity 'Alexa Internet' behind its historical donation activity (Deep Logic) and requires the agent to distinguish between the general data flow and the specific 'DR Crawl data' collection to determine the correct accessibility status (Wide/Specific Aggregation).",
+      "source_nodes": [
+        "Wayback Machine",
+        "Namco - Wikipedia"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: Organization: Alexa Crawls Starting in 1996, Alexa Internet has been donating their crawl data to the Internet Archive. Flowing in every day, these data are added to the Wayba",
+      "judge_max_limit": 300,
+      "answer_a": "The Library of Congress began donating its web crawl data to the Internet Archive in 1996. While much of this harvested content is preserved within the Wayback Machine, the specific subset labeled as the \"DR Crawl data\" (Digital Collections Crawler data) has restricted public accessibility. This data remains available for preservation and research purposes internally but is not freely accessible to the general public via the Wayback Machine interface due to significant copyright and legal limitations associated with the materials collected. [1] [2]\n\n## References\n[1] Internet Archive: \"Linked Open Data & The Library of Congress Crawl Data\" (https://blog.archive.org/2020/05/26/linked-open-data-the-library-of-congress-crawl-data/)\n[2] Internet Archive Help Center: \"What are access restrictions?\" (https://help.archive.org/help/what-are-access-restrictions/)",
+      "answer_b": "The organization that began donating its web crawl data to the Internet Archive in 1996 is **Alexa Internet**, a company founded by Brewster Kahle and Bruce Gilliat. A subset of this massive donation is known as the **\"Alexa/DR Crawl data.\"** This specific collection is distinct as it contains web pages donated to the Internet Archive by **third-party donors** through Alexa's former \"Donated Resources\" (DR) program. While most Alexa data is integrated into the public Wayback Machine, the DR Crawl data has a more restricted public accessibility status. According to the Internet Archive's documentation, this subset is **not currently accessible for public search or browsing** through the standard Wayback Machine interface. Access requires a special research application and approval process due to its unique provenance and the specific donation agreements under which the data was contributed [1][2].\n\n## References\n[1] Internet Archive. (n.d.). About Alexa Crawls. Retrieved from https://help.archive.org/help/about-alexa-crawls/\n[2] Internet Archive. (n.d.). Wayback Machine General Information. Retrieved from https://help.archive.org/help/wayback-machine-general-information/",
+      "duration_a_seconds": 2.9,
+      "duration_b_seconds": 7.3,
+      "verdict": "B_MUCH_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "DEEP",
+      "judge_reasoning": "Agent B correctly identified the core entity as Alexa Internet, which began donating data to the Internet Archive in 1996. It also correctly identified the 'DR' subset as 'Donated Resources' and accurately described its restricted status. Agent A failed the fundamental logic check by incorrectly identifying the entity as the Library of Congress (which began its web archiving pilot later, in 2000) and hallucinated the meaning of the 'DR' acronym to fit that incorrect narrative.",
+      "score_a": 0.0,
+      "score_b": 2.0,
+      "evolution": {
+        "summary": "Mercy rule",
+        "kind": "mercy_rule",
+        "lines": [
+          "[GAME OVER] Mercy Rule Triggered (Diff >= 2.0)!",
+          "============================================================"
+        ]
+      }
+    }
+  ],
+  "summary_id": "tree_0005_tongyidee_vs_deepseekv_907"
+}

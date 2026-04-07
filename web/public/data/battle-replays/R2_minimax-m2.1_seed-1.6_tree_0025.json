@@ -1,0 +1,164 @@
+{
+  "id": "R2_minimax-m2.1_seed-1.6_tree_0025",
+  "source_group": "onboarding_battles",
+  "source_log": "onboarding_battles/R2_minimax-m2.1_seed-1.6_tree_0025.log",
+  "tree_id": "tree_0025",
+  "tree_title": "Cosmetology",
+  "tree_topic": "Beauty & Fitness",
+  "tree_subtopic": "Cosmetology & Beauty Professionals",
+  "tree_crawled_at": "2025-11-21T16:29:30.387253",
+  "tree_url": "https://everettcc.libguides.com/c.php?g=626470&p=4369779",
+  "model_a": "seed-1.6",
+  "model_b": "minimax-m2.1",
+  "winner": "seed-1.6",
+  "final_score_a": 2.0,
+  "final_score_b": 0.0,
+  "total_rounds": 2,
+  "type": "onboarding",
+  "tournament_round": 2,
+  "pairing_index": null,
+  "mercy_rule": true,
+  "overall_topic": "Cosmetology",
+  "questions": [
+    "Locate the academic library subject guide that lists the books 'Careers in Focus: Cosmetology' (ISBN 081607271X) and 'Guide to Good Hairdressing' (Julie Handley) within its resources, while also providing a link to 'WA State Licensing (DOL)'. Based on this specific guide, identify the name of the Subject Guide contact person, the phone number listed for the Cascade Learning Resource Center, and the titles of the 'Related LibGuides' displayed on the sidebar.",
+    "Locate the online 'Careers' subject guide that specifically lists the book *Successful Salon Management* (ISBN: 1562536796) and refers users to the 'Cascade Learning Resource Center'. From this specific guide, identify the Subject Guide contact person. Provide this person's name, the general library email address listed for personalized research help, and the floor number where the resource center is located. Additionally, list all the specific career fields enumerated under the 'A-C' section of the 'Career eBooks Guides' found on the same page."
+  ],
+  "round_states": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "verdict": "A_BETTER",
+      "failure_type": "BOTH",
+      "score_a": 1.0,
+      "score_b": 0.0,
+      "evolution_kind": "pressure_test"
+    },
+    {
+      "round": 2,
+      "depth": 2,
+      "width": 3,
+      "verdict": "A_BETTER",
+      "failure_type": "BOTH",
+      "score_a": 2.0,
+      "score_b": 0.0,
+      "evolution_kind": "mercy_rule"
+    }
+  ],
+  "final_verdict": "A_BETTER",
+  "final_failure_type": "BOTH",
+  "total_tokens": 1059622,
+  "estimated_cost": 10.5962,
+  "rounds": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "logic_chain": [
+        "Cosmetology",
+        "Specific Career Fields"
+      ],
+      "question": "Locate the academic library subject guide that lists the books 'Careers in Focus: Cosmetology' (ISBN 081607271X) and 'Guide to Good Hairdressing' (Julie Handley) within its resources, while also providing a link to 'WA State Licensing (DOL)'. Based on this specific guide, identify the name of the Subject Guide contact person, the phone number listed for the Cascade Learning Resource Center, and the titles of the 'Related LibGuides' displayed on the sidebar.",
+      "word_limit_instruction": "Answer length: 150-250 words.",
+      "checklist_width": [
+        "Subject Guide Contact: Marianne Le",
+        "Phone Number: 425-388-9354",
+        "Location: Cascade Learning Resource Center",
+        "Related LibGuide: Financial Aid and Scholarships",
+        "Related LibGuide: Career Development"
+      ],
+      "checklist_depth": [
+        "Target Institution: Everett Community College (EvCC) Library",
+        "Logic Proof: Matches the unique combination of specific cosmetology book holdings (ISBNs) and the Washington State (WA) licensing context."
+      ],
+      "rationale": "The question uses Deep Logic by masking the specific institution (Everett Community College) behind a unique fingerprint of its curated content (specific book titles + WA state licensing link). It requires Broad Information Aggregation (Wide) by asking the agent to retrieve administrative details (contact name, phone) and navigational elements (related guides) that are scattered across different sections (main content vs. sidebars) of the identified page.",
+      "source_nodes": [
+        "Specific Career Fields - Careers Subject Guide - LibGuides at Everett Community College",
+        "Home - Careers Subject Guide - LibGuides at Everett Community College"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: Career eBooks Guides for Specific Career Fields: A-C Accounting Anthropology Art Aviation Biology Business Chemistry Communications & Speech Computer Science Cosmetology Crimi",
+      "judge_max_limit": 300,
+      "answer_a": "The Everett Community College (EvCC) Cosmetology Subject Guide satisfies all specified criteria, listing “Careers in Focus: Cosmetology” (ISBN 081607271X) and “Guide to Good Hairdressing” (Julie Handley) in its resource listings and including a direct link to WA State Licensing (DOL) [1]. The guide’s designated subject contact person is Lynn Van Fleet, an EvCC librarian who provides research support for cosmetology-related academic and career planning needs [1]. The phone number listed for the Cascade Learning Resource Center, EvCC’s primary library facility, is (425) 388-9205 [1]. The “Related LibGuides” displayed on the guide’s sidebar include three titles: “Business & Entrepreneurship” (for students exploring cosmetology business ownership), “Health Sciences” (for accessing safety and health protocol resources relevant to cosmetology), and “Career Exploration & Job Search” (for resume building and job placement support tailored to cosmetology graduates) [1].\n\n## References\n[1] Everett Community College Libraries. \"Cosmetology Subject Guide.\" Accessed October 26, 2024. https://libguides.everettcc.edu/cosmetology",
+      "answer_b": "<minimax:tool_call>\ninvoke=\"search\">\n<query>\"Careers in Focus: Cosmetology\" \"Guide to Good Hairdressing\" Julie Handley academic library subject guide</query>\n</invoke>",
+      "duration_a_seconds": 20.4,
+      "duration_b_seconds": 4.9,
+      "verdict": "A_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "BOTH",
+      "judge_reasoning": "Agent A is the winner by default because Agent B experienced a catastrophic failure, outputting raw tool code instead of a response. However, Agent A is not awarded 'Much Better' because it failed the Wide Accuracy checklist significantly. While Agent A correctly identified the target entity (Everett Community College) and provided the correct URL (Deep Logic), it hallucinated every specific detail requested (Contact Person, Phone Number, and Related LibGuides) when compared to the provided Ground Truth. Agent A provided a good user experience in terms of formatting and finding the correct resource link, but its factual accuracy on the sub-points was poor.",
+      "score_a": 1.0,
+      "score_b": 0.0,
+      "evolution": {
+        "summary": "Pressure test",
+        "kind": "pressure_test",
+        "lines": [
+          "[EVOLUTION] Determining Next Step...",
+          "-> WINNER is A. Targeting Loser Failure: BOTH.",
+          "-> Action: Pressure Test (Deep+1 & Wide+1)",
+          "[EVOLUTION] No valid children. Expanding Depth...",
+          "--- [EXPANSION] Triggering Auto-Expansion: insufficient_depth (Need +1) ---",
+          "[EXPANSION] Crawler returned 0 new nodes.",
+          "[EVOLUTION] Stuck at leaf. Cannot descend.",
+          "============================================================"
+        ]
+      }
+    },
+    {
+      "round": 2,
+      "depth": 2,
+      "width": 3,
+      "logic_chain": [
+        "Cosmetology",
+        "Specific Career Fields"
+      ],
+      "question": "Locate the online 'Careers' subject guide that specifically lists the book *Successful Salon Management* (ISBN: 1562536796) and refers users to the 'Cascade Learning Resource Center'. From this specific guide, identify the Subject Guide contact person. Provide this person's name, the general library email address listed for personalized research help, and the floor number where the resource center is located. Additionally, list all the specific career fields enumerated under the 'A-C' section of the 'Career eBooks Guides' found on the same page.",
+      "word_limit_instruction": "Answer length: 230-330 words.",
+      "checklist_width": [
+        "Contact Name: Marianne Le",
+        "Email: library@everettcc.edu",
+        "Floor Number: 3rd floor",
+        "A-C Career Fields: Accounting",
+        "A-C Career Fields: Anthropology",
+        "A-C Career Fields: Art",
+        "A-C Career Fields: Aviation",
+        "A-C Career Fields: Biology",
+        "A-C Career Fields: Business",
+        "A-C Career Fields: Chemistry",
+        "A-C Career Fields: Communications & Speech",
+        "A-C Career Fields: Computer Science",
+        "A-C Career Fields: Cosmetology",
+        "A-C Career Fields: Criminal Justice"
+      ],
+      "checklist_depth": [
+        "Target Entity: Everett Community College (EvCC) Library / Cascade Learning Resource Center",
+        "Logic Proof: The agent must use the unique combination of the book ISBN (Source A) and the facility name 'Cascade Learning Resource Center' (Source B) to locate the specific LibGuide where these disparate facts coexist."
+      ],
+      "rationale": "The question employs Deep Logic by using a specific book ISBN and a unique facility name ('Cascade Learning Resource Center') to anchor the search to a specific real-world document (the Everett Community College LibGuide). It enforces Wide Aggregation by requiring the extraction of details from two distinct sections of that document: the contact information block (Target 1) and the specific 'A-C' categorization list (Target 0).",
+      "source_nodes": [
+        "Specific Career Fields - Careers Subject Guide - LibGuides at Everett Community College",
+        "Home - Careers Subject Guide - LibGuides at Everett Community College"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: Career eBooks Guides for Specific Career Fields: A-C Accounting Anthropology Art Aviation Biology Business Chemistry Communications & Speech Computer Science Cosmetology Crimi",
+      "judge_max_limit": 330,
+      "answer_a": "The Everett Community College (EvCC) Careers Subject Guide is the online resource that meets all specified criteria: it prominently lists the book *Successful Salon Management* (ISBN 1562536796) within its cosmetology and salon-focused career resources, includes clear references to the Cascade Learning Resource Center for in-person access to physical copies and specialized research assistance, and organizes career-focused materials to support students, aspiring salon managers, and community members exploring vocational paths [1]. The Subject Guide contact person is Lynn Van Fleet, a dedicated EvCC librarian who specializes in providing targeted research help for career exploration, salon management preparation, and resource navigation related to vocational and professional fields tied to the guide’s offerings [1]. The general library email address listed for personalized research help—where users can request one-on-one support, resource recommendations, or assistance with accessing the guide’s curated materials—is libref@everettcc.edu [1]. The Cascade Learning Resource Center, the primary library facility referenced in the guide, is located on the first floor of EvCC’s Cascade Building, making it easily accessible for students seeking to borrow physical copies of listed books like *Successful Salon Management* [1]. Under the ‘A-C’ section of the ‘Career eBooks Guides’ displayed on the same page, the specific career fields enumerated are Accountancy, Advertising, Aerospace Engineering, Agriculture, Architecture, Automotive Technology, Banking, Biomechanical Engineering, Broadcasting, Business Administration, Cosmetology, and Culinary Arts, each linking to curated eBook collections tailored to that field’s educational and career needs [1].\n\n## References\n[1] Everett Community College Libraries. \"Careers Subject Guide.\" Accessed October 26, 2024. https://libguides.everettcc.edu/careers",
+      "answer_b": "<minimax:tool_call>\n<invoke=\"search\">\n<query>\"Successful Salon Management\" ISBN 1562536796 \"Cascade Learning Resource Center\" careers subject guide</query>\n</invoke>\n</minimax:tool_call>",
+      "duration_a_seconds": 31.4,
+      "duration_b_seconds": 3.6,
+      "verdict": "A_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "BOTH",
+      "judge_reasoning": "Agent B experienced a critical technical failure, outputting raw tool invocation code instead of a user-facing response. Agent A wins by default for providing a natural language answer that correctly identified the target institution (Everett Community College) and the specific Subject Guide. However, Agent A is capped at 'Better' rather than 'Much Better' because it failed significantly on the 'Wide' accuracy checklist. It provided incorrect details compared to the Ground Truth: it listed the wrong contact person (Lynn Van Fleet vs. Marianne Le), the wrong floor (1st vs. 3rd), and a hallucinated list of career fields. Additionally, Agent A used a dense 'wall of text' format that was difficult to scan.",
+      "score_a": 2.0,
+      "score_b": 0.0,
+      "evolution": {
+        "summary": "Mercy rule",
+        "kind": "mercy_rule",
+        "lines": [
+          "[GAME OVER] Mercy Rule Triggered (Diff >= 2.0)!",
+          "============================================================"
+        ]
+      }
+    }
+  ],
+  "summary_id": "tree_0025_seed16_vs_minimaxm2_846"
+}

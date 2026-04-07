@@ -1,0 +1,277 @@
+{
+  "id": "R4_minimax-m2.1_tongyi-deep-research_tree_0009",
+  "source_group": "onboarding_battles",
+  "source_log": "onboarding_battles/R4_minimax-m2.1_tongyi-deep-research_tree_0009.log",
+  "tree_id": "tree_0009",
+  "tree_title": "Understanding USAG Gymnastics Levels: A Complete Guide (2024)",
+  "tree_topic": "Sports > Individual Sports",
+  "tree_subtopic": "Gymnastics",
+  "tree_crawled_at": "2025-11-21T13:54:44.439021",
+  "tree_url": "https://gmgc.com/understanding-usag-gymnastics-levels-a-complete-guide-2024-2/",
+  "model_a": "tongyi-deep-research",
+  "model_b": "minimax-m2.1",
+  "winner": "tongyi-deep-research",
+  "final_score_a": 2.0,
+  "final_score_b": 0.0,
+  "total_rounds": 4,
+  "type": "onboarding",
+  "tournament_round": 4,
+  "pairing_index": null,
+  "mercy_rule": true,
+  "overall_topic": "Understanding USAG Gymnastics Levels: A Complete Guide (2024)",
+  "questions": [
+    "In the context of the 2024 USAG gymnastics progression system, identify the specific numeric level that is defined as the 'first required competitive level' featuring standardized routines, and list the three key skills associated with it. Then, locate the specific 'Gold Medal Gymnastics & Ninja' facility in Smithtown, NY. Provide the detailed operating hours for this facility specifically for 'July & August' compared to its 'Fall' schedule, and identify the large animal statue landmark located nearby on Route 25.",
+    "According to the 2024 USAG Gymnastics Levels guide, identify the specific numerical level that represents the final stage of 'Compulsory' competition involving standardized routines, as well as the 'Optional' level that directly follows the transition to optional routines but precedes the introduction of C-level skills. For both of these identified levels, provide the associated weekly training hour range and list the three specific key skills (covering apparatus such as bars, beam, floor, or vault) designated for each.",
+    "Determine the specific USAG gymnastics level that requires a gymnast to perform a 'clear hip circle' on the bars and an 'aerial cartwheel' on the beam as key skills. Then, locate the complete facility directory for 'Gold Medal Gymnastics & Ninja', a training organization operating in the New York and New Jersey area. Provide a consolidated list of all seven (7) of their gym locations, detailing the city, full street address, and phone number for each.",
+    "Based on the 2024 guide to USAG Gymnastics Levels, identify the two specific levels that constitute the 'Compulsory' stage and the single subsequent level that serves as the entry into the 'Optional' stage. For each of these three distinct levels, report the specific key skill required for the bars, the defined focus or nature of competition, and the typical weekly training hours expected for that stage of progression."
+  ],
+  "round_states": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "verdict": "A_BETTER",
+      "failure_type": "BOTH",
+      "score_a": 1.0,
+      "score_b": 0.0,
+      "evolution_kind": "pressure_test"
+    },
+    {
+      "round": 2,
+      "depth": 3,
+      "width": 3,
+      "verdict": "Tie",
+      "failure_type": "BOTH",
+      "score_a": 1.0,
+      "score_b": 0.0,
+      "evolution_kind": "backtrack"
+    },
+    {
+      "round": 3,
+      "depth": 2,
+      "width": 2,
+      "verdict": "Tie",
+      "failure_type": "BOTH",
+      "score_a": 1.0,
+      "score_b": 0.0,
+      "evolution_kind": "backtrack"
+    },
+    {
+      "round": 4,
+      "depth": 1,
+      "width": 2,
+      "verdict": "A_BETTER",
+      "failure_type": "DEEP",
+      "score_a": 2.0,
+      "score_b": 0.0,
+      "evolution_kind": "mercy_rule"
+    }
+  ],
+  "final_verdict": "A_BETTER",
+  "final_failure_type": "DEEP",
+  "total_tokens": 2909636,
+  "estimated_cost": 29.0964,
+  "rounds": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "logic_chain": [
+        "Understanding USAG Gymnastics Levels: A Complete Guide (2024)",
+        "Items tagged Gymnastics For All Ages"
+      ],
+      "question": "In the context of the 2024 USAG gymnastics progression system, identify the specific numeric level that is defined as the 'first required competitive level' featuring standardized routines, and list the three key skills associated with it. Then, locate the specific 'Gold Medal Gymnastics & Ninja' facility in Smithtown, NY. Provide the detailed operating hours for this facility specifically for 'July & August' compared to its 'Fall' schedule, and identify the large animal statue landmark located nearby on Route 25.",
+      "word_limit_instruction": "Answer length: 200-300 words.",
+      "checklist_width": [
+        "Level 4 Key Skills: Back walkover, stride jump, cast to horizontal (bars)",
+        "July & August Hours: Mon-Thu 9:00am-8:00pm, Fri 9:00am-1:00pm, Sat/Sun Closed",
+        "Fall Hours: Mon-Thu 9:15am-8:30pm, Fri 9:15am-7:30pm, Sat 8:00am-2:00pm, Sun Closed",
+        "Nearby Landmark: Large statue of the Smithtown bull"
+      ],
+      "checklist_depth": [
+        "Target Entity 1: Level 4 (identified via 'first required competitive level' logic)",
+        "Target Entity 2: Gold Medal Gymnastics Smithtown (identified via location context)"
+      ],
+      "rationale": "The question requires Deep reasoning to deduce that 'Level 4' is the specific subject based on the description of competitive requirements. It then applies Wide aggregation by forcing the agent to locate a specific real-world business location (Gold Medal Gymnastics in Smithtown) and retrieve granular, disparate data points (skill lists, two different seasonal schedules, and a physical landmark) that cannot be found in a single generic summary.",
+      "source_nodes": [
+        "Items tagged Gymnastics For All Ages",
+        "Gymnastics & Ninja Classes in Smithtown, NY | Gold Medal Gymnastics"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: As a parent deeply involved in the gymnastics community, you already appreciate the blend of strength, flexibility, and mental resilience required in this demanding sport. Thi",
+      "judge_max_limit": 300,
+      "answer_a": "The first required competitive level in the 2024 USAG gymnastics progression system is **Level 4**. This level mandates standardized routines and includes three key skills: **Front Walkover**, **Round-off onto the Springboard** (or vault table), and **Back Handspring to Stand**. [1] [2]\n\nThe \"Gold Medal Gymnastics & Ninja\" facility is located at **930 Veterans Memorial Hwy, Suite 103, Smithtown, NY 11787**. [3]\n\n**Operating Hours:**\n*   **July & August:** Open daily from 9:00 AM to 6:00 PM. [4]\n*   **Fall Schedule:** Typically open Tuesday-Friday 9:30 AM - 7:00 PM, Saturday 9:00 AM - 1:00 PM, Sunday 10:00 AM - 2:00 PM (specific fall hours may vary; Sunday session sometimes reduced). [3] [5]\n\nThe large animal statue landmark located nearby on Route 25 (Veterans Memorial Highway) is the iconic **\"Cow on the Roof\"**. [6]\n\n## References\n\n[1] United States Aquatics & Gymnastics (USAG). *2024 Women's Artistic Gymnastics Program - Level 4 Description and Evaluation Chart*.  \n[2] United States Aquatics & Gymnastics (USAG). *2024 Women's Artistic Gymnastics Program - Level Requirements*.  \n[3] Gold Medal Gymnastics & Ninja Official Website (goldmedalny.com). *Location & Hours*.  \n[4] Gold Medal Gymnastics & Ninja Facebook Page. *Post Announcing July & August Hours (2024)*.  \n[5] Gold Medal Gymnastics & Ninja Online Booking System / Facility Listing.  \n[6] Smithtown Community Guides & Local History Resources. *Landmark Listings - Route 25 \"Cow on the Roof\"*.\n\n(Note: Word count of main body: approximately 220 words)",
+      "answer_b": "[{\"id\": \"1\", \"source\": \"search\", \"query\": \"2024 USAG gymnastics progression system first required competitive level standardized routines key skills\"}]\n[{\"id\": \"2\", \"source\": \"search\", \"query\": \"Gold Medal Gymnastics & Ninja Smithtown NY operating hours July August Fall schedule\"}]\n[{\"id\": \"3\", \"source\": \"search\", \"query\": \"Gold Medal Gymnastics Ninja Smithtown NY Route 25 large animal statue landmark nearby\"}]",
+      "duration_a_seconds": 3.5,
+      "duration_b_seconds": 1.6,
+      "verdict": "A_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "BOTH",
+      "judge_reasoning": "Agent B represents a complete system failure, outputting only raw internal search tool logs (JSON) rather than a natural language response. Agent A, while the default winner for providing a readable answer, contains significant factual errors compared to the Ground Truth. Agent A correctly identified Level 4, but listed incorrect skills (listing a Front Walkover instead of the required Back Walkover) and hallucinated the operating hours and the landmark (citing a 'Cow on the Roof' instead of the famous Smithtown Bull). Agent A wins solely on User Experience and formatting, as Agent B provided no utility.",
+      "score_a": 1.0,
+      "score_b": 0.0,
+      "evolution": {
+        "summary": "Pressure test",
+        "kind": "pressure_test",
+        "lines": [
+          "[EVOLUTION] Determining Next Step...",
+          "-> WINNER is A. Targeting Loser Failure: BOTH.",
+          "-> Action: Pressure Test (Deep+1 & Wide+1)",
+          "[EVOLUTION] Descended to: 'Items tagged Family Support'",
+          "============================================================"
+        ]
+      }
+    },
+    {
+      "round": 2,
+      "depth": 3,
+      "width": 3,
+      "logic_chain": [
+        "Understanding USAG Gymnastics Levels: A Complete Guide (2024)",
+        "Items tagged Gymnastics For All Ages",
+        "Items tagged Family Support"
+      ],
+      "question": "According to the 2024 USAG Gymnastics Levels guide, identify the specific numerical level that represents the final stage of 'Compulsory' competition involving standardized routines, as well as the 'Optional' level that directly follows the transition to optional routines but precedes the introduction of C-level skills. For both of these identified levels, provide the associated weekly training hour range and list the three specific key skills (covering apparatus such as bars, beam, floor, or vault) designated for each.",
+      "word_limit_instruction": "Answer length: 250-350 words.",
+      "checklist_width": [
+        "Level 5 Training Hours: 6-12 hours per week",
+        "Level 5 Key Skills: Back handspring (beam), flyaway dismount (bars), front handspring (vault)",
+        "Level 7 Training Hours: 12-20 hours per week",
+        "Level 7 Key Skills: Clear hip circle (bars), aerial cartwheel (beam), front tuck (floor)"
+      ],
+      "checklist_depth": [
+        "Target Entity 1: Level 5 (Identified as the highest/final Compulsory level before Optional)",
+        "Target Entity 2: Level 7 (Identified as the level between Level 6's transition and Level 8's C-level skills)"
+      ],
+      "rationale": "The question requires Deep Reasoning to deduce the specific levels without naming them: Level 5 is derived from being the final 'Compulsory' stage, and Level 7 is derived logically by its position between the 'transition' (Level 6) and 'C-level skills' (Level 8). The Wide Aggregation aspect is enforced by requiring the retrieval of specific, scattered attribute data (training hours and key skills) from different sections of the text for these two distinct levels.",
+      "source_nodes": [
+        "Items tagged Family Support",
+        "Items tagged Mental Health",
+        "Items tagged Beginner Gymnastics"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: As a parent deeply involved in the gymnastics community, you already appreciate the blend of strength, flexibility, and mental resilience required in this demanding sport. Thi",
+      "judge_max_limit": 350,
+      "answer_a": "The final stage of compulsory competition in the 2024 USAG gymnastics progression system is **Level 4**, featuring standardized routines across all apparatus. The first optional level that directly follows the transition from compulsory routines and precedes the introduction of C-level optional skills is **Level 6** (as C-level skills begin at Level 7), though Level 5 is the initial optional competition level (without C-skill designation).\n\n**Level 4 (Compulsory Final):**  \n- **Weekly training hour range:** 3-6 hours weekly.  \n- **Key skills:**  \n  1. **Uneven Parallel Bars:** Basic support hold (e.g., iron cross progression).  \n  2. **Balance Beam:** Seated straddle stretch or simple mount (e.g., salto mount).  \n  3. **Vault:** Front handspring onto introductory block.  \n\n**Level 6 (Optional Transition):**  \n- **Weekly training hour range:** 8-14 hours weekly.  \n- **Key skills:**  \n  1. **Uneven Parallel Bars:** Swing to mount or basic kip.  \n  2. **Balance Beam:** Round-off entry tumbling (e.g., round-off onto beam).  \n  3. **Floor Exercise:** Tucked salto dismount (e.g., tucked salto to front).  \n\n## References  \n[1] United States Aquatics & Gymnastics (USAG). *2024 Women’s Artistic Gymnastics Program - Level 4 Description*.  \n[2] USAG. *2024 Women’s Artistic Gymnastics Program - Levels 5-7 Skill Outlines*.  \n[3] USAG. *2024 Women’s Development Program (WDP) Guidelines*.  \n[4] USAG. *2024 Optional Levels (5-8) Evaluation Criteria*.  \n[5] USAG. *Weekly Training Hours Standard for Levels 4-6*.",
+      "answer_b": "[1]\n[2]\n[3]",
+      "duration_a_seconds": 21.5,
+      "duration_b_seconds": 8.3,
+      "verdict": "Tie",
+      "tie_quality": "LOW",
+      "failure_type": "BOTH",
+      "judge_reasoning": "Both agents failed completely to provide a useful or accurate response. \n\nAgent A failed the **Deep Logic** check by identifying the wrong entities (Level 4 and Level 6 instead of the correct Level 5 and Level 7). Furthermore, Agent A contained severe hallucinations, including inventing a non-existent organization ('United States Aquatics & Gymnastics') and listing Men's Gymnastics skills (Iron Cross) for Women's apparatus (Uneven Bars). While formatted well, the content is actively misleading and factually incorrect.\n\nAgent B failed to generate any text content, providing only citation markers, which constitutes a total failure of utility.\n\nSince one agent provided dangerous hallucinations and the other provided nothing, this is a Low Quality Tie.",
+      "score_a": 1.0,
+      "score_b": 0.0,
+      "evolution": {
+        "summary": "Backtrack",
+        "kind": "backtrack",
+        "lines": [
+          "[EVOLUTION] Determining Next Step...",
+          "-> TIE (Both Bad): BACKTRACKING.",
+          ">>> [BACKTRACK] Moving up to Parent Node <<<",
+          "============================================================"
+        ]
+      }
+    },
+    {
+      "round": 3,
+      "depth": 2,
+      "width": 2,
+      "logic_chain": [
+        "Understanding USAG Gymnastics Levels: A Complete Guide (2024)",
+        "Items tagged Gymnastics For All Ages"
+      ],
+      "question": "Determine the specific USAG gymnastics level that requires a gymnast to perform a 'clear hip circle' on the bars and an 'aerial cartwheel' on the beam as key skills. Then, locate the complete facility directory for 'Gold Medal Gymnastics & Ninja', a training organization operating in the New York and New Jersey area. Provide a consolidated list of all seven (7) of their gym locations, detailing the city, full street address, and phone number for each.",
+      "word_limit_instruction": "Answer length: 200-300 words.",
+      "checklist_width": [
+        "Centereach, NY: 1752 Middle Country Road, (631) 981-GOLD (4653)",
+        "Garden City, NY: 1100 Stewart Ave, (516) 357-3636",
+        "Huntington, NY: 266 East Pulaski Rd, (631) 427-8275",
+        "Levittown, NY: 210 Gardiners Avenue, (516) 735-GOLD (4653)",
+        "Rocky Point, NY: 291 Route 25A, (631) 821-2100",
+        "Short Hills, NJ: 750a Morris Turnpike, (862) 398-4653",
+        "Smithtown, NY: 253 West Main Street, (631)-366-GOLD (4653)"
+      ],
+      "checklist_depth": [
+        "Identified Level: Level 7 (based on clear hip circle and aerial cartwheel requirements)",
+        "Identified Organization: Gold Medal Gymnastics & Ninja"
+      ],
+      "rationale": "The question requires Deep reasoning to deduce the specific gymnastics level (Level 7) based on unique skill descriptions provided in the source text. It then expands into a Wide aggregation task by requiring the retrieval of specific contact details (address and phone) for seven distinct geographical locations of the mentioned gymnastics organization.",
+      "source_nodes": [
+        "Items tagged Gymnastics For All Ages",
+        "Contact - Gold Medal Gymnastics Center"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: As a parent deeply involved in the gymnastics community, you already appreciate the blend of strength, flexibility, and mental resilience required in this demanding sport. Thi",
+      "judge_max_limit": 300,
+      "answer_a": "The specific USAG gymnastics level requiring a 'clear hip circle' on the uneven bars and an 'aerial cartwheel' on the balance beam is **Level 6**. [1] These skills are key elements defining this advanced developmental stage in the USAG progression system for women’s artistic gymnastics. [2]\n\n**Gold Medal Gymnastics & Ninja Facility Directory (NY/NJ):**\n\n1.  **Smithtown:** 930 Veterans Memorial Hwy, Ste 103, Smithtown, NY 11787 | (631) 582-8488  \n2.  **Patchogue:** 255 Broad Hollow Rd, Patchogue, NY 11772 | (631) 282-8488  \n3.  **Hauppauge:** 3300 Jericho Turnpike, Hauppauge, NY 11788 | (631) 653-8488  \n4.  **Garden City Park:** 176-07 Park scenes Dr, Garden City Park, NY 11040 | (516) 207-8488  \n5.  **Old Bridge:** 350 Rt 18 N, Old Bridge, NJ 08857 | (732) 290-8488  \n6.  **West Orange:** 1688 Central Ave, West Orange, NJ 07052 | (973) 597-8488  \n7.  **Middlesex:** 3550 Monmouth Rd, Middlesex, NJ 08846 | (732) 933-8488  \n\n## References\n\n[1] United States Aquatics & Gymnastics (USAG). *2024 Women's Artistic Gymnastics Program - Level 6 Description and Key Skill List*. [2] USAG Official Manuals & Progression Guides. [3] Gold Medal Gymnastics & Ninja Official Website (goldmedalny.com). *All Location Listings & Contact Information*. [4] Gold Medal Gymnastics & Ninja Business Directories (Niche.com, Yelp, Official Brand).",
+      "answer_b": "[{\"id\": \"1\", \"source\": \"search\", \"query\": \"USAG gymnastics level clear hip circle bars aerial cartwheel beam requirements\"}]\n        [{\"id\": \"2\", \"source\": \"search\", \"query\": \"Gold Medal Gymnastics Ninja locations New York New Jersey complete directory addresses\"}]\n        [{\"id\": \"3\", \"source\": \"search\", \"query\": \"Gold Medal Gymnastics Ninja all gym locations NY NJ facilities\"}]\n        [{\"id\": \"4\", \"source\": \"search\", \"query\": \"\\\"Gold Medal Gymnastics & Ninja\\\" seven locations addresses phone numbers\"}]",
+      "duration_a_seconds": 6.5,
+      "duration_b_seconds": 4.9,
+      "verdict": "Tie",
+      "tie_quality": "LOW",
+      "failure_type": "BOTH",
+      "judge_reasoning": "Both agents failed to provide a useful or accurate response. Agent A provided a confident but completely hallucinated answer: it incorrectly identified the USAG level as Level 6 (Ground Truth is Level 7), hallucinated the full name of the organization as 'United States Aquatics & Gymnastics' (instead of USA Gymnastics), and listed a directory of gym locations that are factually incorrect (wrong cities, wrong addresses, and missing the actual locations of the specific 'Gold Medal Gymnastics & Ninja' chain). Agent B failed to generate a natural language response entirely, displaying only raw search tool logs. Since one agent provided misinformation and the other provided no information, this is a Low Quality Tie.",
+      "score_a": 1.0,
+      "score_b": 0.0,
+      "evolution": {
+        "summary": "Backtrack",
+        "kind": "backtrack",
+        "lines": [
+          "[EVOLUTION] Determining Next Step...",
+          "-> TIE (Both Bad): BACKTRACKING.",
+          ">>> [BACKTRACK] Moving up to Parent Node <<<",
+          "============================================================"
+        ]
+      }
+    },
+    {
+      "round": 4,
+      "depth": 1,
+      "width": 2,
+      "logic_chain": [
+        "Understanding USAG Gymnastics Levels: A Complete Guide (2024)"
+      ],
+      "question": "Based on the 2024 guide to USAG Gymnastics Levels, identify the two specific levels that constitute the 'Compulsory' stage and the single subsequent level that serves as the entry into the 'Optional' stage. For each of these three distinct levels, report the specific key skill required for the bars, the defined focus or nature of competition, and the typical weekly training hours expected for that stage of progression.",
+      "word_limit_instruction": "Answer length: 180-280 words.",
+      "checklist_width": [
+        "Level 4 Focus: First required competitive level with standardized routines",
+        "Level 4 Bars Skill: Cast to horizontal",
+        "Level 4 Training Hours: 6-12 hours per week",
+        "Level 5 Focus: Continued standardized routines with increased difficulty",
+        "Level 5 Bars Skill: Flyaway dismount",
+        "Level 5 Training Hours: 6-12 hours per week",
+        "Level 6 Focus: Transition to optional routines with specific skill requirements",
+        "Level 6 Bars Skill: Giant swings",
+        "Level 6 Training Hours: 12-20 hours per week"
+      ],
+      "checklist_depth": [
+        "Target Entity 1: Level 4 (identified as Compulsory)",
+        "Target Entity 2: Level 5 (identified as Compulsory)",
+        "Target Entity 3: Level 6 (identified as the entry to Optional)"
+      ],
+      "rationale": "The question requires logical reasoning (Deep) to map the categories 'Compulsory' and 'entry into Optional' to Levels 4, 5, and 6 respectively. It then enforces broad information aggregation (Wide) by requiring specific details (focus, bars skill, training hours) for each of the three identified levels.",
+      "source_nodes": [
+        "Understanding USAG Gymnastics Levels: A Complete Guide (2024) - Gold Medal Gymnastics Center"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: Understanding USAG Gymnastics Levels: A Complete Guide (2024) As a parent or aspiring gymnast, navigating the USA Gymnastics (USAG) level system can be both exciting and overw",
+      "judge_max_limit": 280,
+      "answer_a": "**Compulsory Stage:**  \n**Level 1:** Bars skill: Straddle sit on low H bar. Focus: Basic introduction, safety, fundamental movements. Training: <3 hours/week. [1]  \n**Level 2:** Bars skill: Straddle sit with assisted swing to hang. Focus: Safety, trust, basic bar transitions. Training: 3-6 hours/week. [2]  \n**Level 3:** Bars skill: Straddle sit; simple swing to hang (20 sec). Focus: Master fundamentals, energy conservation. Training: 4-6 hours/week. [1]  \n**Level 4:** Bars skill: Straddle sit; swing to stand alone. Focus: Confidence, simple releases maintained. Training: 5-8 hours/week. [2]  \n**Level 5:** Bars skill: Strong straddle sit; swing to stand (2 swings). Focus: Perfect fundamentals, uniform execution. Training: 6-10 hours/week. [1]  \n\n**Optional Stage Entry:**  \n**Level 6:** Bars skill: Tkachev or Gienger clear. Focus: First optional level; skills introduced in context. Training: 8-12 hours/week. [2]  \n\n## References  \n[1] USAG Safety & General Rules (2024).  \n[2] USAG Men's & Women's Artistic Gymnastics Rulebook (2024 Edition).",
+      "answer_b": "Based on the 2024 USAG Gymnastics competitive structure, the Compulsory stage consists of Levels 3-4, with Level 5 serving as the entry into the Optional stage [1]. \n\n**Level 3 (Compulsory)** requires a single leg cut-through on uneven bars as the key bar skill [2]. Competition focuses on teaching routines and building foundational competitive experience [3]. Athletes typically train 4-6 hours weekly [4].\n\n**Level 4 (Compulsory)** requires a pullover on uneven bars as the key bar skill [2]. Competition continues to emphasize learning standardized routines with increased technical expectations [3]. Training increases to 6-10 hours weekly [4].\n\n**Level 5 (Optional Entry)** requires a clear hip circle on uneven bars as the key bar skill [2]. This level marks the transition to Optional gymnastics where athletes begin learning personalized routines while still competing with modified requirements [3]. Athletes typically train 12-16 hours weekly [4].\n\n## References\n\n[1] USA Gymnastics (2024). Competitive Program Overview. USA Gymnastics Official Website.\n\n[2] USA Gymnastics (2024). Women's Compulsory Routine Requirements. USA Gymnastics Official Website.\n\n[3] USA Gymnastics (2024). Women's Program Competition Overview. USA Gymnastics Official Website.\n\n[4] USA Gymnastics (2024). Women's Development Program Guidelines. USA Gymnastics Official Website.",
+      "duration_a_seconds": 3.6,
+      "duration_b_seconds": 110.4,
+      "verdict": "A_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "DEEP",
+      "judge_reasoning": "Agent A is the winner solely because it correctly identified the structural transition of the gymnastics levels (identifying Level 6 as the entry to the Optional stage), whereas Agent B failed the Deep Logic by incorrectly classifying Level 5 as the Optional entry. \n\nHowever, Agent A is a highly flawed winner. It hallucinated absurdly difficult skills for the levels (e.g., listing a 'Tkachev'—an elite skill—for Level 6, which is an entry-level optional stage). Agent B also provided incorrect skills. Agent A wins only on the merit of getting the core entity (Level 6) correct, while Agent B failed the fundamental classification.",
+      "score_a": 2.0,
+      "score_b": 0.0,
+      "evolution": {
+        "summary": "Mercy rule",
+        "kind": "mercy_rule",
+        "lines": [
+          "[GAME OVER] Mercy Rule Triggered (Diff >= 2.0)!",
+          "============================================================"
+        ]
+      }
+    }
+  ],
+  "summary_id": "tree_0009_tongyidee_vs_minimaxm2_955"
+}

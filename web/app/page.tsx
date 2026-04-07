@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { ArrowRight, BookOpen, Code2, Network, Scale, Trophy } from "lucide-react";
+import { getLeaderboard, getModelMeta, getBattles, getMetadata, getTopologyTreeIds } from "@/lib/data";
 
 /* ── Information tree — the signature background visual ── */
 
@@ -53,7 +54,7 @@ const FEATURES = [
   {
     icon: Network,
     title: "Dynamic Trees",
-    desc: "Real-time information trees built from live web trends across 6 domains. Each tree adapts in depth and breadth to probe what agents can actually handle.",
+    desc: "Real-time information trees built from fresh web trends. Each tree expands in depth and breadth to probe what agents can actually handle.",
     accent: "text-accent-2",
     accentBg: "bg-accent-2/10",
     cardTint: "bg-bg-elevated/60",
@@ -73,7 +74,7 @@ const FEATURES = [
   {
     icon: Trophy,
     title: "Elo Rankings",
-    desc: "Head-to-head results feed into a Bradley-Terry model to produce Elo scores with confidence intervals. Our rankings track closely with LMSYS Search Arena.",
+    desc: "Head-to-head results feed into a Bradley-Terry model to produce Elo scores. Our rankings track closely with LMSYS Search Arena.",
     accent: "text-data-4",
     accentBg: "bg-data-4/10",
     cardTint: "bg-bg-elevated/60",
@@ -82,14 +83,22 @@ const FEATURES = [
   },
 ];
 
-const STATS = [
-  { value: "0.94", label: "Human Alignment", highlight: true },
-  { value: "6", label: "Models Evaluated", highlight: false },
-  { value: "180+", label: "Matches Played", highlight: false },
-  { value: "30", label: "Information Trees", highlight: false },
-];
-
 export default function HomePage() {
+  const leaderboard = getLeaderboard();
+  const modelMeta = getModelMeta();
+  const battles = getBattles();
+  const metadata = getMetadata();
+  const topologyIds = new Set(getTopologyTreeIds());
+  const explorableTreeCount = metadata.trees.filter((tree) => topologyIds.has(tree.tree_id)).length;
+  const top6 = leaderboard.slice(0, 6);
+
+  const STATS = [
+    { value: "0.94", label: "Human Alignment", highlight: true },
+    { value: String(leaderboard.length), label: "Models Evaluated", highlight: false },
+    { value: `${battles.length}+`, label: "Matches Played", highlight: false },
+    { value: String(explorableTreeCount), label: "Information Trees", highlight: false },
+  ];
+
   return (
     <div className="relative flex flex-col items-center overflow-hidden w-full">
       {/* ── Ambient lighting — warm gold + cool teal depth ── */}
@@ -194,8 +203,8 @@ export default function HomePage() {
         >
           We pit deep research agents against each other on real-time
           research tasks that get harder as they play. Fully automated,
-          yet our rankings track almost perfectly with human judgment
-          (0.94 Spearman correlation with LMSYS Search Arena).
+          yet our rankings track closely with human-verified LMSYS Search
+          Arena rankings (0.94 Spearman correlation).
         </p>
 
         {/* CTA row */}
@@ -259,6 +268,90 @@ export default function HomePage() {
               </span>
             </div>
           ))}
+        </div>
+      </section>
+
+      {/* ── Headline leaderboard — compact top-6 ── */}
+      <section
+        className="animate-fade-in-up w-full max-w-4xl px-6 py-12 md:py-16"
+        style={{ animationDelay: "0.45s" }}
+      >
+        <div className="mb-6 flex items-end justify-between">
+          <div>
+            <h2 className="font-display text-xl md:text-2xl">Current Rankings</h2>
+            <p className="mt-1 text-sm text-fg-muted">Top 6 deep research agents by Elo rating</p>
+          </div>
+          <Link
+            href="/leaderboard"
+            className="text-sm font-medium text-accent transition-colors hover:text-accent-hover"
+          >
+            Full leaderboard &rarr;
+          </Link>
+        </div>
+
+        <div className="overflow-hidden rounded-xl border border-border bg-bg-elevated/60 backdrop-blur-sm">
+          <table className="w-full text-sm">
+            <thead>
+              <tr className="border-b border-border-subtle text-left">
+                <th className="w-12 py-3 pl-4 pr-2 text-xs font-medium uppercase tracking-wider text-fg-dim">#</th>
+                <th className="py-3 px-3 text-xs font-medium uppercase tracking-wider text-fg-dim">Model</th>
+                <th className="py-3 px-3 text-right text-xs font-medium uppercase tracking-wider text-fg-dim">Elo</th>
+                <th className="hidden py-3 px-3 text-right text-xs font-medium uppercase tracking-wider text-fg-dim sm:table-cell">Matches</th>
+                <th className="hidden py-3 px-3 text-right text-xs font-medium uppercase tracking-wider text-fg-dim md:table-cell">W / L / T</th>
+                <th className="py-3 px-3 pr-4 text-right text-xs font-medium uppercase tracking-wider text-fg-dim">Win %</th>
+              </tr>
+            </thead>
+            <tbody>
+              {top6.map((entry) => {
+                const meta = modelMeta[entry.model];
+                const winRate = entry.matches > 0
+                  ? ((entry.wins / entry.matches) * 100).toFixed(1)
+                  : "—";
+                return (
+                  <tr
+                    key={entry.model}
+                    className="border-b border-border-subtle/50 transition-colors last:border-0 hover:bg-accent/[0.04]"
+                  >
+                    <td className="py-3 pl-4 pr-2 font-mono text-xs text-fg-dim">
+                      {String(entry.rank).padStart(2, "0")}
+                    </td>
+                    <td className="py-3 px-3">
+                      <div className="flex items-center gap-2.5">
+                        <span
+                          className="h-2 w-2 rounded-full shrink-0"
+                          style={{ backgroundColor: meta?.color ?? "var(--fg-dim)" }}
+                        />
+                        <span className="font-medium text-fg">{meta?.short_name ?? entry.model}</span>
+                        <span className="hidden text-xs text-fg-dim lg:inline">{meta?.provider}</span>
+                      </div>
+                    </td>
+                    <td className="py-3 px-3 text-right font-mono text-base font-semibold tabular" data-numeric>
+                      {entry.elo.toFixed(1)}
+                    </td>
+                    <td className="hidden py-3 px-3 text-right font-mono text-fg-muted sm:table-cell" data-numeric>
+                      {entry.matches}
+                    </td>
+                    <td className="hidden py-3 px-3 text-right font-mono text-xs text-fg-muted md:table-cell" data-numeric>
+                      {entry.wins}/{entry.losses}/{entry.ties}
+                    </td>
+                    <td className="py-3 px-3 pr-4 text-right font-mono text-fg-muted" data-numeric>
+                      {winRate}%
+                    </td>
+                  </tr>
+                );
+              })}
+            </tbody>
+          </table>
+        </div>
+
+        {/* Spearman badge */}
+        <div className="mt-4 flex justify-center">
+          <div className="inline-flex items-center gap-2 rounded-lg border border-accent-2/20 bg-accent-2/[0.06] px-4 py-2">
+            <span className="font-mono text-lg font-bold text-accent-2">0.94</span>
+            <span className="text-xs font-medium uppercase tracking-wider text-fg-dim">
+              Spearman &middot; LMSYS Search Arena &middot; Dec 3 2025
+            </span>
+          </div>
         </div>
       </section>
 

@@ -1,0 +1,213 @@
+{
+  "id": "R1_tongyi-deep-research_deepseek-v3.2_tree_0007",
+  "source_group": "onboarding_battles",
+  "source_log": "onboarding_battles/R1_tongyi-deep-research_deepseek-v3.2_tree_0007.log",
+  "tree_id": "tree_0007",
+  "tree_title": "Mastering the 7 Stages of Film Production",
+  "tree_topic": "Arts & Entertainment > Entertainment Industry > Film & TV Industry",
+  "tree_subtopic": "Film & TV Production",
+  "tree_crawled_at": "2025-11-21T13:49:46.489230",
+  "tree_url": "https://www.nyfa.edu/student-resources/7-stages-film-production/",
+  "model_a": "deepseek-v3.2",
+  "model_b": "tongyi-deep-research",
+  "winner": "deepseek-v3.2",
+  "final_score_a": 2.0,
+  "final_score_b": 0.0,
+  "total_rounds": 3,
+  "type": "onboarding",
+  "tournament_round": 1,
+  "pairing_index": null,
+  "mercy_rule": true,
+  "overall_topic": "Mastering the 7 Stages of Film Production",
+  "questions": [
+    "Using the 'Mastering the 7 Stages of Film Production' workflow as a guide, identify the New York Film Academy (NYFA) department responsible for the specific stage where a project producer gathers ideas until a final draft is completed. Within this department's online curriculum, identify the specific 15-week workshop that serves as a prerequisite for the 'Online Screenplay Workshop.' Additionally, locate the Online Master of Arts degree designed for 'entrepreneurial-minded students' to operate at an executive level, and report its total program duration in semesters and the listed tuition cost per semester.",
+    "Using the seven-stage film production model described by the New York Film Academy, identify the specific phase that bridges 'Development' and 'Pre-production,' and detail the geographic hubs and methods mentioned for securing capital during this time. Additionally, explain the specific operational responsibility of the Assistant Director during the principal photography phase, and name the definitive term that marks the culmination of sound design and color direction in the final edit.",
+    "Identify the educational institution that outlines the filmmaking process in '7 Stages,' specifically describing the final 'Distribution' stage by noting that while physical media was once a focus, 'nowadays, streaming is king.' For the specific 'Online Master of Arts' degree offered by this institution focused on 'Entrepreneurial Producing and Innovation,' provide a comprehensive breakdown including: the program's total duration in semesters, the tuition cost per semester for the Spring 2026 term, the specific name of the final capstone deliverable, and three examples of other real-world documents or plans students create during the curriculum."
+  ],
+  "round_states": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "verdict": "Tie",
+      "failure_type": "BOTH",
+      "score_a": 0.0,
+      "score_b": 0.0,
+      "evolution_kind": "backtrack"
+    },
+    {
+      "round": 2,
+      "depth": 1,
+      "width": 2,
+      "verdict": "A_BETTER",
+      "failure_type": "BOTH",
+      "score_a": 1.0,
+      "score_b": 0.0,
+      "evolution_kind": "pressure_test"
+    },
+    {
+      "round": 3,
+      "depth": 2,
+      "width": 3,
+      "verdict": "A_BETTER",
+      "failure_type": "WIDE",
+      "score_a": 2.0,
+      "score_b": 0.0,
+      "evolution_kind": "mercy_rule"
+    }
+  ],
+  "final_verdict": "A_BETTER",
+  "final_failure_type": "WIDE",
+  "total_tokens": 150515,
+  "estimated_cost": 1.5051,
+  "rounds": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "logic_chain": [
+        "Mastering the 7 Stages of Film Production",
+        "Screenwriting School"
+      ],
+      "question": "Using the 'Mastering the 7 Stages of Film Production' workflow as a guide, identify the New York Film Academy (NYFA) department responsible for the specific stage where a project producer gathers ideas until a final draft is completed. Within this department's online curriculum, identify the specific 15-week workshop that serves as a prerequisite for the 'Online Screenplay Workshop.' Additionally, locate the Online Master of Arts degree designed for 'entrepreneurial-minded students' to operate at an executive level, and report its total program duration in semesters and the listed tuition cost per semester.",
+      "word_limit_instruction": "Answer length: 200-300 words.",
+      "checklist_width": [
+        "Prerequisite Workshop: 15-Week Online Screenplay Story & Structure Workshop",
+        "Online MA Program Name: Online MA in Entrepreneurial Producing and Innovation",
+        "MA Program Duration: 3 Semesters",
+        "MA Tuition: $10,000 per semester"
+      ],
+      "checklist_depth": [
+        "Correctly identifies the 'Screenwriting School' (or Screenwriting department) by mapping the 'Development' stage description (gathering ideas, final draft) to the screenwriting discipline.",
+        "Correctly identifies the 'Online MA in Entrepreneurial Producing and Innovation' based on the description of 'entrepreneurial-minded students' and executive level operation."
+      ],
+      "rationale": "The question requires **Deep Reasoning** to map the functional description of the 'Development' stage (from the 7 Stages source) to the specific 'Screenwriting School' entity. It then requires **Wide Aggregation** to retrieve a specific course prerequisite from the Screenwriting section and combine it with financial and duration details found in the separate 'Entrepreneurial Producing' program section.",
+      "source_nodes": [
+        "Screenwriting School | Degrees, Programs, & Workshops | NYFA",
+        "Online MA in Entrepreneurial Producing and Innovation | Producing School | NYFA"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: NYFA Screenwriting School Screenwriting School Hands-On Degrees, Programs, and Workshops In film, television, and new media, the Screenwriter establishes the basic building bl",
+      "judge_max_limit": 300,
+      "answer_a": "The stage where a project producer gathers ideas until a final draft is completed is the Development stage [1]. At the New York Film Academy (NYFA), the department responsible for this creative development and screenwriting phase is the Screenwriting Department [2]. Within its online curriculum, the specific 15-week workshop that serves as a prerequisite for the 'Online Screenplay Workshop' is the 'Online Screenwriting Workshop' [2].\n\nThe Online Master of Arts degree designed for \"entrepreneurial-minded students\" to operate at an executive level is the Online Master of Arts in Film and Media Production [3]. This program has a total duration of 5 semesters [3]. The listed tuition cost per semester for this online MA degree is $9,444 [3].\n\n## References\n[1] New York Film Academy. (n.d.). The 7 Stages of Film Production. Retrieved October 26, 2023, from https://www.nyfa.edu/student-resources/7-stages-of-film-production/\n[2] New York Film Academy. (n.d.). Online Screenwriting Workshops. Retrieved October 26, 2023, from https://www.nyfa.edu/online-screenwriting-workshops/\n[3] New York Film Academy. (n.d.). Online Master of Arts in Film and Media Production. Retrieved October 26, 2023, from https://www.nyfa.edu/online-degrees/ma-film-media-production/",
+      "answer_b": "The New York Film Academy (NYFA) department responsible for the development stage, where a project producer gathers ideas until a final draft is completed, is the **Screenwriting Department**. This aligns with the \"Development\" stage in the 'Mastering the 7 Stages of Film Production' workflow, which involves conceptualizing and refining ideas into a screenplay [1]. Within this department's online curriculum, the specific 15-week workshop serving as a prerequisite for the 'Online Screenplay Workshop' is the **Online Short Form Narrative Workshop** [2]. \n\nThe Online Master of Arts degree designed for 'entrepreneurial-minded students' to operate at an executive level is the **Online Master of Arts in Media Business** [3]. Its total program duration is **4 semesters**, and the listed tuition cost per semester is **$11,990** [3]. \n\n## References  \n[1] NYFA Course Catalog. \"Mastering the 7 Stages of Film Production.\" New York Film Academy.  \n[2] NYFA Online Curriculum. \"Online Short Form Narrative Workshop.\" New York Film Academy.  \n[3] NYFA Graduate Programs. \"Online Master of Arts in Media Business.\" New York Film Academy.",
+      "duration_a_seconds": 15.0,
+      "duration_b_seconds": 4.2,
+      "verdict": "Tie",
+      "tie_quality": "LOW",
+      "failure_type": "BOTH",
+      "judge_reasoning": "Both agents failed significantly on the specific entity retrieval tasks required by the prompt. \n\n1. **Deep Logic (MA Program)**: The prompt described the 'Online MA in Entrepreneurial Producing and Innovation' (designed for entrepreneurial-minded students, 3 semesters). Agent A incorrectly identified it as the 'MA in Film and Media Production' (5 semesters), and Agent B hallucinated a degree called 'MA in Media Business' (4 semesters). Consequently, the tuition and duration figures provided by both were incorrect.\n\n2. **Width (Workshop)**: The prompt asked for the specific 15-week prerequisite for the 'Online Screenplay Workshop'. The correct answer is the 'Online Screenplay Story & Structure Workshop'. Agent A provided the generic category name ('Online Screenwriting Workshop'), while Agent B provided an incorrect workshop ('Online Short Form Narrative Workshop').\n\n3. **Conclusion**: While both correctly identified the Screenwriting Department, they both failed to find the specific workshop and the correct MA degree. As both provided factually incorrect answers to the majority of the prompt's constraints, this is a Low Quality Tie.",
+      "score_a": 0.0,
+      "score_b": 0.0,
+      "evolution": {
+        "summary": "Backtrack",
+        "kind": "backtrack",
+        "lines": [
+          "[EVOLUTION] Determining Next Step...",
+          "-> TIE (Both Bad): BACKTRACKING.",
+          ">>> [BACKTRACK] Moving up to Parent Node <<<",
+          "============================================================"
+        ]
+      }
+    },
+    {
+      "round": 2,
+      "depth": 1,
+      "width": 2,
+      "logic_chain": [
+        "Mastering the 7 Stages of Film Production"
+      ],
+      "question": "Using the seven-stage film production model described by the New York Film Academy, identify the specific phase that bridges 'Development' and 'Pre-production,' and detail the geographic hubs and methods mentioned for securing capital during this time. Additionally, explain the specific operational responsibility of the Assistant Director during the principal photography phase, and name the definitive term that marks the culmination of sound design and color direction in the final edit.",
+      "word_limit_instruction": "Answer length: 180-280 words.",
+      "checklist_width": [
+        "Identifies 'Financing' as the bridging phase.",
+        "Mentions networking/meetings in Los Angeles and (to a lesser extent) New York.",
+        "Mentions traveling to domestic and international festivals to show materials to investors.",
+        "Describes the Assistant Director's role as coordinating all different teams simultaneously.",
+        "Notes the Assistant Director ensures adherence to the schedule.",
+        "Identifies 'picture lock' as the definitive term for the final edit."
+      ],
+      "checklist_depth": [
+        "Target Entity 1: Financing (Logic: The stage explicitly listed between Development and Pre-production).",
+        "Target Entity 2: Picture Lock (Logic: The specific milestone defined as the culmination of sound design, color direction, and editing)."
+      ],
+      "rationale": "The question requires Deep reasoning to identify the 'Financing' stage based on its position in the sequence (between Development and Pre-production) without it being named. It requires Wide aggregation to retrieve specific details about geographic locations (LA/NY), specific roles (AD's coordination), and technical terms (Picture Lock) scattered across the Financing, Production, and Post-production sections of the source text.",
+      "source_nodes": [
+        "Mastering the 7 Stages of Film Production"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: NYFA Producing How To's Mastering the 7 Stages of Film Production December 12, 2023 The stages of film production involve a meticulous progression, starting with pre-productio",
+      "judge_max_limit": 280,
+      "answer_a": "The phase bridging Development and Pre-production in the NYFA model is **Financing (or \"The Budget\")**. During this phase, producers secure capital through various methods, including private equity, presales to distributors, and loans from studios or banks. Key geographic hubs for this activity are the traditional centers of Hollywood (Los Angeles) and New York, as well as international markets and festivals like the Cannes Film Market, where projects are pitched and deals are made [1][2].\n\nDuring the Principal Photography phase, the **Assistant Director (AD)** has the critical operational responsibility of managing the daily shooting schedule. This involves ensuring the set runs on time, coordinating the movement of cast and crew, preparing call sheets, and maintaining order and safety on set to facilitate the director's creative work [1].\n\nThe definitive term marking the culmination of sound design and color direction in the final edit is the **Final Lock**. This is the point at which the picture, sound, and color are definitively approved and \"locked,\" meaning no further changes will be made before the creation of final delivery materials like the DCP (Digital Cinema Package) [1].\n\n## References\n[1] New York Film Academy, \"The 7 Stages of Film Production,\" student resources.\n[2] New York Film Academy, \"Film Financing 101,\" industry blog.",
+      "answer_b": "The phase bridging Development and Pre-production in the New York Film Academy's seven-stage model is **Financing**. During this stage, filmmakers secure capital primarily by pitching projects to potential investors, seeking funding from private sources, and pursuing production incentives offered by various states and provinces. Key geographic hubs for this capital acquisition include Los Angeles, New York City, Atlanta, and international centers like London and Toronto, leveraging their dense networks of financiers, studio executives, and governmental support programs. [1][2][3]\n\nDuring Principal Photography, the Assistant Director (AD) bears the critical operational responsibility of managing the film set's day-to-day operations. This involves translating the director's vision into actionable plans, enforcing the shooting schedule, coordinating the movement and breaks for cast and crew, maintaining order and safety on set, overseeing call sheets, and ensuring the production stays on schedule and within logistical boundaries. [4]\n\nThe definitive term marking the culmination of sound design and color direction in the final edit is the **Dub Stage** for sound (specifically mixing the final sound track) and the **Color Grade** process (applying the final color look). [5]\n\n## References\n[1] New York Film Academy. (n.d.). *The 7 Stages of Filmmaking*. https://www.nyfa.edu/student-resources/7-stages-of-filmmaking/\n[2] New York Film Academy. (n.d.). *Film Financing*. https://www.nyfa.edu/student-resources/film-financing/\n[3] Producers Guild of America. (n.d.). *Template for Projected Budget and Financing Sources*. Retrieved from pga.org\n[4] American Cinema Editors. (n.d.). *The Role of the Assistant Director (2nd AD)*. https://theace.net/\n[5] Society of Motion Picture and Television Editors (SMPTE). (n.d.). *Glossary of Terms: Dub, Mix, Dub Stage, Color Grade*. https://smpte.org/",
+      "duration_a_seconds": 7.4,
+      "duration_b_seconds": 4.2,
+      "verdict": "A_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "BOTH",
+      "judge_reasoning": "Agent A is the winner primarily because it correctly identified the specific 'Financing' details required by the Ground Truth (specifically the mention of 'Festivals' and 'Cannes'), whereas Agent B missed the festivals and hallucinated general knowledge hubs (Atlanta, London) not found in the specific NYFA model. Regarding the final constraint, both agents struggled with the Ground Truth term 'Picture Lock' (likely due to the prompt's phrasing which implies the term comes *after* sound/color, whereas Picture Lock usually precedes them). Agent A invented a term ('Final Lock') to fit the user's definition, while Agent B listed processes. Agent A is preferred for its better adherence to the source text regarding the financing phase.",
+      "score_a": 1.0,
+      "score_b": 0.0,
+      "evolution": {
+        "summary": "Pressure test",
+        "kind": "pressure_test",
+        "lines": [
+          "[EVOLUTION] Determining Next Step...",
+          "-> WINNER is A. Targeting Loser Failure: BOTH.",
+          "-> Action: Pressure Test (Deep+1 & Wide+1)",
+          "[EVOLUTION] Descended to: 'Producing School'",
+          "============================================================"
+        ]
+      }
+    },
+    {
+      "round": 3,
+      "depth": 2,
+      "width": 3,
+      "logic_chain": [
+        "Mastering the 7 Stages of Film Production",
+        "Producing School"
+      ],
+      "question": "Identify the educational institution that outlines the filmmaking process in '7 Stages,' specifically describing the final 'Distribution' stage by noting that while physical media was once a focus, 'nowadays, streaming is king.' For the specific 'Online Master of Arts' degree offered by this institution focused on 'Entrepreneurial Producing and Innovation,' provide a comprehensive breakdown including: the program's total duration in semesters, the tuition cost per semester for the Spring 2026 term, the specific name of the final capstone deliverable, and three examples of other real-world documents or plans students create during the curriculum.",
+      "word_limit_instruction": "Answer length: 230-330 words.",
+      "checklist_width": [
+        "Program Name: Online MA in Entrepreneurial Producing and Innovation",
+        "Duration: 3 Semesters",
+        "Tuition: $10,000 per semester",
+        "Capstone Project: E-portfolio",
+        "Real-world project example 1 (e.g., Short film, New media projects)",
+        "Real-world project example 2 (e.g., Finance plans, Marketing/Distribution plans)",
+        "Real-world project example 3 (e.g., Series bibles, Pitch decks, Business plans)"
+      ],
+      "checklist_depth": [
+        "Target Entity: New York Film Academy (NYFA)",
+        "Logic Proof: Matches the specific description of the 7 Stages of Film Production (Development to Distribution) and the quote 'streaming is king'."
+      ],
+      "rationale": "The question uses a 'Deep' reasoning constraint by describing a specific breakdown of film production stages and a unique quote found in the source text ('streaming is king') to identify the New York Film Academy (NYFA) without naming it. The 'Wide' component requires the agent to locate a specific online degree program within that institution's offerings and aggregate distinct data points (tuition, duration, curriculum requirements) that are scattered across the program description.",
+      "source_nodes": [
+        "Producing School | NYFA",
+        "Screenwriting School | Degrees, Programs, & Workshops | NYFA",
+        "Online MA in Entrepreneurial Producing and Innovation | Producing School | NYFA"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: NYFA Producing School Producing School Producing Degrees, Programs, and Workshops A Producer supervises and manages pre-production, filming, and post-production, overseeing al",
+      "judge_max_limit": 330,
+      "answer_a": "The educational institution that outlines the filmmaking process in seven stages and describes the modern 'Distribution' stage by noting \"nowadays, streaming is king\" is the **New York Film Academy (NYFA)** [1]. The referenced description is from their online article \"The 7 Stages of Film Production.\"\n\nFor its **Online Master of Arts in Entrepreneurial Producing and Innovation**, the program details are as follows. The total program duration is **four semesters** (or two academic years) [2]. For the Spring 2026 term, the tuition cost per semester is **$12,754** [2]. The specific name of the final capstone deliverable is the **Professional Portfolio and Project**, which serves as the culminating thesis project [2].\n\nThroughout the curriculum, students are required to create various real-world documents and plans integral to film producing. Three primary examples include: 1) A comprehensive **Business Plan** for a proposed production or media venture, which outlines the market strategy, financial projections, and operational model [2]. 2) A detailed **Production Binder**, containing all logistical, scheduling, and budgetary documents necessary to physically mount a film production [2]. 3) A **Distribution and Marketing Plan**, which strategizes the release, audience targeting, and revenue streams for a completed film project [2]. These practical deliverables are designed to equip graduates with tangible skills for navigating the contemporary media landscape.\n\n## References\n[1] New York Film Academy, \"The 7 Stages of Film Production,\" online blog/article.\n[2] New York Film Academy, \"Online Master of Arts in Entrepreneurial Producing and Innovation,\" program webpage, including tuition and curriculum details.",
+      "answer_b": "The New York Film Academy (NYFA) outlines the 7 Stages of Filmmaking. In its description of the final \"Distribution\" stage, NYFA explicitly notes the shift from physical media towards streaming, stating \"nowadays, streaming is king\" when discussing distribution channels [1]. For its Online Master of Arts in Entrepreneurial Producing and Innovation, the program requires completion of 6 semesters [2]. The projected tuition for the Spring 2026 term is $24,386 per semester [3]. The specific name of the final capstone deliverable is the \"Producing Portfolio\" [4]. During the curriculum, students also create other real-world documents including detailed \"Business Plans\" for film/TV projects, \"Financing Packages\" for investors, and comprehensive \"Marketing and Distribution Plans\" for their productions [5]. [6]\n\n## References\n[1] New York Film Academy. (n.d.). *The 7 Stages of Filmmaking*. https://www.nyfa.edu/student-resources/7-stages-of-filmmaking/\n[2] New York Film Academy. (n.d.). *Online Master of Arts in Entrepreneurial Producing and Innovation (MAEP)*. https://www.nyfa.edu/ma-entrepreneurial-producing/\n[3] New York Film Academy. (n.d.). *Tuition and Fees - Online Programs*. https://www.nyfa.edu/tuition-fees/\n[4] New York Film Academy. (n.d.). *Online Master of Arts in Entrepreneurial Producing and Innovation (MAEP) Curriculum*. https://www.nyfa.edu/ma-entrepreneurial-producing/curriculum/\n[5] New York Film Academy. (n.d.). *Online Master of Arts in Entrepreneurial Producing and Innovation (MAEP) Program Highlights*. https://www.nyfa.edu/ma-entrepreneurial-producing/programs/\n[6] New York Film Academy. (n.d.). *Online Master of Arts in Entrepreneurial Producing and Innovation (MAEP) Course Catalog*. https://www.nyfa.edu/ma-entrepreneurial-producing/syllabi/",
+      "duration_a_seconds": 9.8,
+      "duration_b_seconds": 4.0,
+      "verdict": "A_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "WIDE",
+      "judge_reasoning": "Both agents correctly identified the entity (NYFA) but failed to retrieve the precise details for the specific 'Online MA' program requested, likely confusing it with the standard MA or MFA programs regarding tuition and duration (Ground Truth: 3 Semesters, $10,000/semester). However, Agent A is the winner for two reasons: 1) Its hallucinated data was closer to reality (quoting standard MA rates vs. Agent B quoting much higher MFA rates), and 2) It offered significantly better formatting with bullet points and bold text, whereas Agent B provided a dense, hard-to-scan paragraph.",
+      "score_a": 2.0,
+      "score_b": 0.0,
+      "evolution": {
+        "summary": "Mercy rule",
+        "kind": "mercy_rule",
+        "lines": [
+          "[GAME OVER] Mercy Rule Triggered (Diff >= 2.0)!",
+          "============================================================"
+        ]
+      }
+    }
+  ],
+  "summary_id": "tree_0007_deepseekv_vs_tongyidee_913"
+}

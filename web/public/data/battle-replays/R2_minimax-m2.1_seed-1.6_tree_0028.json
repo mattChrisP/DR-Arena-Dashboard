@@ -1,0 +1,94 @@
+{
+  "id": "R2_minimax-m2.1_seed-1.6_tree_0028",
+  "source_group": "onboarding_battles",
+  "source_log": "onboarding_battles/R2_minimax-m2.1_seed-1.6_tree_0028.log",
+  "tree_id": "tree_0028",
+  "tree_title": "Jeep History",
+  "tree_topic": "Games > Computer & Video Games > Gaming Media & Reference",
+  "tree_subtopic": "Game Cheats & Hints",
+  "tree_crawled_at": "2025-11-22T00:23:35.600327",
+  "tree_url": "https://gamefaqs.gamespot.com/",
+  "model_a": "minimax-m2.1",
+  "model_b": "seed-1.6",
+  "winner": "minimax-m2.1",
+  "final_score_a": 2.0,
+  "final_score_b": 0.0,
+  "total_rounds": 1,
+  "type": "onboarding",
+  "tournament_round": 2,
+  "pairing_index": null,
+  "mercy_rule": true,
+  "overall_topic": "Jeep History",
+  "questions": [
+    "In July 1940, the U.S. Army solicited bids for a light reconnaissance vehicle, leading to a competition among three automotive manufacturers. Identify these three companies and the specific names given to the prototype vehicles they delivered in the summer of 1940. Which manufacturer was ultimately selected as the primary supplier for the U.S. Army, and under what specific government program were the majority of the vehicles from the other two manufacturers sent to Great Britain and Russia? Furthermore, trace the post-war civilian lineage of this vehicle to identify the specific model introduced in 1953 that featured a raised hood to accommodate a 'Hurricane' engine, and the 1987 model that replaced the 'CJ' series, noting the unique shape of its headlights."
+  ],
+  "round_states": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "verdict": "A_MUCH_BETTER",
+      "failure_type": "DEEP",
+      "score_a": 2.0,
+      "score_b": 0.0,
+      "evolution_kind": "mercy_rule"
+    }
+  ],
+  "final_verdict": "A_MUCH_BETTER",
+  "final_failure_type": "DEEP",
+  "total_tokens": 1097757,
+  "estimated_cost": 10.9776,
+  "rounds": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "logic_chain": [
+        "Jeep History",
+        "Signup"
+      ],
+      "question": "In July 1940, the U.S. Army solicited bids for a light reconnaissance vehicle, leading to a competition among three automotive manufacturers. Identify these three companies and the specific names given to the prototype vehicles they delivered in the summer of 1940. Which manufacturer was ultimately selected as the primary supplier for the U.S. Army, and under what specific government program were the majority of the vehicles from the other two manufacturers sent to Great Britain and Russia? Furthermore, trace the post-war civilian lineage of this vehicle to identify the specific model introduced in 1953 that featured a raised hood to accommodate a 'Hurricane' engine, and the 1987 model that replaced the 'CJ' series, noting the unique shape of its headlights.",
+      "word_limit_instruction": "Answer length: 200-300 words.",
+      "checklist_width": [
+        "Identifies the three manufacturers: Bantam, Willys-Overland, and Ford.",
+        "Names the specific prototypes: Bantam Field Car (or BRC), Willys Quad, and Ford Pygmy (or Model GP).",
+        "Identifies Willys as the primary manufacturer selected by the Army.",
+        "Identifies the 'Lend-Lease' program as the disposition for the Bantam and Ford vehicles.",
+        "Identifies the 1953 model as the 'CJ-3B'.",
+        "Mentions the reason for the CJ-3B design change: To accommodate the Hurricane F-Head engine (taller grille/hood).",
+        "Identifies the 1987 model as the 'Wrangler (YJ)'.",
+        "Notes the unique feature of the Wrangler YJ: Square headlights."
+      ],
+      "checklist_depth": [
+        "Correctly links the 1940 timeline and prototype specifications to Bantam, Willys, and Ford.",
+        "Correctly identifies the CJ-3B based on the 1953 date and 'raised hood' logic.",
+        "Correctly identifies the Wrangler YJ based on the 1987 date and 'CJ replacement' logic."
+      ],
+      "rationale": "The question requires 'Deep' reasoning to map specific dates (1940, 1953, 1987) and design descriptions (raised hood, square headlights) to the correct vehicle models without them being named in the prompt. It is 'Wide' because the answer cannot be found in a single sentence; the agent must aggregate information regarding the initial military bidding process, the specific fate of the losing prototypes (Lend-Lease), and the evolution of specific civilian models over a 47-year span.",
+      "source_nodes": [
+        "Signup | Jeep | Stellantis Media"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: Sign up for the newsletter Sign up for the Stellantis Communications Newsletter and stay updated on all the news. SIGN UP Signup Sign up by filling in all the fields in the fo",
+      "judge_max_limit": 300,
+      "answer_a": "[1] The three automotive manufacturers that bid on the U.S. Army's July 1940 light reconnaissance vehicle contract were Willys-Overland, Ford, and Bantam. Willys-Overland delivered the \"Willys Quad\" prototype, Ford submitted the \"Pygmy,\" and Bantam produced the \"Blitz Buggie.\" Willys-Overland was ultimately selected as the primary supplier, with their design becoming the iconic Jeep.\n\n[2] The vehicles from Ford and Bantam were primarily sent to Great Britain and Russia under the Lend-Lease Act program, which supplied allied nations with war materials.\n\n[3] The post-war civilian lineage traces to the Willys Jeep, which evolved into the Jeep CJ (Civilian Jeep) series. The 1953 model was the CJ-3B, featuring a raised hood to accommodate the Continental \"Hurricane\" F-head engine. In 1987, the Jeep Wrangler (YJ) replaced the CJ series, distinguished by its unique square headlights rather than the round ones of the CJ models.\n\n## References\n[1] https://www.historynet.com/jeep-willys-ford-bantam\n[2] https://www.theatlantic.com/technology/archive/2013/07/the-controversial-birth-of-the-jeep/278122/\n[3] https://www.allpar.com/jeep/cj.html",
+      "answer_b": "The three 1940 U.S. Army light reconnaissance vehicle bidders were Bantam, Ford, and Willys, delivering the Bantam BRC-60, Ford Pygmy (officially BRC-40), and Willys Quad (officially BRC-62) prototypes that summer [1]. These prototypes underwent rigorous off-road, payload, and reliability testing; the Bantam BRC-60 was the first functional model but lacked mass-production infrastructure, Ford’s Pygmy had scaling tweaks later rebranded as the GP for aid, and Willys’ Quad’s superior engine power secured its role as the primary supplier [2]. Most Bantam and Ford vehicles were sent to Britain and Russia under the 1941 Lend-Lease Act, which let the U.S. provide war materials to Allies without immediate repayment, bypassing neutrality laws [3]. Post-war civilian lineage centered on Willys’ CJ series; the 1953 CJ-5 featured a raised hood to accommodate the more powerful Hurricane overhead-valve engine, resolving prior flathead engine space constraints and boosting torque for civilian off-roading [4]. The 1987 Jeep Wrangler replaced the long-running CJ series, distinguished by its unique rectangular headlights—a departure from the CJ’s iconic round units that sparked mild enthusiast controversy but defined its YJ generation [5].\n\n## References\n[1] Jeep, \"The Original Prototypes,\" Jeep Official Website, accessed October 26, 2024, https://www.jeep.com/history/original-prototypes.html\n[2] U.S. Army Center of Military History, \"The Jeep: Its Development and Procurement During World War II,\" accessed October 26, 2024, https://www.history.army.mil/books/wwii/jeep/\n[3] National WWII Museum, \"The Lend-Lease Act and Allied War Aid,\" accessed October 26, 2024, https://www.nationalww2museum.org/war/articles/lend-lease-act\n[4] Hemmings Motor News, \"1953 Willys CJ-5: Hurricane Engine Upgrade's Defining Hood Modification,\" accessed October 26, 2024, https://www.hemmings.com/story/2021/03/01/1953-willys-cj-5-hurricane-engine-upgrade\n[5] Car and Driver, \"Jeep Wrangler YJ (1987–1995): Rectangular Headlights and CJ Series Replacement,\" accessed October 26, 2024, https://www.caranddriver.com/jeep/wrangler/reviews/a15347664/jeep-wrangler-yj-history/",
+      "duration_a_seconds": 9.1,
+      "duration_b_seconds": 46.8,
+      "verdict": "A_MUCH_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "DEEP",
+      "judge_reasoning": "Agent A correctly identifies the specific 1953 model as the CJ-3B, which is the 'high hood' model introduced that year to fit the Hurricane engine. Agent B incorrectly identifies this as the CJ-5 (which was introduced in late 1954 for the 1955 model year). Furthermore, Agent B hallucinates the prototype names, claiming the Ford Pygmy was 'officially BRC-40' and the Willys Quad was 'officially BRC-62' (BRC stands for Bantam Reconnaissance Car; these designations belong to Bantam, not Ford or Willys). Agent A also uses better formatting.",
+      "score_a": 2.0,
+      "score_b": 0.0,
+      "evolution": {
+        "summary": "Mercy rule",
+        "kind": "mercy_rule",
+        "lines": [
+          "[GAME OVER] Mercy Rule Triggered (Diff >= 2.0)!",
+          "============================================================"
+        ]
+      }
+    }
+  ],
+  "summary_id": "tree_0028_minimaxm2_vs_seed16_849"
+}

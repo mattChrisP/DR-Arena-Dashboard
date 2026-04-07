@@ -1,0 +1,153 @@
+{
+  "id": "R1_minimax-m2.1_ppl-sonar-pro-high_tree_0022",
+  "source_group": "onboarding_battles",
+  "source_log": "onboarding_battles/R1_minimax-m2.1_ppl-sonar-pro-high_tree_0022.log",
+  "tree_id": "tree_0022",
+  "tree_title": "Orchestral Sample Libraries: A Beginner's Guide (+ Recommendations)",
+  "tree_topic": "Arts & Entertainment > Music & Audio > Music Equipment & Technology",
+  "tree_subtopic": "Samples & Sound Libraries",
+  "tree_crawled_at": "2025-11-21T16:19:46.467919",
+  "tree_url": "https://www.becomeaprocomposer.com/guide/sample-libraries",
+  "model_a": "minimax-m2.1",
+  "model_b": "ppl-sonar-pro-high",
+  "winner": "ppl-sonar-pro-high",
+  "final_score_a": 0.0,
+  "final_score_b": 3.0,
+  "total_rounds": 2,
+  "type": "onboarding",
+  "tournament_round": 1,
+  "pairing_index": null,
+  "mercy_rule": true,
+  "overall_topic": "Orchestral Sample Libraries: A Beginner's Guide (+ Recommendations)",
+  "questions": [
+    "In the context of setting up an orchestral template for music production, different sample libraries require specific handling of 'sample delay' to ensure realistic yet rhythmic playback. First, identify the specific string library that is highly recommended for beginners due to its 'romantic tone' and 'brilliant legato' (often cited as a logical next step after owning 'Nucleus'). According to technical setup guides, what specific **negative track delay** value (in milliseconds) should be applied to this library's short articulations to compensate for its inherent latency? \n\nSecond, contrast this with the 'Sample Start' workflow utilized by libraries from the developer **Audio Imperia** (such as Nucleus). Explain the specific millisecond values recommended for the 'Sample Start' knob during the **recording** phase versus the **playback** phase, and how the track delay must be adjusted to match the playback setting.",
+    "Identify the specific 'all-in-one' orchestral sample library by Audio Imperia that is recommended for beginners due to its resource efficiency and inclusion of both 'Modern' and 'Traditional' mix options. Compare the flexibility of its instrument sections to that of Orchestral Tools' 'Berlin Inspire'. Furthermore, based on standard orchestral arrangement principles found in beginner guides, explain how a composer should manage the 'Low' (Bass), 'Medium' (Mid), and 'High' frequency ranges—specifically detailing the recommended interval types and density for each range to prevent a muddy mix."
+  ],
+  "round_states": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "verdict": "B_BETTER",
+      "failure_type": "BOTH",
+      "score_a": 0.0,
+      "score_b": 1.0,
+      "evolution_kind": "pressure_test"
+    },
+    {
+      "round": 2,
+      "depth": 3,
+      "width": 3,
+      "verdict": "B_MUCH_BETTER",
+      "failure_type": "BOTH",
+      "score_a": 0.0,
+      "score_b": 3.0,
+      "evolution_kind": "mercy_rule"
+    }
+  ],
+  "final_verdict": "B_MUCH_BETTER",
+  "final_failure_type": "BOTH",
+  "total_tokens": 432446,
+  "estimated_cost": 4.3245,
+  "rounds": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "logic_chain": [
+        "Orchestral Sample Libraries: A Beginner's Guide (+ Recommendations)",
+        "Create an Orchestral Template in 10 Easy Steps (+ Free Checklist)"
+      ],
+      "question": "In the context of setting up an orchestral template for music production, different sample libraries require specific handling of 'sample delay' to ensure realistic yet rhythmic playback. First, identify the specific string library that is highly recommended for beginners due to its 'romantic tone' and 'brilliant legato' (often cited as a logical next step after owning 'Nucleus'). According to technical setup guides, what specific **negative track delay** value (in milliseconds) should be applied to this library's short articulations to compensate for its inherent latency? \n\nSecond, contrast this with the 'Sample Start' workflow utilized by libraries from the developer **Audio Imperia** (such as Nucleus). Explain the specific millisecond values recommended for the 'Sample Start' knob during the **recording** phase versus the **playback** phase, and how the track delay must be adjusted to match the playback setting.",
+      "word_limit_instruction": "Answer length: 200-300 words.",
+      "checklist_width": [
+        "Identifies the specific negative track delay for the string library as -60ms (or 60ms compensation).",
+        "Identifies the Audio Imperia recording setting as 0ms (Sample Start).",
+        "Identifies the Audio Imperia playback setting as 250ms (Sample Start).",
+        "Mentions the need for a -250ms negative track delay during the Audio Imperia playback phase."
+      ],
+      "checklist_depth": [
+        "Target Entity 1: Cinematic Studio Strings (CSS) (Identified via 'romantic tone' and 'brilliant legato' description).",
+        "Target Entity 2: Audio Imperia (Identified as the developer of Nucleus)."
+      ],
+      "rationale": "The question requires Deep Reasoning to identify 'Cinematic Studio Strings' based solely on its qualitative descriptions ('romantic tone', 'brilliant legato') provided in the 'Recommendations' chapter. It then requires Wide Information Aggregation to scan the 'Template' and 'DAW' chapters to find the specific technical millisecond values (-60ms for CSS, 0ms/250ms for Audio Imperia) associated with these identified entities.",
+      "source_nodes": [
+        "Create an Orchestral Template in 10 Easy Steps (+ Free Checklist)",
+        "How to use a DAW for Orchestral Music | Digital Audio Workstation"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: PREVIOUS CHAPTER NEXT CHAPTER CHAPTER 6 - BEGINNER'S GUIDE TO ORCHESTRAL MUSIC PRODUCTION Create an Orchestral Template in 10 Steps (+ Checklist) A huge time-saver for many. A",
+      "judge_max_limit": 300,
+      "answer_a": "[Search Query: \"Audio Imperia Nucleus next step string library romantic tone brilliant legato negative track delay\"]\n[Search Query: \"sample library short articulations negative track delay milliseconds orchestral template setup\"]\n[Search Query: \"Audio Imperia Sample Start knob recording playback phase milliseconds values\"]\n[Search Query: \"string library romantic legato beginner orchestral template delay compensation\"]",
+      "answer_b": "The string library highly recommended for beginners, noted for its **romantic tone** and **brilliant legato** as a logical next step after Audio Imperia's Nucleus, is **Spitfire Audio's Chamber Strings**. Technical orchestral template guides specify applying a **-23 ms negative track delay** to its short articulations (e.g., staccato, spiccato) to compensate for inherent sample latency, ensuring rhythmic alignment without phase issues.[1][2]\n\nIn contrast, Audio Imperia libraries like Nucleus use a **Sample Start** workflow for timing control. During the **recording phase**, set Sample Start to **0 ms** for minimal latency and tight response, avoiding unnatural attacks but enabling precise MIDI capture.[1][2][4] For the **playback phase**, adjust to **-125 ms** (default setting), which preserves realistic pre-pad audio for legato transitions and releases, introducing 125 ms latency that must be matched by a **-125 ms track delay** (or equivalent MIDI offset) in your DAW.[1][2][3] This dual-phase approach balances playability and realism; enabling \"Tight\" mode reverts to 0 ms instantly.[2][7]\n\n## References\n[1] Audio Imperia Nucleus In-Depth: Sample Start Feature (YouTube Transcript)  \n[2] How to Use Sample Start in Audio Imperia Pyramid (YouTube Transcript)  \n[3] Audio Imperia Nucleus Hands-On Part 1 (YouTube Transcript)  \n[4] Audio Imperia Knowledgebase: Sample Start",
+      "duration_a_seconds": 2.6,
+      "duration_b_seconds": 4.7,
+      "verdict": "B_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "BOTH",
+      "judge_reasoning": "Agent A failed to generate a response, displaying only search queries with no final output. Agent B wins by default as it provided a structured, readable answer. However, Agent B failed the specific Ground Truth constraints: it misidentified the target string library as Spitfire Chamber Strings (instead of Cinematic Studio Strings, which is the standard answer for 'romantic tone' and 'brilliant legato' with specific delay needs) and provided incorrect millisecond values for the Audio Imperia workflow (citing 125ms instead of the standard 250ms for Nucleus). Despite these factual errors, B is the only agent that attempted the prompt.",
+      "score_a": 0.0,
+      "score_b": 1.0,
+      "evolution": {
+        "summary": "Pressure test",
+        "kind": "pressure_test",
+        "lines": [
+          "[EVOLUTION] Determining Next Step...",
+          "-> WINNER is B. Targeting Loser Failure: BOTH.",
+          "-> Action: Pressure Test (Deep+1 & Wide+1)",
+          "[EVOLUTION] Descended to: 'How to Write Orchestral Music in 5 Steps (+ Example)'",
+          "============================================================"
+        ]
+      }
+    },
+    {
+      "round": 2,
+      "depth": 3,
+      "width": 3,
+      "logic_chain": [
+        "Orchestral Sample Libraries: A Beginner's Guide (+ Recommendations)",
+        "Create an Orchestral Template in 10 Easy Steps (+ Free Checklist)",
+        "How to Write Orchestral Music in 5 Steps (+ Example)"
+      ],
+      "question": "Identify the specific 'all-in-one' orchestral sample library by Audio Imperia that is recommended for beginners due to its resource efficiency and inclusion of both 'Modern' and 'Traditional' mix options. Compare the flexibility of its instrument sections to that of Orchestral Tools' 'Berlin Inspire'. Furthermore, based on standard orchestral arrangement principles found in beginner guides, explain how a composer should manage the 'Low' (Bass), 'Medium' (Mid), and 'High' frequency ranges—specifically detailing the recommended interval types and density for each range to prevent a muddy mix.",
+      "word_limit_instruction": "Answer length: 250-350 words.",
+      "checklist_width": [
+        "Nucleus distinction: Offers full section control (Strings, Brass, Woodwinds, etc.)",
+        "Berlin Inspire distinction: Offers less flexibility; uses group patches (e.g., High Strings, Low Strings)",
+        "Low Range Strategy: Use fewer/slower notes (roots), double in octaves or fifths; avoid smaller intervals",
+        "Mid Range Strategy: Used for harmonies/support; avoid arranging too densely to prevent frequency buildup",
+        "High Range Strategy: Used for faster notes/melody; harmonize in thirds/smaller intervals or double in octaves"
+      ],
+      "checklist_depth": [
+        "Target Entity 1: Nucleus (Logic: Audio Imperia + Modern/Traditional Mix + Resource Friendly)",
+        "Target Entity 2: Berlin Inspire (Logic: Orchestral Tools + All-in-one + Group Patch limitation)"
+      ],
+      "rationale": "The question requires 'Deep' reasoning to identify two specific software libraries (Nucleus and Berlin Inspire) based on their unique feature sets and comparative strengths described in the source text. It then enforces 'Wide' aggregation by requiring the agent to combine these product specifications (from the 'Sample Libraries' chapter) with specific music theory and arrangement advice (from the 'How to Write' chapter) regarding frequency spectrum management.",
+      "source_nodes": [
+        "How to Write Orchestral Music in 5 Steps (+ Example)",
+        "Orchestral Music Production Starter Kit | Become A Pro Composer",
+        "Creating My Orchestral template in Studio One with Sound Variations - YouTube"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: PREVIOUS CHAPTER NEXT CHAPTER CHAPTER 7 - BEGINNER'S GUIDE TO ORCHESTRAL MUSIC PRODUCTION How to Write Orchestral Music in 5 Steps (+ Example) Ideas turn into music. Author: K",
+      "judge_max_limit": 350,
+      "answer_a": "[Search Query: \"Audio Imperia all-in-one orchestral library Modern Traditional mix options beginner\"]\n[Search Query: \"Audio Imperia orchestral library resource efficient beginner recommended\"]\n[Search Query: \"Orchestral Tools Berlin Inspire comparison Audio Imperia\"]\n[Search Query: \"orchestral arrangement low medium high frequency ranges intervals density beginner guide\"]",
+      "answer_b": "**Audio Imperia's Nucleus** is the specific 'all-in-one' orchestral sample library recommended for beginners due to its resource efficiency—requiring just 4-5 Kontakt instances for a full orchestra via keyswitchable multi-patches—and inclusion of both **'Modern'** (cinematic, aggressive) and **'Traditional'** (balanced, classical) mix options, making it CPU/RAM-friendly for template setups.[1][3][5]\n\nCompared to **Orchestral Tools' Berlin Inspire**, Nucleus offers greater flexibility in instrument sections. Nucleus provides comprehensive coverage with multi-articulation patches (e.g., sustains, legatos, shorts) per section—strings, brass, woodwinds, percussion—all editable via unified Pyramid engine, keyswitches, and Sample Start for timing tweaks, supporting both intimate and epic scoring in 38 GB.[3][5] Berlin Inspire, a lighter 35 GB library, emphasizes simpler, pre-mixed ensembles with fewer articulations (basic dynamics, limited legatos/shorts) and less granular control, prioritizing quick inspiration over deep customization—ideal for sketches but less adaptable for complex arrangements.\n\nStandard orchestral arrangement principles in beginner guides recommend managing frequency ranges to avoid muddiness by assigning complementary roles, intervals, and densities:\n\n- **Low (Bass) range** (cellos, basses, low brass/tubas below ~250 Hz): Use **root notes, octaves, or perfect fifths** for harmonic foundation; keep density **sparse** (1-3 notes max, sustained pads) to anchor without cluttering lows.\n- **Medium (Mid) range** (violins, violas, mid brass/woods ~250-2kHz): Employ **thirds, sixths** for warmth and melody support; moderate density (**3-5 notes**, rhythmic figures) to fill body while allowing clarity.\n- **High (Treble) range** (high violins, piccolo, high brass ~2kHz+): Focus on **unisons, octaves** for sparkle and air; high density (**5+ notes**, fast runs) is tolerated as highs cut through easily.\n\nThis vertical stratification ensures separation: lows provide weight, mids harmony, highs sheen—EQ/boost highs, cut mud (~200-400 Hz) if needed. (Word count: 298)\n\n## References\n[1] Audio Imperia Nucleus In-Depth (YouTube)  \n[3] Audio Imperia Nucleus Hands-On Part 1 (YouTube)  \n[5] Audio Imperia Nucleus Product Page  \n Orchestral Tools Berlin Inspire Overview  \n Berlin Inspire vs Nucleus Comparisons (Forums/Reviews)  \n orchestraltools.com/blog/orchestral-arranging-basics  \n scoringnotes.com beginner mix guides  \n soundonsound.com orchestral templates",
+      "duration_a_seconds": 5.1,
+      "duration_b_seconds": 7.4,
+      "verdict": "B_MUCH_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "BOTH",
+      "judge_reasoning": "Agent A failed completely to generate a response, only outputting the search queries it intended to run. Agent B provided a highly accurate, well-structured, and comprehensive answer that correctly identified 'Nucleus', compared it effectively to 'Berlin Inspire', and gave detailed arrangement advice within the word count constraints.",
+      "score_a": 0.0,
+      "score_b": 3.0,
+      "evolution": {
+        "summary": "Mercy rule",
+        "kind": "mercy_rule",
+        "lines": [
+          "[GAME OVER] Mercy Rule Triggered (Diff >= 2.0)!",
+          "============================================================"
+        ]
+      }
+    }
+  ],
+  "summary_id": "tree_0022_minimaxm2_vs_pplsonar_790"
+}

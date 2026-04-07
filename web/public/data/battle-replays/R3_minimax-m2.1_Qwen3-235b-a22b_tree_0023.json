@@ -1,0 +1,206 @@
+{
+  "id": "R3_minimax-m2.1_Qwen3-235b-a22b_tree_0023",
+  "source_group": "onboarding_battles",
+  "source_log": "onboarding_battles/R3_minimax-m2.1_Qwen3-235b-a22b_tree_0023.log",
+  "tree_id": "tree_0023",
+  "tree_title": "Heroes, Heroines, and History: The History of Matrimonial Bureaus and Dating Agencies – with Giveaway By Donna Schlachter",
+  "tree_topic": "Online Communities > Dating & Personals",
+  "tree_subtopic": "Matrimonial Services",
+  "tree_crawled_at": "2025-11-21T16:27:39.009237",
+  "tree_url": "https://www.hhhistory.com/2023/04/the-history-of-matrimonial-bureaus-and.html",
+  "model_a": "Qwen3-235b-a22b",
+  "model_b": "minimax-m2.1",
+  "winner": "Qwen3-235b-a22b",
+  "final_score_a": 2.0,
+  "final_score_b": 0.0,
+  "total_rounds": 3,
+  "type": "onboarding",
+  "tournament_round": 3,
+  "pairing_index": null,
+  "mercy_rule": true,
+  "overall_topic": "Heroes, Heroines, and History: The History of Matrimonial Bureaus and Dating Agencies – with Giveaway By Donna Schlachter",
+  "questions": [
+    "Identify the book series by Donna Schlachter that features titles centered around culinary themes (such as 'Recipe' or 'Cooking') and is primarily co-authored with V.A. McKevitt. Provide the name of this series, then list the full titles and publication dates (Month/Year) of the first three books in the series. Additionally, specify the co-author for each of these three books to determine which installment was co-written by Nancy Fraser instead of V.A. McKevitt.",
+    "Investigate the 17th-century origins of dating agencies by identifying the French philanthropist and physician who established the 'Bureau d'Adresse' and the English merchant and writer who later founded the 'Office of Addresses and Encounters.' For each pioneer, provide their full name, the specific year their respective bureau opened, and the city in which it was located.",
+    "Trace the historical evolution of matchmaking agencies by identifying the 17th-century English merchant who established the 'Office of Addresses and Encounters' and the 19th-century American entrepreneur whose hospitality chain along the Santa Fe Railroad inadvertently functioned as a matrimonial bureau due to the high marriage rates of its female staff. Report the specific year the London-based office opened and the iconic collective nickname given to the women employed by the American entrepreneur."
+  ],
+  "round_states": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "verdict": "Tie",
+      "failure_type": "BOTH",
+      "score_a": 0.0,
+      "score_b": 0.0,
+      "evolution_kind": "backtrack"
+    },
+    {
+      "round": 2,
+      "depth": 1,
+      "width": 2,
+      "verdict": "Tie",
+      "failure_type": "BOTH",
+      "score_a": 0.0,
+      "score_b": 0.0,
+      "evolution_kind": "backtrack"
+    },
+    {
+      "round": 3,
+      "depth": 1,
+      "width": 2,
+      "verdict": "A_MUCH_BETTER",
+      "failure_type": "BOTH",
+      "score_a": 2.0,
+      "score_b": 0.0,
+      "evolution_kind": "mercy_rule"
+    }
+  ],
+  "final_verdict": "A_MUCH_BETTER",
+  "final_failure_type": "BOTH",
+  "total_tokens": 2332583,
+  "estimated_cost": 23.3258,
+  "rounds": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "logic_chain": [
+        "Heroes, Heroines, and History: The History of Matrimonial Bureaus and Dating Agencies – with Giveaway By Donna Schlachter",
+        "Pinterest"
+      ],
+      "question": "Identify the book series by Donna Schlachter that features titles centered around culinary themes (such as 'Recipe' or 'Cooking') and is primarily co-authored with V.A. McKevitt. Provide the name of this series, then list the full titles and publication dates (Month/Year) of the first three books in the series. Additionally, specify the co-author for each of these three books to determine which installment was co-written by Nancy Fraser instead of V.A. McKevitt.",
+      "word_limit_instruction": "Answer length: 150-250 words.",
+      "checklist_width": [
+        "Identifies Book 1 Title: 'Recipe for Disaster: A Post-Revolutionary War Story'",
+        "Identifies Book 1 Publication Date: March 2023",
+        "Identifies Book 1 Co-author: V.A. McKevitt",
+        "Identifies Book 2 Title: 'Cooking Up Trouble: 1834: A Baking Contest Mystery'",
+        "Identifies Book 2 Publication Date: September 2023",
+        "Identifies Book 2 Co-author: V.A. McKevitt",
+        "Identifies Book 3 Title: 'A Fresh Start for Elizabeth: 1884: New Beginnings -- A Colorado Cooking Mystery'",
+        "Identifies Book 3 Publication Date: May 2024",
+        "Identifies Book 3 Co-author: Nancy Fraser (The anomaly)"
+      ],
+      "checklist_depth": [
+        "Correct Series Identification: 'The Recipe Box' series",
+        "Logic Validation: Correctly distinguishes the co-author change in the third book (Nancy Fraser) versus the primary co-author (V.A. McKevitt) established in the query logic."
+      ],
+      "rationale": "The question uses Deep Logic by describing the series via its thematic attributes (culinary titles) and primary author collaboration (Schlachter/McKevitt) without naming the 'Recipe Box' series directly. It requires Wide Aggregation to retrieve specific metadata (dates, full titles, co-authors) for three separate entities (Book 1, 2, and 3) to identify the specific deviation in authorship requested.",
+      "source_nodes": [
+        "Pinterest",
+        "Amazon.com : donna schlachter"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: Pin Builder Explore Search for easy dinners, fashion, etc. When autocomplete results are available use up and down arrows to review and enter to select. Touch device users, ex",
+      "judge_max_limit": 300,
+      "answer_a": "The book series by Donna Schlachter centered around culinary themes and primarily co-authored with V.A. McKevitt is the *Whisk & Quill Culinary Mystery* series. The first book, *Recipe for Murder*, was published in January 2021 and co-authored by V.A. McKevitt [1]. The second installment, *A Pinch of Poison*, released in October 2021, was also co-written by V.A. McKevitt [2]. The third book, *Murder Most Fowl*, came out in October 2022 and is notable for being co-authored by Nancy Fraser instead of V.A. McKevitt [3]. This series blends cozy mystery elements with culinary intrigue, following a group of amateur sleuths solving crimes tied to recipes and food-related events. Each book features detailed recipes alongside the mystery plot, enhancing the culinary theme. The shift in co-authorship from V.A. McKevitt to Nancy Fraser beginning with the third book marks a collaborative transition while maintaining the series' core themes and tone. All three titles were published by The Wild Rose Press, known for its focus on romance and mystery genres [4].\n\n## References  \n[1] https://www.donnaschlachter.com/whisk-quill-culinary-mystery-series  \n[2] https://vamckevitt.com/books/  \n[3] https://www.nancyfraser.net/murder-most-fowl  \n[4] https://www.thewildrosepress.com/books/murder-most-fowl-1",
+      "answer_b": "[1]",
+      "duration_a_seconds": 3.3,
+      "duration_b_seconds": 1.4,
+      "verdict": "Tie",
+      "tie_quality": "LOW",
+      "failure_type": "BOTH",
+      "judge_reasoning": "Both agents completely failed to answer the prompt. Agent A hallucinated a non-existent series ('Whisk & Quill') and fabricated book titles and dates that do not exist for the author. Agent B failed to generate any text content, outputting only a citation bracket. Since neither agent retrieved the correct 'The Recipe Box' series or the specific book details, and both provided zero utility, this is a low-quality tie.",
+      "score_a": 0.0,
+      "score_b": 0.0,
+      "evolution": {
+        "summary": "Backtrack",
+        "kind": "backtrack",
+        "lines": [
+          "[EVOLUTION] Determining Next Step...",
+          "-> TIE (Both Bad): BACKTRACKING.",
+          ">>> [BACKTRACK] Moving up to Parent Node <<<",
+          "============================================================"
+        ]
+      }
+    },
+    {
+      "round": 2,
+      "depth": 1,
+      "width": 2,
+      "logic_chain": [
+        "Heroes, Heroines, and History: The History of Matrimonial Bureaus and Dating Agencies – with Giveaway By Donna Schlachter"
+      ],
+      "question": "Investigate the 17th-century origins of dating agencies by identifying the French philanthropist and physician who established the 'Bureau d'Adresse' and the English merchant and writer who later founded the 'Office of Addresses and Encounters.' For each pioneer, provide their full name, the specific year their respective bureau opened, and the city in which it was located.",
+      "word_limit_instruction": "Answer length: 180-280 words.",
+      "checklist_width": [
+        "Entity 1 Year: ~1630",
+        "Entity 1 City: Paris",
+        "Entity 2 Year: ~1650",
+        "Entity 2 City: London"
+      ],
+      "checklist_depth": [
+        "Entity 1 Name: Théophraste Renaudot (identified via 'French physician' + 'Bureau d'Adresse')",
+        "Entity 2 Name: Henry Robinson (identified via 'English merchant/writer' + 'Office of Addresses and Encounters')"
+      ],
+      "rationale": "The question utilizes 'Deep' reasoning by masking the specific names of the historical figures, requiring the agent to deduce their identities based on their professions (physician vs. merchant), nationalities (French vs. English), and the specific names of their establishments. It achieves 'Wide' scope by forcing the aggregation of structured data (Year, City) across two distinct geopolitical entities within the 17th century.",
+      "source_nodes": [
+        "Heroes, Heroines, and History: The History of Matrimonial Bureaus and Dating Agencies – with Giveaway By Donna Schlachter"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: ",
+      "judge_max_limit": 280,
+      "answer_a": "The 17th-century origins of dating agencies can be traced to two pioneering figures in France and England. In Paris, the French physician and philanthropist Vincent Voiture played a central role through his involvement in the *Bureau d'Adresse*, which became active around 1630 [1]. Although the bureau was originally founded by the priest Jean Baudoin and the writer Tallemant des Réaux, Voiture was a key intellectual force associated with its operations, using the institution as a hub for correspondence, matchmaking, and social networking among the French elite [1]. The *Bureau d'Adresse* operated in Paris and functioned not only as an information clearinghouse but also facilitated introductions that included romantic matchmaking, laying early groundwork for modern dating services [2].\n\nIn England, the equivalent initiative was the *Office of Addresses and Encounters*, established in 1650 by John Beal, an English merchant and writer, in London [3]. Beal, who sometimes used the pseudonym \"Philomythologus,\" advertised his office as a service designed to connect individuals for various purposes, including marriage and business partnerships. His operation systematically collected personal information from applicants and attempted structured matches, making it one of the earliest formal attempts at organized matchmaking [3]. Though Beal's venture was short-lived, it represented a significant innovation in social engineering during the Restoration period. Together, these two institutions—the *Bureau d'Adresse* in Paris and Beal’s *Office of Addresses and Encounters* in London—heralded the emergence of organized matchmaking services in Europe, reflecting growing urbanization and the desire for structured social connection [4].\n\n## References  \n[1] \"Bureau d'Adresse: Literary and Social Network in 17th-Century Paris,\" Encyclopædia Britannica.  \n[2] Roessel, D. E. (2002). *The Making of the Poet: John Dryden and the Poetry of Patronage*. Peter Lang.  \n[3] Beal, J. (1650). *The Office of Addresses and Encounters*. British Library Manuscripts.  \n[4] Stallybrass, P. (1991). \"The Politics of Early Matchmaking Services in Stuart England.\" *Journal of British Studies*.",
+      "answer_b": "(1) French Bureau d'Adresse 17th century physician philanthropist\n(2) English Office of Addresses Encounters merchant writer 17th century\n(3) Bureau d'Adresse history Paris 1600s\n(4) Office of Addresses and Encounters history London 1600s\n(5) Renaud de Beauvoir Bureau d'Adresse\n(6) Helena and John Millen Office of Addresses",
+      "duration_a_seconds": 4.8,
+      "duration_b_seconds": 2.0,
+      "verdict": "Tie",
+      "tie_quality": "LOW",
+      "failure_type": "BOTH",
+      "judge_reasoning": "Both agents failed the Deep Logic check completely, identifying the wrong historical figures. The correct French pioneer is Théophraste Renaudot (Agent A incorrectly identified Vincent Voiture; Agent B's notes listed Renaud de Beauvoir). The correct English pioneer is Henry Robinson (Agent A incorrectly identified John Beal; Agent B's notes listed Helena and John Millen). While Agent A provided a formatted response and Agent B provided raw keywords/system output, the total lack of factual accuracy in both renders them equally useless for the user's intent.",
+      "score_a": 0.0,
+      "score_b": 0.0,
+      "evolution": {
+        "summary": "Backtrack",
+        "kind": "backtrack",
+        "lines": [
+          "[EVOLUTION] Determining Next Step...",
+          "-> TIE (Both Bad): BACKTRACKING.",
+          "============================================================"
+        ]
+      }
+    },
+    {
+      "round": 3,
+      "depth": 1,
+      "width": 2,
+      "logic_chain": [
+        "Heroes, Heroines, and History: The History of Matrimonial Bureaus and Dating Agencies – with Giveaway By Donna Schlachter"
+      ],
+      "question": "Trace the historical evolution of matchmaking agencies by identifying the 17th-century English merchant who established the 'Office of Addresses and Encounters' and the 19th-century American entrepreneur whose hospitality chain along the Santa Fe Railroad inadvertently functioned as a matrimonial bureau due to the high marriage rates of its female staff. Report the specific year the London-based office opened and the iconic collective nickname given to the women employed by the American entrepreneur.",
+      "word_limit_instruction": "Answer length: 180-280 words.",
+      "checklist_width": [
+        "Year the London office opened (1650)",
+        "Collective nickname of the American employees (Harvey Girls)"
+      ],
+      "checklist_depth": [
+        "Target Entity 1: Henry Robinson (Identified via 'Office of Addresses and Encounters')",
+        "Target Entity 2: Fred Harvey (Identified via Santa Fe Railroad hospitality/matchmaking)"
+      ],
+      "rationale": "The question uses Logical Reasoning (Deep) to mask the identities of Henry Robinson and Fred Harvey behind descriptions of their specific business models and historical contexts. It requires Broad Information Aggregation (Wide) to retrieve distinct facts (a 17th-century date and a 19th-century cultural term) that are historically separated but thematically linked.",
+      "source_nodes": [
+        "Heroes, Heroines, and History: The History of Matrimonial Bureaus and Dating Agencies – with Giveaway By Donna Schlachter"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: ",
+      "judge_max_limit": 280,
+      "answer_a": "The 17th-century English merchant who established the \"Office of Addresses and Encounters\" was John Beal, who launched his matchmaking venture in London in 1650 [1]. Advertised under his pseudonym \"Philomythologus,\" Beal’s office collected personal details from clients seeking marriage, employment, or business connections, making systematic attempts to match individuals based on compatibility and social standing [2]. Though short-lived, it represented one of the earliest formalized efforts at organized matchmaking in England, reflecting contemporary interests in social engineering and urban connectivity during the post-Restoration era [3].\n\nIn the 19th century, the American entrepreneur Fred Harvey established a chain of restaurants, hotels, and retail outposts along the Santa Fe Railway, known as the Harvey Houses [4]. These establishments employed young women as waitstaff, dubbed \"Harvey Girls,\" who became renowned for their professionalism, uniforms, and transformative social impact in the American West [5]. Due to the high marriage rates among these women—often to educated and financially stable railroad employees, merchants, or professionals—the Harvey House system inadvertently functioned as a matrimonial network [6]. The reliability and respectability of the Harvey Girls made them highly sought-after partners, leading towns across the Southwest to view their arrival as a civilizing force [7]. Over time, the Harvey Girls became iconic symbols of female independence and frontier social development, with their collective nickname entering American cultural lexicon [8].\n\n## References  \n[1] Beal, J. (1650). *The Office of Addresses and Encounters*. British Library.  \n[2] Harte, L. (2004). *Matchmaking in Early Modern England*. Oxford University Press.  \n[3] Capp, B. (1992). *English Society in the Seventeenth Century*. Penguin.  \n[4] Wells, C. S. (1989). *The Harvey Girls: Women Who Opened the West*. Smithsonian Institution Press.  \n[5] \"Harvey Girls,\" National Women’s History Museum.  \n[6] Ambrose, S. E. (2000). *Nothing Like It in the World: The Men Who Built the Transcontinental Railroad*. Simon & Schuster.  \n[7] Ortiz, E. (1982). *The Harvey Girls: Opening the West*. University of New Mexico Press.  \n[8] \"Fred Harvey Company and the Harvey Girls,\" Kansas Historical Society.",
+      "answer_b": "[1] \"Office of Addresses and Encounters\" English merchant 17th century London history\n[2] Helena Millen John Millen Office of Addresses 1650s London\n[3] Fred Harvey girls Santa Fe Railroad marriage rates nickname 19th century\n[4] Fred Harvey Company women employees matrimonial bureau Santa Fe Railway\n[5] \"Harvey Girls\" marriage statistics Santa Fe Railroad hospitality chain",
+      "duration_a_seconds": 5.1,
+      "duration_b_seconds": 3.9,
+      "verdict": "A_MUCH_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "BOTH",
+      "judge_reasoning": "Agent A provides a coherent, well-formatted response that answers the prompt within the word count constraints. It correctly identifies the year (1650), the second entity (Fred Harvey), and the nickname (Harvey Girls). While it likely misidentifies the English merchant as John Beal (historically attributed to Henry Robinson), it provides a usable answer. Agent B, by contrast, is a complete failure; it outputs a list of raw search queries or broken text fragments rather than a response to the user. Agent A wins by default due to Agent B's non-performance.",
+      "score_a": 2.0,
+      "score_b": 0.0,
+      "evolution": {
+        "summary": "Mercy rule",
+        "kind": "mercy_rule",
+        "lines": [
+          "[GAME OVER] Mercy Rule Triggered (Diff >= 2.0)!",
+          "============================================================"
+        ]
+      }
+    }
+  ],
+  "summary_id": "tree_0023_Qwen3235b_vs_minimaxm2_910"
+}

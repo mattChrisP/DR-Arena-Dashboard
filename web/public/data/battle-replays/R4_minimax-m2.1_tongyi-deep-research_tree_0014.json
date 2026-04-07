@@ -1,0 +1,90 @@
+{
+  "id": "R4_minimax-m2.1_tongyi-deep-research_tree_0014",
+  "source_group": "onboarding_battles",
+  "source_log": "onboarding_battles/R4_minimax-m2.1_tongyi-deep-research_tree_0014.log",
+  "tree_id": "tree_0014",
+  "tree_title": "Video rental shop",
+  "tree_topic": "Shopping > Entertainment Media > DVD & Video Shopping",
+  "tree_subtopic": "DVD & Video Rentals",
+  "tree_crawled_at": "2025-11-21T14:49:42.251140",
+  "tree_url": "https://en.wikipedia.org/wiki/Video_rental_shop",
+  "model_a": "tongyi-deep-research",
+  "model_b": "minimax-m2.1",
+  "winner": "tongyi-deep-research",
+  "final_score_a": 2.0,
+  "final_score_b": 0.0,
+  "total_rounds": 1,
+  "type": "onboarding",
+  "tournament_round": 4,
+  "pairing_index": null,
+  "mercy_rule": true,
+  "overall_topic": "Video rental shop",
+  "questions": [
+    "Identify the landmark 1984 Supreme Court case where the head of the Motion Picture Association of America famously argued against a specific recording technology by comparing it to the 'Boston strangler.' Then, identify the 2013 Supreme Court ruling involving a Thai math student and imported textbooks that is often cited as a modern parallel regarding copyright limits. Provide the names of both court cases, the name of the executive who made the 'Boston strangler' comparison, and the specific legal doctrine mentioned in relation to these events that grants companies like Blockbuster and Netflix the right to rent out physical copies of movies."
+  ],
+  "round_states": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "verdict": "A_MUCH_BETTER",
+      "failure_type": "BOTH",
+      "score_a": 2.0,
+      "score_b": 0.0,
+      "evolution_kind": "mercy_rule"
+    }
+  ],
+  "final_verdict": "A_MUCH_BETTER",
+  "final_failure_type": "BOTH",
+  "total_tokens": 3850302,
+  "estimated_cost": 38.503,
+  "rounds": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "logic_chain": [
+        "Video rental shop",
+        "In a Copyright Ruling, the Legacy of the Betamax"
+      ],
+      "question": "Identify the landmark 1984 Supreme Court case where the head of the Motion Picture Association of America famously argued against a specific recording technology by comparing it to the 'Boston strangler.' Then, identify the 2013 Supreme Court ruling involving a Thai math student and imported textbooks that is often cited as a modern parallel regarding copyright limits. Provide the names of both court cases, the name of the executive who made the 'Boston strangler' comparison, and the specific legal doctrine mentioned in relation to these events that grants companies like Blockbuster and Netflix the right to rent out physical copies of movies.",
+      "word_limit_instruction": "Answer length: 200-300 words.",
+      "checklist_width": [
+        "Executive Name: Jack Valenti",
+        "1984 Case: Sony Corp. of America v. Universal City Studios, Inc. (or the Betamax case)",
+        "2013 Case: Kirtsaeng v. John Wiley & Sons",
+        "Legal Doctrine: The First Sale Doctrine (or Doctrine of First Sale)"
+      ],
+      "checklist_depth": [
+        "Correctly identifies the 1984 case using the 'Boston strangler' quote logic.",
+        "Correctly identifies the 2013 case using the 'Thai math student' description logic."
+      ],
+      "rationale": "The question requires Deep reasoning to identify two specific Supreme Court cases based on descriptive anecdotes (the 'Boston strangler' quote and the 'Thai student' scenario) rather than their names. It then requires Wide aggregation to retrieve the specific executive's name and the specific legal doctrine ('first sale') that connects these rulings to the business model of video rental shops.",
+      "source_nodes": [
+        "In a Copyright Ruling, the Legacy of the Betamax - The New York Times",
+        "Archive - Wikipedia"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: Business | Copyright Ruling Rings With Echo of Betamax https://www.nytimes.com/2013/03/27/business/in-a-copyright-ruling-the-lingering-legacy-of-the-betamax.html Advertisement",
+      "judge_max_limit": 300,
+      "answer_a": "The landmark 1984 Supreme Court case is *Sony Corp. of America v. Universal City Studios, Inc.*, where Jack Valenti, then-president of the Motion Picture Association of America (MPAA), compared home videotaping technology to the \"Boston strangler,\" arguing it would lead to widespread copyright infringement. The 2013 Supreme Court case is *Kirtsaeng v. John Wiley & Sons Inc.*, involving a Thai math student importing cheaper foreign textbooks. Both cases relate to the \"first sale\" doctrine (17 U.S.C. § 109), which limits copyright holders' control over physical copies after first sale, enabling rental businesses like Blockbuster and Netflix to legally rent out physical media.  \n\n## References  \n[1] \"Sony Corp. of America v. Universal City Studios, Inc.\" Oyez.  \n[2] \"Gideon Kirtsaeng v. John Wiley & Sons, Inc.\" SCOTUSblog.  \n[3] U.S. Copyright Office, \"First Sale Doctrine.\"  \n[4] \"Jack Valenti's Senate Testimony on Videotape.\" MPAA Archives.",
+      "answer_b": "无法直接输出搜索工具的使用过程，我需要直接执行搜索并展示结果。",
+      "duration_a_seconds": 3.1,
+      "duration_b_seconds": 2.6,
+      "verdict": "A_MUCH_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "BOTH",
+      "judge_reasoning": "Agent A followed all instructions perfectly. It correctly identified the executive (Jack Valenti), the 1984 case (Sony v. Universal), the 2013 case (Kirtsaeng v. John Wiley & Sons), and the legal doctrine (First Sale Doctrine). It also included citations. Agent B failed completely, outputting an error message in Chinese stating it could not display the search process, resulting in zero utility.",
+      "score_a": 2.0,
+      "score_b": 0.0,
+      "evolution": {
+        "summary": "Mercy rule",
+        "kind": "mercy_rule",
+        "lines": [
+          "[GAME OVER] Mercy Rule Triggered (Diff >= 2.0)!",
+          "============================================================"
+        ]
+      }
+    }
+  ],
+  "summary_id": "tree_0014_tongyidee_vs_minimaxm2_961"
+}

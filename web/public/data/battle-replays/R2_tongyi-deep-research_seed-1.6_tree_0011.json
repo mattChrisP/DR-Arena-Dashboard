@@ -1,0 +1,338 @@
+{
+  "id": "R2_tongyi-deep-research_seed-1.6_tree_0011",
+  "source_group": "onboarding_battles",
+  "source_log": "onboarding_battles/R2_tongyi-deep-research_seed-1.6_tree_0011.log",
+  "tree_id": "tree_0011",
+  "tree_title": "Welcome",
+  "tree_topic": "People & Society > Social Sciences",
+  "tree_subtopic": "Demographics",
+  "tree_crawled_at": "2025-11-21T13:56:30.648121",
+  "tree_url": "https://demographicestimation.iussp.org/",
+  "model_a": "seed-1.6",
+  "model_b": "tongyi-deep-research",
+  "winner": "seed-1.6",
+  "final_score_a": 4.0,
+  "final_score_b": 1.0,
+  "total_rounds": 5,
+  "type": "onboarding",
+  "tournament_round": 2,
+  "pairing_index": null,
+  "mercy_rule": true,
+  "overall_topic": "Welcome",
+  "questions": [
+    "Identify the major reference work produced by the joint IUSSP and UNFPA project that is described as the direct lineage successor to the 'UN Manual X: Indirect Techniques for Demographic Estimation'. Within this volume, locate the section authored by T.A. Moultrie in 2011 that specifically addresses the assessment and adjustment of fertility statistics. Provide the full 'Suggested citation' for this specific section, including the list of editors and the publisher.",
+    "Identify the digital platform dedicated to demographic estimation tools that was created through a joint project between the IUSSP and UNFPA, serving as a direct successor to 'UN Manual X'. According to the site's introductory or welcome documentation, which specific web browsers are recommended for the best viewing experience? Furthermore, explain the stated content difference between the downloadable 2013 PDF version of the book and the live web-based version, and provide the exact URL designated for the French language version of the portal.",
+    "Identify the comprehensive reference work produced jointly by the IUSSP and UNFPA that serves as the direct lineage successor to the UN Manual X: Indirect Techniques for Demographic Estimation, specifically focusing on methods for limited and defective data. Within this collection, locate the specific chapter or section authored by T.A. Moultrie that addresses the 'Evaluation and correction of fertility data.' Provide the full suggested citation for this specific section, including the publication year, the section title, the publisher, and the complete list of all six editors of the parent volume.",
+    "Identify the major collaborative work between the IUSSP and UNFPA that functions as the successor to UN Manual X for demographic estimation tools. Within this body of work, find the details for two specific sections: one authored by T.A. Moultrie focusing on methods for a single census, and one authored by K. Hill focusing on maternal mortality. For both sections, report the exact title and the full string provided as the 'Suggested citation'.",
+    "Identify the specific online demographic manual published by the International Union for the Scientific Study of Population (IUSSP) that features chapters titled 'Evaluation and correction of fertility data' and 'One census methods' by T.A. Moultrie. Once this resource is located, determine the exact Creative Commons license version applied to the content, specifically noting its stance on commercial usage and derivative works. Furthermore, identify the exact title of the module within this same collection that is dedicated to estimation techniques utilizing data from more than one census."
+  ],
+  "round_states": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "verdict": "Tie",
+      "failure_type": "BOTH",
+      "score_a": 0.0,
+      "score_b": 0.0,
+      "evolution_kind": "backtrack"
+    },
+    {
+      "round": 2,
+      "depth": 1,
+      "width": 2,
+      "verdict": "B_BETTER",
+      "failure_type": "DEEP",
+      "score_a": 0.0,
+      "score_b": 1.0,
+      "evolution_kind": "drill_down"
+    },
+    {
+      "round": 3,
+      "depth": 2,
+      "width": 2,
+      "verdict": "A_BETTER",
+      "failure_type": "DEEP",
+      "score_a": 1.0,
+      "score_b": 1.0,
+      "evolution_kind": "drill_down"
+    },
+    {
+      "round": 4,
+      "depth": 3,
+      "width": 2,
+      "verdict": "A_BETTER",
+      "failure_type": "DEEP",
+      "score_a": 2.0,
+      "score_b": 1.0,
+      "evolution_kind": "drill_down"
+    },
+    {
+      "round": 5,
+      "depth": 4,
+      "width": 2,
+      "verdict": "A_MUCH_BETTER",
+      "failure_type": "DEEP",
+      "score_a": 4.0,
+      "score_b": 1.0,
+      "evolution_kind": "mercy_rule"
+    }
+  ],
+  "final_verdict": "A_MUCH_BETTER",
+  "final_failure_type": "DEEP",
+  "total_tokens": 1324417,
+  "estimated_cost": 13.2442,
+  "rounds": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "logic_chain": [
+        "Welcome",
+        "Evaluation and correction of fertility data"
+      ],
+      "question": "Identify the major reference work produced by the joint IUSSP and UNFPA project that is described as the direct lineage successor to the 'UN Manual X: Indirect Techniques for Demographic Estimation'. Within this volume, locate the section authored by T.A. Moultrie in 2011 that specifically addresses the assessment and adjustment of fertility statistics. Provide the full 'Suggested citation' for this specific section, including the list of editors and the publisher.",
+      "word_limit_instruction": "Answer length: 100-200 words.",
+      "checklist_width": [
+        "Chapter Author: Moultrie TA",
+        "Year: 2011",
+        "Chapter Title: Evaluation and correction of fertility data",
+        "Editors: Moultrie TA, Dorrington RE, Hill AG, Hill K, Timæus IM and Zaba B",
+        "Book Title: Tools for Demographic Estimation",
+        "Publisher: International Union for the Scientific Study of Population (Paris)"
+      ],
+      "checklist_depth": [
+        "Correctly identifies the parent volume as 'Tools for Demographic Estimation'",
+        "Correctly identifies the section topic as 'Evaluation and correction of fertility data'"
+      ],
+      "rationale": "The question requires Deep reasoning to identify the specific book ('Tools for Demographic Estimation') based on its project origin (IUSSP/UNFPA) and lineage (UN Manual X), without naming it. It then requires Wide aggregation to drill down into that specific volume to find a chapter by a specific author and topic, and extract the precise citation details provided on that specific page.",
+      "source_nodes": [
+        "Evaluation and correction of fertility data | Tools for Demographic Estimation"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: Evaluation and correction of fertility data Author Moultrie TA Printer-friendly version Suggested citation Moultrie TA. 2011. Evaluation and correction of fertility data. In M",
+      "judge_max_limit": 300,
+      "answer_a": "The major reference work from the joint IUSSP and UNFPA project that succeeds “UN Manual X: Indirect Techniques for Demographic Estimation” is “Indirect Demographic Estimation: Methods for Developing Countries” [1]. Its 2011 edition features a section by T.A. Moultrie dedicated to the assessment and adjustment of fertility statistics, which provides tailored methods to validate and refine incomplete or biased fertility data prevalent in developing nations, addressing critical gaps in earlier guidance that failed to account for evolving data collection challenges in marginalized communities [1]. This section builds on the manual’s legacy by incorporating updated computational tools and regional case studies to enhance estimate reliability, supporting more informed demographic policy and program planning in resource-constrained contexts [1].\n\n## References\n[1] Moultrie, T.A. (2011). Assessment and adjustment of fertility statistics. In J.P. Smith & S.K. Preston (Eds.), Indirect Demographic Estimation: Methods for Developing Countries (pp. 245-287). International Union for the Scientific Study of Population (IUSSP) & United Nations Population Fund (UNFPA).",
+      "answer_b": "The major reference work is *\"Indirect Demographic Estimation\"* (2013), edited by A. Hill and M. Timaeus, published by the United Nations Population Division and IUSSP as a direct successor to 'UN Manual X'. The section authored by T.A. Moultrie in 2011 addressing fertility statistics adjustment is titled *\"Assessment and adjustment of fertility statistics\"* [1].  \n\nThe full suggested citation is:  \nMoultrie, T.A., & Rodrigues, P. (2011). Assessment and adjustment of fertility statistics. In A. Hill & M. Timaeus (Eds.), *Indirect Demographic Estimation* (pp. 15–29). United Nations Department of Economic and Social Affairs, Population Division, and International Union for the Scientific Study of Population. [2]  \n\n## References  \n1. Moultrie, T.A., & Rodrigues, P. (2011). Assessment and adjustment of fertility statistics. In A. Hill & M. Timaeus (Eds.), *Indirect Demographic Estimation* (pp. 15–29). United Nations Department of Economic and Social Affairs, Population Division, and International Union for the Scientific Study of Population.  \n2. Hill, K., & Timaeus, I. (Eds.). (2013). *Indirect Demographic Estimation*. United Nations Department of Economic and Social Affairs, Population Division, and International Union for the Scientific Study of Population.",
+      "duration_a_seconds": 46.1,
+      "duration_b_seconds": 13.1,
+      "verdict": "Tie",
+      "tie_quality": "LOW",
+      "failure_type": "BOTH",
+      "judge_reasoning": "Both agents failed the DEEP Logic check by failing to identify the correct reference work. The successor to 'UN Manual X' produced by the IUSSP and UNFPA is titled **'Tools for Demographic Estimation'** (often abbreviated as TDE), not 'Indirect Demographic Estimation'. \n\nConsequently, both agents provided hallucinated citations:\n- **Agent A** invented a book title and listed incorrect editors (Smith & Preston).\n- **Agent B** also used an incorrect book title and listed an incomplete/incorrect set of editors (Hill & Timaeus), whereas the actual volume has six editors (Moultrie, Dorrington, Hill, Hill, Timæus, and Zaba).\n\nSince both failed to retrieve the core entity and provided factually wrong citations, this is a low-quality tie.",
+      "score_a": 0.0,
+      "score_b": 0.0,
+      "evolution": {
+        "summary": "Backtrack",
+        "kind": "backtrack",
+        "lines": [
+          "[EVOLUTION] Determining Next Step...",
+          "-> TIE (Both Bad): BACKTRACKING.",
+          ">>> [BACKTRACK] Moving up to Parent Node <<<",
+          "============================================================"
+        ]
+      }
+    },
+    {
+      "round": 2,
+      "depth": 1,
+      "width": 2,
+      "logic_chain": [
+        "Welcome"
+      ],
+      "question": "Identify the digital platform dedicated to demographic estimation tools that was created through a joint project between the IUSSP and UNFPA, serving as a direct successor to 'UN Manual X'. According to the site's introductory or welcome documentation, which specific web browsers are recommended for the best viewing experience? Furthermore, explain the stated content difference between the downloadable 2013 PDF version of the book and the live web-based version, and provide the exact URL designated for the French language version of the portal.",
+      "word_limit_instruction": "Answer length: 180-280 words.",
+      "checklist_width": [
+        "Recommended Browsers: Mozilla Firefox or Chromium-based browsers (specifically Google Chrome or Microsoft Edge)",
+        "PDF Caveat: The 2013 PDF version does not incorporate the edits and updates that have been made to the web-based version since then",
+        "French URL: https://demographicestimation.iussp.org/fr/content/accueil"
+      ],
+      "checklist_depth": [
+        "Target Entity: Tools for Demographic Estimation (website/project)",
+        "Logic Proof: Identified as the joint IUSSP and UNFPA project following the lineage of UN Manual X"
+      ],
+      "rationale": "The question uses Deep Reasoning by defining the target resource solely through its organizational parentage (IUSSP/UNFPA) and academic lineage (UN Manual X) without naming it. Once identified, the Wide Aggregation step forces the agent to retrieve three distinct pieces of information found on the landing page: technical requirements (browsers), content currency warnings (PDF vs. Web), and localization details (French URL).",
+      "source_nodes": [
+        "Welcome | Tools for Demographic Estimation"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: La version française de ce site peut être trouvé à https://demographicestimation.iussp.org/fr/content/accueil This site represents the major output arising from a joint IUSSP ",
+      "judge_max_limit": 280,
+      "answer_a": "The digital platform dedicated to demographic estimation tools—an collaborative project between the IUSSP and UNFPA that serves as the direct successor to “UN Manual X”—is the Demographic Estimation Toolkit (DET) portal [1]. Its introductory documentation specifies that the latest versions of Google Chrome, Mozilla Firefox, and Microsoft Edge are the recommended web browsers for the best viewing and functional experience, explicitly stating that Internet Explorer is not supported due to critical compatibility issues that hinder access to interactive features [1]. The 2013 downloadable PDF version of the book is a static snapshot of the updated 2013 content from the original manual, lacking dynamic elements, while the live web-based version enhances this by incorporating interactive demographic estimation tools, real-time content updates, detailed step-by-step user guides, and practical case studies to facilitate hands-on application of estimation methods for users across diverse regional contexts [2]. The exact URL for the French language version of the portal is https://www.demographicestimation.org/fr [3].\n\n## References\n[1] Demographic Estimation Toolkit Portal. \"Welcome & Getting Started Guide.\" https://www.demographicestimation.org/welcome-guide (accessed October 26, 2024)\n[2] Demographic Estimation Toolkit Portal. \"Content Version Comparison: 2013 PDF vs. Live Web Platform.\" https://www.demographicestimation.org/content-comparison (accessed October 26, 2024)\n[3] Demographic Estimation Toolkit Portal. Language Navigation Menu. https://www.demographicestimation.org (accessed October 26, 2024)",
+      "answer_b": "## References  \nThe digital platform in question is the \"Demographic Estimation Tools\" portal, created by the International Union for the Scientific Study of Population (IUSSP) and the United Nations Population Fund (UNFPA) as a successor to \"UN Manual X.\" The recommended web browsers for optimal viewing are **Chrome, Firefox, and Safari** [1]. The 2013 PDF version of *World Population Estimation* is a static, downloadable resource, whereas the live web-based version provides interactive tools for dynamic data visualization and updating methodologies [2]. The French language version of the portal is accessible at [https://demographicestimation.iussp.org/fr](https://demographicestimation.iussp.org/fr) [3].  \n\nSources:  \n[1] IUSSP-UNFPA Digital Platform Documentation.  \n[2] Introductory Welcome Page, IUSSP-UNFPA Portal.  \n[3] Platform’s French Language Version URL.",
+      "duration_a_seconds": 25.5,
+      "duration_b_seconds": 7.0,
+      "verdict": "B_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "DEEP",
+      "judge_reasoning": "Agent B correctly identifies the target entity and provides the correct, functional URL for the French portal. Agent A fails the Deep Logic check by hallucinating the entity name ('Toolkit' instead of 'Tools') and providing a fake/non-functional URL ('demographicestimation.org'). Although Agent A's internal details regarding the browser requirements were actually more accurate to the source text (Agent B incorrectly suggested Safari), the failure to provide a valid link or correct entity name makes Agent A the loser. Agent B is capped at 'Better' rather than 'Much Better' because it missed the specific detail about 'edits/updates' for the PDF and hallucinated Safari as a recommended browser.",
+      "score_a": 0.0,
+      "score_b": 1.0,
+      "evolution": {
+        "summary": "Drill down",
+        "kind": "drill_down",
+        "lines": [
+          "[EVOLUTION] Determining Next Step...",
+          "-> WINNER is B. Targeting Loser Failure: DEEP.",
+          "-> Action: Deep+1 (Drill Down)",
+          "[EVOLUTION] Descended to: 'Evaluation and correction of fertility data'",
+          "============================================================"
+        ]
+      }
+    },
+    {
+      "round": 3,
+      "depth": 2,
+      "width": 2,
+      "logic_chain": [
+        "Welcome",
+        "Evaluation and correction of fertility data"
+      ],
+      "question": "Identify the comprehensive reference work produced jointly by the IUSSP and UNFPA that serves as the direct lineage successor to the UN Manual X: Indirect Techniques for Demographic Estimation, specifically focusing on methods for limited and defective data. Within this collection, locate the specific chapter or section authored by T.A. Moultrie that addresses the 'Evaluation and correction of fertility data.' Provide the full suggested citation for this specific section, including the publication year, the section title, the publisher, and the complete list of all six editors of the parent volume.",
+      "word_limit_instruction": "Answer length: 150-250 words.",
+      "checklist_width": [
+        "Section Title: Evaluation and correction of fertility data",
+        "Section Author: Moultrie TA",
+        "Publication Year: 2011 (web) or 2013 (book)",
+        "Publisher: International Union for the Scientific Study of Population (or IUSSP)",
+        "Editor 1: Moultrie TA",
+        "Editor 2: Dorrington RE",
+        "Editor 3: Hill AG",
+        "Editor 4: Hill K",
+        "Editor 5: Timæus IM",
+        "Editor 6: Zaba B"
+      ],
+      "checklist_depth": [
+        "Target Project: Tools for Demographic Estimation",
+        "Logic Validation: Identified the project via its IUSSP/UNFPA origin and UN Manual X ancestry."
+      ],
+      "rationale": "The question uses 'Deep' reasoning by describing the project's history (UN Manual X lineage) and organizational ownership (IUSSP/UNFPA) without naming the 'Tools for Demographic Estimation' website directly. It then requires 'Wide' aggregation by forcing the agent to navigate to a specific sub-section (Moultrie's chapter) and retrieve a precise list of editors and citation details found on that specific page.",
+      "source_nodes": [
+        "Evaluation and correction of fertility data | Tools for Demographic Estimation"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: Evaluation and correction of fertility data Author Moultrie TA Printer-friendly version Suggested citation Moultrie TA. 2011. Evaluation and correction of fertility data. In M",
+      "judge_max_limit": 300,
+      "answer_a": "The comprehensive IUSSP-UNFPA reference work succeeding UN Manual X: Indirect Techniques for Demographic Estimation (focused on limited/defective data methods) is Demographic Estimation: A Guide to Methods for Populations with Limited Data (2013) [1]. Within this collection, T.A. Moultrie authors the chapter “Evaluation and correction of fertility data” [1]. The full suggested citation for this section is: Moultrie, T.A. 2013. “Evaluation and correction of fertility data.” In Demographic Estimation: A Guide to Methods for Populations with Limited Data, edited by J.R. Weeks, A. Hill, T.A. Moultrie, S. Myer, P. Zaba, and R. White. Published by the International Union for the Scientific Study of Population (IUSSP) and the United Nations Population Fund (UNFPA) [1]. This volume codifies updated indirect estimation frameworks for regions with incomplete demographic records, acting as the static foundational text underpinning the dynamic tools of the associated Demographic Estimation Toolkit portal [2]. It addresses critical gaps in applying methods to defective data, serving as a pivotal resource for global demographic researchers and practitioners [1].\n\n## References\n[1] International Union for the Scientific Study of Population (IUSSP), United Nations Population Fund (UNFPA). Demographic Estimation: A Guide to Methods for Populations with Limited Data. 2013. https://www.demographicestimation.org/book (accessed October 26, 2024)\n[2] Demographic Estimation Toolkit Portal. “About the 2013 Foundational Book.” https://www.demographicestimation.org/book-overview (accessed October 26, 2024)",
+      "answer_b": "## References  \nThe comprehensive reference work is \"World Population Assessment: Estimation of Population Totals and Components of Change by Age and Sex\" (2013), jointly produced by the IUSSP and UNFPA as the direct successor to \"UN Manual X: Indirect Techniques for Demographic Estimation.\" The specific section authored by T.A. Moultrie is \"Evaluation and Correction of Fertility Data\" within Chapter 5 (\"Estimation of Fertility from Limited and Defective Data and Sources\"). The full suggested citation is: Moultrie, T.A., Kinsella, J.E., and Nyirenda, W.R.N. (2013). \"Evaluation and correction of fertility data.\" In: Alkema, T., Margetts, K., Clark, D., Mofya, S., Setel, P.W., and Walker, C. (eds.). *World Population Assessment: Estimation of Population Totals and Components of Change by Age and Sex* (pp. 127–144). International Union for the Scientific Study of Population (IUSSP) and United Nations Population Fund (UNFPA).  \n\nSources:  \n[1] Book citation details and chapter authorship.  \n[2] Document structure confirming section location.",
+      "duration_a_seconds": 28.8,
+      "duration_b_seconds": 28.4,
+      "verdict": "A_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "DEEP",
+      "judge_reasoning": "Agent A correctly identified the target entity (the project/book 'Tools for Demographic Estimation' hosted at demographicestimation.org), although it hallucinated the specific list of editors in the citation (listing J.R. Weeks et al. instead of the correct team: Moultrie, Dorrington, Hill, Hill, Timæus, Zaba). Agent B failed completely (Deep Failure), hallucinating a non-existent book title ('World Population Assessment') and a fake list of editors. Agent A wins because it found the correct resource, even though the specific citation details contained errors.",
+      "score_a": 1.0,
+      "score_b": 1.0,
+      "evolution": {
+        "summary": "Drill down",
+        "kind": "drill_down",
+        "lines": [
+          "[EVOLUTION] Determining Next Step...",
+          "-> WINNER is A. Targeting Loser Failure: DEEP.",
+          "-> Action: Deep+1 (Drill Down)",
+          "[EVOLUTION] Descended to: 'One census methods'",
+          "============================================================"
+        ]
+      }
+    },
+    {
+      "round": 4,
+      "depth": 3,
+      "width": 2,
+      "logic_chain": [
+        "Welcome",
+        "Evaluation and correction of fertility data",
+        "One census methods"
+      ],
+      "question": "Identify the major collaborative work between the IUSSP and UNFPA that functions as the successor to UN Manual X for demographic estimation tools. Within this body of work, find the details for two specific sections: one authored by T.A. Moultrie focusing on methods for a single census, and one authored by K. Hill focusing on maternal mortality. For both sections, report the exact title and the full string provided as the 'Suggested citation'.",
+      "word_limit_instruction": "Answer length: 220-320 words.",
+      "checklist_width": [
+        "Exact Title 1: \"One census methods\"",
+        "Citation 1: Contains \"Moultrie TA. 2011. One census methods.\"",
+        "Citation 1 Context: Includes \"In Moultrie TA, Dorrington RE, Hill AG, Hill K, Timæus IM and Zaba B (eds). Tools for Demographic Estimation.\"",
+        "Exact Title 2: \"Maternal mortality\"",
+        "Citation 2: Contains \"Hill K. 2011. Maternal mortality.\"",
+        "Citation 2 Context: Includes \"In Moultrie TA, Dorrington RE, Hill AG, Hill K, Timæus IM and Zaba B (eds). Tools for Demographic Estimation.\""
+      ],
+      "checklist_depth": [
+        "Parent Entity: Identifies \"Tools for Demographic Estimation\" as the IUSSP/UNFPA project successor to UN Manual X.",
+        "Target 1 Logic: correctly maps \"methods for a single census\" by Moultrie to the section \"One census methods\".",
+        "Target 2 Logic: correctly maps \"maternal mortality\" by Hill to the specific section titled \"Maternal mortality\"."
+      ],
+      "rationale": "The question uses Deep Logic by masking the book title ('Tools for Demographic Estimation') behind its historical lineage (successor to UN Manual X) and organizational origin (IUSSP/UNFPA). It uses Wide Logic by requiring the retrieval of specific metadata (citations) from two distinct chapters ('One census methods' and 'Maternal mortality') authored by different contributors within that masked source.",
+      "source_nodes": [
+        "One census methods | Tools for Demographic Estimation",
+        "Maternal mortality | Tools for Demographic Estimation"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: One census methods Author Moultrie TA Printer-friendly version Suggested citation Moultrie TA. 2011. One census methods. In Moultrie TA, Dorrington RE, Hill AG, Hill K, Timæus",
+      "judge_max_limit": 320,
+      "answer_a": "The major collaborative work between the IUSSP and UNFPA that succeeds UN Manual X for demographic estimation tools is Demographic Estimation: A Guide to Methods for Populations with Limited Data (2013) [1]. Within this volume, T.A. Moultrie authors the section focused on single census methods, with the exact title “Estimation of fertility from a single census” [1]. Its full suggested citation is: Moultrie, T.A. 2013. “Estimation of fertility from a single census.” In Demographic Estimation: A Guide to Methods for Populations with Limited Data, edited by J.R. Weeks, A. Hill, T.A. Moultrie, S. Myer, P. Zaba, and R. White. International Union for the Scientific Study of Population (IUSSP) and United Nations Population Fund (UNFPA) [1]. K. Hill’s section addressing maternal mortality has the exact title “Estimation of maternal mortality from sibling histories” [2]. Its full suggested citation is: Hill, K. 2013. “Estimation of maternal mortality from sibling histories.” In Demographic Estimation: A Guide to Methods for Populations with Limited Data, edited by J.R. Weeks, A. Hill, T.A. Moultrie, S. Myer, P. Zaba, and R. White. International Union for the Scientific Study of Population (IUSSP) and United Nations Population Fund (UNFPA) [2]. This 2013 volume codifies updated frameworks for limited/defective data, serving as the static foundation for the dynamic Demographic Estimation Toolkit portal [1].\n\n## References\n[1] International Union for the Scientific Study of Population (IUSSP), United Nations Population Fund (UNFPA). Demographic Estimation: A Guide to Methods for Populations with Limited Data. 2013. https://www.demographicestimation.org/book (accessed October 26, 2024)\n[2] International Union for the Scientific Study of Population (IUSSP), United Nations Population Fund (UNFPA). “Chapter 12: Estimation of maternal mortality from sibling histories” in Demographic Estimation: A Guide to Methods for Populations with Limited Data. 2013. https://www.demographicestimation.org/chapter-12 (accessed October 26, 2024)",
+      "answer_b": "## References  \nThe major collaborative work is the 2013 IUSSP‑UNFPA volume **“World Population Assessment: Estimation of Population Totals and Components of Change by Age and Sex”**, which serves as the contemporary successor to UN Manual X for demographic estimation techniques.  \n\n- **Section by T.A. Moultrie (single‑census methods):**  \n  **Exact title:** “Single Census Method”  \n  **Suggested citation:** “Moultrie, T.A.; Clark, D.; Setel, P.W.; and Walker, C. (2013). Single Census Method. In: Alkema, I.; Margetts, K.; Clark, D.; Mofya, S.; Setel, P.W.; and Walker, C. (eds.). *World Population Assessment: Estimation of Population Totals and Components of Change by Age and Sex*. IUSSP/UNFPA.”  \n\n- **Section by K. Hill (maternal mortality):**  \n  **Exact title:** “Maternal Mortality”  \n  **Suggested citation:** “Hill, K.; Bowes, J.M.; and Upadhyay, U.D. (2013). Maternal Mortality. In: Alkema, I.; Margetts, K.; Clark, D.; Mofya, S.; Setel, P.W.; and Walker, C. (eds.). *World Population Assessment: Estimation of Population Totals and Components of Change by Age and Sex*. IUSSP/UNFPA.”  \n\n**Sources**  \n[1] Introductory page and chapter list of “World Population Assessment” volume.  \n[2] Individual section PDFs and citation strings for the “Single Census Method” and “Maternal Mortality” chapters.",
+      "duration_a_seconds": 30.9,
+      "duration_b_seconds": 12.3,
+      "verdict": "A_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "DEEP",
+      "judge_reasoning": "Agent A correctly identified the core entity (the IUSSP/UNFPA project 'Tools for Demographic Estimation') and the correct authors for the requested sections (Moultrie and Hill). It also provided the correct domain/URL. However, Agent A hallucinated the specific details requested: it provided descriptive chapter titles instead of the exact ones ('One census methods' and 'Maternal mortality') and hallucinated the list of editors in the citation string. Agent B, however, completely failed the Deep Logic check by hallucinating a non-existent book title ('World Population Assessment') and fake citations. Agent A wins for being grounded in reality, but is capped at BETTER due to significant inaccuracies in the specific strings.",
+      "score_a": 2.0,
+      "score_b": 1.0,
+      "evolution": {
+        "summary": "Drill down",
+        "kind": "drill_down",
+        "lines": [
+          "[EVOLUTION] Determining Next Step...",
+          "-> WINNER is A. Targeting Loser Failure: DEEP.",
+          "-> Action: Deep+1 (Drill Down)",
+          "[EVOLUTION] Descended to: 'Deed'",
+          "============================================================"
+        ]
+      }
+    },
+    {
+      "round": 5,
+      "depth": 4,
+      "width": 2,
+      "logic_chain": [
+        "Welcome",
+        "Evaluation and correction of fertility data",
+        "One census methods",
+        "Deed"
+      ],
+      "question": "Identify the specific online demographic manual published by the International Union for the Scientific Study of Population (IUSSP) that features chapters titled 'Evaluation and correction of fertility data' and 'One census methods' by T.A. Moultrie. Once this resource is located, determine the exact Creative Commons license version applied to the content, specifically noting its stance on commercial usage and derivative works. Furthermore, identify the exact title of the module within this same collection that is dedicated to estimation techniques utilizing data from more than one census.",
+      "word_limit_instruction": "Answer length: 240-340 words.",
+      "checklist_width": [
+        "Identifies the specific license as Creative Commons Attribution-NonCommercial-ShareAlike 3.0 (CC BY-NC-SA 3.0)",
+        "Notes that the license prohibits commercial use (NonCommercial)",
+        "Notes that the license requires derivative works to be distributed under the same license (ShareAlike)",
+        "Identifies the specific module title as 'Multiple census methods'"
+      ],
+      "checklist_depth": [
+        "Correctly identifies the resource as 'Tools for Demographic Estimation' (or its associated website demographicestimation.iussp.org)",
+        "Connects the chapters 'One census methods' and 'Evaluation and correction of fertility data' to the collection 'Tools for Demographic Estimation'"
+      ],
+      "rationale": "The question requires Deep reasoning to identify the parent publication ('Tools for Demographic Estimation') using specific chapter titles and the author/editor name found in the background context. It then demands Wide aggregation by requiring the agent to navigate the resource to find two distinct pieces of information: the specific legacy license version (Target 0) and the title of a separate chapter regarding multiple censuses (Target 1).",
+      "source_nodes": [
+        "Deed - Attribution-NonCommercial-ShareAlike 3.0 Unported\n - Creative Commons",
+        "Multiple census methods | Tools for Demographic Estimation"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: Notice This is an older version of this license. Compared to previous versions, the 4.0 versions of all CC licenses are more user-friendly and more internationally robust . If",
+      "judge_max_limit": 340,
+      "answer_a": "The specific online demographic manual from the IUSSP featuring T.A. Moultrie’s chapters “Evaluation and correction of fertility data” and “One census methods” is Demographic Estimation: A Guide to Methods for Populations with Limited Data (2013), the official successor to UN Manual X [1]. This collaborative work with UNFPA focuses on limited and defective data methods, with its online version hosting interactive supplements alongside core chapter content [1]. The exact Creative Commons license applied to the content is CC BY-NC-SA 3.0 [2]. This license explicitly prohibits commercial usage of the manual’s content—any commercial reproduction or distribution requires prior written approval from the IUSSP and UNFPA—and permits derivative works only if they are licensed under the same CC BY-NC-SA 3.0 terms and include proper attribution to the original authors and publishers [2]. The module within this collection dedicated to estimation techniques utilizing data from more than one census is titled “Estimation of population change from two or more censuses” [3]. This module guides users through reconciling discrepancies between multiple census records, adjusting for undercounts, and calculating accurate population growth rates, addressing key challenges in regions with incomplete demographic documentation [3].\n\n## References\n[1] International Union for the Scientific Study of Population (IUSSP). Demographic Estimation: A Guide to Methods for Populations with Limited Data (Online Edition). 2013. https://www.demographicestimation.org/manual (accessed October 26, 2024)\n[2] Demographic Estimation Toolkit Portal. “Copyright and License Information.” https://www.demographicestimation.org/copyright (accessed October 26, 2024)\n[3] International Union for the Scientific Study of Population (IUSSP). “Module: Estimation of population change from two or more censuses” in Demographic Estimation: A Guide to Methods for Populations with Limited Data (Online Edition). 2013. https://www.demographicestimation.org/multi-census-module (accessed October 26, 2024)",
+      "answer_b": "The online demographic manual published by the International Union for the Scientific Study of Population (IUSSP) that includes the chapters \"Evaluation and correction of fertility data\" and \"One census methods\" by T.A. Moultrie is *World Population Assessment: Estimation of Population Totals and Components of Change by Age and Sex* (2013) [1,2].  \n\nThe resource is distributed under a **Creative Commons Attribution-NonCommercial-ShareAlike 3.0 License (CC BY-NC-SA 3.0)**. This license permits non-commercial use and sharing, provided attribution is given, and any derivative works must be shared under identical terms [3].  \n\nWithin the same collection, the module dedicated to estimation techniques utilizing data from more than one census is titled **\"Two or more censuses methods\"** [2].  \n\n## References  \n[1] IUSSP-UNFPA World Population Assessment: Estimation of Population Totals and Components of Change by Age and Sex.  \n[2] Moultrie, T.A. (2013). Evaluation and correction of fertility data. In: Alkema et al. (eds.). *World Population Assessment*. IUSSP/UNFPA.  \n[3] IUSSP-UNFPA Portal: Creative Commons License Information.",
+      "duration_a_seconds": 34.7,
+      "duration_b_seconds": 12.4,
+      "verdict": "A_MUCH_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "DEEP",
+      "judge_reasoning": "Agent A correctly identifies the core entity (the manual) as 'Demographic Estimation' (full title: *Tools for Demographic Estimation*), correctly noting it as the successor to UN Manual X and identifying the correct license. Agent B hallucinates the title of the manual completely ('World Population Assessment'), which constitutes a Deep Logic failure. While Agent A's module title is slightly verbose compared to the ground truth ('Multiple census methods'), it found the correct resource, whereas Agent B did not.",
+      "score_a": 4.0,
+      "score_b": 1.0,
+      "evolution": {
+        "summary": "Mercy rule",
+        "kind": "mercy_rule",
+        "lines": [
+          "[GAME OVER] Mercy Rule Triggered (Diff >= 2.0)!",
+          "============================================================"
+        ]
+      }
+    }
+  ],
+  "summary_id": "tree_0011_seed16_vs_tongyidee_976"
+}

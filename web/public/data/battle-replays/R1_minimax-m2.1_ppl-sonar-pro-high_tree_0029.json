@@ -1,0 +1,95 @@
+{
+  "id": "R1_minimax-m2.1_ppl-sonar-pro-high_tree_0029",
+  "source_group": "onboarding_battles",
+  "source_log": "onboarding_battles/R1_minimax-m2.1_ppl-sonar-pro-high_tree_0029.log",
+  "tree_id": "tree_0029",
+  "tree_title": "Handball",
+  "tree_topic": "Sports > Team Sports",
+  "tree_subtopic": "Handball",
+  "tree_crawled_at": "2025-11-22T00:49:21.808008",
+  "tree_url": "https://en.wikipedia.org/wiki/Handball",
+  "model_a": "minimax-m2.1",
+  "model_b": "ppl-sonar-pro-high",
+  "winner": "ppl-sonar-pro-high",
+  "final_score_a": 0.0,
+  "final_score_b": 2.0,
+  "total_rounds": 1,
+  "type": "onboarding",
+  "tournament_round": 1,
+  "pairing_index": null,
+  "mercy_rule": true,
+  "overall_topic": "Handball",
+  "questions": [
+    "Identify the three Russian men's handball clubs that achieved the following specific historical milestones: (1) The winner of the unique 'Open Championship of the CIS' held during the 1991/92 transitional season; (2) The club that won the inaugural Russian Championship (1992/93) and is currently known by a name shared with a prominent St. Petersburg football team; (3) The Moscow-based club that ended the 21-year championship winning streak of Chekhovskie Medvedi in the 2022/23 season. For each identified club, provide its current name, its home city, and the specific details regarding its naming history or distinction from other historical entities (e.g., rebrandings or separate clubs with the same acronym) as relevant to their identity."
+  ],
+  "round_states": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "verdict": "B_MUCH_BETTER",
+      "failure_type": "BOTH",
+      "score_a": 0.0,
+      "score_b": 2.0,
+      "evolution_kind": "mercy_rule"
+    }
+  ],
+  "final_verdict": "B_MUCH_BETTER",
+  "final_failure_type": "BOTH",
+  "total_tokens": 502030,
+  "estimated_cost": 5.0203,
+  "rounds": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "logic_chain": [
+        "Handball",
+        "Чемпионат России по гандболу среди мужчин — Википедия"
+      ],
+      "question": "Identify the three Russian men's handball clubs that achieved the following specific historical milestones: (1) The winner of the unique 'Open Championship of the CIS' held during the 1991/92 transitional season; (2) The club that won the inaugural Russian Championship (1992/93) and is currently known by a name shared with a prominent St. Petersburg football team; (3) The Moscow-based club that ended the 21-year championship winning streak of Chekhovskie Medvedi in the 2022/23 season. For each identified club, provide its current name, its home city, and the specific details regarding its naming history or distinction from other historical entities (e.g., rebrandings or separate clubs with the same acronym) as relevant to their identity.",
+      "word_limit_instruction": "Answer length: 200-300 words.",
+      "checklist_width": [
+        "Entity 1 (CIS Winner): Identified as SKIF (Krasnodar).",
+        "Entity 1 Detail: Won the 1991/92 Open CIS Championship (transitional tournament).",
+        "Entity 2 (First Russian Winner): Identified as Zenit (St. Petersburg) or Neva.",
+        "Entity 2 Detail: Won the 1992/93 title (as Neva/Stepan Razin-Neva).",
+        "Entity 2 Naming History: Note the rebranding/evolution from 'Neva' (University Lesgafta-Neva) to 'Zenit'.",
+        "Entity 3 (Streak Breaker): Identified as CSKA (Moscow).",
+        "Entity 3 Detail: Won the 2022/23 season, breaking the Chekhovskie Medvedi streak.",
+        "Entity 3 Distinction: Must distinguish between the current CSKA (est. 2017) and the historical CSKA (1969-1998) or CSKA-Sportakadem."
+      ],
+      "checklist_depth": [
+        "Correctly identifies SKIF Krasnodar based on the 'Open CIS' logic.",
+        "Correctly identifies Zenit/Neva based on the 'First Winner' + 'St. Petersburg Football Brand' logic.",
+        "Correctly identifies CSKA (2017) based on the '2022/23 Streak Breaker' logic."
+      ],
+      "rationale": "The question uses deep logic by describing the clubs through their historical achievements (transitional CIS title, inaugural Russian title, streak breaker) rather than naming them directly. It requires wide aggregation by asking for specific details about naming history and distinctions (e.g., Neva->Zenit, Old CSKA vs New CSKA) that are scattered across the history and notes sections of the text.",
+      "source_nodes": [
+        "Чемпионат России по гандболу среди мужчин — Википедия",
+        "Penalty card - Wikipedia"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: Чемпионат России по гандболу среди мужчин Материал из Википедии — свободной энциклопедии Перейти к навигации Перейти к поиску Чемпионат России по гандболу Основан 1992 Регион ",
+      "judge_max_limit": 300,
+      "answer_a": "[{\"id\": \"1\", \"query\": \"Open Championship of the CIS 1991/92 handball winner\"}, {\"id\": \"2\", \"query\": \"inaugural Russian handball championship 1992/93 winner St. Petersburg\"}, {\"id\": \"3\", \"query\": \"Chekhovskie Medvedi 21-year streak ended 2022/23 Moscow handball club\"}, {\"id\": \"4\", \"query\": \"Russian men's handball championship history winners 1990s\"}, {\"id\": \"5\", \"query\": \"St. Petersburg handball club name Zenit football team\"}]",
+      "answer_b": "(1) **SKIF Krasnodar** won the unique Open Championship of the CIS in the 1991/92 transitional season. Current name: **Krasnodar**. Home city: **Krasnodar**. It transitioned from the Soviet-era club and competed in early post-Soviet European tournaments, distinct from other SKIF entities[2].\n\n(2) **Neva St. Petersburg** won the inaugural Russian Championship in 1992/93. Current name: **Neva**. Home city: **St. Petersburg**. Previously known as **CIS** during the CIS championship era, it shares its name with the prominent football club **FC Neva St. Petersburg** (formerly Petrotrest); no rebrandings confuse it with other entities.\n\n(3) **Dinamo Moscow** ended Chekhovskie Medvedi's 21-year streak by winning the 2022/23 Russian Championship. Current name: **Dinamo Volokolamsk** (often referred to as Dinamo Moscow). Home city: **Moscow** (plays at Dinamo arena). Distinct from the Soviet-era **Dinamo Moscow** handball club, which disbanded; this is a separate entity relocated from Zvenigorod/Volokolamsk, using the historic Dinamo Moscow branding without direct lineage[7].\n\nThese clubs represent key transitions from Soviet to Russian handball dominance, with SKIF bridging CIS, Neva launching the Russian era, and Dinamo snapping the longest streak.\n\n(Word count: 248)\n\n## References\n[1] LA Times - Russia Handball (irrelevant to clubs).  \n[2] Wikipedia - 1991–92 European Cup (SKIF Krasnodar context).  \n[6] Wikipedia - Soviet Men's Handball Championship (transitional era).  \n[7] Maryevans - Russian Men's Championship (Dinamo, Kaustik, Polet).",
+      "duration_a_seconds": 7.7,
+      "duration_b_seconds": 5.2,
+      "verdict": "B_MUCH_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "BOTH",
+      "judge_reasoning": "Agent A failed completely to provide a natural language response, outputting only raw JSON search queries (likely a system error or intermediate step). This offers zero utility to the user. Agent B provided a structured, readable response. While Agent B has significant accuracy issues—specifically failing to identify the rebranding of Neva to 'Zenit' (Entity 2) and incorrectly identifying 'Dinamo Moscow' instead of 'CSKA' as the streak breaker (Entity 3)—it correctly identified the first entity (SKIF) and adhered to the formatting constraints. In a comparison between a hallucinated/flawed response and a raw code dump, the structured response provides a better user experience.",
+      "score_a": 0.0,
+      "score_b": 2.0,
+      "evolution": {
+        "summary": "Mercy rule",
+        "kind": "mercy_rule",
+        "lines": [
+          "[GAME OVER] Mercy Rule Triggered (Diff >= 2.0)!",
+          "============================================================"
+        ]
+      }
+    }
+  ],
+  "summary_id": "tree_0029_minimaxm2_vs_pplsonar_799"
+}

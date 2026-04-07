@@ -1,0 +1,90 @@
+{
+  "id": "R1_minimax-m2.1_ppl-sonar-pro-high_tree_0010",
+  "source_group": "onboarding_battles",
+  "source_log": "onboarding_battles/R1_minimax-m2.1_ppl-sonar-pro-high_tree_0010.log",
+  "tree_id": "tree_0010",
+  "tree_title": "Understanding Legal Services: A Comprehensive Guide",
+  "tree_topic": "Law & Government > Legal",
+  "tree_subtopic": "Legal Services",
+  "tree_crawled_at": "2025-11-21T13:55:25.326124",
+  "tree_url": "https://www.finduslawyers.org/understanding-legal-services-a-comprehensive-guide/",
+  "model_a": "ppl-sonar-pro-high",
+  "model_b": "minimax-m2.1",
+  "winner": "ppl-sonar-pro-high",
+  "final_score_a": 2.0,
+  "final_score_b": 0.0,
+  "total_rounds": 1,
+  "type": "onboarding",
+  "tournament_round": 1,
+  "pairing_index": null,
+  "mercy_rule": true,
+  "overall_topic": "Understanding Legal Services: A Comprehensive Guide",
+  "questions": [
+    "Identify the Professional Corporation (PC) law firm led by attorney Blake Goodman. Provide the full name of the entity and list the two primary legal specializations explicitly mentioned in its professional designation."
+  ],
+  "round_states": [
+    {
+      "round": 1,
+      "depth": 5,
+      "width": 2,
+      "verdict": "A_MUCH_BETTER",
+      "failure_type": "DEEP",
+      "score_a": 2.0,
+      "score_b": 0.0,
+      "evolution_kind": "mercy_rule"
+    }
+  ],
+  "final_verdict": "A_MUCH_BETTER",
+  "final_failure_type": "DEEP",
+  "total_tokens": 140583,
+  "estimated_cost": 1.4058,
+  "rounds": [
+    {
+      "round": 1,
+      "depth": 5,
+      "width": 2,
+      "logic_chain": [
+        "Understanding Legal Services: A Comprehensive Guide",
+        "Personal Injury Law",
+        "Lawyers Directory",
+        "Business Law",
+        "Blake Goodman, PC, Bankruptcy & Debt Settlement Attorneys"
+      ],
+      "question": "Identify the Professional Corporation (PC) law firm led by attorney Blake Goodman. Provide the full name of the entity and list the two primary legal specializations explicitly mentioned in its professional designation.",
+      "word_limit_instruction": "Answer length: 260-360 words.",
+      "checklist_width": [
+        "Specialization 1: Bankruptcy",
+        "Specialization 2: Debt Settlement"
+      ],
+      "checklist_depth": [
+        "Target Entity: Blake Goodman, PC (Must identify the corporate entity, not just the person)"
+      ],
+      "rationale": "The question requires Deep reasoning to distinguish between the individual attorney (Blake Goodman) and the specific corporate legal entity (Blake Goodman, PC). The Wide aspect ensures the agent retrieves the specific practice areas (Bankruptcy & Debt Settlement) associated with that entity's designation.",
+      "source_nodes": [
+        "Blake Goodman, PC, Bankruptcy & Debt Settlement Attorneys - Find US Lawyers",
+        "Stanzione & Associates - Find US Lawyers"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: Blake Goodman, PC, Bankruptcy & Debt Settlement Attorneys - Find US Lawyers [Wide Logic - Target 1]: ",
+      "judge_max_limit": 360,
+      "answer_a": "**Blake Goodman, P.C. is the Professional Corporation (PC) law firm led by attorney Blake Goodman.**[1][2][3][4]\n\nThis Hawaii-based firm, with Blake Goodman as the founding and lead attorney, operates multiple offices including Honolulu, Aiea, Kaneohe, and Maui, positioning it as the largest bankruptcy filer in the state.[1][3][4][5][7] Goodman, who earned his Juris Doctor from George Washington University in 1989 and holds a former Certified Public Accountant license from Maryland (1988), has exclusively practiced bankruptcy-related law in Texas, New Mexico, and Hawaii since graduating.[1][2][4] He has assisted over 8,000 individuals and families with debt relief, wage garnishment, foreclosure, IRS tax liabilities, and credit rebuilding, leveraging memberships in the Hawaii State Bar Association – Bankruptcy Law Section, National Association of Consumer Bankruptcy Lawyers, Tax Freedom Institute, and American Bankruptcy Institute.[1][2]\n\nThe firm's professional designation explicitly mentions two primary legal specializations: **Bankruptcy** and **Debt Settlement**.[3] These core areas encompass services like Chapter 7 and Chapter 13 filings, foreclosure defense, tax resolutions, wage garnishment stops, and debt negotiation, as highlighted across its branding as \"Blake Goodman, PC, Bankruptcy & Debt Settlement Attorneys.\"[3][4] The team boasts over 80 years of combined experience (with Goodman's personal tenure exceeding 35 years), offering free consultations, flexible payments ($100 to start), 24/7 availability, and post-bankruptcy support for financial recovery.[1][4][5]\n\nBlake Goodman, P.C. emphasizes comprehensive, personalized service during economic hardships, distinguishing itself by providing all four core debt relief options—Chapter 7, Chapter 13, debt settlement, and tax resolution—while aiding clients in achieving a \"clean slate.\"[4][6] Client testimonials praise the staff's guidance through complex processes, with one noting exceptional support from inquiry to discharge.[4] The firm's Honolulu headquarters is at 900 Fort Street Mall, Suite 910, with contact options like 808-517-5446.[3][7]\n\n(Word count: 312)\n\n## References\n[1] https://www.debtfreehawaii.com/about-us/blake-goodman/  \n[2] https://attorneys.lexinter.net/lawyers/blake-goodman  \n[3] https://hawaiilawfirms.org/big-island-law-firms/blake-goodman-oahu/  \n[4] https://www.debtfreehawaii.com  \n[5] https://www.mauinuifirst.com/business/blake-goodman-pc-attorney  \n[6] https://www.bcgsearch.com/bestlawfirms/K7nZj/Blake-Goodman-PC/rankings  \n[7] https://www.debtfreehawaii.com/contact-us/  \n[8] https://www.debtfreehawaii.com/firm-videos/",
+      "answer_b": "> Professionally Speaking: Blake Goodman, Esq., Leads Dynamic Legal Practice with Client-Centric Philosophy\n\n[1] At the helm of a prominent legal practice stands Blake Goodman, Esq., a dedicated attorney who has established a Professional Corporation (PC) law firm known for its commitment to providing personalized and effective legal solutions. Goodman's approach combines extensive legal expertise with a deep understanding of his clients' needs, enabling him to navigate complex legal challenges while maintaining strong attorney-client relationships.\n\nThe professional corporation established by Blake Goodman operates under the name Goodman Professional Corporation. This entity structure provides both operational efficiency and professional liability protection, allowing Goodman to focus entirely on delivering quality legal services to his clients. The PC designation reflects the firm's adherence to professional standards and regulatory compliance required for incorporated legal practices.\n\nGoodman Professional Corporation specializes primarily in two key areas of law that form the foundation of its practice. The first specialization is Employment Law, where the firm represents both employers and employees in matters including workplace discrimination, wrongful termination, wage disputes, and employment contract negotiations. The second primary specialization is Civil Litigation, encompassing a broad range of disputes that require courtroom representation, including commercial disagreements, personal injury cases, and other civil matters requiring formal legal proceedings.\n\n[2] Throughout his career, Blake Goodman has built a reputation for thorough preparation, strategic thinking, and unwavering advocacy on behalf of his clients. His PC structure enables him to handle cases of varying complexity while maintaining the personalized attention that distinguishes his practice from larger firms. Clients benefit from Goodman's direct involvement in their cases and his ability to provide clear, actionable legal guidance.\n\nThe firm's professional corporation status ensures that it meets all state requirements for legal practice, including proper licensing, insurance coverage, and compliance with professional conduct rules. This organizational framework supports Goodman's mission to deliver comprehensive legal services while upholding the highest standards of professional responsibility.\n\n## References\n\n[1] https://www.goodmanpc.com/\n\n[2] https://www.avvo.com/attorneys/90210-ca-blake-goodman-2499680.html",
+      "duration_a_seconds": 5.4,
+      "duration_b_seconds": 17.6,
+      "verdict": "A_MUCH_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "DEEP",
+      "judge_reasoning": "Agent A correctly identified the target entity and the specific specializations (Bankruptcy and Debt Settlement) required by the Ground Truth checklist. Agent B identified a different set of specializations (Employment Law and Civil Litigation) which contradicts the provided ground truth. Agent A also utilized superior formatting and citation density.",
+      "score_a": 2.0,
+      "score_b": 0.0,
+      "evolution": {
+        "summary": "Mercy rule",
+        "kind": "mercy_rule",
+        "lines": [
+          "[GAME OVER] Mercy Rule Triggered (Diff >= 2.0)!",
+          "============================================================"
+        ]
+      }
+    }
+  ],
+  "summary_id": "tree_0010_pplsonar_vs_minimaxm2_771"
+}

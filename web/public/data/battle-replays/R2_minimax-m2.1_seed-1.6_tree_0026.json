@@ -1,0 +1,90 @@
+{
+  "id": "R2_minimax-m2.1_seed-1.6_tree_0026",
+  "source_group": "onboarding_battles",
+  "source_log": "onboarding_battles/R2_minimax-m2.1_seed-1.6_tree_0026.log",
+  "tree_id": "tree_0026",
+  "tree_title": "Healthcare Professionals",
+  "tree_topic": "Health > Public Health",
+  "tree_subtopic": "Poisons & Overdoses",
+  "tree_crawled_at": "2025-11-21T16:33:08.262133",
+  "tree_url": "https://calpoison.org/pros",
+  "model_a": "minimax-m2.1",
+  "model_b": "seed-1.6",
+  "winner": "minimax-m2.1",
+  "final_score_a": 2.0,
+  "final_score_b": 0.0,
+  "total_rounds": 1,
+  "type": "onboarding",
+  "tournament_round": 2,
+  "pairing_index": null,
+  "mercy_rule": true,
+  "overall_topic": "Healthcare Professionals",
+  "questions": [
+    "Identify the two healthcare professionals currently serving as the Executive Director and the Managing Director of the California Poison Control System (CPCS). For each individual, provide their full name, their professional post-graduate degree (e.g., MD, PharmD), and their specific academic title/rank within the UCSF School of Pharmacy."
+  ],
+  "round_states": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "verdict": "A_MUCH_BETTER",
+      "failure_type": "DEEP",
+      "score_a": 2.0,
+      "score_b": 0.0,
+      "evolution_kind": "mercy_rule"
+    }
+  ],
+  "final_verdict": "A_MUCH_BETTER",
+  "final_failure_type": "DEEP",
+  "total_tokens": 1065412,
+  "estimated_cost": 10.6541,
+  "rounds": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "logic_chain": [
+        "Healthcare Professionals",
+        "Amazon.com: Poisoning and Drug Overdose, Eighth Edition eBook : Anderson, Ilene B., Benowitz, Neal L., Blanc, Paul D., Kim-Katz, Susan Y., Lewis, Justin C., Wu, Alan H. B., Olson, Kent R., Smollin, Craig: Kindle Store"
+      ],
+      "question": "Identify the two healthcare professionals currently serving as the Executive Director and the Managing Director of the California Poison Control System (CPCS). For each individual, provide their full name, their professional post-graduate degree (e.g., MD, PharmD), and their specific academic title/rank within the UCSF School of Pharmacy.",
+      "word_limit_instruction": "Answer length: 200-300 words.",
+      "checklist_width": [
+        "Executive Director's Degree (Pharm.D.)",
+        "Executive Director's Academic Title (e.g., Clinical Professor)",
+        "Managing Director's Degree (Pharm.D.)",
+        "Managing Director's Academic Title (e.g., Health Sciences Clinical Professor)"
+      ],
+      "checklist_depth": [
+        "Identify Stuart Heard as the Executive Director",
+        "Identify Raymond Ho as the Managing Director"
+      ],
+      "rationale": "The question uses 'Deep' logic by masking the entities behind their specific job titles (Executive Director, Managing Director) within a specific organization (CPCS), requiring the agent to deduce who holds these roles. It uses 'Wide' logic by requesting multiple disparate facts (degrees, academic titles) that often require cross-referencing organizational charts with academic faculty profiles.",
+      "source_nodes": [
+        "Amazon.com: Poisoning and Drug Overdose, Eighth Edition eBook : Anderson, Ilene B., Benowitz, Neal L., Blanc, Paul D., Kim-Katz, Susan Y., Lewis, Justin C., Wu, Alan H. B., Olson, Kent R., Smollin, Craig: Kindle Store",
+        "Who We Serve | California Poison Control System"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]:  [Wide Logic - Target 1]: ",
+      "judge_max_limit": 300,
+      "answer_a": "The California Poison Control System (CPCS) is led by two healthcare professionals who serve as Executive Director and Managing Director. Based on current information:\n\n**Executive Director:** Dr. Stuart E. Heard serves as the Executive Director of CPCS. He holds an PharmD (Doctor of Pharmacy) degree and holds the academic rank of Clinical Professor within the UCSF School of Pharmacy's Department of Clinical Pharmacy. Dr. Heard has been extensively involved in poison control activities and has contributed significantly to clinical toxicology education and practice.\n\n**Managing Director:** Dr. F. Lee Cantrell serves as the Managing Director of CPCS. He holds an PharmD (Doctor of Pharmacy) degree and holds the academic title of Professor within the UCSF School of Pharmacy. Dr. Cantrell is a recognized expert in clinical toxicology and has been instrumental in the operations and management of poison control services throughout California.\n\nBoth professionals have been key figures in California's poison control system, contributing to clinical services, education, and research in toxicology. Their dual leadership combines pharmacy expertise with administrative oversight to ensure effective poison prevention and treatment guidance across the state.\n\n## References\n\n[1] California Poison Control System - UCSF. \"Leadership and Staff.\" https://calpoison.org/about-us/leadership-and-staff\n\n[2] UCSF School of Pharmacy - Faculty Directory. \"Stuart Heard, PharmD.\" https://pharmacy.ucsf.edu/faculty/1176\n\n[3] UCSF School of Pharmacy - Faculty Directory. \"F. Lee Cantrell, PharmD.\" https://pharmacy.ucsf.edu/faculty/1165",
+      "answer_b": "The current Executive Director of the California Poison Control System (CPCS) is Diane Calello, MD [1]. Within the UCSF School of Pharmacy, she holds the academic title of Clinical Professor in the Department of Clinical Pharmacy [1]. A board-certified medical toxicologist with over 25 years of poison control experience, Calello guides CPCS’s statewide patient care protocols, public education campaigns targeting childhood poisonings and prescription drug misuse, and research into emerging toxicological threats like synthetic drug exposures and pesticide-related illnesses [1]. The current Managing Director of CPCS is Karen Simmering, PharmD [2]. Her academic title at the UCSF School of Pharmacy is Adjunct Professor in the same Department of Clinical Pharmacy [2]. With a 30-year career in pharmaceutical practice and health administration, Simmering oversees CPCS’s daily operational and administrative functions—including staffing, budget management, interagency collaborations with state health departments, and technology upgrades for call center efficiency—and mentors UCSF pharmacy students through hands-on training in poison control logistics and patient counseling [2]. Their combined leadership ties CPCS’s frontline service delivery to UCSF’s academic mission, fostering research translations and workforce development for future toxicology and pharmacy professionals.\n\n## References\n[1] UCSF School of Pharmacy, “California Poison Control System Leadership Roster 2024,” https://pharmacy.ucsf.edu/cpcs/leadership, accessed October 12, 2024.\n[2] California Poison Control System, “Executive & Administrative Leadership,” https://calpoison.org/leadership, accessed October 12, 2024.",
+      "duration_a_seconds": 5.8,
+      "duration_b_seconds": 36.8,
+      "verdict": "A_MUCH_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "DEEP",
+      "judge_reasoning": "Agent A correctly identified the Executive Director (Stuart Heard) and provided accurate details regarding his degree and academic title, aligning with the ground truth. While Agent A identified a Division Director (F. Lee Cantrell) instead of the System Managing Director (Raymond Ho), it remained within the correct organization. Agent B, conversely, hallucinated completely, naming the director of the New Jersey Poison Control Center (Diane Calello) as the leader for California. Agent A also utilized superior formatting with clear headers, whereas Agent B provided a dense wall of text.",
+      "score_a": 2.0,
+      "score_b": 0.0,
+      "evolution": {
+        "summary": "Mercy rule",
+        "kind": "mercy_rule",
+        "lines": [
+          "[GAME OVER] Mercy Rule Triggered (Diff >= 2.0)!",
+          "============================================================"
+        ]
+      }
+    }
+  ],
+  "summary_id": "tree_0026_minimaxm2_vs_seed16_847"
+}

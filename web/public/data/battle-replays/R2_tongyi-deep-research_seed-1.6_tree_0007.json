@@ -1,0 +1,279 @@
+{
+  "id": "R2_tongyi-deep-research_seed-1.6_tree_0007",
+  "source_group": "onboarding_battles",
+  "source_log": "onboarding_battles/R2_tongyi-deep-research_seed-1.6_tree_0007.log",
+  "tree_id": "tree_0007",
+  "tree_title": "Mastering the 7 Stages of Film Production",
+  "tree_topic": "Arts & Entertainment > Entertainment Industry > Film & TV Industry",
+  "tree_subtopic": "Film & TV Production",
+  "tree_crawled_at": "2025-11-21T13:49:46.489230",
+  "tree_url": "https://www.nyfa.edu/student-resources/7-stages-film-production/",
+  "model_a": "seed-1.6",
+  "model_b": "tongyi-deep-research",
+  "winner": "seed-1.6",
+  "final_score_a": 3.0,
+  "final_score_b": 1.0,
+  "total_rounds": 4,
+  "type": "onboarding",
+  "tournament_round": 2,
+  "pairing_index": null,
+  "mercy_rule": true,
+  "overall_topic": "Mastering the 7 Stages of Film Production",
+  "questions": [
+    "Utilizing the New York Film Academy's (NYFA) educational framework regarding the stages of film production, identify the specific Online Master of Arts degree designed for the 'entrepreneurial' role managing the business, financing, and marketing stages, and the specific series of '15-Week Online Workshops' designed for the discipline responsible for the 'basic building blocks of the visual story' (the development stage). \n\nFor the identified MA degree, report the tuition cost per semester and the comprehensive list of real-world projects and plans students must complete for their portfolio. \n\nFor the screenwriting discipline, list the titles of all six '15-Week' online workshops available and detail the exact prerequisites required to enroll in the 'Online Screenplay Workshop' and the 'Online Television Pilot Workshop'.",
+    "Analyze the seven distinct stages of the film production lifecycle. For each stage, provide the specific operational details as follows: 1) Development: Identify the visual aids drafted to accompany the script. 2) Financing: Name the two primary U.S. cities for producer networking. 3) Pre-production: Describe the evolution of the shooting schedule. 4) Production: Contrast the primary responsibilities of the Director versus the Assistant Director. 5) Post-production: Define the milestone known as 'picture lock'. 6) Marketing: Explain the responsibility shift for small productions versus major companies. 7) Distribution: Identify the modern format that has superseded physical copies like DVD and Blu-Ray.",
+    "Identify the educational institution that published the guide 'Mastering the 7 Stages of Film Production,' in which the 'Development' stage is explicitly characterized as the period where a producer drafts a first synopsis to 'sell the idea and raise funds' and creates visual aids to 'communicate the essence of the film.' \n\nOnce this institution is identified, consult their specific listings for 'Online Workshops' to extract the following curriculum details:\n1.  **Production Management:** For the 2-Day Online Line Producing Workshop, identify the two specific industry-standard software programs students are taught to use.\n2.  **Visual Storytelling:** For the 15-Week Online Writing For Comic Books Workshop, list the two distinct components that make up the final project proposal.\n3.  **Television Writing:** For the 4-Week Online Screenwriting – Television Pilot Workshop, list the three specific written documents students must complete by the end of the program.",
+    "Identify the educational institution that offers an 'Online MA in Entrepreneurial Producing' and specifically teaches 'Movie Magic Scheduling and Budgeting' software within its 15-Week Online Producing Workshop. Once this institution is located, consult its official 'Digital Web and Mobile Privacy Statement' to answer the following: Under what specific condition is Personally Identifiable Information (PII) collected from website visitors? What is the institution's explicit policy regarding the sale or renting of PII to third parties? Finally, what specific technologies does the institution and its vendors use to facilitate 'Interest-Based Advertising'?"
+  ],
+  "round_states": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "verdict": "Tie",
+      "failure_type": "BOTH",
+      "score_a": 0.0,
+      "score_b": 0.0,
+      "evolution_kind": "backtrack"
+    },
+    {
+      "round": 2,
+      "depth": 1,
+      "width": 2,
+      "verdict": "B_BETTER",
+      "failure_type": "NONE",
+      "score_a": 0.0,
+      "score_b": 1.0,
+      "evolution_kind": "pressure_test"
+    },
+    {
+      "round": 3,
+      "depth": 2,
+      "width": 3,
+      "verdict": "A_BETTER",
+      "failure_type": "DEEP",
+      "score_a": 1.0,
+      "score_b": 1.0,
+      "evolution_kind": "drill_down"
+    },
+    {
+      "round": 4,
+      "depth": 3,
+      "width": 3,
+      "verdict": "A_MUCH_BETTER",
+      "failure_type": "DEEP",
+      "score_a": 3.0,
+      "score_b": 1.0,
+      "evolution_kind": "mercy_rule"
+    }
+  ],
+  "final_verdict": "A_MUCH_BETTER",
+  "final_failure_type": "DEEP",
+  "total_tokens": 1235042,
+  "estimated_cost": 12.3504,
+  "rounds": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "logic_chain": [
+        "Mastering the 7 Stages of Film Production",
+        "Online MA in Entrepreneurial Producing and Innovation"
+      ],
+      "question": "Utilizing the New York Film Academy's (NYFA) educational framework regarding the stages of film production, identify the specific Online Master of Arts degree designed for the 'entrepreneurial' role managing the business, financing, and marketing stages, and the specific series of '15-Week Online Workshops' designed for the discipline responsible for the 'basic building blocks of the visual story' (the development stage). \n\nFor the identified MA degree, report the tuition cost per semester and the comprehensive list of real-world projects and plans students must complete for their portfolio. \n\nFor the screenwriting discipline, list the titles of all six '15-Week' online workshops available and detail the exact prerequisites required to enroll in the 'Online Screenplay Workshop' and the 'Online Television Pilot Workshop'.",
+      "word_limit_instruction": "Answer length: 200-300 words.",
+      "checklist_width": [
+        "MA Tuition: $10,000 Per Semester",
+        "MA Projects: Short film, new media projects, single project finance plans, marketing and distribution plans, episodic television series bibles, pitch decks, start-up company business plans, websites",
+        "Workshop Titles: Screenplay Story & Structure, Screenplay Workshop, Writing for TV Spec, Television Pilot Workshop, Screenplay & Television Rewrite, Writing For Comic Books (all 15-Week)",
+        "Prerequisite for Screenplay Workshop: Complete Story & Structure Workshop OR submit full-length treatment and beat sheet",
+        "Prerequisite for TV Pilot Workshop: Complete TV Spec Workshop OR submit formatted TV script"
+      ],
+      "checklist_depth": [
+        "Target Entity 1: Online MA in Entrepreneurial Producing and Innovation (Matches executive/business/financing logic)",
+        "Target Entity 2: 15-Week Online Screenwriting Workshops (Matches development/visual story building blocks logic)"
+      ],
+      "rationale": "The question requires Deep reasoning to differntiate between the 'Producing' track (business/executive stages) and the 'Screenwriting' track (development/story stage) based on the roles described in the background text. It then requires Wide aggregation to pull specific financial data and project lists for the MA program, while simultaneously retrieving a specific list of course titles and conditional prerequisites for the workshops, which are located in different sections of the source material.",
+      "source_nodes": [
+        "Online MA in Entrepreneurial Producing and Innovation | Producing School | NYFA",
+        "Screenwriting School | Degrees, Programs, & Workshops | NYFA"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: NYFA Program Finder Online MA in Entrepreneurial Producing and Innovation Online MA in Entrepreneurial Producing and Innovation Study International Entrepreneurial Producing a",
+      "judge_max_limit": 300,
+      "answer_a": "The New York Film Academy’s entrepreneurial MA degree tailored to managing film production’s business, financing, and marketing stages (aligned with its official production framework) is the Online MA in Film, Media, and Entertainment Management[1]. Its 2024 per-semester tuition is $14,775[1]. Mandatory portfolio projects and plans students must complete include a detailed feature film finance plan (with risk assessment and funding stream mapping), a scalable media startup business plan (with market analysis and competitive benchmarking), a targeted marketing campaign for an independent film (with distribution outreach tactics and social media strategies), a comprehensive talent management strategy (for emerging creators and crew), and a polished distribution pitch deck (for studio stakeholders or streaming platforms)[1]. For the development stage’s “basic building blocks of the visual story” discipline (screenwriting), the six 15-Week Online Workshops are: Online Screenplay Workshop, Online Television Pilot Workshop, Online Short Screenplay Workshop, Online Adaptation Workshop, Online Genre Screenwriting Workshop, Online Story Development Workshop[2]. Online Screenplay Workshop prerequisites require demonstrated basic understanding of three-act story structure[2]. Online Television Pilot Workshop prerequisites include completion of the Online Screenplay Workshop (or an equivalent 3-credit college-level screenwriting course) and submission of a 10-page original script sample for faculty evaluation[2].\n\n## References\n[1] New York Film Academy. \"Online MA in Film, Media, and Entertainment Management.\" 2024. https://www.nyfa.edu/online/masters/film-media-entertainment-management/\n[2] New York Film Academy. \"15-Week Online Screenwriting Workshops.\" 2024. https://www.nyfa.edu/online/workshops/screenwriting/",
+      "answer_b": "## Answer\n\n**Identified Programs:**  \n- Entrepreneurial MA: **Online Master of Arts in Media & Entertainment Business** ([80]).  \n- Screenwriting Workshops: Six distinct 15-Week Online Workshops focusing on development-stage disciplines:  \n  1. Online Screenplay Workshop  \n  2. Online First-Pass Coverage Workshop  \n  3. Online Television Pilot Workshop  \n  4. Online Web Series Workshop  \n  5. Online Feature Film Development Workshop  \n  6. Online Documentary Pitch Workshop  \n\n**Online MA in Media & Entertainment Business Details:**  \n- **Tuition Cost:** $5,000 per semester (as per NYFA's current pricing) [1].  \n- **Portfolio Requirements:** Students must submit five comprehensive projects/plans:  \n  1. Business Plan Proposal  \n  2. Project Financing Model  \n  3. Marketing Campaign Strategy  \n  4. Distribution Roadmap  \n  5. Investor Pitch Deck ([81]).  \n\n**Screenwriting Workshops – Prerequisites:**  \n- **Online Screenplay Workshop:** Requires completion of “First-Pass Coverage Workshop” OR submission of a short logline plus cold opening of a screenplay.  \n- **Online Television Pilot Workshop:** Requires prior completion of the “Online Screenplay Workshop” OR submission of a full pilot script (10 pages) for evaluation.  \n\n## References  \n[1] NYFA Online MA in Media & Entertainment Business Tuition ($5K/semester) – NYFA Academic Catalog 2024, Section 4.  \n[80] NYFA Program Framework – “Entrepreneurial” Track Page, NYFA.edu.  \n[81] NYFA Porterfolio Project List – MA Business Plan Requirements, NYFA.edu/MA-Business-Portfolio.",
+      "duration_a_seconds": 35.9,
+      "duration_b_seconds": 17.8,
+      "verdict": "Tie",
+      "tie_quality": "LOW",
+      "failure_type": "BOTH",
+      "judge_reasoning": "Both agents failed significantly on the Core Entity and Sub-Point Accuracy checks based on the provided Ground Truth. \n\n1. **Deep Logic Failure**: The Ground Truth identifies the target degree as the \"Online MA in Entrepreneurial Producing and Innovation.\" Agent A identified it as \"Online MA in Film, Media, and Entertainment Management,\" and Agent B identified it as \"Online Master of Arts in Media & Entertainment Business.\" Both are hallucinations/incorrect entities.\n\n2. **Wide Detail Failure**: \n- **Tuition**: Ground Truth lists $10,000/semester. Agent A stated $14,775, and Agent B stated $5,000.\n- **Workshops**: Neither agent correctly listed the six specific 15-Week Online Workshops found in the Ground Truth (e.g., \"Screenplay Story & Structure,\" \"Writing for TV Spec\"). Both agents invented titles (e.g., Agent B's \"First-Pass Coverage Workshop\" or Agent A's \"Online Genre Screenwriting Workshop\").\n- **Prerequisites**: Both agents provided incorrect prerequisites for the requested workshops compared to the Ground Truth.\n\nWhile Agent B offered superior formatting and readability, the foundational failure to retrieve accurate information by both models necessitates a Low Quality Tie.",
+      "score_a": 0.0,
+      "score_b": 0.0,
+      "evolution": {
+        "summary": "Backtrack",
+        "kind": "backtrack",
+        "lines": [
+          "[EVOLUTION] Determining Next Step...",
+          "-> TIE (Both Bad): BACKTRACKING.",
+          ">>> [BACKTRACK] Moving up to Parent Node <<<",
+          "============================================================"
+        ]
+      }
+    },
+    {
+      "round": 2,
+      "depth": 1,
+      "width": 2,
+      "logic_chain": [
+        "Mastering the 7 Stages of Film Production"
+      ],
+      "question": "Analyze the seven distinct stages of the film production lifecycle. For each stage, provide the specific operational details as follows: 1) Development: Identify the visual aids drafted to accompany the script. 2) Financing: Name the two primary U.S. cities for producer networking. 3) Pre-production: Describe the evolution of the shooting schedule. 4) Production: Contrast the primary responsibilities of the Director versus the Assistant Director. 5) Post-production: Define the milestone known as 'picture lock'. 6) Marketing: Explain the responsibility shift for small productions versus major companies. 7) Distribution: Identify the modern format that has superseded physical copies like DVD and Blu-Ray.",
+      "word_limit_instruction": "Answer length: 180-280 words.",
+      "checklist_width": [
+        "Development: Storyboards (or visual aids) accompany the script.",
+        "Financing: Los Angeles and New York.",
+        "Pre-production: The schedule starts broad and gets more specific.",
+        "Production: Director manages creative aspects; Assistant Director (AD) manages the schedule/coordination.",
+        "Post-production: Picture lock is the film's final edit.",
+        "Marketing: Small production creatives often manage it themselves ('wear the hat') or outsource; Major companies release teasers early.",
+        "Distribution: Streaming is described as 'king' (superseding physical copies)."
+      ],
+      "checklist_depth": [
+        "Correctly identifies the 7 stages: Development, Financing, Pre-production, Production, Post-production, Marketing, Distribution.",
+        "Validates the logical progression from idea gathering (Development) to audience viewing (Distribution)."
+      ],
+      "rationale": "The question uses the logical structure of the '7 stages' to force the agent to traverse the entire lifecycle (Deep) and aggregate specific, scattered facts from each phase (Wide). It requires distinguishing between roles (Director vs AD) and retrieving granular facts (cities, specific terms like 'picture lock') grounded in the source text.",
+      "source_nodes": [
+        "Mastering the 7 Stages of Film Production"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: NYFA Producing How To's Mastering the 7 Stages of Film Production December 12, 2023 The stages of film production involve a meticulous progression, starting with pre-productio",
+      "judge_max_limit": 280,
+      "answer_a": "Development’s visual aids include storyboards (paneled key-scene drawings) and mood boards (tone-setting image/sound collages) [1]. Financing’s primary U.S. producer networking cities are Los Angeles and New York City [2]. Pre-production’s shooting schedule evolves from a rough day-by-day outline to a granular breakdown—incorporating scene order, location specifics, cast/crew requirements—after location scouting, cast locking, and cross-departmental consultations [3]. Production’s Director leads creative vision (scene composition, actor performances) whereas the Assistant Director manages on-set logistics (schedule adherence, crew coordination, safety checks) [4]. Post-production’s picture lock is the milestone where the film’s edit is finalized, with no further visual changes permitted before sound/music integration [5]. Marketing sees small productions shift responsibility to core crew (self-promotion via social media/film festivals) while major companies delegate to specialized in-house teams (large-scale ads, red-carpet premieres) [6]. This structured progression ensures each phase’s operational goals align, with checks to prevent delays, while distribution’s streaming formats (e.g., Netflix, Disney+) have fully superseded physical DVDs and Blu-Rays as the dominant modern delivery method [7].\n\n## References\n[1] Film Independent, \"Guide to Film Development Stages,\" https://www.filmindependent.org, 2024.\n[2] The Black List, \"Producer Networking Hubs in the U.S.,\" https://www.blcklst.com, 2024.\n[3] Production Hub, \"Crafting a Shooting Schedule for Pre-Production,\" https://www.productionhub.com, 2024.\n[4] SAG-AFTRA, \"On-Set Roles: Director vs. Assistant Director,\" https://www.sagaftra.org, 2024.\n[5] American Cinema Editors, \"Post-Production Milestones Explained,\" https://www.aceeditors.org, 2024.\n[6] IndieWire, \"Marketing Strategies for Small vs. Major Film Productions,\" https://www.indiewire.com, 2024.\n[7] Motion Picture Association, \"The Rise of Streaming in Film Distribution,\" https://www.mpa.org, 2024.",
+      "answer_b": "**Direct Answer Body:**  \n1.  **Development:** Visual aids include detailed **storyboards** (sequential illustrations depicting key shots and compositions) and sometimes **animatics** (animated storyboards), alongside **shot lists** tracking required footage. [3]  \n2.  **Financing:** Producers primarily network in **Los Angeles** and **New York City** to secure funding and key hires. [1, 2]  \n3.  **Pre-production:** The shooting schedule evolves from an initial **rough draft** (based on script breakdowns and location availability) into a **finalized plan** balancing narrative flow, logistical constraints, and budget limitations. [3, 4]  \n4.  **Production:** The **Director** focuses on creative vision, actor performances, and shot composition. The **Assistant Director (AD)** manages the physical execution: scheduling, set discipline, crew coordination, and ensuring the shoot stays on schedule. [1, 4]  \n5.  **Post-production:** **Picture lock** is the milestone when editing is finalized; no further changes to the film's picture or sound edit are permitted, enabling complex visual effects and color grading. [2, 4]  \n6.  **Marketing:** Small productions often handle marketing themselves or use low-budget guerrilla tactics, while major studios deploy dedicated, large-scale teams executing extensive, budget-intensive campaigns. [1, 5]  \n7.  **Distribution:** **Streaming (VOD)** has superseded physical copies like DVD and Blu-Ray as the dominant distribution format. [3, 4]  \n\n## References  \n[1] https://www.profilio.com/the-process-of-filmmaking-an-overview/  \n[2] https://www.studiobinder.com/blog/major-stages-of-filmmaking/  \n[3] https://moveablefest.com/the-7-stages-of-film-production/  \n[4] https://www.nyfa.edu/student-resources/the-seven-stages-in-film-production/  \n[5] https://thelocationguide.com/ultimate-guide-to-film-production/",
+      "duration_a_seconds": 29.9,
+      "duration_b_seconds": 11.7,
+      "verdict": "B_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "NONE",
+      "judge_reasoning": "Both agents provide accurate, comprehensive answers that satisfy the ground truth checklist. However, Agent B provides a significantly better User Experience. The query asks for seven distinct operational details; Agent B formats this as a clean, numbered list with bold headers, making it effortless to scan and verify each point. Agent A presents the information as a single, dense block of text, which forces the user to read the entire paragraph to find specific details. Agent B wins on formatting and scannability.",
+      "score_a": 0.0,
+      "score_b": 1.0,
+      "evolution": {
+        "summary": "Pressure test",
+        "kind": "pressure_test",
+        "lines": [
+          "[EVOLUTION] Determining Next Step...",
+          "-> WINNER is B. Targeting Loser Failure: NONE.",
+          "-> Action: Pressure Test (Deep+1 & Wide+1)",
+          "[EVOLUTION] Descended to: 'Producing School'",
+          "============================================================"
+        ]
+      }
+    },
+    {
+      "round": 3,
+      "depth": 2,
+      "width": 3,
+      "logic_chain": [
+        "Mastering the 7 Stages of Film Production",
+        "Producing School"
+      ],
+      "question": "Identify the educational institution that published the guide 'Mastering the 7 Stages of Film Production,' in which the 'Development' stage is explicitly characterized as the period where a producer drafts a first synopsis to 'sell the idea and raise funds' and creates visual aids to 'communicate the essence of the film.' \n\nOnce this institution is identified, consult their specific listings for 'Online Workshops' to extract the following curriculum details:\n1.  **Production Management:** For the 2-Day Online Line Producing Workshop, identify the two specific industry-standard software programs students are taught to use.\n2.  **Visual Storytelling:** For the 15-Week Online Writing For Comic Books Workshop, list the two distinct components that make up the final project proposal.\n3.  **Television Writing:** For the 4-Week Online Screenwriting – Television Pilot Workshop, list the three specific written documents students must complete by the end of the program.",
+      "word_limit_instruction": "Answer length: 230-330 words.",
+      "checklist_width": [
+        "Workshop 1 Software: Movie Magic Scheduling",
+        "Workshop 1 Software: Movie Magic Budgeting",
+        "Workshop 2 Component: A proposal for a graphic novel/manga/comic book series",
+        "Workshop 2 Component: The script for the first issue or chapter",
+        "Workshop 3 Document: A Completed Series Proposal",
+        "Workshop 3 Document: A Pilot Beat Sheet",
+        "Workshop 3 Document: A written Teaser for their Pilot"
+      ],
+      "checklist_depth": [
+        "Target Entity: New York Film Academy (NYFA)",
+        "Logic Proof: Matches the specific description of the 'Development' stage found in the NYFA 'Mastering the 7 Stages of Film Production' guide.",
+        "Sub-Entity 1: 2-Day Online Line Producing Workshop",
+        "Sub-Entity 2: 15-Week Online Writing For Comic Books Workshop",
+        "Sub-Entity 3: 4-Week Online Screenwriting – Television Pilot Workshop"
+      ],
+      "rationale": "The question utilizes Deep Logic by requiring the agent to identify the source institution (New York Film Academy) based on a specific textual definition of the 'Development' stage of film production. It then applies Wide Aggregation by forcing the agent to navigate to three distinct areas of the institution's online curriculum (Line Producing, Comic Books, and TV Pilot workshops) to retrieve specific, granular details (software names and project deliverables) that are not located in a single paragraph.",
+      "source_nodes": [
+        "Producing School | NYFA",
+        "Events",
+        "Screenwriting School | Degrees, Programs, & Workshops | NYFA"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: NYFA Producing School Producing School Producing Degrees, Programs, and Workshops A Producer supervises and manages pre-production, filming, and post-production, overseeing al",
+      "judge_max_limit": 330,
+      "answer_a": "The educational institution that published the guide “Mastering the 7 Stages of Film Production” is the New York Film Academy (NYFA) [1]. Its guide explicitly frames the Development stage as a critical period where producers draft a polished first synopsis to sell the film’s core idea and secure initial fundraising leads, alongside crafting targeted visual aids to clearly communicate the film’s thematic essence, tone, and key narrative hooks to potential collaborators and investors [1]. For NYFA’s curated online workshops: 1. Production Management’s 2-Day Online Line Producing Workshop teaches students to use two industry-standard software programs: Movie Magic Scheduling and Movie Magic Budgeting, equipping them to build accurate shoot timelines and budget breakdowns [2]. 2. Visual Storytelling’s 15-Week Online Writing For Comic Books Workshop’s final project proposal includes two distinct components: a detailed 10-page concept breakdown outlining central plot arcs, character backstories, and worldbuilding elements, and a 5-panel storyboard sequence illustrating pivotal narrative beats to visualize core story moments [3]. 3. Television Writing’s 4-Week Online Screenwriting – Television Pilot Workshop requires three specific written documents by completion: a 1-page logline and series bible excerpt, a 3-page act breakdown mapping the pilot’s narrative structure, and a full 22-page teleplay draft for a half-hour comedy or drama pilot [4]. This curriculum ties guide-based theoretical frameworks to hands-on skill-building for emerging media professionals.\n\n## References\n[1] New York Film Academy, “Mastering the 7 Stages of Film Production Guide,” https://www.nyfa.edu, 2024.\n[2] New York Film Academy, “2-Day Online Line Producing Workshop Curriculum Details,” https://www.nyfa.edu, 2024.\n[3] New York Film Academy, “15-Week Online Writing For Comic Books Workshop Final Project Requirements,” https://www.nyfa.edu, 2024.\n[4] New York Film Academy, “4-Week Online Screenwriting – Television Pilot Workshop Completion Documents,” https://www.nyfa.edu, 2024.",
+      "answer_b": "## Direct Answer Body:  \nThe educational institution publishing the guide \"Mastering the 7 Stages of Film Production\"—characterizing the 'Development' stage with a synopsis for \"selling the idea and raising funds\" and visual aids for \"communicating the essence\"—is **VisualAidWorkshops.com**, a specialized curriculum provider for filmmaking professionals. Their online workshops offer structured training:  \n1.  **Production Management (2-Day Online Line Producing Workshop):** Students learn industry-standard **MS Project** for scheduling and **Excel** for budget tracking and financial management [1].  \n2.  **Visual Storytelling (15-Week Online Writing For Comic Books Workshop):** The final project proposal comprises a **complete comic book script draft** and a **comprehensive visual portfolio** demonstrating character designs and scene compositions [2].  \n3.  **Television Writing (4-Week Online Screenwriting – Television Pilot Workshop):** By course completion, students must submit three deliverables: a **full first-act television pilot script** (approx. 20-25 pages), a **step outline** for the entire season, and a **series bible** detailing character arcs and overarching plot [3].  \n\n## References  \n[1] https://www.visualaidworkshops.com/online-workshops/line-producing-workshop  \n[2] https://www.visualaidworkshops.com/online-workshops/comic-books-workshop  \n[3] https://www.visualaidworkshops.com/online-workshops/screenwriting-television-pilot",
+      "duration_a_seconds": 39.0,
+      "duration_b_seconds": 8.8,
+      "verdict": "A_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "DEEP",
+      "judge_reasoning": "Agent A correctly identified the New York Film Academy (NYFA) as the target entity and correctly identified the software used in the first workshop (Movie Magic). However, Agent A hallucinated the specific deliverables for the second and third workshops (claiming a full teleplay and storyboards rather than the Teaser and Script specified in the Ground Truth). Agent A also suffered from poor formatting (wall of text). \n\nAgent B failed completely by hallucinating a non-existent institution ('VisualAidWorkshops.com') and fabricating all subsequent details. Agent A wins as the 'Flawed Winner' for finding the correct entity, but cannot receive a higher score due to significant hallucinations in the curriculum details.",
+      "score_a": 1.0,
+      "score_b": 1.0,
+      "evolution": {
+        "summary": "Drill down",
+        "kind": "drill_down",
+        "lines": [
+          "[EVOLUTION] Determining Next Step...",
+          "-> WINNER is A. Targeting Loser Failure: DEEP.",
+          "-> Action: Deep+1 (Drill Down)",
+          "[EVOLUTION] Descended to: 'Privacy Policy'",
+          "============================================================"
+        ]
+      }
+    },
+    {
+      "round": 4,
+      "depth": 3,
+      "width": 3,
+      "logic_chain": [
+        "Mastering the 7 Stages of Film Production",
+        "Producing School",
+        "Privacy Policy"
+      ],
+      "question": "Identify the educational institution that offers an 'Online MA in Entrepreneurial Producing' and specifically teaches 'Movie Magic Scheduling and Budgeting' software within its 15-Week Online Producing Workshop. Once this institution is located, consult its official 'Digital Web and Mobile Privacy Statement' to answer the following: Under what specific condition is Personally Identifiable Information (PII) collected from website visitors? What is the institution's explicit policy regarding the sale or renting of PII to third parties? Finally, what specific technologies does the institution and its vendors use to facilitate 'Interest-Based Advertising'?",
+      "word_limit_instruction": "Answer length: 250-350 words.",
+      "checklist_width": [
+        "PII Collection Condition: PII is not collected unless voluntarily provided by the user (e.g., for academic records, mailing lists, payment).",
+        "Selling Policy: The institution explicitly states it will not sell, rent, or share PII with third parties.",
+        "Advertising Technologies: The institution and third-party vendors use 'cookies' and 'web beacons' to serve ads based on prior visits."
+      ],
+      "checklist_depth": [
+        "Target Entity: New York Film Academy (NYFA)",
+        "Logic Proof: Identified via the unique 'Online MA in Entrepreneurial Producing' degree and the specific inclusion of 'Movie Magic Scheduling and Budgeting' software in the 15-Week workshop curriculum."
+      ],
+      "rationale": "The question utilizes Deep Reasoning by describing the target entity (NYFA) solely through its unique curriculum details (specific degree title and software taught) found in the 'Reasoning Chain', without naming it. It then enforces Wide Aggregation by requiring the agent to locate a separate document (the Privacy Policy) and extract three distinct, scattered policy details (PII collection, Data selling, and Ad tech) to form a complete answer.",
+      "source_nodes": [
+        "Privacy Policy | NYFA",
+        "Events",
+        "Digital Privacy Statement of the New York Film Academy"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: NYFA Privacy Policy Privacy Policy NYFA and FERPA Digital Privacy Statement of the New York Film Academy Digital Web and Mobile Privacy Statement New York Film Academy (NYFA) ",
+      "judge_max_limit": 350,
+      "answer_a": "The educational institution that offers an Online MA in Entrepreneurial Producing and integrates Movie Magic Scheduling and Movie Magic Budgeting training into its 15-Week Online Producing Workshop is the New York Film Academy (NYFA) [1]. This workshop serves as a core practical component of the MA program, equipping students with industry-aligned producing skills. Per NYFA’s official Digital Web and Mobile Privacy Statement, Personally Identifiable Information (PII) from website visitors is collected exclusively under the specific condition that visitors voluntarily submit it via targeted online forms—these include forms for workshop registration, program application inquiries, free production resource downloads, or requests for one-on-one academic counseling, all of which require details such as full names, email addresses, phone numbers, or previous academic backgrounds [2]. The institution’s explicit policy strictly prohibits the sale or renting of any collected PII to external third parties; the only exceptions are for trusted vendors hired to fulfill essential services (e.g., secure payment processing, email communication platforms) who are legally bound by confidentiality agreements to protect PII and use it solely for NYFA-approved purposes [2]. For interest-based advertising initiatives, NYFA and its authorized vendors utilize two distinct specific technologies: cookie tracking (which collects data on user browsing behavior across NYFA’s website to identify content preferences) and pixel tags (which embed invisible code in ads and website pages to measure ad engagement rates and tailor future advertising content to user interests) [2].\n\n## References\n[1] New York Film Academy, \"Online MA in Entrepreneurial Producing Program and 15-Week Online Producing Workshop Curriculum,\" https://www.nyfa.edu, 2024.\n[2] New York Film Academy, \"Digital Web and Mobile Privacy Statement,\" https://www.nyfa.edu, 2024.",
+      "answer_b": "## Direct Answer Body:  \nThe educational institution offering an 'Online MA in Entrepreneurial Producing' with a 15-Week Online Producing Workshop that teaches 'Movie Magic Scheduling and Budgeting' software is **Rowan University Online**, specifically through its **School of Communication and Media**. This is evident from their program descriptions emphasizing entrepreneurial producing skills and software training.  \n\nConsulting Rowan University Online's official 'Digital Web and Mobile Privacy Statement':  \n- Personally Identifiable Information (PII) is collected from website visitors **only when voluntarily provided by users through forms, applications, or interactions such as requesting information, enrolling in courses, or engaging with support services**.  \n- The institution's explicit policy regarding the sale or renting of PII is that **PII is never sold or rented to third parties; it is strictly used for the purposes stated during collection, aligned with privacy laws like FERPA and COPPA**.  \n- Technologies used to facilitate 'Interest-Based Advertising' include **cookies (for tracking browsing behavior), pixel tags, and third-party advertising networks**, which analyze user data to display relevant ads while allowing opt-out options via browser settings or privacy portals.  \n\n## References  \n[1] https://www.rowan.edu/online/programs/ma-entrepreneurial-producing.html  \n[2] https://www.rowan.edu/about/legal/policies/privacy-policy.html",
+      "duration_a_seconds": 37.4,
+      "duration_b_seconds": 16.7,
+      "verdict": "A_MUCH_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "DEEP",
+      "judge_reasoning": "Agent A correctly identified the target entity (New York Film Academy) based on the specific degree name and workshop curriculum. It then accurately retrieved the privacy policy details requested. Agent B failed the fundamental logic check by hallucinating that Rowan University offers this specific program (Rowan does not offer an 'Online MA in Entrepreneurial Producing' with that specific workshop structure). Because Agent B failed to identify the correct institution, its subsequent answers regarding privacy policies were irrelevant to the user's actual query intent. While Agent B had better formatting, accuracy is the primary requirement.",
+      "score_a": 3.0,
+      "score_b": 1.0,
+      "evolution": {
+        "summary": "Mercy rule",
+        "kind": "mercy_rule",
+        "lines": [
+          "[GAME OVER] Mercy Rule Triggered (Diff >= 2.0)!",
+          "============================================================"
+        ]
+      }
+    }
+  ],
+  "summary_id": "tree_0007_seed16_vs_tongyidee_972"
+}

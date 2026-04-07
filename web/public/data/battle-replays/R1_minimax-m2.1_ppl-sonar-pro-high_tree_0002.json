@@ -1,0 +1,93 @@
+{
+  "id": "R1_minimax-m2.1_ppl-sonar-pro-high_tree_0002",
+  "source_group": "onboarding_battles",
+  "source_log": "onboarding_battles/R1_minimax-m2.1_ppl-sonar-pro-high_tree_0002.log",
+  "tree_id": "tree_0002",
+  "tree_title": "Mac User Guide",
+  "tree_topic": "Computers & Electronics > Software > Operating Systems",
+  "tree_subtopic": "Mac OS",
+  "tree_crawled_at": "2025-11-21T00:05:54.251581",
+  "tree_url": "https://support.apple.com/guide/mac-help/welcome/mac",
+  "model_a": "ppl-sonar-pro-high",
+  "model_b": "minimax-m2.1",
+  "winner": "ppl-sonar-pro-high",
+  "final_score_a": 2.0,
+  "final_score_b": 0.0,
+  "total_rounds": 1,
+  "type": "onboarding",
+  "tournament_round": 1,
+  "pairing_index": null,
+  "mercy_rule": true,
+  "overall_topic": "Mac User Guide",
+  "questions": [
+    "Based on the Apple Consumer Store Singapore sales policies, compare the return requirements for custom third-party prescription optical inserts versus bulk purchases (defined as an aggregate of more than 4 items). For each category, specify the allowable return deadline (in days), the required return location or method, and any applicable restocking fees."
+  ],
+  "round_states": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "verdict": "A_MUCH_BETTER",
+      "failure_type": "BOTH",
+      "score_a": 2.0,
+      "score_b": 0.0,
+      "evolution_kind": "mercy_rule"
+    }
+  ],
+  "final_verdict": "A_MUCH_BETTER",
+  "final_failure_type": "BOTH",
+  "total_tokens": 56031,
+  "estimated_cost": 0.5603,
+  "rounds": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "logic_chain": [
+        "Mac User Guide",
+        "Site Map"
+      ],
+      "question": "Based on the Apple Consumer Store Singapore sales policies, compare the return requirements for custom third-party prescription optical inserts versus bulk purchases (defined as an aggregate of more than 4 items). For each category, specify the allowable return deadline (in days), the required return location or method, and any applicable restocking fees.",
+      "word_limit_instruction": "Answer length: 200-300 words.",
+      "checklist_width": [
+        "Prescription Optical Inserts: Return deadline is 14 days",
+        "Prescription Optical Inserts: Must be returned via Order Listing page or by calling (cannot be returned to a physical Apple Store location)",
+        "Prescription Optical Inserts: No restocking fee is specified (implies standard refund)",
+        "Bulk/Volume Purchases: Return deadline is 7 days",
+        "Bulk/Volume Purchases: Must be returned to the specific Apple Store where originally purchased",
+        "Bulk/Volume Purchases: Subject to a 25% restocking fee per item"
+      ],
+      "checklist_depth": [
+        "Correctly identifies 'ZEISS Optical Inserts - Prescription' as the custom third-party optical insert target",
+        "Correctly identifies 'Return of Products Purchased in Volume' as the bulk purchase target",
+        "Validates the Singapore-specific policy context (e.g., noting the 25% fee which is specific to this policy text)"
+      ],
+      "rationale": "The question uses Deep Logic by describing the entities ('custom third-party prescription optical inserts' and 'bulk purchases') without naming the specific product brand (ZEISS) or the section header, forcing the agent to reason through the text to find the matching policy definitions. It uses Wide Aggregation by requiring the extraction and comparison of three distinct attributes (Time, Location, Fee) for each of the two identified categories, which are located in different paragraphs of the source text.",
+      "source_nodes": [
+        "Site Map - Apple (SG)",
+        "Sales Policies - Apple (SG)"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: Apple Site Map About Apple Apple Leadership Career Opportunities Investors Contact Apple Legal Choose Your Country or Region Product Feedback Apple Values Environment Supply C",
+      "judge_max_limit": 300,
+      "answer_a": "**Custom third-party prescription optical inserts (ZEISS Optical Inserts - Prescription)** cannot be returned to an Apple Store location in Singapore, with returns accepted within **14 days** of receipt via online order listing or by calling 1800-692-7753; no restocking fee is specified, but they must be in original condition as custom third-party products handled on behalf of ZEISS.[2][5]\n\n**Bulk purchases** (more than 4 items aggregate per order or across orders in the same category) must be returned within **7 days** of receipt to the original Apple Store location, subject to a **25% restocking fee** per item.[2]\n\nStandard non-bulk, non-custom items follow a 14-day policy returnable to Apple Stores or via order listing, but bulk overrides this with stricter terms, while prescription inserts have unique handling excluding in-store returns.[2] Note that ZEISS Readers (non-prescription) differ, allowing store returns within 14 days without fees, but the query specifies prescription/custom variants.[2][5] These policies ensure original condition, packaging, and accessories for eligibility across categories.[1][2]\n\n(Word count: 248)\n\n## References\n[1] https://zybervr.com/blogs/news/need-to-return-your-apple-vision-pro-heres-how  \n[2] https://www.apple.com/sg/shop/open/salespolicies  \n[3] https://support.apple.com/en-sg/118486  \n[4] https://support.apple.com/en-us/118486  \n[5] https://www.apple.com/sg/legal/sales-support/sales-policies/retail_sg.html",
+      "answer_b": "Error: No response from API.",
+      "duration_a_seconds": 3.5,
+      "duration_b_seconds": 4.0,
+      "verdict": "A_MUCH_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "BOTH",
+      "judge_reasoning": "Agent A followed all instructions, correctly identified the specific Singapore policies for both ZEISS prescription inserts (14 days, online return only) and bulk purchases (7 days, 25% fee, return to specific store). It adhered to the word count constraint and provided citations. Agent B failed to generate a response entirely.",
+      "score_a": 2.0,
+      "score_b": 0.0,
+      "evolution": {
+        "summary": "Mercy rule",
+        "kind": "mercy_rule",
+        "lines": [
+          "[GAME OVER] Mercy Rule Triggered (Diff >= 2.0)!",
+          "============================================================"
+        ]
+      }
+    }
+  ],
+  "summary_id": "tree_0002_pplsonar_vs_minimaxm2_760"
+}

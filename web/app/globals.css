@@ -101,8 +101,8 @@
   --color-data-5: var(--data-5);
   --color-data-6: var(--data-6);
 
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-sans: var(--font-public-sans);
+  --font-mono: var(--font-ibm-plex-mono);
   --font-display: var(--font-instrument-serif);
 }
 
@@ -120,7 +120,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
-  font-feature-settings: "ss01", "cv11"; /* Geist stylistic alternates */
+  font-feature-settings: "salt", "ss01";
 }
 
 /* Tabular numbers — non-negotiable for the leaderboard */
@@ -167,6 +167,45 @@ table,
   font-family: var(--font-display), ui-serif, Georgia, serif;
   font-feature-settings: "ss01", "liga";
   letter-spacing: -0.02em;
+}
+
+.app-kicker {
+  font-size: 0.6875rem;
+  line-height: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--fg-dim);
+}
+
+.app-title {
+  font-family: var(--font-sans), system-ui, sans-serif;
+  font-size: clamp(2rem, 3.4vw, 3.4rem);
+  line-height: 0.98;
+  letter-spacing: -0.04em;
+  font-weight: 700;
+}
+
+.surface-ledger {
+  border: 1px solid var(--border);
+  background:
+    linear-gradient(180deg, rgba(255, 249, 241, 0.86), rgba(255, 249, 241, 0.74));
+  backdrop-filter: blur(14px);
+}
+
+.section-divider {
+  border-top: 1px solid var(--border-subtle);
+}
+
+.row-ledger {
+  transition:
+    background-color 0.25s ease,
+    transform 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.row-ledger:hover {
+  background: rgba(212, 160, 74, 0.045);
 }
 
 /* Headline sizing scale: 12 / 14 / 16 / 20 / 28 / 40 / 64 */

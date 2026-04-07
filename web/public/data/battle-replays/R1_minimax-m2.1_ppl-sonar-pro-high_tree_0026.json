@@ -1,0 +1,90 @@
+{
+  "id": "R1_minimax-m2.1_ppl-sonar-pro-high_tree_0026",
+  "source_group": "onboarding_battles",
+  "source_log": "onboarding_battles/R1_minimax-m2.1_ppl-sonar-pro-high_tree_0026.log",
+  "tree_id": "tree_0026",
+  "tree_title": "Healthcare Professionals",
+  "tree_topic": "Health > Public Health",
+  "tree_subtopic": "Poisons & Overdoses",
+  "tree_crawled_at": "2025-11-21T16:33:08.262133",
+  "tree_url": "https://calpoison.org/pros",
+  "model_a": "minimax-m2.1",
+  "model_b": "ppl-sonar-pro-high",
+  "winner": "ppl-sonar-pro-high",
+  "final_score_a": 0.0,
+  "final_score_b": 2.0,
+  "total_rounds": 1,
+  "type": "onboarding",
+  "tournament_round": 1,
+  "pairing_index": null,
+  "mercy_rule": true,
+  "overall_topic": "Healthcare Professionals",
+  "questions": [
+    "Identify the current Executive Director and the Managing Director of the California Poison Control System (CPCS). For each of these two leadership roles, provide the individual's full name and their primary professional doctoral degree (e.g., MD, PharmD)."
+  ],
+  "round_states": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "verdict": "B_MUCH_BETTER",
+      "failure_type": "DEEP",
+      "score_a": 0.0,
+      "score_b": 2.0,
+      "evolution_kind": "mercy_rule"
+    }
+  ],
+  "final_verdict": "B_MUCH_BETTER",
+  "final_failure_type": "DEEP",
+  "total_tokens": 474295,
+  "estimated_cost": 4.743,
+  "rounds": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "logic_chain": [
+        "Healthcare Professionals",
+        "Amazon.com: Poisoning and Drug Overdose, Eighth Edition eBook : Anderson, Ilene B., Benowitz, Neal L., Blanc, Paul D., Kim-Katz, Susan Y., Lewis, Justin C., Wu, Alan H. B., Olson, Kent R., Smollin, Craig: Kindle Store"
+      ],
+      "question": "Identify the current Executive Director and the Managing Director of the California Poison Control System (CPCS). For each of these two leadership roles, provide the individual's full name and their primary professional doctoral degree (e.g., MD, PharmD).",
+      "word_limit_instruction": "Answer length: 150-250 words.",
+      "checklist_width": [
+        "Full name of the Executive Director",
+        "Primary doctoral degree/credential of the Executive Director",
+        "Full name of the Managing Director",
+        "Primary doctoral degree/credential of the Managing Director"
+      ],
+      "checklist_depth": [
+        "Target Entity 1: Stuart E. Heard (or current holder) identified as Executive Director",
+        "Target Entity 2: Raymond Ho (or current holder) identified as Managing Director"
+      ],
+      "rationale": "The question uses Deep logic by defining the target entities through their specific professional titles within the 'California Poison Control System' organization rather than naming them directly. It utilizes Wide logic by requiring the agent to aggregate specific biographical details (names and credentials) for multiple distinct individuals found within that organizational structure.",
+      "source_nodes": [
+        "Amazon.com: Poisoning and Drug Overdose, Eighth Edition eBook : Anderson, Ilene B., Benowitz, Neal L., Blanc, Paul D., Kim-Katz, Susan Y., Lewis, Justin C., Wu, Alan H. B., Olson, Kent R., Smollin, Craig: Kindle Store",
+        "Who We Serve | California Poison Control System"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]:  [Wide Logic - Target 1]: ",
+      "judge_max_limit": 300,
+      "answer_a": "[1] The California Poison Control System (CPCS) is headquartered at the University of California, San Francisco (UCSF). The current Executive Director is Dr. Stuart E. Heard, who holds an PharmD degree. [2] The current Managing Director is Dr. F. Lee Cantrell, who also holds a PharmD degree.\n\nBoth directors serve as key leaders of the CPCS, which operates multiple poison centers throughout California. Dr. Heard has been involved with the CPCS for many years, providing pharmacy expertise and oversight. Dr. Cantrell similarly brings extensive pharmacy and toxicology expertise to his administrative role. The dual PharmD leadership reflects the pharmacy-centered nature of poison control services, where medication-related exposures and pharmaceutical expertise are critically important.\n\n## References\n\n[1] California Poison Control System official website - Leadership information\n[2] UCSF School of Pharmacy faculty directory - CPCS leadership",
+      "answer_b": "The California Poison Control System (CPCS) currently lacks a named individual serving as **Executive Director**, as the position is actively posted as open for recruitment by the University of California San Francisco (UCSF) Department of Clinical Pharmacy.[1][2][7][8] The role requires a PharmD or equivalent pharmacy degree and oversees scientific, managerial, and strategic leadership, including supervision of Managing Directors, while reporting to the Department Chair.[1][2]\n\n**Raymond Ho, PharmD**, serves as the **Managing Director** of CPCS, based at the San Francisco site.[3] His primary professional doctoral degree is **Doctor of Pharmacy (PharmD)** from the University of California, San Francisco; he also holds Diplomate of the American Board of Applied Toxicology (DABAT) certification.[3] Managing Directors operate under the Executive Director and support CPCS operations across its four California centers (Sacramento, Fresno/Madera, San Francisco, San Diego).[1][4]\n\nNo other Managing Director is explicitly named in current sources, though the structure implies multiple under Executive Committee oversight.[1] Cyrus Rangan holds the role of Assistant Medical Director, distinct from the queried leadership positions.[4] CPCS provides 24/7 poison control via 1-800-222-1222.[9]\n\n(Word count: 178)\n\n## References\n[1] https://aprecruit.ucsf.edu/JPF05534  \n[2] https://www.clintox.org/wp-content/uploads/2025/04/Executive-Director-of-the-California-Poison-Control-System.pdf  \n[3] https://www.sf.gov/raymond-ho  \n[4] https://calpoison.org/about  \n[7] https://www.indeed.com/viewjob?jk=65f4ec6713c28d1e  \n[8] https://poisoncenters.org/job-board  \n[9] https://calpoison.org",
+      "duration_a_seconds": 4.0,
+      "duration_b_seconds": 4.4,
+      "verdict": "B_MUCH_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "DEEP",
+      "judge_reasoning": "Agent B is the clear winner for several reasons. \n\n1. **Accuracy & Currency**: Agent B correctly identified that the Executive Director position is currently open/recruiting, providing specific evidence (job postings). Agent A provided outdated information (Stuart Heard). \n\n2. **Ground Truth Alignment**: The prompt's ground truth checklist specifically looked for 'Raymond Ho' as the Managing Director. Agent B found Raymond Ho. Agent A found F. Lee Cantrell (who is a director of a different division, but not the specific entity targeted by the ground truth logic provided in the instructions). \n\n3. **Nuance**: Agent B correctly explained the structure of the organization (multiple centers, site-specific directors), whereas Agent A implied a single system-wide Managing Director, which is structurally inaccurate.\n\n4. **Formatting**: Agent B used bolding and clear paragraph structure to make the answer scannable, whereas Agent A used a dense paragraph block.",
+      "score_a": 0.0,
+      "score_b": 2.0,
+      "evolution": {
+        "summary": "Mercy rule",
+        "kind": "mercy_rule",
+        "lines": [
+          "[GAME OVER] Mercy Rule Triggered (Diff >= 2.0)!",
+          "============================================================"
+        ]
+      }
+    }
+  ],
+  "summary_id": "tree_0026_minimaxm2_vs_pplsonar_796"
+}

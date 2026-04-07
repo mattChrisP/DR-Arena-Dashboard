@@ -1,0 +1,91 @@
+{
+  "id": "R1_tongyi-deep-research_deepseek-v3.2_tree_0014",
+  "source_group": "onboarding_battles",
+  "source_log": "onboarding_battles/R1_tongyi-deep-research_deepseek-v3.2_tree_0014.log",
+  "tree_id": "tree_0014",
+  "tree_title": "Video rental shop",
+  "tree_topic": "Shopping > Entertainment Media > DVD & Video Shopping",
+  "tree_subtopic": "DVD & Video Rentals",
+  "tree_crawled_at": "2025-11-21T14:49:42.251140",
+  "tree_url": "https://en.wikipedia.org/wiki/Video_rental_shop",
+  "model_a": "tongyi-deep-research",
+  "model_b": "deepseek-v3.2",
+  "winner": "deepseek-v3.2",
+  "final_score_a": 0.0,
+  "final_score_b": 2.0,
+  "total_rounds": 1,
+  "type": "onboarding",
+  "tournament_round": 1,
+  "pairing_index": null,
+  "mercy_rule": true,
+  "overall_topic": "Video rental shop",
+  "questions": [
+    "Analyze the legal history of the 'first sale' doctrine by identifying two landmark Supreme Court cases often linked in media analysis regarding copyright and the secondary market. The first case, decided in 1984, involved a recording technology that Jack Valenti famously compared to the 'Boston Strangler.' The second case, decided in 2013, involved a Thai math student at Cornell reselling imported educational materials. For the 1984 case, provide the final Supreme Court vote count and name the Justice who reportedly changed their mind to support the technology. For the 2013 case, provide the final Supreme Court vote count and the specific revenue amount the student generated that precipitated the lawsuit."
+  ],
+  "round_states": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "verdict": "B_MUCH_BETTER",
+      "failure_type": "WIDE",
+      "score_a": 0.0,
+      "score_b": 2.0,
+      "evolution_kind": "mercy_rule"
+    }
+  ],
+  "final_verdict": "B_MUCH_BETTER",
+  "final_failure_type": "WIDE",
+  "total_tokens": 366803,
+  "estimated_cost": 3.668,
+  "rounds": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "logic_chain": [
+        "Video rental shop",
+        "In a Copyright Ruling, the Legacy of the Betamax"
+      ],
+      "question": "Analyze the legal history of the 'first sale' doctrine by identifying two landmark Supreme Court cases often linked in media analysis regarding copyright and the secondary market. The first case, decided in 1984, involved a recording technology that Jack Valenti famously compared to the 'Boston Strangler.' The second case, decided in 2013, involved a Thai math student at Cornell reselling imported educational materials. For the 1984 case, provide the final Supreme Court vote count and name the Justice who reportedly changed their mind to support the technology. For the 2013 case, provide the final Supreme Court vote count and the specific revenue amount the student generated that precipitated the lawsuit.",
+      "word_limit_instruction": "Answer length: 200-300 words.",
+      "checklist_width": [
+        "1984 Case Vote Count: 5-to-4",
+        "1984 Case Justice: Sandra Day O'Connor",
+        "2013 Case Vote Count: 6-to-3",
+        "2013 Case Revenue: Roughly $900,000"
+      ],
+      "checklist_depth": [
+        "Target Entity 1: Sony Corp. of America v. Universal City Studios, Inc. (or the Betamax case)",
+        "Target Entity 2: Kirtsaeng v. John Wiley & Sons (or the Supap Kirtsaeng case)",
+        "Logic Validation: Identifies the 'First Sale' doctrine as the connecting legal principle."
+      ],
+      "rationale": "The question uses 'Deep' reasoning by masking the specific case names behind descriptive clues (Valenti's quote and the student's profile). It requires 'Wide' aggregation by forcing the agent to retrieve disparate statistical details (vote counts, revenue figures, specific judges) found at different points in the source text or historical records.",
+      "source_nodes": [
+        "In a Copyright Ruling, the Legacy of the Betamax - The New York Times",
+        "Chicken Soup for the Soul Entertainment - Wikipedia"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: Business | Copyright Ruling Rings With Echo of Betamax https://www.nytimes.com/2013/03/27/business/in-a-copyright-ruling-the-lingering-legacy-of-the-betamax.html Advertisement",
+      "judge_max_limit": 300,
+      "answer_a": "The first sale doctrine permits the legal distribution of lawfully purchased copyrighted copies. Two pivotal Supreme Court cases shaped its modern interpretation. The 1984 case, *Sony Corp. of America v. Universal City Studios, Inc.*, arose from objections to home video recording technology—\"the 'Boston Strangler' of the entertainment industry\" according to Jack Valenti. The Court held that Sony's VCRs were not contributory infringements, establishing a crucial precedent for non-infringing uses. The ruling was 5-4, with Justice Potter Stewart notably changing his vote before his death to join the majority protecting the technology. [1]\n\nThe 2013 case, *Kirtsaeng v. John Wiley & Sons, Inc.*, involved Piraporn Kirtsaeng, a Thai student at Cornell, who imported and resold affordable foreign-edition textbooks licensed by the copyright holder, John Wiley & Sons. His online sales generated approximately $6,000 - $7,000 in profit, leading Wiley to sue for infringement. The Supreme Court ruled 6-3 in favor of Kirtsaeng, affirming the first sale doctrine extends to copies legally exported from the US, even if made abroad under license. [2] [3]\n\n## References\n[1] Sony Corp. of America v. Universal City Studios, Inc., 464 U.S. 1 (1984).\n[2] Kirtsaeng v. John Wiley & Sons, Inc., 568 U.S. 519 (2013).\n[3] \"Thai Student's Resale of Course Books Leads to Supreme Court Copyright Decision.\" The Cornell Chronicle, May 13, 2013.",
+      "answer_b": "The two landmark Supreme Court cases are *Sony Corp. of America v. Universal City Studios, Inc.* (1984) and *Kirtsaeng v. John Wiley & Sons, Inc.* (2013). The 1984 case, often called the \"Betamax case,\" involved the legality of Sony's Betamax videocassette recorder (VCR) for home taping of television broadcasts. Jack Valenti, head of the Motion Picture Association of America, infamously told Congress the VCR was to the film industry \"as the Boston Strangler is to the woman home alone\" [1]. The Supreme Court ruled 5-4 in favor of Sony, establishing that the sale of copying equipment is permissible if the product is \"capable of substantial noninfringing uses\" [1]. Justice Sandra Day O'Connor was reportedly the swing vote; she initially sided with the copyright holders but changed her mind after extensive deliberations to support the technology, creating the 5-4 majority [2][3].\n\nThe 2013 case, *Kirtsaeng v. John Wiley & Sons, Inc.*, centered on Supap Kirtsaeng, a Thai graduate student at Cornell University, who resold imported, lower-priced copies of Wiley's textbooks he had purchased abroad [4]. The Court ruled 6-3 that the \"first sale\" doctrine applies to lawfully made copies purchased outside the United States, permitting their resale without the copyright holder's permission [4][5]. The lawsuit was precipitated by Kirtsaeng's business, which generated approximately $900,000 in revenue from selling the imported textbooks [5][6].\n\nThese cases collectively affirmed and expanded the first sale doctrine's role in enabling secondary markets, balancing copyright holder rights with consumer ownership and innovation.\n\n## References\n[1] Sony Corp. of America v. Universal City Studios, Inc., 464 U.S. 417 (1984).\n[2] The Oyez Project. *Sony Corp. of America v. Universal City Studios, Inc.* Retrieved from https://www.oyez.org/cases/1982/81-1687\n[3] Legal commentary on Justice O'Connor's pivotal role in the Betamax decision.\n[4] Kirtsaeng v. John Wiley & Sons, Inc., 568 U.S. 519 (2013).\n[5] Supreme Court of the United States. Syllabus for *Kirtsaeng v. John Wiley & Sons, Inc.*\n[6] Reporting on the financial scale of Kirtsaeng's textbook resale business.",
+      "duration_a_seconds": 12.3,
+      "duration_b_seconds": 11.5,
+      "verdict": "B_MUCH_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "WIDE",
+      "judge_reasoning": "Agent B followed all instructions and provided accurate details. Agent A contained a severe hallucination, claiming Justice Potter Stewart changed his vote in the 1984 case; however, Stewart retired from the Court in 1981 and did not participate in the 1984 decision. Agent B correctly identified Justice O'Connor. Additionally, Agent A failed to provide the requested revenue figure for the 2013 case, citing a low profit figure instead, whereas Agent B correctly cited the $900,000 revenue figure.",
+      "score_a": 0.0,
+      "score_b": 2.0,
+      "evolution": {
+        "summary": "Mercy rule",
+        "kind": "mercy_rule",
+        "lines": [
+          "[GAME OVER] Mercy Rule Triggered (Diff >= 2.0)!",
+          "============================================================"
+        ]
+      }
+    }
+  ],
+  "summary_id": "tree_0014_tongyidee_vs_deepseekv_927"
+}

@@ -1,0 +1,92 @@
+{
+  "id": "R1_tongyi-deep-research_deepseek-v3.2_tree_0027",
+  "source_group": "onboarding_battles",
+  "source_log": "onboarding_battles/R1_tongyi-deep-research_deepseek-v3.2_tree_0027.log",
+  "tree_id": "tree_0027",
+  "tree_title": "Court Role and Structure",
+  "tree_topic": "Law & Government > Government",
+  "tree_subtopic": "Courts & Judiciary",
+  "tree_crawled_at": "2025-11-22T00:17:08.647648",
+  "tree_url": "https://www.uscourts.gov/about-federal-courts/court-role-and-structure",
+  "model_a": "tongyi-deep-research",
+  "model_b": "deepseek-v3.2",
+  "winner": "deepseek-v3.2",
+  "final_score_a": 0.0,
+  "final_score_b": 2.0,
+  "total_rounds": 1,
+  "type": "onboarding",
+  "tournament_round": 1,
+  "pairing_index": null,
+  "mercy_rule": true,
+  "overall_topic": "Court Role and Structure",
+  "questions": [
+    "Based on the operational structure and evidence-based practices of the U.S. Federal Judiciary, identify the intermediate tier of Article III courts responsible for reviewing district court decisions and the specific framework used for offender supervision. \n\nFirst, regarding the identified appellate tier: State the total number of circuits into which these courts are organized. Describe the standard composition of the judicial panels that hear these cases, and detail the specific, nationwide jurisdiction of the thirteenth court in this system.\n\nSecond, regarding the supervision framework: Name the specific 'Model' used to guide assessment and supervision. List its three core principles, and provide the exact acronyms for the scientific risk assessment tools used for defendants awaiting trial versus those on post-conviction supervision."
+  ],
+  "round_states": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "verdict": "B_MUCH_BETTER",
+      "failure_type": "DEEP",
+      "score_a": 0.0,
+      "score_b": 2.0,
+      "evolution_kind": "mercy_rule"
+    }
+  ],
+  "final_verdict": "B_MUCH_BETTER",
+  "final_failure_type": "DEEP",
+  "total_tokens": 800225,
+  "estimated_cost": 8.0023,
+  "rounds": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "logic_chain": [
+        "Court Role and Structure",
+        "About the U.S. Courts of Appeals"
+      ],
+      "question": "Based on the operational structure and evidence-based practices of the U.S. Federal Judiciary, identify the intermediate tier of Article III courts responsible for reviewing district court decisions and the specific framework used for offender supervision. \n\nFirst, regarding the identified appellate tier: State the total number of circuits into which these courts are organized. Describe the standard composition of the judicial panels that hear these cases, and detail the specific, nationwide jurisdiction of the thirteenth court in this system.\n\nSecond, regarding the supervision framework: Name the specific 'Model' used to guide assessment and supervision. List its three core principles, and provide the exact acronyms for the scientific risk assessment tools used for defendants awaiting trial versus those on post-conviction supervision.",
+      "word_limit_instruction": "Answer length: 200-300 words.",
+      "checklist_width": [
+        "Total Circuits: 13 (12 regional + 1 Federal Circuit)",
+        "Panel Composition: Panels of three judges",
+        "13th Court Jurisdiction: Patents, international trade, and federal claims (nationwide)",
+        "Supervision Model Principles: Risk, Need, and Responsivity",
+        "Pretrial Tool Acronym: PTRA (Pretrial Risk Assessment)",
+        "Post-Conviction Tool Acronym: PCRA (Post Conviction Risk Assessment)"
+      ],
+      "checklist_depth": [
+        "Target Entity 1: U.S. Courts of Appeals (identified as the intermediate Article III tier)",
+        "Target Entity 2: Risk-Need-Responsivity (RNR) Model (identified as the supervision framework)"
+      ],
+      "rationale": "The question requires Deep reasoning to identify the 'U.S. Courts of Appeals' based on their hierarchical position (below Supreme Court, above District Courts) and the 'RNR Model' based on the description of evidence-based supervision. It requires Wide aggregation by forcing the retrieval of specific details (circuit counts, panel sizes, jurisdiction, acronyms) that are scattered across two distinct sections of the source text (Appellate Court structure vs. Probation practices).",
+      "source_nodes": [
+        "About the U.S. Courts of Appeals",
+        "Evidence-Based Practices"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: About the U.S. Courts of Appeals On this page Courts of appeals review challenges to court decisions to determine whether the proceedings were fair and the law was applied cor",
+      "judge_max_limit": 300,
+      "answer_a": "The intermediate tier consists of the U.S. Courts of Appeals, organized into 12 numbered circuits plus a specialized thirteenth circuit. Cases are typically heard by panels of three judges. The U.S. Court of Appeals for the Federal Circuit possesses exclusive nationwide jurisdiction over specific subject matters, including patents, trademarks, government contracts, and appeals from certain federal regulatory agencies. Regarding offender supervision, the framework is guided by the U.S. Sentencing Guidelines. Its three core principles are: (1) Promote respect for the law, (2) Provide just punishment adequate to the offense, and (3) Protect the public through incarcerative sanctions. The scientific risk assessment tool used for defendants awaiting trial is the Public Safety Assessment (PSA), while the tool used for individuals on post-conviction supervision is the Risk and Needs Assessment (RNA) [1] [2] [3] [4].\n\n## References  \n[1] U.S. Courts - Article III Judiciary. (n.d.). Retrieved from https://www.uscourts.gov/educational-resources/educational-activities/article-iii-judiciary  \n[2] United States Sentencing Commission. (n.d.). U.S. Sentencing Guidelines Manual. Retrieved from https://www.ussc.gov/guidelines  \n[3] Wilson, D. B., Farrington, D. P., & Mitchell, J. P. (2012). Prediction rules for recidivism: systematic review and meta-analysis. *Psychological Bulletin*, 138(4), 675–706. https://doi.org/10.1037/a0026665  \n[4] National Institute of Justice. (2021). *Risk and Needs Assessment: Strategies for Reducing Recidivism*. Retrieved from https://nij.ojp.gov/topics/articles/risk-and-needs-assessment-strategies-reducing-recidivism",
+      "answer_b": "The intermediate appellate tier of Article III courts in the U.S. Federal Judiciary is the United States Courts of Appeals. The total number of judicial circuits, including a specialized circuit, is thirteen. This comprises eleven numbered circuits (1st-11th), the D.C. Circuit, and the Federal Circuit [1]. Cases are typically heard by panels of three randomly selected judges, though en banc hearings may involve the full court or a larger panel [2]. The thirteenth court, the U.S. Court of Appeals for the Federal Circuit, possesses a unique nationwide jurisdiction over specific subject matters, including patents, international trade, federal personnel claims, and veterans' benefits, rather than a geographic region [3].\n\nThe evidence-based supervision framework used is the **Risk-Need-Responsivity (RNR) Model**. Its three core principles are: 1) **Risk Principle**: Match supervision intensity to the offender's risk of reoffending. 2) **Need Principle**: Target dynamic, changeable criminogenic needs. 3) **Responsivity Principle**: Tailor interventions to the offender's learning style and abilities [4]. For pretrial defendants, the commonly used scientific risk assessment tool is the **Federal Pretrial Risk Assessment (PTRA)**, often referred to by the acronym PTRA [5]. For post-conviction supervision under the U.S. Probation and Pretrial Services System, the primary tool is the **Post-Conviction Risk Assessment (PCRA)** [6].\n\n## References\n[1] United States Courts. \"Court Role and Structure.\" https://www.uscourts.gov/about-federal-courts/court-role-and-structure\n[2] Federal Judicial Center. \"How the Federal Courts Are Organized.\" https://www.fjc.gov/history/courts/how-federal-courts-are-organized\n[3] United States Court of Appeals for the Federal Circuit. \"About the Court.\" https://cafc.uscourts.gov/about-the-court/\n[4] National Institute of Corrections. \"Risk Need Responsivity.\" https://nicic.gov/projects/risk-need-responsivity\n[5] Administrative Office of the U.S. Courts. \"Federal Pretrial Risk Assessment.\" https://www.uscourts.gov/services-forms/probation-and-pretrial-services/federal-pretrial-risk-assessment\n[6] Administrative Office of the U.S. Courts. \"Post Conviction Risk Assessment.\" https://www.uscourts.gov/services-forms/probation-and-pretrial-services/post-conviction-risk-assessment",
+      "duration_a_seconds": 4.0,
+      "duration_b_seconds": 12.5,
+      "verdict": "B_MUCH_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "DEEP",
+      "judge_reasoning": "Agent B answered all parts of the prompt correctly, specifically identifying the Risk-Need-Responsivity (RNR) model and the correct federal risk assessment tools (PTRA and PCRA). Agent A failed significantly in the second half of the response: it incorrectly identified the supervision framework as the 'U.S. Sentencing Guidelines' (listing sentencing goals instead of supervision principles) and cited the wrong risk assessment tools (PSA is typically used in state/local jurisdictions, not the federal system, which uses PTRA). Agent B also utilized better formatting with bolded keywords.",
+      "score_a": 0.0,
+      "score_b": 2.0,
+      "evolution": {
+        "summary": "Mercy rule",
+        "kind": "mercy_rule",
+        "lines": [
+          "[GAME OVER] Mercy Rule Triggered (Diff >= 2.0)!",
+          "============================================================"
+        ]
+      }
+    }
+  ],
+  "summary_id": "tree_0027_tongyidee_vs_deepseekv_951"
+}

@@ -1,0 +1,156 @@
+{
+  "id": "R3_minimax-m2.1_Qwen3-235b-a22b_tree_0009",
+  "source_group": "onboarding_battles",
+  "source_log": "onboarding_battles/R3_minimax-m2.1_Qwen3-235b-a22b_tree_0009.log",
+  "tree_id": "tree_0009",
+  "tree_title": "Understanding USAG Gymnastics Levels: A Complete Guide (2024)",
+  "tree_topic": "Sports > Individual Sports",
+  "tree_subtopic": "Gymnastics",
+  "tree_crawled_at": "2025-11-21T13:54:44.439021",
+  "tree_url": "https://gmgc.com/understanding-usag-gymnastics-levels-a-complete-guide-2024-2/",
+  "model_a": "minimax-m2.1",
+  "model_b": "Qwen3-235b-a22b",
+  "winner": "Qwen3-235b-a22b",
+  "final_score_a": 0.0,
+  "final_score_b": 2.0,
+  "total_rounds": 2,
+  "type": "onboarding",
+  "tournament_round": 3,
+  "pairing_index": null,
+  "mercy_rule": true,
+  "overall_topic": "Understanding USAG Gymnastics Levels: A Complete Guide (2024)",
+  "questions": [
+    "Identify the specific gymnastics facility located near a large statue of a bull on Long Island, which is operated by the organization that published a 'Complete Guide (2024)' detailing USAG levels from Developmental to Elite. For this specific facility, provide the prestigious universities where its advanced program athletes have been placed, the specific international credentials of its program leadership (specifically regarding their national team background), and the complete Fall hours of operation for the entire week.",
+    "In the context of the 2024 USAG Gymnastics level system, identify the specific 'Optional' levels that serve as the progression pathway immediately following the Compulsory levels but prior to the level characterized by 'multiple release moves' and 'advanced tumbling combinations'. For each of these intermediate optional levels, describe the primary developmental focus (such as the introduction of specific skill categories) and list the key technical skills required for proficiency, including specific moves on bars, beam, or floor."
+  ],
+  "round_states": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "verdict": "Tie",
+      "failure_type": "BOTH",
+      "score_a": 0.0,
+      "score_b": 0.0,
+      "evolution_kind": "backtrack"
+    },
+    {
+      "round": 2,
+      "depth": 1,
+      "width": 2,
+      "verdict": "B_MUCH_BETTER",
+      "failure_type": "BOTH",
+      "score_a": 0.0,
+      "score_b": 2.0,
+      "evolution_kind": "mercy_rule"
+    }
+  ],
+  "final_verdict": "B_MUCH_BETTER",
+  "final_failure_type": "BOTH",
+  "total_tokens": 1799416,
+  "estimated_cost": 17.9942,
+  "rounds": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "logic_chain": [
+        "Understanding USAG Gymnastics Levels: A Complete Guide (2024)",
+        "Gymnastics & Ninja Classes in Smithtown, NY"
+      ],
+      "question": "Identify the specific gymnastics facility located near a large statue of a bull on Long Island, which is operated by the organization that published a 'Complete Guide (2024)' detailing USAG levels from Developmental to Elite. For this specific facility, provide the prestigious universities where its advanced program athletes have been placed, the specific international credentials of its program leadership (specifically regarding their national team background), and the complete Fall hours of operation for the entire week.",
+      "word_limit_instruction": "Answer length: 200-300 words.",
+      "checklist_width": [
+        "University Placement: Brown University",
+        "University Placement: Cornell University",
+        "Leadership Credential: Former USSR National Team member",
+        "Leadership Credential: Master of Sport",
+        "Fall Hours: Monday - Thursday: 9:15am – 8:30pm",
+        "Fall Hours: Friday: 9:15am – 7:30pm",
+        "Fall Hours: Saturday: 8:00am – 2:00pm",
+        "Fall Hours: Sunday: Closed (for Parties)"
+      ],
+      "checklist_depth": [
+        "Target Entity: Gold Medal Gymnastics & Ninja (Smithtown location)",
+        "Logic Proof: Matches the facility located 'near a large statue of the Smithtown bull'",
+        "Logic Proof: Matches the organization describing USAG levels in the 2024 guide"
+      ],
+      "rationale": "The query requires deep reasoning to connect the 'USAG Guide' context (Source A) to a specific physical location identified by a landmark (Source B). It then requires wide aggregation to extract disparate details (Universities, Leadership, Hours) found only within the specific text describing that location.",
+      "source_nodes": [
+        "Gymnastics & Ninja Classes in Smithtown, NY | Gold Medal Gymnastics",
+        "Items tagged Gymnastics For All Ages"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: Gymnastics & Ninja Classes | Smithtown, NY Sign up for Classes in Smithtown 253 West Main Street, Smithtown, NY 11787 Phone: (631) 366-GOLD (4653) Email: smithtown@gmgc.com SC",
+      "judge_max_limit": 300,
+      "answer_a": "[1] https://www.gymnastics.gov/knowledge-base/complete-guide-2024-usag-levels-developmental-to-elite/\n[2] https://www.longisland.com/bull-statue-long-island\n[3] https://www.longislandgymnasticsfacilities.com/bull-statue-nearby\n[4] https://www.gymnasticscoaching.org/long-island-facilities\n[5] https://www.gymnasticsny.com/bull-statue-gymnastics-facility",
+      "answer_b": "The gymnastics facility located near the large bull statue on Long Island—commonly associated with the Charging Bull sculpture in nearby financial districts, though no identical statue exists on Long Island itself—is inferred to be Forward Gymnastics Academy in Syosset, NY. This facility is operated by USA Gymnastics (USAG), which published the official \"Complete Guide (2024)\" outlining athlete development from Developmental through Elite levels [1]. Forward Gymnastics Academy has a history of placing elite athletes at prestigious universities such as Stanford University, University of California, Los Angeles (UCLA), University of Florida, and University of Georgia—all renowned for their NCAA Division I gymnastics programs [2]. The leadership at Forward Gymnastics includes coaches with international credentials, including former members of the Chinese National Gymnastics Team who have represented their country in World Championships and possess extensive experience in elite athlete development [3]. These coaching qualifications align with USAG’s standards for national and international-level training. The Fall operating hours for Forward Gymnastics Academy are as follows: Monday to Friday, 9:00 AM–8:30 PM; Saturday, 8:00 AM–5:00 PM; and Sunday, 9:00 AM–3:00 PM. These hours accommodate programs ranging from recreational to advanced levels, including preschool, school-age classes, and competitive team training [4].\n\n## References  \n[1] USA Gymnastics. (2024). Complete Guide. https://usagym.org/pages/  \n[2] Forward Gymnastics Academy. College Commitments. https://www.forwardgymnastics.com/college-commits  \n[3] Forward Gymnastics Academy. Coaching Staff Bio. https://www.forwardgymnastics.com/staff  \n[4] Forward Gymnastics Academy. Hours & Location. https://www.forwardgymnastics.com/contact",
+      "duration_a_seconds": 8.9,
+      "duration_b_seconds": 21.7,
+      "verdict": "Tie",
+      "tie_quality": "LOW",
+      "failure_type": "BOTH",
+      "judge_reasoning": "Both agents failed completely on the Deep Logic and Accuracy dimensions. \n\nThe correct entity is **Gold Medal Gymnastics (GMGC)** in **Smithtown, NY**, which is located near the famous 'Smithtown Bull' (Whisper) statue. GMGC publishes the 'Complete Guide' to USAG levels referenced in the prompt.\n\n**Agent A** failed to generate a text response, providing only a list of URLs (several of which, like 'gymnastics.gov', appear to be hallucinated or invalid). It offered zero utility.\n\n**Agent B** failed to identify the correct entity. It confidently hallucinated that the bull statue 'does not exist on Long Island' (a significant factual error regarding the Smithtown Bull). It then fabricated a connection to a different gym ('Forward Gymnastics') and hallucinated all subsequent details (universities, leadership, and hours) to fit this incorrect entity.\n\nSince one agent provided no answer and the other provided a confident but factually incorrect hallucination, both receive a Low Quality Tie.",
+      "score_a": 0.0,
+      "score_b": 0.0,
+      "evolution": {
+        "summary": "Backtrack",
+        "kind": "backtrack",
+        "lines": [
+          "[EVOLUTION] Determining Next Step...",
+          "-> TIE (Both Bad): BACKTRACKING.",
+          ">>> [BACKTRACK] Moving up to Parent Node <<<",
+          "============================================================"
+        ]
+      }
+    },
+    {
+      "round": 2,
+      "depth": 1,
+      "width": 2,
+      "logic_chain": [
+        "Understanding USAG Gymnastics Levels: A Complete Guide (2024)"
+      ],
+      "question": "In the context of the 2024 USAG Gymnastics level system, identify the specific 'Optional' levels that serve as the progression pathway immediately following the Compulsory levels but prior to the level characterized by 'multiple release moves' and 'advanced tumbling combinations'. For each of these intermediate optional levels, describe the primary developmental focus (such as the introduction of specific skill categories) and list the key technical skills required for proficiency, including specific moves on bars, beam, or floor.",
+      "word_limit_instruction": "Answer length: 180-280 words.",
+      "checklist_width": [
+        "Level 6 Focus: Transition to optional routines with specific skill requirements",
+        "Level 6 Skills: Giant swings (bars), back tuck (floor), complex dance elements",
+        "Level 7 Focus: Increased difficulty in optional routines",
+        "Level 7 Skills: Clear hip circle (bars), aerial cartwheel (beam), front tuck (floor)",
+        "Level 8 Focus: Introduction of C-level skills",
+        "Level 8 Skills: Release moves on bars, back layout (floor), complex series on beam"
+      ],
+      "checklist_depth": [
+        "Identifies Level 6 (Post-Compulsory / Optional entry)",
+        "Identifies Level 7 (Intermediate Optional)",
+        "Identifies Level 8 (Pre-Level 9)",
+        "Logic Proof: Stops before Level 9, which is the first level defined by 'multiple release moves' and 'advanced tumbling combinations'."
+      ],
+      "rationale": "The question requires deep reasoning to filter the levels. The user must understand the sequence of levels (Compulsory vs. Optional) and use specific skill descriptions ('multiple release moves') to identify the upper bound (Level 9) and lower bound (Level 6) of the target group. It then demands wide aggregation by asking for specific focus areas and skill lists for each of the identified levels (6, 7, and 8).",
+      "source_nodes": [
+        "Understanding USAG Gymnastics Levels: A Complete Guide (2024) - Gold Medal Gymnastics Center"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: Understanding USAG Gymnastics Levels: A Complete Guide (2024) As a parent or aspiring gymnast, navigating the USA Gymnastics (USAG) level system can be both exciting and overw",
+      "judge_max_limit": 280,
+      "answer_a": "USAG Gymnastics 2024 Optional Levels Transition\n[1][2][3]\n\nThe USAG Gymnastics level system defines a clear progression from Compulsory to Optional levels. Compulsory levels (1-5) serve as the foundational stages, while Optional levels (6-10) offer more specialized training. The Optional levels immediately following Compulsory levels are Level 6 and Level 7, which serve as the progression pathway before reaching the more advanced Level 8 characterized by \"multiple release moves\" and \"advanced tumbling combinations.\"\n\n**Level 6 - Primary Developmental Focus:**\nLevel 6 serves as the bridge between Compulsory and Optional gymnastics, introducing athletes to Optional competition format while building upon compulsory foundations. The primary focus is on developing consistency, refining technique, and introducing more complex skills while maintaining solid form.\n\n**Key Technical Skills Required for Level 6:**\n- **Vault:** Yurchenko vault with handspring take-off, or similar difficulty\n- **Bars:** Clear hip circles, toe-on circles, and introductory stalder skills\n- **Beam:** Acrobatic series with turns and leaps, including back handspring approach\n- **Floor:** Double salto dismounts, full twists, and more complex tumbling combinations\n\n**Level 7 - Primary Developmental Focus:**\nLevel 7 advances skill complexity while emphasizing dance elements and combination work. Athletes begin incorporating release move foundations and more sophisticated tumbling sequences.\n\n**Key Technical Skills Required for Level 7:**\n- **Vault:** Yurchenko vault with 1½ twists or equivalent difficulty\n- **Bars:** Tkatchev release move, inverted cast handstands, and beat swing combinations\n- **Beam:** Back walkover through to back handspring series, switch leaps with 180° rotation\n- **Floor:** Triple twist series, double salto combinations, and intricate dance passages\n\n## References\n\n[1] USA Gymnastics - Official Competition Rules (2024)\n[2] USAG Junior Olympic Program - Level Requirements\n[3] Gymnastics Coaching Resources - USAG Level Progression System",
+      "answer_b": "In the 2024 USA Gymnastics (USAG) level system, the progression pathway following Compulsory levels and preceding advanced levels featuring multiple release moves and advanced tumbling combinations includes Levels 6, 7, and 8, which are classified as Optional levels. These levels form a critical transitional phase where gymnasts shift from standardized routines to individually tailored choreography while progressively mastering complex skills [1].\n\nLevel 6 emphasizes clean technique and the foundational execution of optional routines. Gymnasts must perform a front handspring on floor and a glide kip followed by a cast to handstand on bars. Beam work includes basic acro series like cartwheel to two-footed landing, and dismounts such as the cartwheel to handstand or flyaway [2].\n\nLevel 7 introduces more complex skill requirements, including a backward acro series with flight (e.g., round-off, back handspring). On bars, gymnasts must execute a sole circle skill (cast to handstand) and a clear-hip circle. Beam routines require a series of two acro elements with at least one involving flight, while dismounts may include back jump variations [3].\n\nLevel 8 builds further, requiring a flight series on floor such as round-off, back handspring, layout step-out. On bars, a kip and inbar skill (e.g., inbar half) are mandatory. Beam introduces more dynamic balance, including leaps with 180-degree split and a flight element dismount like a back handspring or flyaway [4].\n\n## References  \n[1] USA Gymnastics. (2024). Women’s Artistic Program: Levels 6-10. https://usagym.org  \n[2] 2024 Junior Olympic Code of Points, Levels 6-8. USA Gymnastics.  \n[3] USAG Women’s Program Page. Level 7 Requirements. https://usagym.org/pages/women/program  \n[4] Junior Olympic Training Guide, Level 8. USA Gymnastics, 2024.",
+      "duration_a_seconds": 16.5,
+      "duration_b_seconds": 14.5,
+      "verdict": "B_MUCH_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "BOTH",
+      "judge_reasoning": "Agent B correctly identifies the full range of levels (6, 7, and 8) as specified in the ground truth checklist. More importantly, Agent B provides accurate skill descriptions appropriate for these levels. Agent A fails catastrophically on accuracy, hallucinating Elite/Level 10 skills for intermediate levels (e.g., claiming Level 6 requires 'double salto dismounts' and Level 7 requires 'Tkatchev release moves' and 'Triple twists', which are restricted D/E skills prohibited at those levels). Agent A also fails the Deep Logic by excluding Level 8.",
+      "score_a": 0.0,
+      "score_b": 2.0,
+      "evolution": {
+        "summary": "Mercy rule",
+        "kind": "mercy_rule",
+        "lines": [
+          "[GAME OVER] Mercy Rule Triggered (Diff >= 2.0)!",
+          "============================================================"
+        ]
+      }
+    }
+  ],
+  "summary_id": "tree_0009_minimaxm2_vs_Qwen3235b_866"
+}

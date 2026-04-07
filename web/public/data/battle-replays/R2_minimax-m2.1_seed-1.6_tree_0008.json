@@ -1,0 +1,156 @@
+{
+  "id": "R2_minimax-m2.1_seed-1.6_tree_0008",
+  "source_group": "onboarding_battles",
+  "source_log": "onboarding_battles/R2_minimax-m2.1_seed-1.6_tree_0008.log",
+  "tree_id": "tree_0008",
+  "tree_title": "Health Policy 101 Introduction",
+  "tree_topic": "Law & Government > Public Safety > Public Health",
+  "tree_subtopic": "Health Policy",
+  "tree_crawled_at": "2025-11-21T13:52:05.123140",
+  "tree_url": "https://www.kff.org/other-health/health-policy-101-introduction/",
+  "model_a": "minimax-m2.1",
+  "model_b": "seed-1.6",
+  "winner": "seed-1.6",
+  "final_score_a": 0.0,
+  "final_score_b": 2.0,
+  "total_rounds": 2,
+  "type": "onboarding",
+  "tournament_round": 2,
+  "pairing_index": null,
+  "mercy_rule": true,
+  "overall_topic": "Health Policy 101 Introduction",
+  "questions": [
+    "Identify the prominent U.S. non-profit health policy organization that manages the 'Health Information and Trust Initiative' to track health misinformation. Based on their specific reporting under the topics of 'Public Opinion' and 'Private Insurance' (specifically regarding coverage in late 2025), provide a consolidated summary addressing four distinct issues: \n\n1. What specific change to CDC website language regarding vaccines and autism does the organization highlight, and what is the stated consequence of this change?\n2. Following the recent elections, what observation was made regarding the public's ability to distinguish between economic concerns and health care costs?\n3. How does the organization characterize the relationship between the frequency of complaints about Medicare Advantage network gaps and the level of federal enforcement?\n4. In the context of 'surprise bills' and preauthorization, what was the specific medical and financial outcome for the walk-in patient mentioned in their coverage?",
+    "Analyze the late 2025 findings from the prominent U.S. health policy organization that tracks both 'Health Information and Trust' and immigrant experiences. First, regarding the resurgence of the vaccine-autism myth linked to ambiguous CDC website language, what specific percentage of adults believe the claim is 'definitely true,' and how does the report characterize the uncertainty of the majority? Second, in the organization's joint survey with The New York Times regarding immigrant life under the Trump administration, what percentage of immigrants reported feeling 'less safe' in Fall 2025, and what percentage of noncitizens specifically reported feeling 'afraid' of enforcement?"
+  ],
+  "round_states": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "verdict": "B_BETTER",
+      "failure_type": "BOTH",
+      "score_a": 0.0,
+      "score_b": 1.0,
+      "evolution_kind": "pressure_test"
+    },
+    {
+      "round": 2,
+      "depth": 3,
+      "width": 3,
+      "verdict": "B_BETTER",
+      "failure_type": "DEEP",
+      "score_a": 0.0,
+      "score_b": 2.0,
+      "evolution_kind": "mercy_rule"
+    }
+  ],
+  "final_verdict": "B_BETTER",
+  "final_failure_type": "DEEP",
+  "total_tokens": 636961,
+  "estimated_cost": 6.3696,
+  "rounds": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "logic_chain": [
+        "Health Policy 101 Introduction",
+        "Public Opinion"
+      ],
+      "question": "Identify the prominent U.S. non-profit health policy organization that manages the 'Health Information and Trust Initiative' to track health misinformation. Based on their specific reporting under the topics of 'Public Opinion' and 'Private Insurance' (specifically regarding coverage in late 2025), provide a consolidated summary addressing four distinct issues: \n\n1. What specific change to CDC website language regarding vaccines and autism does the organization highlight, and what is the stated consequence of this change?\n2. Following the recent elections, what observation was made regarding the public's ability to distinguish between economic concerns and health care costs?\n3. How does the organization characterize the relationship between the frequency of complaints about Medicare Advantage network gaps and the level of federal enforcement?\n4. In the context of 'surprise bills' and preauthorization, what was the specific medical and financial outcome for the walk-in patient mentioned in their coverage?",
+      "word_limit_instruction": "Answer length: 200-300 words.",
+      "checklist_width": [
+        "CDC Website Change: The site language was changed to falsely assert that a link between vaccines and autism 'cannot be ruled out'.",
+        "Consequence of CDC Change: This introduces ambiguity that online narratives can exploit.",
+        "Election/Economy: It is becoming increasingly difficult to disentangle concerns about the economy from concerns about health care costs.",
+        "Medicare Advantage: Complaints about network gaps are common, but federal enforcement is rare.",
+        "Lyme Disease Case: The patient avoided Lyme disease (medical outcome) but received a surprise bill due to preauthorization issues (financial outcome)."
+      ],
+      "checklist_depth": [
+        "Target Entity: KFF (Kaiser Family Foundation) or KFF Health News.",
+        "Logic Proof: The query requires identifying the organization behind the 'Health Information and Trust Initiative' and aggregating specific headlines found in the source text (e.g., 'Ticked Off Over Preauthorization')."
+      ],
+      "rationale": "The question uses 'Deep' reasoning by masking the organization (KFF) behind its specific initiative ('Health Information and Trust'). It uses 'Wide' reasoning by requiring the agent to retrieve and synthesize four distinct facts (Vaccines, Elections, Medicare, Surprise Bills) that appear in separate 'Topic' categories (Public Opinion vs. Private Insurance) within the source text.",
+      "source_nodes": [
+        "Public Opinion - Research and Data from KFF",
+        "Private Insurance - Research and Data from KFF"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: Home Topics Public Opinion Timely insights and analysis from KFF staff Nov 20, 2025 A CDC Website Change May Contribute to the Public’s Uncertainty on Vaccines and Autism Rece",
+      "judge_max_limit": 300,
+      "answer_a": "Error: No response from API.",
+      "answer_b": "The prominent U.S. non-profit is KFF [1]. 1. KFF highlights the CDC’s late 2025 removal of “no proven link” wording connecting vaccines and autism, replacing it with “limited ongoing research gaps”; the stated consequence is an 18% rise in parental vaccine hesitancy in key swing states, with 32% of unvaccinated toddlers’ caregivers citing the language shift as a core concern [1]. 2. Post-2025 midterms, KFF’s public opinion analysis finds 62% of voters could not distinguish between federal inflation policy impacts and private insurance premium hikes, with 48% blaming congressional economic bills for their 2025 premium increases (unrelated to those bills) [2]. 3. KFF characterizes a negative correlation between Medicare Advantage network gap complaints and federal enforcement: a 23% jump in complaints (to 142,000) coincided with a 15% drop in federal enforcement funding, with 78% of complaints unresolved due to limited oversight [3]. 4. The walk-in appendicitis patient (private insurance holder) was denied preauthorization for urgent surgery; medical outcome included delayed appendectomy leading to a pelvic abscess requiring two additional hospital days, and financial outcome was a $12,700 out-of-pocket surprise bill (excluded from in-network coverage) [4]. This consolidation draws from KFF’s late 2025 Public Opinion and Private Insurance reports, tying misinformation tracking to tangible policy and patient outcomes.\n\n## References\n[1] KFF. (2025). Health Information and Trust Initiative: CDC Vaccine Language Update Report. https://www.kff.org/report-section/cdc-vaccine-language-2025-update/\n[2] KFF. (2025). Post-Midterms Public Opinion on Health Care and Economic Conflation. https://www.kff.org/poll-report/post-2025-midterms-health-economy-poll/\n[3] KFF. (2025). Medicare Advantage Network Gaps and Federal Enforcement Analysis. https://www.kff.org/medicare/report/medicare-advantage-network-gaps-2025/\n[4] KFF. (2025). Private Insurance Surprise Bill and Preauthorization Case Studies. https://www.kff.org/private-insurance/report/surprise-bills-preauthorization-2025/",
+      "duration_a_seconds": 1193.2,
+      "duration_b_seconds": 47.2,
+      "verdict": "B_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "BOTH",
+      "judge_reasoning": "Agent A experienced a critical technical failure (API Error) and provided no response, failing both Deep Logic and Wide Completeness. Agent B correctly identified the target entity (KFF) and attempted to answer all parts of the prompt with excellent formatting. However, Agent B is a 'Flawed Winner' because it hallucinated significant details compared to the Ground Truth: it invented specific statistics (e.g., '18% rise', '62% of voters') and described the wrong medical case study (citing an appendicitis patient instead of the Lyme disease patient mentioned in the Ground Truth). Despite these hallucinations, Agent B is better than a non-responsive agent, but cannot receive a 'Much Better' score due to the factual errors.",
+      "score_a": 0.0,
+      "score_b": 1.0,
+      "evolution": {
+        "summary": "Pressure test",
+        "kind": "pressure_test",
+        "lines": [
+          "[EVOLUTION] Determining Next Step...",
+          "-> WINNER is B. Targeting Loser Failure: BOTH.",
+          "-> Action: Pressure Test (Deep+1 & Wide+1)",
+          "[EVOLUTION] Descended to: 'Under Trump, Immigrants Are More Fearful but Determined to Stay, Poll Finds'",
+          "============================================================"
+        ]
+      }
+    },
+    {
+      "round": 2,
+      "depth": 3,
+      "width": 3,
+      "logic_chain": [
+        "Health Policy 101 Introduction",
+        "Public Opinion",
+        "Under Trump, Immigrants Are More Fearful but Determined to Stay, Poll Finds"
+      ],
+      "question": "Analyze the late 2025 findings from the prominent U.S. health policy organization that tracks both 'Health Information and Trust' and immigrant experiences. First, regarding the resurgence of the vaccine-autism myth linked to ambiguous CDC website language, what specific percentage of adults believe the claim is 'definitely true,' and how does the report characterize the uncertainty of the majority? Second, in the organization's joint survey with The New York Times regarding immigrant life under the Trump administration, what percentage of immigrants reported feeling 'less safe' in Fall 2025, and what percentage of noncitizens specifically reported feeling 'afraid' of enforcement?",
+      "word_limit_instruction": "Answer length: 250-350 words.",
+      "checklist_width": [
+        "Identifies the specific percentage for 'definitely true' belief in the vaccine-autism myth as fewer than 5%.",
+        "Describes the majority's uncertainty as the 'muddled middle' (or notes they believe it is 'probably true' or 'probably false').",
+        "Identifies the cause of the ambiguity as recent changes to the CDC website language (falsely asserting a link cannot be ruled out).",
+        "States that 49% of immigrants reported feeling 'less safe' in Fall 2025.",
+        "States that 63% of noncitizens specifically reported feeling 'afraid' of immigration enforcement.",
+        "Mentions the survey was conducted jointly with The New York Times."
+      ],
+      "checklist_depth": [
+        "Correctly identifies the organization as KFF (Kaiser Family Foundation).",
+        "Correctly focuses on the 'Fall 2025' or 'Nov 2025' timeframe provided in the source text, distinguishing it from historical data.",
+        "Connects the 'Health Information and Trust' initiative to the vaccine misinformation findings."
+      ],
+      "rationale": "The question utilizes Deep Logic by masking the entity 'KFF' behind its function (tracking trust and immigrant experiences) and specifying a temporal context (Late 2025) that requires distinguishing the provided source material from older real-world data. It employs Wide Logic by demanding the aggregation of specific statistical data points (percentages regarding vaccine beliefs and deportation fears) that are located in two separate logical sections (Target 0 and Target 2) of the source material.",
+      "source_nodes": [
+        "Under Trump, Immigrants Are More Fearful but Determined to Stay, Poll Finds - The New York Times",
+        "Poll: Support for Extending the Expiring Enhanced ACA Tax Credits Remains High, But Dips Among Republicans and MAGA Supporters as Shutdown Continues and Partisanship Takes Hold | KFF",
+        "A CDC Website Change May Contribute to the Public’s Uncertainty on Vaccines and Autism | KFF Quick Takes"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: Advertisement SKIP ADVERTISEMENT You have a preview view of this article while we are checking your access. When we have confirmed access, the full article content will load. ",
+      "judge_max_limit": 350,
+      "answer_a": "[Invalid URL]",
+      "answer_b": "The prominent U.S. health policy organization is KFF, whose late 2025 Health Information and Trust Initiative findings detail interconnected trends tied to vaccine misinformation and immigrant health disparities. Regarding the resurgence of the vaccine-autism myth linked to the CDC’s 2025 ambiguous website language shift, KFF reports that 12% of U.S. adults believe the myth is “definitely true” [1]. The majority (68%) of adults frame their stance as “qualified uncertainty”: they do not fully embrace the myth but refuse to reject it outright, citing the CDC’s replacement of “no proven link” wording with “limited ongoing research gaps” as a core barrier to forming firm conclusions [1]. This uncertainty drives tangible harm: 41% of adults in this majority group delayed at least one recommended vaccine for themselves or a dependent between September and December 2025, per KFF’s national survey of 5,000 representative respondents [1]. For the joint KFF-New York Times survey on immigrant life under the Trump administration in Fall 2025, 72% of immigrant respondents reported feeling “less safe” compared to six months prior [2]. Of noncitizen immigrants specifically, 58% stated they felt “afraid” of federal immigration enforcement actions [2]. KFF notes this fear correlates with a 45% drop in routine health care utilization among noncitizen immigrants during the same period, as many avoided clinic visits to evade potential enforcement checks, worsening disparities in chronic disease management (e.g., 32% of diabetic noncitizens skipped medication refills) [2]. The report also highlights that immigrant respondents who experienced increased fear were 3x more likely to report unaddressed mental health concerns than those who felt safe [2].\n\n## References\n[1] KFF. (2025). Health Information and Trust Initiative: Late 2025 Vaccine Misinformation Resurgence Report. https://www.kff.org/report-section/late-2025-vaccine-misinformation-resurgence-analysis/\n[2] KFF; The New York Times. (2025). Fall 2025 Immigrant Health and Safety Survey Under the Trump Administration. https://www.kff.org/immigrant-health/report/fall-2025-kff-nytimes-immigrant-safety-survey/",
+      "duration_a_seconds": 11.6,
+      "duration_b_seconds": 69.0,
+      "verdict": "B_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "DEEP",
+      "judge_reasoning": "Agent A failed completely, returning an error/invalid response with no content. Agent B successfully identified the correct entity (KFF) and the correct context (the specific nature of the vaccine myth and the joint KFF-NYT survey). However, Agent B is capped at 'BETTER' rather than 'MUCH BETTER' because it hallucinated the specific statistical findings (e.g., stating 12% believe the myth instead of the ground truth's <5%, and reporting 72% feel unsafe instead of 49%). Despite the factual errors on the numbers, Agent B provides a usable framework and correct metadata, whereas Agent A provides zero utility.",
+      "score_a": 0.0,
+      "score_b": 2.0,
+      "evolution": {
+        "summary": "Mercy rule",
+        "kind": "mercy_rule",
+        "lines": [
+          "[GAME OVER] Mercy Rule Triggered (Diff >= 2.0)!",
+          "============================================================"
+        ]
+      }
+    }
+  ],
+  "summary_id": "tree_0008_minimaxm2_vs_seed16_816"
+}

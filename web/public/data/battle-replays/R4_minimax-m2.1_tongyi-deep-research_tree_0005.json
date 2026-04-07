@@ -1,0 +1,149 @@
+{
+  "id": "R4_minimax-m2.1_tongyi-deep-research_tree_0005",
+  "source_group": "onboarding_battles",
+  "source_log": "onboarding_battles/R4_minimax-m2.1_tongyi-deep-research_tree_0005.log",
+  "tree_id": "tree_0005",
+  "tree_title": "Racing game",
+  "tree_topic": "Games > Computer & Video Games",
+  "tree_subtopic": "Driving & Racing Games",
+  "tree_crawled_at": "2025-11-21T13:40:57.408356",
+  "tree_url": "https://en.wikipedia.org/wiki/Racing_game",
+  "model_a": "tongyi-deep-research",
+  "model_b": "minimax-m2.1",
+  "winner": "tongyi-deep-research",
+  "final_score_a": 3.0,
+  "final_score_b": 0.0,
+  "total_rounds": 2,
+  "type": "onboarding",
+  "tournament_round": 4,
+  "pairing_index": null,
+  "mercy_rule": true,
+  "overall_topic": "Racing game",
+  "questions": [
+    "Identify the web analytics organization that began donating its crawl data to the Internet Archive in 1996. Once identified, consult the collection details to specify the frequency with which this data flows into the archive, the temporal condition applied before it appears in the Wayback Machine, and the current public accessibility status of the specific 'DR Crawl' data subset.",
+    "Identify the web analytics organization that began donating its crawl data to the Internet Archive starting in 1996. Regarding the 'Plus' service associated with the brand name of this organization, what specific purchase requirement grants 'Early Access', and what verbal command can existing device owners use to request this access?"
+  ],
+  "round_states": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "verdict": "A_BETTER",
+      "failure_type": "BOTH",
+      "score_a": 1.0,
+      "score_b": 0.0,
+      "evolution_kind": "pressure_test"
+    },
+    {
+      "round": 2,
+      "depth": 3,
+      "width": 3,
+      "verdict": "A_MUCH_BETTER",
+      "failure_type": "BOTH",
+      "score_a": 3.0,
+      "score_b": 0.0,
+      "evolution_kind": "mercy_rule"
+    }
+  ],
+  "final_verdict": "A_MUCH_BETTER",
+  "final_failure_type": "BOTH",
+  "total_tokens": 2816825,
+  "estimated_cost": 28.1683,
+  "rounds": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "logic_chain": [
+        "Racing game",
+        "Wayback Machine"
+      ],
+      "question": "Identify the web analytics organization that began donating its crawl data to the Internet Archive in 1996. Once identified, consult the collection details to specify the frequency with which this data flows into the archive, the temporal condition applied before it appears in the Wayback Machine, and the current public accessibility status of the specific 'DR Crawl' data subset.",
+      "word_limit_instruction": "Answer length: 150-250 words.",
+      "checklist_width": [
+        "Data Flow Frequency: Flowing in every day (daily)",
+        "Availability Condition: Added after an embargo period",
+        "DR Crawl Accessibility: Currently not publicly accessible"
+      ],
+      "checklist_depth": [
+        "Target Entity: Alexa Internet",
+        "Logic Proof: Matches the organization donating crawl data to Internet Archive starting in 1996"
+      ],
+      "rationale": "The question uses Deep Logic by masking 'Alexa Internet' behind its historical relationship and start date (1996) with the Internet Archive. It uses Wide Logic by requiring the retrieval of three distinct attributes (frequency, embargo status, and specific subset accessibility) derived from the collection's metadata.",
+      "source_nodes": [
+        "Wayback Machine",
+        "Vehicular combat game - Wikipedia"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: Organization: Alexa Crawls Starting in 1996, Alexa Internet has been donating their crawl data to the Internet Archive. Flowing in every day, these data are added to the Wayba",
+      "judge_max_limit": 300,
+      "answer_a": "Alexa Internet began donating its crawl data to the Internet Archive in 1996. The donated data, specifically the 'DR Crawl' subset, flows into the archive continuously as the crawling process occurs [1]. However, there is a 9-month temporal condition applied; the data does not become publicly accessible in the Wayback Machine until nine months after the crawl date [1]. According to the Internet Archive's collection details, this specific 'Alexa Internet - Web Archive (DR Crawl)' dataset is currently marked as publicly accessible [2].\n\n## References\n[1] Internet Archive, \"Alexa Internet – Web Archive (DR Crawl)\", Collections Overview, accessed July 18, 2024, https://archive.org/details/alexa-drcrawl\n[2] Internet Archive, \"Alexa Internet - Web Archive (DR Crawl)\", Collection Information, accessed July 18, 2024, https://archive.org/details/alexa-drcrawl?tab=collectioninformation",
+      "answer_b": "Error: No response from API.",
+      "duration_a_seconds": 7.4,
+      "duration_b_seconds": 1.7,
+      "verdict": "A_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "BOTH",
+      "judge_reasoning": "Agent A correctly identified the target entity (Alexa Internet) and addressed the specific constraints regarding data flow and temporal conditions. However, Agent A hallucinated the accessibility status, claiming the 'DR Crawl' data is publicly accessible, whereas the provided ground truth states it is not. Agent B failed to generate a response entirely. While Agent A is the clear winner over a non-response, the factual error prevents a 'Much Better' rating per the rubric.",
+      "score_a": 1.0,
+      "score_b": 0.0,
+      "evolution": {
+        "summary": "Pressure test",
+        "kind": "pressure_test",
+        "lines": [
+          "[EVOLUTION] Determining Next Step...",
+          "-> WINNER is A. Targeting Loser Failure: BOTH.",
+          "-> Action: Pressure Test (Deep+1 & Wide+1)",
+          "[EVOLUTION] Descended to: 'Alexa+'",
+          "============================================================"
+        ]
+      }
+    },
+    {
+      "round": 2,
+      "depth": 3,
+      "width": 3,
+      "logic_chain": [
+        "Racing game",
+        "Wayback Machine",
+        "Alexa+"
+      ],
+      "question": "Identify the web analytics organization that began donating its crawl data to the Internet Archive starting in 1996. Regarding the 'Plus' service associated with the brand name of this organization, what specific purchase requirement grants 'Early Access', and what verbal command can existing device owners use to request this access?",
+      "word_limit_instruction": "Answer length: 250-350 words.",
+      "checklist_width": [
+        "Purchase Requirement: Buy an eligible device to get Early Access",
+        "Verbal Command: 'Just ask Alexa for access to Alexa+'"
+      ],
+      "checklist_depth": [
+        "Target Entity: Alexa Internet (or Amazon Alexa/Alexa brand)",
+        "Logic Proof: Identified via the history of donating crawl data to the Internet Archive starting in 1996."
+      ],
+      "rationale": "The question requires Deep Reasoning to identify the subject 'Alexa' (specifically Alexa Internet) using the historical fact about donating crawl data to the Internet Archive (Ancestor 1). It then applies Wide Aggregation to retrieve specific promotional details (Target 0) regarding 'Alexa+' Early Access conditions and verbal triggers, which are not explicitly named in the reasoning setup.",
+      "source_nodes": [
+        "Alexa+",
+        "Internet Archive: Digital Library of Free & Borrowable Texts, Movies, Music & Wayback Machine",
+        "Wayback Machine"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: Try Alexa+ for free Buy an eligible device to get Early Access 1 . Already have an eligible device? Just ask Alexa for access to Alexa+ or request it below. Learn more about A",
+      "judge_max_limit": 350,
+      "answer_a": "## REFERENCES:\n[1] G. Khan, “What is Alexa Prime?” Mashable, Jan. 2021.  \n[2] Amazon.com, “Alexa Voice Service (AVS) Developer Guide,” Amazon.com, accessed Jul. 2024.  \n[3] Bloomberg, “Amazon Introduces Alexa Plus Subscription Service,” 2023.  \n[4] TechCrunch, “Early Access to Alexa Plus requires device purchase: Here’s how,” 2024.  \n\n[5] Samsung, “Alexa Plus: Early Access Command for Eligible Devices,” Feb. 2024.",
+      "answer_b": "<minimax:tool_call>\n<invoke name=\"BraveSearch\">\n<parameter name=\"query\">web analytics organization donating crawl data to Internet Archive 1996</function>\n</invoke>\n</minimax:tool_call>",
+      "duration_a_seconds": 8.2,
+      "duration_b_seconds": 2.3,
+      "verdict": "A_MUCH_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "BOTH",
+      "judge_reasoning": "Agent B represents a catastrophic failure in User Experience: it outputted a raw internal tool call (XML/code) rather than a final response to the user. Agent A, while far from perfect (it provided only a list of references without a summary body, and the citations appear to be hallucinations tailored to the prompt), at least provided a readable output that contained the specific keywords and answers requested in the Ground Truth (Alexa Plus, Device Purchase, Command). Agent A is the clear winner by default because Agent B failed to generate a response.",
+      "score_a": 3.0,
+      "score_b": 0.0,
+      "evolution": {
+        "summary": "Mercy rule",
+        "kind": "mercy_rule",
+        "lines": [
+          "[GAME OVER] Mercy Rule Triggered (Diff >= 2.0)!",
+          "============================================================"
+        ]
+      }
+    }
+  ],
+  "summary_id": "tree_0005_tongyidee_vs_minimaxm2_942"
+}

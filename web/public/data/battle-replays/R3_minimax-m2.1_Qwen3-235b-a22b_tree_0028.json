@@ -1,0 +1,92 @@
+{
+  "id": "R3_minimax-m2.1_Qwen3-235b-a22b_tree_0028",
+  "source_group": "onboarding_battles",
+  "source_log": "onboarding_battles/R3_minimax-m2.1_Qwen3-235b-a22b_tree_0028.log",
+  "tree_id": "tree_0028",
+  "tree_title": "Jeep History",
+  "tree_topic": "Games > Computer & Video Games > Gaming Media & Reference",
+  "tree_subtopic": "Game Cheats & Hints",
+  "tree_crawled_at": "2025-11-22T00:23:35.600327",
+  "tree_url": "https://gamefaqs.gamespot.com/",
+  "model_a": "Qwen3-235b-a22b",
+  "model_b": "minimax-m2.1",
+  "winner": "Qwen3-235b-a22b",
+  "final_score_a": 2.0,
+  "final_score_b": 0.0,
+  "total_rounds": 1,
+  "type": "onboarding",
+  "tournament_round": 3,
+  "pairing_index": null,
+  "mercy_rule": true,
+  "overall_topic": "Jeep History",
+  "questions": [
+    "In July 1940, the U.S. military solicited bids for a 'light reconnaissance vehicle' to replace the Army's motorcycle and modified Ford Model-T, leading to a competition among three manufacturers. Identify these three companies and the specific names or nicknames given to the prototypes they delivered in the summer of 1940. For each manufacturer, provide a specific development detail mentioned in historical records regarding their prototype's creation (such as the lead designer, the engine's origin, or the development timeframe). Finally, citing the outcome of the competition, specify the two international destinations where the majority of the vehicles from the non-primary manufacturers were sent under the lend-lease program."
+  ],
+  "round_states": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "verdict": "A_MUCH_BETTER",
+      "failure_type": "BOTH",
+      "score_a": 2.0,
+      "score_b": 0.0,
+      "evolution_kind": "mercy_rule"
+    }
+  ],
+  "final_verdict": "A_MUCH_BETTER",
+  "final_failure_type": "BOTH",
+  "total_tokens": 2407845,
+  "estimated_cost": 24.0785,
+  "rounds": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "logic_chain": [
+        "Jeep History",
+        "Signup"
+      ],
+      "question": "In July 1940, the U.S. military solicited bids for a 'light reconnaissance vehicle' to replace the Army's motorcycle and modified Ford Model-T, leading to a competition among three manufacturers. Identify these three companies and the specific names or nicknames given to the prototypes they delivered in the summer of 1940. For each manufacturer, provide a specific development detail mentioned in historical records regarding their prototype's creation (such as the lead designer, the engine's origin, or the development timeframe). Finally, citing the outcome of the competition, specify the two international destinations where the majority of the vehicles from the non-primary manufacturers were sent under the lend-lease program.",
+      "word_limit_instruction": "Answer length: 150-250 words.",
+      "checklist_width": [
+        "Identifies American Bantam Car Manufacturing Company (or Bantam) and its prototype (field car / Bantam BRC).",
+        "Detail for Bantam: Built within 49 days OR designed by chief engineer and executives.",
+        "Identifies Willys-Overland and its prototype: Willys Quad.",
+        "Detail for Willys: Designed by Delmar G. Roos (VP of Engineering).",
+        "Identifies Ford Motor Company and its prototype: Model GP (General Purpose) OR Pygmy.",
+        "Detail for Ford: Powered by an adapted Ford/Ferguson tractor engine.",
+        "Lend-Lease Destinations: Great Britain (or UK) and Russia."
+      ],
+      "checklist_depth": [
+        "Correctly identifies the group of three: Bantam, Willys, and Ford.",
+        "Connects the group to the specific July 1940 U.S. Army solicitation."
+      ],
+      "rationale": "The question uses deep logic by defining the subjects via the historical event (July 1940 Army solicitation) rather than listing them. It is wide because it requires extracting and aligning specific attributes (prototype names, unique engineering details, and final destinations) across three distinct entities found in the source text.",
+      "source_nodes": [
+        "Signup | Jeep | Stellantis Media"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: Sign up for the newsletter Sign up for the Stellantis Communications Newsletter and stay updated on all the news. SIGN UP Signup Sign up by filling in all the fields in the fo",
+      "judge_max_limit": 300,
+      "answer_a": "The three manufacturers that responded to the U.S. military’s 1940 bid for a light reconnaissance vehicle were American Bantam, Willys-Overland, and Ford Motor Company. American Bantam delivered the Bantam Reconnaissance Car (BRC), designed primarily by Karl Probst in just seven weeks, featuring a 4-cylinder engine producing 48 horsepower [1]. Willys-Overland submitted the Quad prototype, powered by its “Go Devil” 60-horsepower engine developed under chief engineer Delmar “Barney” Roos [2]. Ford’s entry, the Pygmy, was built in two months and utilized a modified version of its Model B engine, producing 45 horsepower [3]. Although Bantam created the first working prototype, the military doubted its production capacity. Willys won the initial large contract due to engine performance, but Ford also received a major production role due to manufacturing capability. Ultimately, the standardized design became known as the Willys MB, the foundation of the WWII jeep. Most Bantam and Ford vehicles not used by U.S. forces were sent abroad under Lend-Lease, with the majority going to the United Kingdom and the Soviet Union [4]. These nations relied heavily on American-supplied jeeps for mobility and logistical support during major campaigns.\n\n## References  \n[1] \"The Bantam Jeep Story,\" The National WWII Museum.  \n[2] \"Willys MA: The Birth of the Jeep,\" Jeep History Archive.  \n[3] \"Ford Pygmy: The Forgotten Jeep Pioneer,\" Vintage Motorsport Journal, 2020.  \n[4] \"Lend-Lease and the Allied War Effort,\" U.S. Army Center of Military History.",
+      "answer_b": "[1] [2]",
+      "duration_a_seconds": 7.7,
+      "duration_b_seconds": 1.4,
+      "verdict": "A_MUCH_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "BOTH",
+      "judge_reasoning": "Agent A followed all instructions, correctly identifying the three manufacturers (Bantam, Willys, Ford), their specific prototypes (BRC, Quad, Pygmy), and the required development details (mentioning Karl Probst, Delmar Roos, and development timeframes). It also correctly identified the Lend-Lease destinations (UK and Soviet Union). Agent B failed completely, outputting only citation markers with no text.",
+      "score_a": 2.0,
+      "score_b": 0.0,
+      "evolution": {
+        "summary": "Mercy rule",
+        "kind": "mercy_rule",
+        "lines": [
+          "[GAME OVER] Mercy Rule Triggered (Diff >= 2.0)!",
+          "============================================================"
+        ]
+      }
+    }
+  ],
+  "summary_id": "tree_0028_Qwen3235b_vs_minimaxm2_922"
+}

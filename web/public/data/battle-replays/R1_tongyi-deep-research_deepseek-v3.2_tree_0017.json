@@ -1,0 +1,93 @@
+{
+  "id": "R1_tongyi-deep-research_deepseek-v3.2_tree_0017",
+  "source_group": "onboarding_battles",
+  "source_log": "onboarding_battles/R1_tongyi-deep-research_deepseek-v3.2_tree_0017.log",
+  "tree_id": "tree_0017",
+  "tree_title": "Handheld game console",
+  "tree_topic": "Computers & Electronics > Consumer Electronics > Gadgets & Portable Electronics",
+  "tree_subtopic": "Handheld Game Consoles",
+  "tree_crawled_at": "2025-11-21T15:27:37.988167",
+  "tree_url": "https://en.wikipedia.org/wiki/Handheld_game_console",
+  "model_a": "tongyi-deep-research",
+  "model_b": "deepseek-v3.2",
+  "winner": "deepseek-v3.2",
+  "final_score_a": 0.0,
+  "final_score_b": 2.0,
+  "total_rounds": 1,
+  "type": "onboarding",
+  "tournament_round": 1,
+  "pairing_index": null,
+  "mercy_rule": true,
+  "overall_topic": "Handheld game console",
+  "questions": [
+    "Identify the 8-bit handheld game console released in 1989 that dominated the portable market despite lacking the color screens and backlighting of its contemporaries. After identifying the device and the specific 'block-stacking' pack-in game credited for much of its sales success, provide a detailed comparison of its power efficiency against its two main color-screen competitors from Atari and Sega (specifically citing battery count and approximate lifespan). Finally, describe the specific visual improvement regarding the monochrome display tone introduced in the 1996 'Pocket' revision of this console compared to the original unit."
+  ],
+  "round_states": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "verdict": "B_MUCH_BETTER",
+      "failure_type": "WIDE",
+      "score_a": 0.0,
+      "score_b": 2.0,
+      "evolution_kind": "mercy_rule"
+    }
+  ],
+  "final_verdict": "B_MUCH_BETTER",
+  "final_failure_type": "WIDE",
+  "total_tokens": 427029,
+  "estimated_cost": 4.2703,
+  "rounds": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "logic_chain": [
+        "Handheld game console",
+        "Game Boy — Nintendo dominates the portable market"
+      ],
+      "question": "Identify the 8-bit handheld game console released in 1989 that dominated the portable market despite lacking the color screens and backlighting of its contemporaries. After identifying the device and the specific 'block-stacking' pack-in game credited for much of its sales success, provide a detailed comparison of its power efficiency against its two main color-screen competitors from Atari and Sega (specifically citing battery count and approximate lifespan). Finally, describe the specific visual improvement regarding the monochrome display tone introduced in the 1996 'Pocket' revision of this console compared to the original unit.",
+      "word_limit_instruction": "Answer length: 200-300 words.",
+      "checklist_width": [
+        "Identifies the pack-in game as Tetris",
+        "Comparison: Game Boy used 4 AA batteries (approx 30 hours life)",
+        "Comparison: Atari Lynx used 6 AA batteries (short battery life)",
+        "Comparison: Sega Game Gear used 6 AA batteries (short battery life)",
+        "Revision Detail: The Game Boy Pocket (1996) featured a 'true' black and white display",
+        "Revision Detail: The original Game Boy display had a green-tinted monochrome look"
+      ],
+      "checklist_depth": [
+        "Target Entity: Nintendo Game Boy (Original/DMG)",
+        "Competitor Entity 1: Atari Lynx",
+        "Competitor Entity 2: Sega Game Gear"
+      ],
+      "rationale": "The question uses 'Deep' logic by describing the console via its release year, specs (8-bit, no backlight), and pack-in game genre rather than naming it directly. It requires 'Wide' aggregation by asking for specific comparative technical details (battery counts/hours) regarding its competitors (Lynx/Game Gear) and specific visual nuances of a later hardware revision (Pocket green tint vs black/white), all of which are distinct facts scattered throughout the source text.",
+      "source_nodes": [
+        "Game Boy — Nintendo dominates the portable market | First Arkansas News (FAN) - reporting from across the Natural State",
+        "WonderSwan - Wikipedia"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: Home » Headline , Retrogaming , Technology Game Boy — Nintendo dominates the portable market By: Ethan C. Nobles 22 January 2011 One Comment Kirby was popular on the Super Nin",
+      "judge_max_limit": 300,
+      "answer_a": "The 8-bit handheld console released in 1989 that dominated the portable market despite its monochrome screen and lack of backlighting was the Nintendo Game Boy. Its pack-in game, *Tetris*, a block-stacking puzzle game, was instrumental in its sales success [1]. Compared to its color-screen competitors, the Game Boy significantly outperformed them in power efficiency. It used two AA batteries, offering approximately 15–20 hours of gameplay, while the Atari Lynx (four AA batteries) lasted only 1–2 hours [2]. The Sega Game Gear (two 9V batteries or AC adapter) managed around 2–3 hours on battery power [3]. The 1996 \"Pocket\" revision (Game Boy Pocket) improved the display with a brighter, higher-contrast monochrome screen and a lighter greenish-gray pixel shading, reducing ghosting and enhancing visibility compared to the original’s darker screen tone [4].\n\n## References  \n[1] Nintendo History: Game Boy Launch.  \n[2] \"Atari Lynx vs. Game Boy Battery Life,\" Handheld Review Archive, 1990.  \n[3] Sega Game Gear Technical Specifications, 1990.  \n[4] Game Boy Pocket Display Comparison, Retro Gaming Forum, 1996.",
+      "answer_b": "The device is the Nintendo Game Boy, released in 1989. Its immense sales success is heavily credited to its pack-in game, *Tetris*, a block-stacking puzzle game. Power efficiency was a key advantage for the original Game Boy over its color-screen competitors. It required only 4 AA batteries, providing approximately 15-30 hours of playtime [1]. In contrast, the Atari Lynx (released 1989) needed 6 AA batteries for only about 4-5 hours of use [2]. The Sega Game Gear (released 1990) required 6 AA batteries as well and had an even shorter lifespan of roughly 3-5 hours [1][2]. This stark difference in battery consumption solidified the Game Boy's appeal for portable, long-term play.\n\nThe 1996 Game Boy Pocket revision featured a significant visual improvement to its monochrome display. While the original Game Boy had a greenish, pea-soup colored screen with a greenish-gray tone, the Game Boy Pocket introduced a true black-and-white display with darker blacks and a much sharper gray-scale contrast, eliminating the green tint for a clearer picture [3][4]. This was coupled with a physically smaller screen but with higher pixel density.\n\n## References\n[1] How-To Geek. \"The Nintendo Game Boy Was the Underdog That Won.\" Retrieved October 27, 2023, from https://www.howtogeek.com/746955/the-nintendo-game-boy-was-the-underdog-that-won/\n[2] Retro Dodo. \"Game Boy vs Game Gear vs Atari Lynx.\" Retrieved October 27, 2023, from https://retrododo.com/game-boy-vs-game-gear-vs-atari-lynx/\n[3] Nintendo Life. \"Hardware Classics: Nintendo Game Boy Pocket.\" Retrieved October 27, 2023, from https://www.nintendolife.com/news/2015/07/hardware_classics_nintendo_game_boy_pocket\n[4] Video Game History Foundation. \"Game Boy: A Technical Overview.\" Retrieved October 27, 2023, from https://gamehistory.org/gameboy/",
+      "duration_a_seconds": 14.1,
+      "duration_b_seconds": 12.5,
+      "verdict": "B_MUCH_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "WIDE",
+      "judge_reasoning": "Agent B is factually accurate, whereas Agent A hallucinates significantly regarding the hardware specifications requested. Agent A incorrectly states the original Game Boy used 2 AA batteries (it used 4), the Atari Lynx used 4 AA batteries (it used 6), and the Game Gear used two 9V batteries (it used 6 AA). Agent B correctly identifies the battery counts and lifespans for all three devices and provides a clearer description of the screen revision.",
+      "score_a": 0.0,
+      "score_b": 2.0,
+      "evolution": {
+        "summary": "Mercy rule",
+        "kind": "mercy_rule",
+        "lines": [
+          "[GAME OVER] Mercy Rule Triggered (Diff >= 2.0)!",
+          "============================================================"
+        ]
+      }
+    }
+  ],
+  "summary_id": "tree_0017_tongyidee_vs_deepseekv_933"
+}
