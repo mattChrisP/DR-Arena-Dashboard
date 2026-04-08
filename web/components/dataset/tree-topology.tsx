@@ -18,6 +18,7 @@ interface LayoutNode {
   childCount: number;
   descendantCount: number;
   expanded: boolean;
+  estimatedHeight: number;
 }
 
 interface LayoutLink {
@@ -27,8 +28,7 @@ interface LayoutLink {
 
 const CARD_WIDTH = 210;
 const ROOT_CARD_WIDTH = 260;
-const CARD_HEIGHT = 88;
-const LEVEL_GAP = 148;
+const LEVEL_GAP = 196;
 const SIBLING_GAP = 58;
 const MARGIN_X = 120;
 const MARGIN_Y = 88;
@@ -36,29 +36,62 @@ const FIT_PADDING = 56;
 const MIN_SCALE = 0.28;
 const MAX_SCALE = 1.6;
 const DRAG_THRESHOLD = 5;
+const EDGE_GAP = 6;
 
-function nodeId(node: TopologyNode): string {
-  return node.url;
+const ROOT_PATH = "0";
+
+/**
+ * Estimate a card's rendered height from its data.
+ *   py-3          = 24px  (12 top + 12 bottom)
+ *   depth label   = 14px  (text-[10px] + line-height)
+ *   mt-1 + title  = 4px + 18–36px  (line-clamp-2, text-sm leading-snug)
+ *   mt-2 + meta   = 8px + 16px
+ *   mt-3 + pills  = 12px + 22px
+ */
+function estimateCardHeight(node: TopologyNode, cardWidth: number): number {
+  const PAD = 24;
+  const LABEL = 14;
+  const TITLE_GAP = 4;
+  const META = 8 + 16;
+  const PILLS = 12 + 22;
+
+  const titleChars = nodeTitle(node).length;
+  const availableWidth = cardWidth - 32 - 28;
+  const charsPerLine = Math.max(1, Math.floor(availableWidth / 7.5));
+  const titleLines = Math.min(2, Math.ceil(titleChars / charsPerLine));
+  const titleHeight = titleLines * 18;
+
+  return PAD + LABEL + TITLE_GAP + titleHeight + META + PILLS;
 }
 
 function countDescendants(node: TopologyNode): number {
   return (node.children ?? []).reduce((sum, child) => sum + 1 + countDescendants(child), 0);
 }
 
-function findNode(root: TopologyNode, id: string): TopologyNode | null {
-  if (root.url == id) return root;
-  for (const child of root.children ?? []) {
-    const match = findNode(child, id);
-    if (match) return match;
+function findNodeByPath(root: TopologyNode, path: string): TopologyNode | null {
+  const parts = path.split("/").map(Number);
+  let current: TopologyNode = root;
+  for (let i = 1; i < parts.length; i++) {
+    const children = current.children ?? [];
+    if (parts[i] >= children.length) return null;
+    current = children[parts[i]];
   }
-  return null;
+  return current;
 }
 
-function buildVisibleTree(node: TopologyNode, expandedIds: Set<string>): TopologyNode {
-  const isExpanded = expandedIds.has(nodeId(node));
+function buildVisibleTree(
+  node: TopologyNode,
+  expandedIds: Set<string>,
+  currentPath: string = ROOT_PATH,
+): TopologyNode {
+  const isExpanded = expandedIds.has(currentPath);
   return {
     ...node,
-    children: isExpanded ? (node.children ?? []).map((child) => buildVisibleTree(child, expandedIds)) : [],
+    children: isExpanded
+      ? (node.children ?? []).map((child, i) =>
+          buildVisibleTree(child, expandedIds, `${currentPath}/${i}`),
+        )
+      : [],
   };
 }
 
@@ -120,13 +153,13 @@ export function TreeTopology({ data, onNodeSelect }: Props) {
   } | null>(null);
   const suppressClickRef = useRef(false);
   const [expandedIds, setExpandedIds] = useState<Set<string>>(new Set());
-  const [selectedId, setSelectedId] = useState<string>(nodeId(data));
+  const [selectedId, setSelectedId] = useState<string>(ROOT_PATH);
   const [transform, setTransform] = useState({ x: 0, y: 0, scale: 1 });
   const [isDragging, setIsDragging] = useState(false);
 
   useEffect(() => {
     setExpandedIds(new Set());
-    setSelectedId(nodeId(data));
+    setSelectedId(ROOT_PATH);
     onNodeSelect?.(data);
   }, [data, onNodeSelect]);
 
@@ -157,8 +190,6 @@ export function TreeTopology({ data, onNodeSelect }: Props) {
     return () => container.removeEventListener("wheel", handleWheel);
   }, []);
 
-  const rootId = nodeId(data);
-
   const { nodes, links, width, height } = useMemo(() => {
     const visibleRoot = buildVisibleTree(data, expandedIds);
     const root = hierarchy(visibleRoot);
@@ -171,21 +202,37 @@ export function TreeTopology({ data, onNodeSelect }: Props) {
     let maxX = -Infinity;
     let maxY = 0;
 
+    // Build path-based IDs by walking the d3 hierarchy
+    const nodePathMap = new Map<object, string>();
+    root.each((node) => {
+      if (!node.parent) {
+        nodePathMap.set(node, ROOT_PATH);
+      } else {
+        const parentPath = nodePathMap.get(node.parent)!;
+        const childIndex = node.parent.children!.indexOf(node);
+        nodePathMap.set(node, `${parentPath}/${childIndex}`);
+      }
+    });
+
     const layoutNodes: LayoutNode[] = root.descendants().map((node) => {
       minX = Math.min(minX, node.x ?? 0);
       maxX = Math.max(maxX, node.x ?? 0);
       maxY = Math.max(maxY, node.y ?? 0);
 
-      const original = findNode(data, node.data.url) ?? node.data;
+      const nPath = nodePathMap.get(node)!;
+      const original = findNodeByPath(data, nPath) ?? node.data;
+      const isRoot = nPath === ROOT_PATH;
+      const cw = isRoot ? ROOT_CARD_WIDTH : CARD_WIDTH;
       return {
-        id: nodeId(original),
+        id: nPath,
         x: node.x ?? 0,
         y: node.y ?? 0,
         data: original,
         depth: node.depth,
         childCount: original.children?.length ?? 0,
         descendantCount: countDescendants(original),
-        expanded: expandedIds.has(nodeId(original)),
+        expanded: expandedIds.has(nPath),
+        estimatedHeight: estimateCardHeight(original, cw),
       };
     });
 
@@ -198,11 +245,13 @@ export function TreeTopology({ data, onNodeSelect }: Props) {
       y: node.y + yOffset,
     }));
 
-    const byId = new Map(positionedNodes.map((node) => [node.id, node]));
+    const maxEstHeight = positionedNodes.reduce((m, n) => Math.max(m, n.estimatedHeight), 0);
+
+    const byPath = new Map(positionedNodes.map((node) => [node.id, node]));
     const layoutLinks: LayoutLink[] = root.links()
       .map((link) => {
-        const source = byId.get(nodeId(link.source.data));
-        const target = byId.get(nodeId(link.target.data));
+        const source = byPath.get(nodePathMap.get(link.source)!);
+        const target = byPath.get(nodePathMap.get(link.target)!);
         return source && target ? { source, target } : null;
       })
       .filter((link): link is LayoutLink => Boolean(link));
@@ -211,11 +260,11 @@ export function TreeTopology({ data, onNodeSelect }: Props) {
       nodes: positionedNodes,
       links: layoutLinks,
       width: Math.max(860, maxX - minX + MARGIN_X * 2 + CARD_WIDTH),
-      height: Math.max(420, maxY + MARGIN_Y * 2 + CARD_HEIGHT),
+      height: Math.max(420, maxY + MARGIN_Y * 2 + maxEstHeight),
     };
   }, [data, expandedIds]);
 
-  const selectedNode = findNode(data, selectedId) ?? data;
+  const selectedNode = findNodeByPath(data, selectedId) ?? data;
 
   const fitToViewport = useCallback(() => {
     const container = containerRef.current;
@@ -236,7 +285,7 @@ export function TreeTopology({ data, onNodeSelect }: Props) {
 
   function resetView() {
     setExpandedIds(new Set());
-    setSelectedId(rootId);
+    setSelectedId(ROOT_PATH);
     onNodeSelect?.(data);
   }
 
@@ -338,9 +387,9 @@ export function TreeTopology({ data, onNodeSelect }: Props) {
             type="button"
             onClick={() => {
               const next = new Set<string>();
-              next.add(rootId);
+              next.add(ROOT_PATH);
               setExpandedIds(next);
-              setSelectedId(rootId);
+              setSelectedId(ROOT_PATH);
               onNodeSelect?.(data);
             }}
             className="rounded-xl border border-border-subtle bg-bg/55 px-3 py-2 text-xs font-medium text-fg-muted transition-colors hover:border-accent-2/20 hover:bg-accent-2/[0.05] hover:text-fg"
@@ -387,10 +436,10 @@ export function TreeTopology({ data, onNodeSelect }: Props) {
             willChange: "transform",
           }}
         >
-          <svg className="absolute inset-0 h-full w-full" width={width} height={height}>
+          <svg className="absolute inset-0 -z-10 h-full w-full" width={width} height={height}>
             {links.map((link) => {
-              const sourceY = link.source.y + CARD_HEIGHT / 2 - 4;
-              const targetY = link.target.y - CARD_HEIGHT / 2 + 4;
+              const sourceY = link.source.y + link.source.estimatedHeight / 2 + EDGE_GAP;
+              const targetY = link.target.y - link.target.estimatedHeight / 2 - EDGE_GAP;
               const midY = sourceY + (targetY - sourceY) * 0.45;
 
               return (
@@ -407,7 +456,7 @@ export function TreeTopology({ data, onNodeSelect }: Props) {
           </svg>
 
           {nodes.map((node) => {
-            const isRoot = node.id === rootId;
+            const isRoot = node.id === ROOT_PATH;
             const isSelected = node.id === selectedId;
             const hasChildren = node.childCount > 0;
             const cardWidth = isRoot ? ROOT_CARD_WIDTH : CARD_WIDTH;
@@ -418,7 +467,7 @@ export function TreeTopology({ data, onNodeSelect }: Props) {
                 type="button"
                 onPointerDown={(event) => event.stopPropagation()}
                 onClick={() => handleNodeClick(node)}
-                className={`absolute -translate-x-1/2 -translate-y-1/2 rounded-[20px] border px-4 py-3 text-left outline-none transition-all duration-200 focus-visible:border-accent-2/40 focus-visible:outline-none ${
+                className={`absolute -translate-x-1/2 -translate-y-1/2 overflow-hidden rounded-[20px] border px-4 py-3 text-left outline-none transition-all duration-200 focus-visible:border-accent-2/40 focus-visible:outline-none ${
                   isSelected
                     ? "border-accent-2/40 bg-bg shadow-[0_18px_36px_-26px_rgba(31,26,23,0.28)]"
                     : "border-border-subtle bg-bg-elevated/90 hover:-translate-y-[calc(50%+2px)] hover:border-accent-2/24 hover:bg-bg"
@@ -457,8 +506,8 @@ export function TreeTopology({ data, onNodeSelect }: Props) {
                   {nodeMeta(node.data)}
                 </div>
 
-                <div className="mt-3 flex flex-wrap gap-1.5 text-[10px]">
-                  <span className="rounded-full border border-border-subtle/80 bg-bg/55 px-2 py-1 text-fg-dim">
+                <div className="mt-3 flex flex-nowrap gap-1.5 overflow-hidden text-[10px]">
+                  <span className="max-w-full truncate rounded-full border border-border-subtle/80 bg-bg/55 px-2 py-1 text-fg-dim">
                     {node.data.crawled ? "Crawled" : node.data.error || "Failed"}
                   </span>
                   {hasChildren && (

@@ -33,11 +33,11 @@ export function TreeDetailShell({ treeMeta, topology, battles, modelMeta }: Prop
         </div>
 
         <div className="mt-4 flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between">
-          <div className="max-w-2xl">
+          <div className="min-w-0 max-w-2xl">
             <span className="self-start rounded-full border border-accent-2/20 bg-accent-2/[0.06] px-2.5 py-0.5 text-[10px] font-semibold uppercase tracking-[0.12em] text-accent-2">
               {topicTag(treeMeta.topic)}
             </span>
-            <h1 className="app-title mt-3">
+            <h1 className="app-title mt-3 break-words">
               {treeMeta.root_url.replace(/^https?:\/\//, "").split("/").slice(0, 2).join("/")}
             </h1>
             <p className="mt-2 text-sm text-fg-muted">

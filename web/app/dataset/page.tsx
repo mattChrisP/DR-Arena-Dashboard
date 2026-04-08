@@ -1,7 +1,8 @@
 import { readFileSync, readdirSync } from "fs";
 import { join } from "path";
 import { getMetadata, getSummary, getBattles, getTopologyTreeIds } from "@/lib/data";
-import type { TopologyNode } from "@/lib/types";
+import type { TopologyNode, TreeStats } from "@/lib/types";
+import { computeTopologyStats } from "@/lib/topology-stats";
 import { DatasetShell } from "@/components/dataset/dataset-shell";
 
 export const metadata = {
@@ -32,14 +33,22 @@ export default function DatasetPage() {
   const topologyIds = new Set(getTopologyTreeIds());
   const topologyMap = loadTopologyMap(topologyIds);
 
+  // Compute ground-truth stats from topology files
+  const statsMap: Record<string, TreeStats> = {};
+  for (const [id, topo] of Object.entries(topologyMap)) {
+    statsMap[id] = computeTopologyStats(topo);
+  }
+
   // Count battles per tree
   const battleCounts: Record<string, number> = {};
   for (const b of battles) {
     battleCounts[b.tree_id] = (battleCounts[b.tree_id] ?? 0) + 1;
   }
 
-  // Only include trees that have topology files
-  const treesWithTopology = meta.trees.filter((t) => topologyIds.has(t.tree_id));
+  // Only include trees that have topology files, override stale stats
+  const treesWithTopology = meta.trees
+    .filter((t) => topologyIds.has(t.tree_id))
+    .map((t) => (statsMap[t.tree_id] ? { ...t, stats: statsMap[t.tree_id] } : t));
 
   const totalNodes = treesWithTopology.reduce((s, t) => s + t.stats.total_nodes, 0);
 
