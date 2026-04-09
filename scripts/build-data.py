@@ -96,16 +96,6 @@ MODEL_META = {
         "color": "#EC4899",
         "short_name": "Seed 1.6",
     },
-    "tongyi-deep-research": {
-        "provider": "Alibaba",
-        "color": "#A855F7",
-        "short_name": "Tongyi DR",
-    },
-    "minimax-m2.1": {
-        "provider": "MiniMax",
-        "color": "#6366F1",
-        "short_name": "MiniMax M2.1",
-    },
 }
 
 
@@ -836,6 +826,8 @@ def build_verdicts_and_failure_profiles(models: list[str], replay_candidates: li
                 coverage["rounds_with_failure_type"] += 1
 
             for model in attribute_failure_models(replay["model_a"], replay["model_b"], round_data):
+                if model not in model_counts:
+                    continue
                 model_counts[model]["counts"][failure_type] += 1
                 model_counts[model]["total"] += 1
                 population_counts[failure_type] += 1
@@ -935,6 +927,22 @@ def main():
 
     pairwise = build_pairwise(matches, models)
     write_json(pairwise, OUT_DIR / "pairwise.json", "Pairwise")
+
+    # Auto-generate placeholder entries for models in the leaderboard but not in MODEL_META
+    FALLBACK_COLORS = [
+        "#64748B", "#0891B2", "#059669", "#D97706", "#DC2626",
+        "#7C3AED", "#DB2777", "#EA580C", "#4F46E5", "#0D9488",
+    ]
+    color_idx = 0
+    for model in models:
+        if model not in MODEL_META:
+            MODEL_META[model] = {
+                "provider": "Unknown",
+                "color": FALLBACK_COLORS[color_idx % len(FALLBACK_COLORS)],
+                "short_name": model.split("-")[0].title() if "-" in model else model,
+            }
+            print(f"  Warning: auto-generated placeholder meta for '{model}' — update MODEL_META for proper display")
+            color_idx += 1
 
     write_json(MODEL_META, OUT_DIR / "model-meta.json", "Model meta")
 

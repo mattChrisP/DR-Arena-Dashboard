@@ -2,7 +2,7 @@
   {
     "rank": 1,
     "model": "gpt-5.1-search",
-    "elo": 1265.1,
+    "elo": 1183.24,
     "matches": 120,
     "wins": 75,
     "losses": 45,
@@ -11,7 +11,7 @@
   {
     "rank": 2,
     "model": "gemini-2.5-pro-grounding",
-    "elo": 1234.3,
+    "elo": 1152.01,
     "matches": 120,
     "wins": 70,
     "losses": 50,
@@ -20,7 +20,7 @@
   {
     "rank": 3,
     "model": "o3-search",
-    "elo": 1211.77,
+    "elo": 1129.93,
     "matches": 120,
     "wins": 64,
     "losses": 56,
@@ -29,7 +29,7 @@
   {
     "rank": 4,
     "model": "grok-4-search",
-    "elo": 1147.62,
+    "elo": 1064.98,
     "matches": 180,
     "wins": 94,
     "losses": 86,
@@ -38,7 +38,7 @@
   {
     "rank": 5,
     "model": "claude-opus-4-1-search",
-    "elo": 1103.8,
+    "elo": 1023.31,
     "matches": 212,
     "wins": 117,
     "losses": 92,
@@ -47,7 +47,7 @@
   {
     "rank": 6,
     "model": "Kimi-k2",
-    "elo": 1074.8,
+    "elo": 995.7,
     "matches": 180,
     "wins": 97,
     "losses": 78,
@@ -56,25 +56,25 @@
   {
     "rank": 7,
     "model": "ppl-sonar-pro-high",
-    "elo": 1067.69,
-    "matches": 240,
-    "wins": 130,
+    "elo": 984.72,
+    "matches": 210,
+    "wins": 101,
     "losses": 107,
-    "ties": 3
+    "ties": 2
   },
   {
     "rank": 8,
     "model": "deepseek-v3.2",
-    "elo": 1044.46,
-    "matches": 210,
-    "wins": 121,
-    "losses": 75,
-    "ties": 14
+    "elo": 967.45,
+    "matches": 180,
+    "wins": 95,
+    "losses": 72,
+    "ties": 13
   },
   {
     "rank": 9,
     "model": "glm-4.7",
-    "elo": 1017.57,
+    "elo": 937.87,
     "matches": 92,
     "wins": 35,
     "losses": 47,
@@ -83,37 +83,19 @@
   {
     "rank": 10,
     "model": "Qwen3-235b-a22b",
-    "elo": 913.9,
-    "matches": 180,
-    "wins": 78,
+    "elo": 823.69,
+    "matches": 150,
+    "wins": 48,
     "losses": 99,
     "ties": 3
   },
   {
     "rank": 11,
     "model": "seed-1.6",
-    "elo": 803.98,
-    "matches": 174,
-    "wins": 62,
-    "losses": 97,
-    "ties": 15
-  },
-  {
-    "rank": 12,
-    "model": "tongyi-deep-research",
-    "elo": 641.86,
-    "matches": 83,
-    "wins": 21,
-    "losses": 43,
-    "ties": 19
-  },
-  {
-    "rank": 13,
-    "model": "minimax-m2.1",
-    "elo": 473.15,
-    "matches": 119,
-    "wins": 10,
-    "losses": 99,
-    "ties": 10
+    "elo": 737.11,
+    "matches": 120,
+    "wins": 26,
+    "losses": 90,
+    "ties": 4
   }
 ]

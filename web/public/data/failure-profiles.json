@@ -164,49 +164,19 @@
         "BOTH": 0.5437,
         "NONE": 0.031
       }
-    },
-    "tongyi-deep-research": {
-      "counts": {
-        "DEEP": 82,
-        "WIDE": 28,
-        "BOTH": 195,
-        "NONE": 3
-      },
-      "total": 308,
-      "distribution": {
-        "DEEP": 0.2662,
-        "WIDE": 0.0909,
-        "BOTH": 0.6331,
-        "NONE": 0.0097
-      }
-    },
-    "minimax-m2.1": {
-      "counts": {
-        "DEEP": 38,
-        "WIDE": 13,
-        "BOTH": 404,
-        "NONE": 2
-      },
-      "total": 457,
-      "distribution": {
-        "DEEP": 0.0832,
-        "WIDE": 0.0284,
-        "BOTH": 0.884,
-        "NONE": 0.0044
-      }
     }
   },
   "population_average": {
-    "DEEP": 0.2494,
-    "WIDE": 0.1759,
-    "BOTH": 0.5047,
-    "NONE": 0.0701
+    "DEEP": 0.2753,
+    "WIDE": 0.2101,
+    "BOTH": 0.4268,
+    "NONE": 0.0878
   },
   "coverage": {
     "logs_total": 1192,
     "logs_with_verdicts": 1192,
     "rounds_total": 3617,
     "rounds_with_failure_type": 3042,
-    "attributed_events": 3497
+    "attributed_events": 2732
   }
 }
