@@ -30,7 +30,7 @@ from pathlib import Path
 from typing import Any
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
-TOURNAMENT_DIR = REPO_ROOT / "DR-Arena" / "tournament_results_cli_13models"
+TOURNAMENT_DIR = REPO_ROOT / "tournament_results_cli_13models"
 OUT_DIR = REPO_ROOT / "web" / "public" / "data"
 REPLAY_DIR = OUT_DIR / "battle-replays"
 

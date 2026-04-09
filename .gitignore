@@ -11,8 +11,23 @@ web_tree/data/coffee_tree.json
 web_tree/data/deeper_tree.json
 
 # Tournament raw results (logs are large, processed data is committed)
-DR-Arena/
-DR-Arena/tournament_results_cli_*/
+tournament_results*/
+
+# Environment / secrets
+.env
+.env.local
+.venv/
+venv/
+
+# Python cache
+__pycache__/
+*/__pycache__/
+*.py[cod]
+
+# Local test outputs
+all_search_test.txt
+tool_probe_with_tools.txt
+tool_probe_with_tools_debug.txt
 
 # macOS metadata
 .DS_Store
