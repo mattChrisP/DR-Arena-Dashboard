@@ -2,7 +2,7 @@
 """
 build-data.py — Transform tournament results into dashboard-ready JSON.
 
-Reads from:  DR-Arena/tournament_results_cli_13models/
+Reads from:  DR-Arena/tournament_results_cli_12models/
 Writes to:   web/public/data/
   - leaderboard.json
   - battles.json
@@ -21,6 +21,7 @@ Also copies:
 from __future__ import annotations
 
 import csv
+import hashlib
 import json
 import re
 import shutil
@@ -30,7 +31,7 @@ from pathlib import Path
 from typing import Any
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
-TOURNAMENT_DIR = REPO_ROOT / "tournament_results_cli_13models"
+TOURNAMENT_DIR = REPO_ROOT / "tournament_results_cli_12models"
 OUT_DIR = REPO_ROOT / "web" / "public" / "data"
 REPLAY_DIR = OUT_DIR / "battle-replays"
 
@@ -98,16 +99,128 @@ MODEL_META = {
     },
 }
 
+# -----------------------------------------------------------------------------
+# Auto-meta for models not listed in MODEL_META above.
+#
+# Goal: adding a new model should be zero-config — infer provider/color/name
+# from the model key alone. Manual MODEL_META entries still take precedence
+# (use them when you want hand-picked display values).
+# -----------------------------------------------------------------------------
+
+# Vendor → brand name + palette. Multiple colors per vendor so sibling models
+# (e.g. gpt-5.1 and o3, both OpenAI) get visually distinct but on-brand colors.
+VENDOR_BRAND = {
+    "anthropic":  {"name": "Anthropic",   "colors": ["#D97706", "#B45309", "#92400E", "#F59E0B"]},
+    "openai":     {"name": "OpenAI",      "colors": ["#10A37F", "#0EA5E9", "#059669", "#14B8A6"]},
+    "google":     {"name": "Google",      "colors": ["#4285F4", "#1A73E8", "#0B57D0", "#60A5FA"]},
+    "x-ai":       {"name": "xAI",         "colors": ["#E5484D", "#DC2626", "#991B1B", "#F87171"]},
+    "moonshotai": {"name": "Moonshot AI", "colors": ["#8B5CF6", "#7C3AED", "#6D28D9"]},
+    "deepseek":   {"name": "DeepSeek",    "colors": ["#3B82F6", "#2563EB", "#1D4ED8"]},
+    "z-ai":       {"name": "Zhipu AI",    "colors": ["#F59E0B", "#D97706", "#B45309"]},
+    "alibaba":    {"name": "Alibaba",     "colors": ["#F97316", "#EA580C", "#C2410C"]},
+    "bytedance":  {"name": "ByteDance",   "colors": ["#EC4899", "#DB2777", "#BE185D"]},
+    "perplexity": {"name": "Perplexity",  "colors": ["#22D3EE", "#06B6D4", "#0891B2"]},
+    "minimax":    {"name": "MiniMax",     "colors": ["#14B8A6", "#0D9488", "#0F766E"]},
+}
+
+# Substrings → vendor key. First match wins, order matters for ambiguous cases.
+VENDOR_KEYWORDS = [
+    ("anthropic",  ["claude"]),
+    ("openai",     ["gpt", "gpt4o", "o3", "o4"]),
+    ("google",     ["gemini"]),
+    ("x-ai",       ["grok"]),
+    ("moonshotai", ["kimi"]),
+    ("deepseek",   ["deepseek"]),
+    ("z-ai",       ["glm", "zhipu"]),
+    ("alibaba",    ["qwen", "tongyi"]),
+    ("bytedance",  ["seed"]),
+    ("perplexity", ["sonar", "ppl"]),
+    ("minimax",    ["minimax"]),
+]
+
+# Decorator suffixes stripped from the model key before generating a short name
+# (e.g. "claude-opus-4.6-search" → "claude-opus-4.6" → "Claude Opus 4.6").
+SUFFIX_STRIP_RE = re.compile(
+    r"-(search|grounding|chat|preview|beta\d*|high|thinking|multi-agent(?:-beta)?|deep-research)$",
+    re.IGNORECASE,
+)
+
+# Word-level formatting overrides (keep acronyms uppercase, etc.)
+WORD_FORMAT = {
+    "gpt": "GPT",
+    "glm": "GLM",
+    "ppl": "Perplexity",
+    "deepseek": "DeepSeek",
+    "minimax": "MiniMax",
+    "bytedance": "ByteDance",
+}
+
+
+def _infer_vendor(model_key: str) -> str | None:
+    key = model_key.lower()
+    for vendor, keywords in VENDOR_KEYWORDS:
+        if any(kw in key for kw in keywords):
+            return vendor
+    return None
+
+
+def _derive_short_name(model_key: str) -> str:
+    base = SUFFIX_STRIP_RE.sub("", model_key)
+    parts = base.split("-")
+    formatted = []
+    for part in parts:
+        lower = part.lower()
+        if re.match(r"^\d", part):                       # version like "4.6", "3.1"
+            formatted.append(part)
+        elif re.match(r"^o\d+(\.\d+)?$", lower):         # o3, o4
+            formatted.append(lower)
+        elif re.match(r"^[vk]\d", lower):                # v3.2, k2, k2.5
+            formatted.append(part.upper())
+        elif lower in WORD_FORMAT:
+            formatted.append(WORD_FORMAT[lower])
+        else:
+            formatted.append(part.capitalize())
+    return " ".join(formatted)
+
+
+def auto_model_meta(model_key: str) -> dict:
+    """Auto-derive provider/color/short_name for a model key. Deterministic."""
+    vendor = _infer_vendor(model_key)
+    brand = VENDOR_BRAND.get(vendor) if vendor else None
+    if brand:
+        # Deterministic color pick within the vendor palette based on model hash,
+        # so the same model always gets the same color across runs.
+        digest = int(hashlib.md5(model_key.encode()).hexdigest(), 16)
+        color = brand["colors"][digest % len(brand["colors"])]
+        provider = brand["name"]
+    else:
+        color = "#64748B"
+        provider = "Unknown"
+    return {
+        "provider": provider,
+        "color": color,
+        "short_name": _derive_short_name(model_key),
+    }
+
 
 def parse_leaderboard_csv(path: Path) -> dict[str, float]:
-    """Parse pandas-artifact CSV into {model: elo} dict."""
+    """Parse leaderboard CSV into {model: elo} dict.
+
+    Tolerates two formats:
+      - Old tournament runner: first row is a pandas index header (",0")
+      - add_model.py: no header, data starts on line 1
+    """
     elos = {}
     with open(path, "r", encoding="utf-8") as f:
         reader = csv.reader(f)
-        next(reader, None)  # skip ",0" header
         for row in reader:
-            if len(row) >= 2:
+            if len(row) < 2:
+                continue
+            try:
                 elos[row[0].strip()] = float(row[1])
+            except ValueError:
+                # Header row (e.g. ",0" or "model,elo") — skip
+                continue
     return elos
 
 
@@ -928,21 +1041,14 @@ def main():
     pairwise = build_pairwise(matches, models)
     write_json(pairwise, OUT_DIR / "pairwise.json", "Pairwise")
 
-    # Auto-generate placeholder entries for models in the leaderboard but not in MODEL_META
-    FALLBACK_COLORS = [
-        "#64748B", "#0891B2", "#059669", "#D97706", "#DC2626",
-        "#7C3AED", "#DB2777", "#EA580C", "#4F46E5", "#0D9488",
-    ]
-    color_idx = 0
+    # Auto-generate entries for models in the leaderboard but not in MODEL_META.
+    # Hand-curated MODEL_META entries above take precedence; anything new gets
+    # a brand-inferred entry via auto_model_meta(). Adding a model to the arena
+    # requires zero edits to this file as long as its vendor is in VENDOR_KEYWORDS.
     for model in models:
         if model not in MODEL_META:
-            MODEL_META[model] = {
-                "provider": "Unknown",
-                "color": FALLBACK_COLORS[color_idx % len(FALLBACK_COLORS)],
-                "short_name": model.split("-")[0].title() if "-" in model else model,
-            }
-            print(f"  Warning: auto-generated placeholder meta for '{model}' — update MODEL_META for proper display")
-            color_idx += 1
+            MODEL_META[model] = auto_model_meta(model)
+            print(f"  Auto-meta for '{model}': {MODEL_META[model]}")
 
     write_json(MODEL_META, OUT_DIR / "model-meta.json", "Model meta")
 

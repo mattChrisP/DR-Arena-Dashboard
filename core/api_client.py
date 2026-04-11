@@ -31,7 +31,21 @@ def call_api_with_retry(model_config, messages, **kwargs):
                 messages=messages,
                 **api_kwargs
             )
-            return response.choices[0].message.content.strip()
+            choice = response.choices[0]
+            content = choice.message.content
+            finish_reason = getattr(choice, "finish_reason", None)
+
+            # Some preview reasoning models (e.g. google/gemini-3.1-pro-preview)
+            # intermittently return HTTP 200 with content=None and
+            # finish_reason="error". Surface that as a clear retriable error
+            # instead of crashing with 'NoneType' has no attribute 'strip'.
+            if content is None or finish_reason == "error":
+                raise RuntimeError(
+                    f"Empty response from {model_id} "
+                    f"(finish_reason={finish_reason}, content is None)"
+                )
+
+            return content.strip()
         except Exception as e:
             logging.warning(f"API call for {model_id} failed: {e}. Retrying ({i+1}/{API_MAX_RETRY})...")
             if i == API_MAX_RETRY - 1:

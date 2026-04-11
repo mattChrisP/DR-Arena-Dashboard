@@ -67,7 +67,6 @@ VERIFIED_SEARCH_MODELS = {
     "claude-opus-4-6-search",
     "gemini-3.1-pro-grounding",
     "gpt-5.4-search",
-    "o3-deep-research",
 }
 
 

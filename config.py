@@ -37,10 +37,6 @@ AVAILABLE_SEARCH_MODELS = {
         "id": "x-ai/grok-4.20-multi-agent-beta",
         "supported_params": [],
     },
-    "o3-deep-research": {
-        "id": "openai/o3-deep-research",
-        "supported_params": [],
-    },
     "sonar-deep-research": {
         "id": "perplexity/sonar-deep-research",
         "supported_params": ["temperature", "max_tokens"],

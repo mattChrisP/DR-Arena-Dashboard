@@ -28,6 +28,7 @@ __pycache__/
 all_search_test.txt
 tool_probe_with_tools.txt
 tool_probe_with_tools_debug.txt
+onboarding*.out
 
 # macOS metadata
 .DS_Store

@@ -49,10 +49,19 @@ class EvolvementLoop:
 
         # Initial difficulty state
         self.difficulty_nodes = 2   # Controls Width (Wide)
-        self.next_focus = random.choice(["WIDTH", "DEPTH"]) 
-        
+        self.next_focus = random.choice(["WIDTH", "DEPTH"])
+
         self.history_snapshots = [0]
         self.questions_file = questions_file_path
+
+        # Safety caps — prevent runaway auto-expansion on cyclic sites
+        # (observed 2026-04-10: gemini battle on archive-it.org/bsz-bw.de cycled
+        # the same ~10 URLs at depth 18 for hours because there was no cap).
+        self.expansion_count = 0
+        self.MAX_EXPANSIONS = 8          # hard cap on _auto_expand_tree calls per battle
+        self.total_iterations = 0
+        self.MAX_ITERATIONS = MAX_ROUNDS * 3  # backup cap on the main while-loop
+
         
         if logger: self.logger = logger
         else: 
@@ -274,7 +283,16 @@ class EvolvementLoop:
 
     def _auto_expand_tree(self, failure_type, required_amount=1):
         """Attempts to crawl more nodes if the tree is too shallow or narrow."""
-        self.logger.info(f"--- [EXPANSION] Triggering Auto-Expansion: {failure_type} (Need +{required_amount}) ---")
+        # Safety cap: prevent runaway expansion on cyclic sites.
+        if self.expansion_count >= self.MAX_EXPANSIONS:
+            self.logger.warning(
+                f"--- [EXPANSION] Cap reached ({self.expansion_count}/{self.MAX_EXPANSIONS}). "
+                f"Skipping further auto-expansion for this battle. ---"
+            )
+            return False
+        self.expansion_count += 1
+
+        self.logger.info(f"--- [EXPANSION] Triggering Auto-Expansion: {failure_type} (Need +{required_amount}) [{self.expansion_count}/{self.MAX_EXPANSIONS}] ---")
         target_url = None
         mode = None
         
@@ -380,6 +398,16 @@ class EvolvementLoop:
         root_title = self._clean_title(self.tree.get('title'))
         self.logger.info(f"Overall Domain/Topic: {root_title}")
         while self.round_count < MAX_ROUNDS:
+            # Backup safety: escape the loop if we've iterated far too many times
+            # (e.g. skip-retry path keeps decrementing round_count without progress).
+            self.total_iterations += 1
+            if self.total_iterations > self.MAX_ITERATIONS:
+                self.logger.warning(
+                    f"[SAFETY] Iteration cap reached ({self.total_iterations}/{self.MAX_ITERATIONS}). "
+                    f"Ending battle early with current scores."
+                )
+                break
+
             self.round_count += 1
             depth_level = len(self.node_path_stack)
             

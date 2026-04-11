@@ -22,7 +22,6 @@ SEEDED_MODELS = [
     "gemini-3.1-pro-grounding",
     "gpt-5.4-search",
     "grok-4.20-multi-agent-beta",
-    "o3-deep-research",
     "sonar-deep-research",
     "Kimi-k2.5",
     "glm-5.1",

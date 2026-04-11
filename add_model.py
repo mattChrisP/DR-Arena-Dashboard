@@ -11,7 +11,7 @@ Uses a Swiss-system approach (aligned with Auto-Arena):
 Usage:
     python add_model.py \
         --models "gpt-5-search,claude-opus-4-search" \
-        --output-dir ./tournament_results_cli_13models \
+        --output-dir ./tournament_results_cli_12models \
         --workers 4
 """
 
@@ -22,10 +22,19 @@ import argparse
 import math
 import logging
 import random
+import signal
 import filelock
 import pandas as pd
 from datetime import datetime
 from concurrent.futures import ProcessPoolExecutor, as_completed
+
+
+def _init_worker():
+    """ProcessPoolExecutor initializer: make workers ignore SIGINT and SIGTERM
+    so that shutdown signals hit only the parent. The parent then cancels
+    pending futures and force-kills in-flight workers explicitly."""
+    signal.signal(signal.SIGINT, signal.SIG_IGN)
+    signal.signal(signal.SIGTERM, signal.SIG_IGN)
 
 # ================= Path setup =================
 script_dir = os.path.dirname(os.path.abspath(__file__))
@@ -40,6 +49,13 @@ from core.score_utils import compute_mle_elo
 
 TREE_DIR = os.path.join(script_dir, "web_tree/data/dataset/trees")
 INIT_RATING = 1000
+
+# Hard wall-clock timeout per battle. A well-behaved battle completes in
+# ~2-5 minutes; 900s (15 min) is a safety net for catching runaway crawls,
+# stuck API retries, or judge loops. See batch-onboarding-plan.md Known
+# Issues #6 (2026-04-11). Timed-out battles are NOT written to the JSONL
+# and will be retried on the next resume.
+MAX_BATTLE_SECONDS = 900
 
 logging.basicConfig(
     level=logging.INFO,
@@ -274,6 +290,15 @@ def run_single_battle(args):
         log_dir, f"temp_{tree_id}_{datetime.now().strftime('%H%M%S%f')}.jsonl"
     )
 
+    # Per-battle wall-clock timeout via SIGALRM. Fires in the worker process,
+    # unwinds as TimeoutError, and is cancelled in finally:. Workers already
+    # ignore SIGINT/SIGTERM (see _init_worker) but SIGALRM is separate and
+    # still delivered. See batch-onboarding-plan.md Known Issues #6.
+    def _battle_timeout_handler(signum, frame):
+        raise TimeoutError(f"Battle exceeded {MAX_BATTLE_SECONDS}s")
+    signal.signal(signal.SIGALRM, _battle_timeout_handler)
+    signal.alarm(MAX_BATTLE_SECONDS)
+
     try:
         # Set up per-battle file logger
         battle_logger = logging.getLogger(f"Battle_{tree_id}_{real_a}_{real_b}")
@@ -310,8 +335,12 @@ def run_single_battle(args):
         winner = result.get('winner', 'Tie')
         return {"status": "ok", "tree_id": tree_id, "winner": winner}
 
+    except TimeoutError as e:
+        return {"status": "timeout", "tree_id": tree_id, "error": str(e)}
     except Exception as e:
         return {"status": "error", "tree_id": tree_id, "error": str(e)}
+    finally:
+        signal.alarm(0)
 
 
 def run_battles_parallel(pairings, tree_files, debate_file, log_dir,
@@ -335,27 +364,61 @@ def run_battles_parallel(pairings, tree_files, debate_file, log_dir,
         return
 
     total = len(tasks)
-    logger.info(f"  Dispatching {total} battles across {num_workers} workers...")
+    logger.info(f"  Dispatching {total} battles across {num_workers} workers (parent PID {os.getpid()})...")
 
     done_count = 0
     error_count = 0
+    timeout_count = 0
 
-    with ProcessPoolExecutor(max_workers=num_workers) as pool:
+    pool = ProcessPoolExecutor(max_workers=num_workers, initializer=_init_worker)
+    try:
         futures = {pool.submit(run_single_battle, t): t for t in tasks}
-        for future in as_completed(futures):
-            done_count += 1
-            result = future.result()
-            if result["status"] == "ok":
-                logger.info(
-                    f"  [{done_count}/{total}] {result['tree_id']} → {result['winner']}"
-                )
-            else:
-                error_count += 1
-                logger.error(
-                    f"  [{done_count}/{total}] {result['tree_id']} FAILED: {result['error']}"
-                )
+        try:
+            for future in as_completed(futures):
+                done_count += 1
+                result = future.result()
+                if result["status"] == "ok":
+                    logger.info(
+                        f"  [{done_count}/{total}] {result['tree_id']} → {result['winner']}"
+                    )
+                elif result["status"] == "timeout":
+                    timeout_count += 1
+                    error_count += 1
+                    logger.warning(
+                        f"  [{done_count}/{total}] {result['tree_id']} TIMED OUT "
+                        f"after {MAX_BATTLE_SECONDS}s (will retry on resume): {result['error']}"
+                    )
+                else:
+                    error_count += 1
+                    logger.error(
+                        f"  [{done_count}/{total}] {result['tree_id']} FAILED: {result['error']}"
+                    )
+        except KeyboardInterrupt:
+            logger.warning(
+                "  Interrupt received. Cancelling pending battles and force-killing workers "
+                "(in-flight battles will be abandoned and re-run on resume)..."
+            )
+            # Cancel anything that hasn't started yet.
+            for fut in futures:
+                fut.cancel()
+            # Workers ignore SIGINT/SIGTERM (see _init_worker), and stuck crawler
+            # loops don't respond to SIGTERM anyway — so escalate straight to
+            # SIGKILL. (_processes is a private API but it's the only reliable
+            # way to reach individual workers in a ProcessPoolExecutor.)
+            for proc in list(getattr(pool, "_processes", {}).values()):
+                try:
+                    proc.kill()  # SIGKILL — unignorable
+                except Exception:
+                    pass
+            raise
+    finally:
+        # shutdown(wait=False) so we don't block on in-flight workers.
+        pool.shutdown(wait=False, cancel_futures=True)
 
-    logger.info(f"  Round complete: {total - error_count} succeeded, {error_count} failed.")
+    logger.info(
+        f"  Round complete: {total - error_count} succeeded, "
+        f"{error_count} failed ({timeout_count} timed out)."
+    )
 
 
 # ================= Main Onboarding Loop =================
@@ -505,4 +568,18 @@ if __name__ == "__main__":
     if not model_list:
         parser.error("No models specified.")
 
-    run_batch_onboarding(model_list, args.output_dir, args.workers, args.rounds)
+    # Treat SIGTERM (plain `kill <pid>`) the same as Ctrl-C so the graceful
+    # shutdown path in run_battles_parallel runs regardless of how we're killed.
+    def _sigterm_to_keyboard_interrupt(signum, frame):
+        raise KeyboardInterrupt("SIGTERM received")
+    signal.signal(signal.SIGTERM, _sigterm_to_keyboard_interrupt)
+
+    logger.info(f"Starting onboarding (parent PID {os.getpid()}). Use `kill {os.getpid()}` or Ctrl-C to stop cleanly.")
+    try:
+        run_batch_onboarding(model_list, args.output_dir, args.workers, args.rounds)
+    except KeyboardInterrupt:
+        logger.warning(
+            "Onboarding interrupted by user. Completed battles are preserved in "
+            "all_debate_history.jsonl — re-run the same command to resume."
+        )
+        sys.exit(130)
