@@ -11,7 +11,7 @@
   },
   "o3-search": {
     "provider": "OpenAI",
-    "color": "#0EA5E9",
+    "color": "#10A37F",
     "short_name": "o3"
   },
   "grok-4-search": {
@@ -56,7 +56,7 @@
   },
   "claude-opus-4.6-search": {
     "provider": "Anthropic",
-    "color": "#92400E",
+    "color": "#D97706",
     "short_name": "Claude Opus 4.6"
   },
   "gemini-3.1-pro-grounding": {
@@ -66,12 +66,12 @@
   },
   "gpt-5.4-search": {
     "provider": "OpenAI",
-    "color": "#0EA5E9",
+    "color": "#10A37F",
     "short_name": "GPT 5.4"
   },
   "ppl-sonar-reasoning-pro-high": {
     "provider": "Perplexity",
-    "color": "#06B6D4",
+    "color": "#22D3EE",
     "short_name": "Perplexity Sonar Reasoning Pro"
   }
 }

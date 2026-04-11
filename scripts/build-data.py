@@ -21,7 +21,6 @@ Also copies:
 from __future__ import annotations
 
 import csv
-import hashlib
 import json
 import re
 import shutil
@@ -107,20 +106,20 @@ MODEL_META = {
 # (use them when you want hand-picked display values).
 # -----------------------------------------------------------------------------
 
-# Vendor → brand name + palette. Multiple colors per vendor so sibling models
-# (e.g. gpt-5.1 and o3, both OpenAI) get visually distinct but on-brand colors.
+# Vendor → canonical provider name + single brand color. Models from the same
+# provider intentionally share one color across the UI.
 VENDOR_BRAND = {
-    "anthropic":  {"name": "Anthropic",   "colors": ["#D97706", "#B45309", "#92400E", "#F59E0B"]},
-    "openai":     {"name": "OpenAI",      "colors": ["#10A37F", "#0EA5E9", "#059669", "#14B8A6"]},
-    "google":     {"name": "Google",      "colors": ["#4285F4", "#1A73E8", "#0B57D0", "#60A5FA"]},
-    "x-ai":       {"name": "xAI",         "colors": ["#E5484D", "#DC2626", "#991B1B", "#F87171"]},
-    "moonshotai": {"name": "Moonshot AI", "colors": ["#8B5CF6", "#7C3AED", "#6D28D9"]},
-    "deepseek":   {"name": "DeepSeek",    "colors": ["#3B82F6", "#2563EB", "#1D4ED8"]},
-    "z-ai":       {"name": "Zhipu AI",    "colors": ["#F59E0B", "#D97706", "#B45309"]},
-    "alibaba":    {"name": "Alibaba",     "colors": ["#F97316", "#EA580C", "#C2410C"]},
-    "bytedance":  {"name": "ByteDance",   "colors": ["#EC4899", "#DB2777", "#BE185D"]},
-    "perplexity": {"name": "Perplexity",  "colors": ["#22D3EE", "#06B6D4", "#0891B2"]},
-    "minimax":    {"name": "MiniMax",     "colors": ["#14B8A6", "#0D9488", "#0F766E"]},
+    "anthropic":  {"name": "Anthropic",   "color": "#D97706"},
+    "openai":     {"name": "OpenAI",      "color": "#10A37F"},
+    "google":     {"name": "Google",      "color": "#4285F4"},
+    "x-ai":       {"name": "xAI",         "color": "#E5484D"},
+    "moonshotai": {"name": "Moonshot AI", "color": "#8B5CF6"},
+    "deepseek":   {"name": "DeepSeek",    "color": "#3B82F6"},
+    "z-ai":       {"name": "Zhipu AI",    "color": "#F59E0B"},
+    "alibaba":    {"name": "Alibaba",     "color": "#F97316"},
+    "bytedance":  {"name": "ByteDance",   "color": "#EC4899"},
+    "perplexity": {"name": "Perplexity",  "color": "#22D3EE"},
+    "minimax":    {"name": "MiniMax",     "color": "#14B8A6"},
 }
 
 # Substrings → vendor key. First match wins, order matters for ambiguous cases.
@@ -183,24 +182,35 @@ def _derive_short_name(model_key: str) -> str:
     return " ".join(formatted)
 
 
-def auto_model_meta(model_key: str) -> dict:
-    """Auto-derive provider/color/short_name for a model key. Deterministic."""
+def canonical_provider_meta(model_key: str) -> tuple[str, str]:
     vendor = _infer_vendor(model_key)
     brand = VENDOR_BRAND.get(vendor) if vendor else None
-    if brand:
-        # Deterministic color pick within the vendor palette based on model hash,
-        # so the same model always gets the same color across runs.
-        digest = int(hashlib.md5(model_key.encode()).hexdigest(), 16)
-        color = brand["colors"][digest % len(brand["colors"])]
-        provider = brand["name"]
-    else:
-        color = "#64748B"
-        provider = "Unknown"
+    if not brand:
+        return ("Unknown", "#64748B")
+    return (brand["name"], brand["color"])
+
+
+def auto_model_meta(model_key: str) -> dict:
+    """Auto-derive provider/color/short_name for a model key."""
+    provider, color = canonical_provider_meta(model_key)
     return {
         "provider": provider,
         "color": color,
         "short_name": _derive_short_name(model_key),
     }
+
+
+def normalize_model_meta(model_meta: dict[str, dict[str, str]]) -> dict[str, dict[str, str]]:
+    """Force a single canonical color per provider across all model entries."""
+    normalized: dict[str, dict[str, str]] = {}
+    for model_key, meta in model_meta.items():
+        provider, color = canonical_provider_meta(model_key)
+        normalized[model_key] = {
+            **meta,
+            "provider": provider,
+            "color": color,
+        }
+    return normalized
 
 
 def parse_leaderboard_csv(path: Path) -> dict[str, float]:
@@ -1050,7 +1060,8 @@ def main():
             MODEL_META[model] = auto_model_meta(model)
             print(f"  Auto-meta for '{model}': {MODEL_META[model]}")
 
-    write_json(MODEL_META, OUT_DIR / "model-meta.json", "Model meta")
+    normalized_model_meta = normalize_model_meta(MODEL_META)
+    write_json(normalized_model_meta, OUT_DIR / "model-meta.json", "Model meta")
 
     battle_index = build_battle_index(battles, matched_replays, tree_meta)
     write_json(battle_index, OUT_DIR / "battle-index.json", "Battle index")
