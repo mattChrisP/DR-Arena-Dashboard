@@ -396,17 +396,17 @@ export default function HomePage() {
           </p>
           <div className="flex items-center gap-3">
             <Link
-              href="/methodology"
+              href="/dataset"
               className="text-sm font-medium text-accent transition-colors hover:text-accent-hover"
             >
-              How it works &rarr;
+              Explore dataset &rarr;
             </Link>
             <span className="text-fg-dim">·</span>
             <Link
-              href="/about"
+              href="/battles"
               className="text-sm font-medium text-accent-2 transition-colors hover:text-accent-2-hover"
             >
-              About the project &rarr;
+              Browse battles &rarr;
             </Link>
           </div>
         </div>

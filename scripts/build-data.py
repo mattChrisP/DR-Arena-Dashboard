@@ -26,6 +26,7 @@ import re
 import shutil
 import sys
 from collections import Counter, defaultdict
+from datetime import datetime
 from pathlib import Path
 from typing import Any
 
@@ -33,6 +34,7 @@ REPO_ROOT = Path(__file__).resolve().parent.parent
 TOURNAMENT_DIR = REPO_ROOT / "tournament_results_cli_12models"
 OUT_DIR = REPO_ROOT / "web" / "public" / "data"
 REPLAY_DIR = OUT_DIR / "battle-replays"
+SITE_META_OUT = OUT_DIR / "site-meta.json"
 
 # Source files for copy
 METADATA_SRC = REPO_ROOT / "web_tree" / "data" / "dataset" / "metadata.json"
@@ -1011,6 +1013,16 @@ def write_json(data: Any, path: Path, label: str, *, report: bool = True):
         print(f"  {label}: {path.relative_to(OUT_DIR)} ({size/1024:.1f} KB)")
 
 
+def latest_mtime_iso(paths: list[Path]) -> str | None:
+    """Return the newest file mtime as an ISO-8601 timestamp with local offset."""
+    existing = [path for path in paths if path.exists()]
+    if not existing:
+        return None
+
+    latest_mtime = max(path.stat().st_mtime for path in existing)
+    return datetime.fromtimestamp(latest_mtime).astimezone().isoformat(timespec="seconds")
+
+
 def main():
     if not TOURNAMENT_DIR.exists():
         print(f"Error: tournament directory not found: {TOURNAMENT_DIR}", file=sys.stderr)
@@ -1088,6 +1100,18 @@ def main():
     verdicts, failure_profiles = build_verdicts_and_failure_profiles(models, replay_candidates)
     write_json(verdicts, OUT_DIR / "verdicts.json", "Verdicts")
     write_json(failure_profiles, OUT_DIR / "failure-profiles.json", "Failure profiles")
+
+    site_meta = {
+        "tournament_last_updated_at": latest_mtime_iso([
+            TOURNAMENT_DIR / "current_leaderboard.csv",
+            TOURNAMENT_DIR / "all_debate_history.jsonl",
+        ]),
+        "tournament_source_files": [
+            "tournament_results_cli_12models/current_leaderboard.csv",
+            "tournament_results_cli_12models/all_debate_history.jsonl",
+        ],
+    }
+    write_json(site_meta, SITE_META_OUT, "Site meta")
 
     print("\nCopying metadata files...")
     for src, label in ((METADATA_SRC, "metadata.json"), (SUMMARY_SRC, "summary.json")):

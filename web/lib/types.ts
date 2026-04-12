@@ -115,6 +115,13 @@ export interface DatasetSummary {
   trees_by_topic: Record<string, number>;
 }
 
+// --- site-meta.json ---
+
+export interface SiteMeta {
+  tournament_last_updated_at: string | null;
+  tournament_source_files: string[];
+}
+
 // --- verdicts.json / failure-profiles.json ---
 
 export type FailureType = "DEEP" | "WIDE" | "BOTH" | "NONE";

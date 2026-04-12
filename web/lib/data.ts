@@ -7,6 +7,7 @@ import type {
   ModelMetaMap,
   DatasetMetadata,
   DatasetSummary,
+  SiteMeta,
   VerdictEntry,
   FailureProfiles,
   BattleIndexEntry,
@@ -48,6 +49,14 @@ export function getTopologyTreeIds(): string[] {
 
 export function getSummary(): DatasetSummary {
   return readJson<DatasetSummary>("summary.json");
+}
+
+export function getSiteMeta(): SiteMeta | null {
+  try {
+    return readJson<SiteMeta>("site-meta.json");
+  } catch {
+    return null;
+  }
 }
 
 export function getVerdicts(): VerdictEntry[] {

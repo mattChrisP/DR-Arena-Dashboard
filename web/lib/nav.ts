@@ -8,8 +8,6 @@ export const NAV_ITEMS = [
   { href: "/models", label: "Models" },
   { href: "/battles", label: "Battles" },
   { href: "/dataset", label: "Dataset" },
-  { href: "/methodology", label: "Methodology" },
-  { href: "/about", label: "About" },
 ] as const;
 
 export type NavItem = (typeof NAV_ITEMS)[number];

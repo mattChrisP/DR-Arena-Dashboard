@@ -18,7 +18,6 @@ export function SiteFooter() {
             <Link href="/models" className="hover:text-fg transition-colors">Models</Link>
             <Link href="/battles" className="hover:text-fg transition-colors">Battles</Link>
             <Link href="/dataset" className="hover:text-fg transition-colors">Dataset</Link>
-            <Link href="/methodology" className="hover:text-fg transition-colors">Methodology</Link>
             <a href="https://arxiv.org/abs/2601.10504" target="_blank" rel="noopener noreferrer" className="hover:text-fg transition-colors">Paper</a>
             <a href="https://github.com/iNLP-Lab/DR-Arena" target="_blank" rel="noopener noreferrer" className="hover:text-fg transition-colors">GitHub</a>
           </nav>

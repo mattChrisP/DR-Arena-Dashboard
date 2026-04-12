@@ -11,6 +11,18 @@ export const metadata = {
     "The information trees used in the DR-Arena benchmark — topology thumbnails, topic distribution, and depth statistics.",
 };
 
+function formatDatasetSnapshot(timestamp: string) {
+  return new Intl.DateTimeFormat("en-SG", {
+    day: "2-digit",
+    month: "short",
+    year: "numeric",
+    hour: "numeric",
+    minute: "2-digit",
+    hour12: true,
+    timeZone: "Asia/Singapore",
+  }).format(new Date(timestamp));
+}
+
 function loadTopologyMap(ids?: Set<string>): Record<string, TopologyNode> {
   const dir = join(process.cwd(), "public", "data", "trees");
   const files = readdirSync(dir)
@@ -32,6 +44,7 @@ export default function DatasetPage() {
   const battles = getBattles();
   const topologyIds = new Set(getTopologyTreeIds());
   const topologyMap = loadTopologyMap(topologyIds);
+  const frozenAt = formatDatasetSnapshot(summary.dataset_info.updated_at);
 
   // Compute ground-truth stats from topology files
   const statsMap: Record<string, TreeStats> = {};
@@ -62,11 +75,20 @@ export default function DatasetPage() {
       {/* Header */}
       <div className="mb-8 flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
         <div className="max-w-3xl">
-          <div className="app-kicker">Information trees</div>
+          <div className="flex flex-wrap items-center gap-3">
+            <div className="app-kicker">Information trees</div>
+            <span className="inline-flex items-center rounded-full border border-border-strong bg-bg-elevated/80 px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.14em] text-fg">
+              Dataset frozen
+            </span>
+          </div>
           <h1 className="app-title mt-3">Dataset Atlas</h1>
           <p className="mt-3 max-w-2xl text-sm leading-relaxed text-fg-muted md:text-base">
             {treesWithTopology.length} pre-crawled information trees spanning {Object.keys(summary.trees_by_topic).length} topics.
             Each tree is a web-sourced knowledge structure used to generate adaptive research questions.
+          </p>
+          <p className="mt-3 max-w-2xl text-xs leading-relaxed text-fg-dim md:text-sm">
+            This dataset is kept as a fixed snapshot for browsing and benchmark context. No new trees will be added.
+            Snapshot frozen on {frozenAt} SGT.
           </p>
         </div>
 

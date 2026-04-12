@@ -1,7 +1,26 @@
 import Link from "next/link";
-import { FileText } from "lucide-react";
+import { FileText, Mail } from "lucide-react";
 import { NavLink } from "./nav-link";
 import { NAV_ITEMS } from "@/lib/nav";
+import { getSiteMeta, getSummary } from "@/lib/data";
+
+function formatTournamentUpdate(timestamp?: string | null) {
+  if (!timestamp) {
+    return "Update pending";
+  }
+
+  const formatted = new Intl.DateTimeFormat("en-SG", {
+    day: "2-digit",
+    month: "short",
+    year: "numeric",
+    hour: "numeric",
+    minute: "2-digit",
+    hour12: true,
+    timeZone: "Asia/Singapore",
+  }).format(new Date(timestamp));
+
+  return `${formatted} SGT`;
+}
 
 function GithubMark({ className }: { className?: string }) {
   return (
@@ -17,8 +36,34 @@ function GithubMark({ className }: { className?: string }) {
 }
 
 export function SiteHeader() {
+  const siteMeta = getSiteMeta();
+  const summary = getSummary();
+  const lastUpdated = formatTournamentUpdate(
+    siteMeta?.tournament_last_updated_at ?? summary.dataset_info.updated_at
+  );
+
   return (
     <header className="sticky top-0 z-40 border-b border-border-subtle bg-bg/70 backdrop-blur-xl backdrop-saturate-150">
+      <div className="border-b border-border-subtle/80 bg-bg-elevated/50">
+        <div className="mx-auto flex max-w-5xl flex-col gap-2 px-6 py-2 text-[11px] text-fg-muted sm:flex-row sm:items-center sm:justify-between">
+          <div className="flex items-center gap-2">
+            <span className="h-1.5 w-1.5 rounded-full bg-accent-2" aria-hidden="true" />
+            <span className="font-medium uppercase tracking-[0.14em] text-fg-dim">
+              Last updated
+            </span>
+            <span className="font-mono text-fg">{lastUpdated}</span>
+          </div>
+
+          <Link
+            href="/submit-model"
+            className="inline-flex items-center gap-1.5 font-medium text-accent transition-colors hover:text-accent-hover"
+          >
+            <Mail className="h-3.5 w-3.5" />
+            Want your model featured? Contact us
+          </Link>
+        </div>
+      </div>
+
       <div className="mx-auto flex h-14 max-w-5xl items-center justify-between px-6">
         {/* Wordmark */}
         <Link
