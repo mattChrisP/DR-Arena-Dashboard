@@ -72,6 +72,6 @@
   "ppl-sonar-reasoning-pro-high": {
     "provider": "Perplexity",
     "color": "#22D3EE",
-    "short_name": "Perplexity Sonar Reasoning Pro"
+    "short_name": "Sonar Reasoning Pro"
   }
 }
