@@ -384,7 +384,7 @@ export default function HomePage() {
         className="animate-fade-in-up w-full max-w-[1440px] px-6 py-10 md:px-10 md:py-14 lg:px-12"
         style={{ animationDelay: "0.45s" }}
       >
-        <div className="mb-5">
+        <div className="mb-5 flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
           <div>
             <h2 className="font-display text-4xl leading-none md:text-[52px]">Current Rankings</h2>
             <p className="mt-1 text-sm text-fg-muted md:text-base">
@@ -394,6 +394,13 @@ export default function HomePage() {
               <span className="hidden text-fg-dim sm:inline"> vs LMSYS Search Arena</span>
             </p>
           </div>
+          <Link
+            href="/leaderboard"
+            className="group inline-flex items-center gap-2 self-start whitespace-nowrap font-display text-[24px] leading-none text-accent transition-colors hover:text-accent-hover sm:pt-10 md:pt-14 md:text-[30px]"
+          >
+            Full leaderboard
+            <ArrowRight className="mt-1 h-5 w-5 shrink-0 transition-transform group-hover:translate-x-1" />
+          </Link>
         </div>
 
         <div className="overflow-hidden rounded-xl border border-border bg-bg-elevated/60 backdrop-blur-sm">
@@ -451,15 +458,6 @@ export default function HomePage() {
           </table>
         </div>
 
-        <Link
-          href="/leaderboard"
-          className="group mt-8 flex items-end justify-between gap-6 border-t border-border-subtle pt-8 transition-colors hover:border-accent/40"
-        >
-          <span className="font-display text-[44px] leading-none text-accent transition-colors group-hover:text-accent-hover md:text-[72px]">
-            Full leaderboard
-          </span>
-          <ArrowRight className="mb-1 h-7 w-7 shrink-0 text-accent transition-transform group-hover:translate-x-1 md:mb-3 md:h-9 md:w-9" />
-        </Link>
       </section>
 
       {/* ── Feature cards ── */}
@@ -496,7 +494,7 @@ export default function HomePage() {
       >
         <div className="mx-auto w-full max-w-[1440px] px-6 py-12 md:px-10 md:py-16 lg:px-12">
           <div className="mb-10">
-            <h2 className="font-display text-[48px] leading-none text-fg md:text-[80px]">
+            <h2 className="font-display text-4xl leading-none text-fg md:text-[52px]">
               How it works
             </h2>
           </div>
