@@ -294,7 +294,7 @@ export default function HomePage() {
       <section className="flex w-full max-w-[1440px] flex-col items-center px-3 pt-14 pb-10 text-center sm:px-6 md:px-10 md:pt-20 md:pb-14 lg:px-12">
         {/* Headline */}
         <h1
-          className="animate-fade-in-up max-w-full whitespace-nowrap font-display text-[16px] leading-none min-[390px]:text-[20px] sm:text-[36px] md:text-[56px] lg:text-[64px]"
+          className="animate-fade-in-up max-w-full whitespace-nowrap font-display text-[16px] leading-none min-[390px]:text-[22px] sm:text-[40px] md:text-[64px] lg:text-[72px]"
           style={{ animationDelay: "0.1s" }}
         >
           Which{" "}
@@ -386,7 +386,7 @@ export default function HomePage() {
       >
         <div className="mb-5">
           <div>
-            <h2 className="font-display text-2xl md:text-3xl">Current Rankings</h2>
+            <h2 className="font-display text-4xl leading-none md:text-[52px]">Current Rankings</h2>
             <p className="mt-1 text-sm text-fg-muted md:text-base">
               Top 5 deep research agents by Elo rating
               <span className="hidden text-fg-dim sm:inline"> · </span>
@@ -455,10 +455,10 @@ export default function HomePage() {
           href="/leaderboard"
           className="group mt-8 flex items-end justify-between gap-6 border-t border-border-subtle pt-8 transition-colors hover:border-accent/40"
         >
-          <span className="font-display text-[52px] leading-none text-accent transition-colors group-hover:text-accent-hover md:text-[96px]">
+          <span className="font-display text-[44px] leading-none text-accent transition-colors group-hover:text-accent-hover md:text-[72px]">
             Full leaderboard
           </span>
-          <ArrowRight className="mb-2 h-7 w-7 shrink-0 text-accent transition-transform group-hover:translate-x-1 md:mb-4 md:h-10 md:w-10" />
+          <ArrowRight className="mb-1 h-7 w-7 shrink-0 text-accent transition-transform group-hover:translate-x-1 md:mb-3 md:h-9 md:w-9" />
         </Link>
       </section>
 
@@ -496,7 +496,7 @@ export default function HomePage() {
       >
         <div className="mx-auto w-full max-w-[1440px] px-6 py-12 md:px-10 md:py-16 lg:px-12">
           <div className="mb-10">
-            <h2 className="font-display text-[56px] uppercase leading-none text-fg md:text-[112px]">
+            <h2 className="font-display text-[48px] leading-none text-fg md:text-[80px]">
               How it works
             </h2>
           </div>
