@@ -5,7 +5,7 @@ import { formatFailureType, getBattleOutcome, getPrimaryFailureType, modelToSlug
 
 export const metadata = {
   title: "Models",
-  description: "Seeded model profiles for every deep research agent in the DR-Arena leaderboard.",
+  description: "Seeded model profiles for every deep research agent in the Deep Research Arena leaderboard.",
 };
 
 export default function ModelsPage() {
@@ -38,7 +38,7 @@ export default function ModelsPage() {
   });
 
   return (
-    <div className="relative w-full max-w-7xl px-6 py-8 md:py-12">
+    <div className="relative w-full max-w-[1440px] px-6 py-8 md:px-10 md:py-12 lg:px-12">
       <div
         aria-hidden
         className="pointer-events-none absolute left-1/2 top-0 -z-10 h-[420px] w-[860px] -translate-x-1/2 rounded-full bg-accent/[0.06] blur-[140px]"
@@ -52,7 +52,7 @@ export default function ModelsPage() {
               Every contender, one click away.
             </h1>
             <p className="mt-4 max-w-2xl text-sm leading-relaxed text-fg-muted md:text-base">
-              Browse the full DR-Arena field by rank, provider, answer-failure profile, and recent form.
+              Browse the full Deep Research Arena field by rank, provider, answer-failure profile, and recent form.
               Each card opens a model deep-dive built from the same final Elo, head-to-head, and judged answer data
               used on the leaderboard.
             </p>

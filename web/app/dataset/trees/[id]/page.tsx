@@ -55,7 +55,7 @@ export default async function TreeDetailPage({
   const treeBattles = allBattles.filter((b) => b.tree_id === id);
 
   return (
-    <div className="relative w-full max-w-7xl px-6 py-8 md:py-12">
+    <div className="relative w-full max-w-[1440px] px-6 py-8 md:px-10 md:py-12 lg:px-12">
       <div
         aria-hidden
         className="pointer-events-none absolute right-0 top-0 -z-10 h-[420px] w-[520px] rounded-full bg-accent-2/[0.05] blur-[140px]"

@@ -93,7 +93,7 @@ export async function generateMetadata({
   const name = resolved.meta?.short_name ?? resolved.model;
   return {
     title: `${name} · Models`,
-    description: `Deep-dive profile for ${name}: final Elo, judged answer profile, head-to-head record, and recent DR-Arena battles.`,
+    description: `Deep-dive profile for ${name}: final Elo, judged answer profile, head-to-head record, and recent Deep Research Arena battles.`,
   };
 }
 
@@ -132,7 +132,7 @@ export default async function ModelDetailPage({
   }
 
   return (
-    <div className="relative w-full max-w-7xl px-6 py-8 md:py-12">
+    <div className="relative w-full max-w-[1440px] px-6 py-8 md:px-10 md:py-12 lg:px-12">
       <div
         aria-hidden
         className="pointer-events-none absolute right-0 top-0 -z-10 h-[440px] w-[520px] rounded-full blur-[150px]"

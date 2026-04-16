@@ -26,14 +26,14 @@ const instrumentSerif = Instrument_Serif({
 
 export const metadata: Metadata = {
   title: {
-    default: "DR-Arena — Deep Research Agent Leaderboard",
-    template: "%s · DR-Arena",
+    default: "Deep Research Arena — Agent Leaderboard",
+    template: "%s · Deep Research Arena",
   },
   description:
-    "DR-Arena is an automated evaluation framework for Deep Research agents. Dynamic information trees, adaptive difficulty, and 0.94 Spearman correlation with LMSYS Search Arena.",
+    "Deep Research Arena is an automated evaluation framework for Deep Research agents. Dynamic information trees, adaptive difficulty, and 0.94 Spearman correlation with LMSYS Search Arena.",
   metadataBase: new URL("https://mattchrisp.github.io/DR-Arena-Test/"),
   openGraph: {
-    title: "DR-Arena — Deep Research Agent Leaderboard",
+    title: "Deep Research Arena — Agent Leaderboard",
     description:
       "Automated evaluation for deep research agents. 0.94 Spearman with LMSYS Search Arena.",
     type: "website",

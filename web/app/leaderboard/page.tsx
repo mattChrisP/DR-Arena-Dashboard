@@ -4,7 +4,7 @@ import { LeaderboardShell } from "@/components/leaderboard/leaderboard-shell";
 export const metadata = {
   title: "Leaderboard",
   description:
-    "The main ranking dashboard for DR-Arena — dense table, pairwise matrix, and answer-failure profiles.",
+    "The main ranking dashboard for Deep Research Arena — dense table, pairwise matrix, and answer-failure profiles.",
 };
 
 export default function LeaderboardPage() {
@@ -19,7 +19,7 @@ export default function LeaderboardPage() {
     : 0;
 
   return (
-    <div className="relative w-full max-w-7xl px-6 py-8 md:py-12">
+    <div className="relative w-full max-w-[1440px] px-6 py-8 md:px-10 md:py-12 lg:px-12">
       <div
         aria-hidden
         className="pointer-events-none absolute left-0 top-0 -z-10 h-[420px] w-[520px] rounded-full bg-accent/[0.05] blur-[140px]"
@@ -30,7 +30,7 @@ export default function LeaderboardPage() {
           <div className="app-kicker">Ranked field report</div>
           <h1 className="app-title mt-3">Leaderboard</h1>
           <p className="mt-3 max-w-2xl text-sm leading-relaxed text-fg-muted md:text-base">
-            Final DR-Arena Elo ratings across {battles.length} matches. Select a row for inspected context,
+            Final Deep Research Arena Elo ratings across {battles.length} matches. Select a row for inspected context,
             or open a model dossier for the full breakdown.
           </p>
         </div>

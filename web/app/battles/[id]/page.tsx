@@ -57,7 +57,7 @@ export default async function BattleDetailPage({
   }
 
   return (
-    <div className="relative w-full max-w-7xl px-6 py-8 md:py-12">
+    <div className="relative w-full max-w-[1440px] px-6 py-8 md:px-10 md:py-12 lg:px-12">
       <div
         aria-hidden
         className="pointer-events-none absolute left-0 top-0 -z-10 h-[440px] w-[560px] rounded-full bg-accent/[0.05] blur-[150px]"

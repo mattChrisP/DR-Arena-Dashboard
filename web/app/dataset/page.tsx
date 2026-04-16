@@ -8,7 +8,7 @@ import { DatasetShell } from "@/components/dataset/dataset-shell";
 export const metadata = {
   title: "Dataset",
   description:
-    "The information trees used in the DR-Arena benchmark — topology thumbnails, topic distribution, and depth statistics.",
+    "The information trees used in the Deep Research Arena benchmark — topology thumbnails, topic distribution, and depth statistics.",
 };
 
 function formatDatasetSnapshot(timestamp: string) {
@@ -66,7 +66,7 @@ export default function DatasetPage() {
   const totalNodes = treesWithTopology.reduce((s, t) => s + t.stats.total_nodes, 0);
 
   return (
-    <div className="relative w-full max-w-7xl px-6 py-8 md:py-12">
+    <div className="relative w-full max-w-[1440px] px-6 py-8 md:px-10 md:py-12 lg:px-12">
       <div
         aria-hidden
         className="pointer-events-none absolute right-0 top-0 -z-10 h-[420px] w-[520px] rounded-full bg-accent-2/[0.05] blur-[140px]"

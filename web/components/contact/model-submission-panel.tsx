@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import Link from "next/link";
 import { Check, Copy, Mail, ArrowUpRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
@@ -31,12 +30,11 @@ export function ModelSubmissionPanel() {
       <div className="rounded-[28px] border border-border bg-bg-elevated/70 px-6 py-7 backdrop-blur-sm md:px-8">
         <div className="app-kicker text-accent">Submission channel</div>
         <h1 className="font-display mt-4 text-3xl leading-[0.98] tracking-tight md:text-[3.75rem]">
-          Submit a model for DR-Arena.
+          Submit a model for Deep Research Arena.
         </h1>
         <p className="mt-4 max-w-2xl text-sm leading-relaxed text-fg-muted md:text-base">
-          This page is the fallback path when a direct email link does not open on the device.
-          Use the actions below to copy the contact details, copy a ready-made message template,
-          or open your email client manually.
+          Send the team the model identity, access details, and evaluation constraints needed
+          to consider it for the leaderboard.
         </p>
 
         <div className="mt-8 grid gap-3 sm:grid-cols-3">
@@ -70,7 +68,7 @@ export function ModelSubmissionPanel() {
 
           <div className="rounded-2xl border border-border-subtle bg-bg/65 px-4 py-4">
             <div className="text-[10px] font-medium uppercase tracking-[0.14em] text-fg-dim">
-              Manual fallback
+              Email action
             </div>
             <div className="mt-3">
               <Button asChild size="sm" className="w-full">
@@ -137,21 +135,54 @@ export function ModelSubmissionPanel() {
 
         <div className="mt-6 rounded-2xl border border-accent/20 bg-accent/[0.06] px-4 py-4">
           <div className="text-[10px] font-medium uppercase tracking-[0.14em] text-accent">
-            Why this page exists
+            SUTD iNLP Lab
           </div>
           <p className="mt-2 text-sm leading-relaxed text-fg-muted">
-            Some browsers do not have a default mail application configured, so a plain email link can appear to do nothing.
-            This page gives users a working fallback without leaving the site.
+            The SUTD iNLP group led by Wenxuan Zhang works on language-model research
+            spanning reasoning, safety, efficiency, multilinguality, and trustworthy AI.
           </p>
-          <Link
-            href="https://github.com/iNLP-Lab/DR-Arena"
+          <a
+            href="https://isakzhang.github.io/group.html"
             target="_blank"
             rel="noopener noreferrer"
             className="mt-3 inline-flex items-center gap-1.5 text-sm font-medium text-accent transition-colors hover:text-accent-hover"
           >
-            Project repository
+            Lab page
             <ArrowUpRight className="h-4 w-4" />
-          </Link>
+          </a>
+        </div>
+
+        <div className="mt-4 rounded-2xl border border-border-subtle bg-bg/65 px-4 py-4">
+          <div className="text-[10px] font-medium uppercase tracking-[0.14em] text-fg-dim">
+            Benchmark maintainer
+          </div>
+          <div className="mt-3 flex flex-col items-start gap-2">
+            <a
+              href="mailto:matthewchristopherpohadi@gmail.com"
+              className="inline-flex items-center gap-1.5 break-all text-sm font-medium text-accent transition-colors hover:text-accent-hover"
+            >
+              matthewchristopherpohadi@gmail.com
+              <Mail className="h-4 w-4 shrink-0" />
+            </a>
+            <a
+              href="https://matthewchristopherpohadi.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-1.5 text-sm font-medium text-accent transition-colors hover:text-accent-hover"
+            >
+              Portfolio
+              <ArrowUpRight className="h-4 w-4" />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/matthewchristopherpohadi/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-1.5 text-sm font-medium text-accent transition-colors hover:text-accent-hover"
+            >
+              LinkedIn profile
+              <ArrowUpRight className="h-4 w-4" />
+            </a>
+          </div>
         </div>
       </aside>
     </section>

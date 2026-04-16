@@ -1,5 +1,5 @@
 // ============================================================================
-// DR-Arena Dashboard — Data types
+// Deep Research Arena Dashboard — Data types
 // Matches the JSON schemas produced by scripts/build-data.py
 // ============================================================================
 

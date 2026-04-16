@@ -1,7 +1,7 @@
 export const MODEL_SUBMISSION_EMAIL = "wxzhang@sutd.edu.sg";
-export const MODEL_SUBMISSION_SUBJECT = "DR-Arena Model Submission";
+export const MODEL_SUBMISSION_SUBJECT = "Deep Research Arena Model Submission";
 export const MODEL_SUBMISSION_BODY = [
-  "Hello DR-Arena team,",
+  "Hello Deep Research Arena team,",
   "",
   "I would like to submit a model for consideration on the leaderboard.",
   "",

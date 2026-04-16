@@ -3,13 +3,12 @@ import Link from "next/link";
 export function SiteFooter() {
   return (
     <footer className="border-t border-border-subtle">
-      <div className="mx-auto max-w-5xl px-6 py-10">
+      <div className="mx-auto max-w-[1440px] px-6 py-10 md:px-10 lg:px-12">
         <div className="flex flex-col items-center gap-6 text-center">
           {/* Wordmark */}
-          <div className="flex items-center gap-2 text-sm font-semibold tracking-tight">
-            <span className="font-display text-[19px] leading-none">DR</span>
-            <span className="text-accent/60 text-sm font-light leading-none">-</span>
-            <span className="text-[11px] font-bold tracking-[0.2em] uppercase leading-none">Arena</span>
+          <div className="flex items-baseline gap-1.5 text-sm font-semibold tracking-tight">
+            <span className="font-display text-[19px] leading-none">Deep Research</span>
+            <span className="text-[11px] font-bold tracking-[0.2em] uppercase leading-none text-accent">Arena</span>
           </div>
 
           {/* Links row */}
@@ -24,7 +23,15 @@ export function SiteFooter() {
 
           {/* Copyright */}
           <p className="text-[11px] text-fg-dim">
-            © 2026 DR-Arena · SUTD iNLP Lab
+            © 2026 Deep Research Arena ·{" "}
+            <a
+              href="https://isakzhang.github.io/group.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="transition-colors hover:text-fg"
+            >
+              SUTD iNLP Lab
+            </a>
           </p>
         </div>
       </div>

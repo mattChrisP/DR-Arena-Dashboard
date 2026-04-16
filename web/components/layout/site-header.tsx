@@ -45,7 +45,7 @@ export function SiteHeader() {
   return (
     <header className="sticky top-0 z-40 border-b border-border-subtle bg-bg/70 backdrop-blur-xl backdrop-saturate-150">
       <div className="border-b border-border-subtle/80 bg-bg-elevated/50">
-        <div className="mx-auto flex max-w-5xl flex-col gap-2 px-6 py-2 text-[11px] text-fg-muted sm:flex-row sm:items-center sm:justify-between">
+        <div className="mx-auto flex max-w-[1440px] flex-col gap-2 px-6 py-2 text-[11px] text-fg-muted md:px-10 lg:px-12 sm:flex-row sm:items-center sm:justify-between">
           <div className="flex items-center gap-2">
             <span className="h-1.5 w-1.5 rounded-full bg-accent-2" aria-hidden="true" />
             <span className="font-medium uppercase tracking-[0.14em] text-fg-dim">
@@ -64,15 +64,14 @@ export function SiteHeader() {
         </div>
       </div>
 
-      <div className="mx-auto flex h-14 max-w-5xl items-center justify-between px-6">
+      <div className="mx-auto flex h-14 max-w-[1440px] items-center justify-between px-6 md:px-10 lg:px-12">
         {/* Wordmark */}
         <Link
           href="/"
-          className="flex items-center gap-2 text-sm font-semibold tracking-tight"
+          className="flex items-baseline gap-1.5 text-sm font-semibold tracking-tight"
         >
-          <span className="font-display text-[19px] leading-none">DR</span>
-          <span className="text-accent/60 text-sm font-light leading-none">-</span>
-          <span className="text-[11px] font-bold tracking-[0.2em] uppercase leading-none">Arena</span>
+          <span className="font-display text-[19px] leading-none">Deep Research</span>
+          <span className="text-[11px] font-bold tracking-[0.2em] uppercase leading-none text-accent">Arena</span>
         </Link>
 
         {/* Center navigation */}
