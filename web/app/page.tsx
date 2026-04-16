@@ -3,6 +3,7 @@ import Link from "next/link";
 import { ArrowRight, BookOpen, Code2, Network, Scale, Trophy } from "lucide-react";
 import { getLeaderboard, getModelMeta, getBattles, getMetadata, getTopologyTreeIds } from "@/lib/data";
 import { publicAssetPath } from "@/lib/site";
+import { EvidenceToggle } from "@/components/methodology/evidence-toggle";
 
 /* ── Information tree — the signature background visual ── */
 
@@ -212,7 +213,6 @@ export default function HomePage() {
   const topologyIds = new Set(getTopologyTreeIds());
   const explorableTreeCount = metadata.trees.filter((tree) => topologyIds.has(tree.tree_id)).length;
   const top5 = leaderboard.slice(0, 5);
-
   const STATS = [
     { value: "0.94", label: "Human Alignment", highlight: true },
     { value: String(leaderboard.length), label: "Models Evaluated", highlight: false },
@@ -291,17 +291,17 @@ export default function HomePage() {
       </div>
 
       {/* ── Hero ── */}
-      <section className="flex w-full max-w-[1440px] flex-col items-center px-6 pt-14 pb-10 text-center md:px-10 md:pt-20 md:pb-14 lg:px-12">
+      <section className="flex w-full max-w-[1440px] flex-col items-center px-3 pt-14 pb-10 text-center sm:px-6 md:px-10 md:pt-20 md:pb-14 lg:px-12">
         {/* Headline */}
         <h1
-          className="animate-fade-in-up font-display text-[48px] leading-[1.02] tracking-tight md:text-[88px] md:leading-[0.96] lg:text-[104px]"
+          className="animate-fade-in-up max-w-full whitespace-nowrap font-display text-[16px] leading-none min-[390px]:text-[20px] sm:text-[36px] md:text-[56px] lg:text-[64px]"
           style={{ animationDelay: "0.1s" }}
         >
-          Which deep research agent{" "}
-          <span className="text-accent italic drop-shadow-[0_0_36px_rgba(212,160,74,0.45)]">
-            actually
+          Which{" "}
+          <span className="text-accent italic drop-shadow-[0_0_32px_rgba(212,160,74,0.4)]">
+            deep research agent
           </span>{" "}
-          wins?
+          actually wins?
         </h1>
 
         {/* Subtitle */}
@@ -379,12 +379,12 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ── Headline leaderboard — compact top-6 ── */}
+      {/* ── Current rankings — compact top 5 ── */}
       <section
         className="animate-fade-in-up w-full max-w-[1440px] px-6 py-10 md:px-10 md:py-14 lg:px-12"
         style={{ animationDelay: "0.45s" }}
       >
-        <div className="mb-5 flex flex-wrap items-end justify-between gap-3">
+        <div className="mb-5">
           <div>
             <h2 className="font-display text-2xl md:text-3xl">Current Rankings</h2>
             <p className="mt-1 text-sm text-fg-muted md:text-base">
@@ -394,12 +394,6 @@ export default function HomePage() {
               <span className="hidden text-fg-dim sm:inline"> vs LMSYS Search Arena</span>
             </p>
           </div>
-          <Link
-            href="/leaderboard"
-            className="text-sm font-medium text-accent transition-colors hover:text-accent-hover md:text-base"
-          >
-            Full leaderboard &rarr;
-          </Link>
         </div>
 
         <div className="overflow-hidden rounded-xl border border-border bg-bg-elevated/60 backdrop-blur-sm">
@@ -457,6 +451,15 @@ export default function HomePage() {
           </table>
         </div>
 
+        <Link
+          href="/leaderboard"
+          className="group mt-8 flex items-end justify-between gap-6 border-t border-border-subtle pt-8 transition-colors hover:border-accent/40"
+        >
+          <span className="font-display text-[52px] leading-none text-accent transition-colors group-hover:text-accent-hover md:text-[96px]">
+            Full leaderboard
+          </span>
+          <ArrowRight className="mb-2 h-7 w-7 shrink-0 text-accent transition-transform group-hover:translate-x-1 md:mb-4 md:h-10 md:w-10" />
+        </Link>
       </section>
 
       {/* ── Feature cards ── */}
@@ -492,20 +495,10 @@ export default function HomePage() {
         style={{ animationDelay: "0.65s" }}
       >
         <div className="mx-auto w-full max-w-[1440px] px-6 py-12 md:px-10 md:py-16 lg:px-12">
-          <div className="mb-8 grid gap-4 md:grid-cols-[1.1fr_0.9fr] md:items-end">
-            <div>
-              <div className="text-xs font-medium uppercase tracking-[0.16em] text-accent">
-                How it works
-              </div>
-              <h2 className="font-display mt-3 text-3xl leading-[1.05] md:text-[44px] md:leading-[1.02]">
-                A closed-loop benchmark that grows with the agents
-              </h2>
-            </div>
-            <p className="text-base leading-relaxed text-fg-muted md:text-lg">
-              An Examiner builds fresh information trees from the live web,
-              generates questions, judges agent answers, and adapts the next
-              round to where each agent is weakest.
-            </p>
+          <div className="mb-10">
+            <h2 className="font-display text-[56px] uppercase leading-none text-fg md:text-[112px]">
+              How it works
+            </h2>
           </div>
 
           {/* Framework diagram from the original DR-Arena paper */}
@@ -598,27 +591,21 @@ export default function HomePage() {
                   </div>
                 </div>
               </div>
-              <figure className="border-t border-accent-2/15 bg-bg/40 px-4 py-4 md:px-6 md:py-6">
-                <div className="mb-3 flex items-baseline justify-between">
-                  <figcaption className="font-mono text-[11px] font-semibold uppercase tracking-[0.16em] text-fg-dim">
-                    Figure 2: Task Generation
-                  </figcaption>
-                  <span className="font-mono text-[10px] uppercase tracking-wider text-accent-2">
-                    Automated Task Generation
-                  </span>
-                </div>
-                <Image
-                  src={publicAssetPath("/images/how-it-works/task_generation.png")}
-                  alt="Task generation example: the Examiner transforms topological web structures into complex research queries."
-                  width={1864}
-                  height={726}
-                  className="h-auto w-full"
-                  priority={false}
-                />
-                <p className="mt-3 text-xs leading-relaxed text-fg-dim">
-                  The Examiner transforms topological web structures into complex research queries.
-                </p>
-              </figure>
+              <EvidenceToggle eyebrow="Figure 2: Task Generation" label="figure">
+                <figure className="px-4 pb-4 md:px-6 md:pb-6">
+                  <Image
+                    src={publicAssetPath("/images/how-it-works/task_generation.png")}
+                    alt="Task generation example: the Examiner transforms topological web structures into complex research queries."
+                    width={1864}
+                    height={726}
+                    className="h-auto w-full"
+                    priority={false}
+                  />
+                  <p className="mt-3 text-xs leading-relaxed text-fg-dim">
+                    The Examiner transforms topological web structures into complex research queries.
+                  </p>
+                </figure>
+              </EvidenceToggle>
             </li>
 
             {/* ─── Act 02 — Evidence-Based Judgement ─── */}
@@ -656,38 +643,32 @@ export default function HomePage() {
                   </p>
                 </div>
               </div>
-              <div className="border-t border-accent/15 bg-bg/40 px-4 py-4 md:px-6 md:py-6">
-                <div className="mb-3 flex items-baseline justify-between">
-                  <span className="font-mono text-[11px] font-semibold uppercase tracking-[0.16em] text-fg-dim">
-                    Table 1: Taxonomy of Failure Types
-                  </span>
-                  <span className="font-mono text-[10px] uppercase tracking-wider text-accent">
-                    Evidence-Based Judgement
-                  </span>
-                </div>
-                <div className="overflow-hidden rounded-2xl border border-border-subtle bg-border-subtle">
-                  <div className="grid grid-cols-[120px_1fr] bg-bg-raised/70 px-4 py-3 font-mono text-[11px] font-semibold uppercase tracking-[0.14em] text-fg-dim md:grid-cols-[170px_1fr]">
-                    <div>Failure Tag</div>
-                    <div>Diagnostic Criteria</div>
-                  </div>
-                  {FAILURE_TAXONOMY.map((row) => (
-                    <div
-                      key={row.tag}
-                      className="grid grid-cols-[120px_1fr] gap-px border-t border-border-subtle bg-bg-elevated/80 md:grid-cols-[170px_1fr]"
-                    >
-                      <div className="flex items-start px-4 py-4">
-                        <span className={`inline-flex rounded-md border px-2.5 py-1 font-mono text-[11px] font-bold tracking-wider ${row.border} ${row.bg} ${row.color}`}>
-                          {row.tag}
-                        </span>
-                      </div>
-                      <div className="px-4 py-4 text-sm leading-relaxed text-fg-muted md:text-base">
-                        <strong className="font-semibold text-fg">{row.criteriaLead}</strong>{" "}
-                        {row.criteriaRest}
-                      </div>
+              <EvidenceToggle eyebrow="Table 1: Taxonomy of Failure Types" label="table">
+                <div className="px-4 pb-4 md:px-6 md:pb-6">
+                  <div className="overflow-hidden rounded-2xl border border-border-subtle bg-border-subtle">
+                    <div className="grid grid-cols-[120px_1fr] bg-bg-raised/70 px-4 py-3 font-mono text-[11px] font-semibold uppercase tracking-[0.14em] text-fg-dim md:grid-cols-[170px_1fr]">
+                      <div>Failure Tag</div>
+                      <div>Diagnostic Criteria</div>
                     </div>
-                  ))}
+                    {FAILURE_TAXONOMY.map((row) => (
+                      <div
+                        key={row.tag}
+                        className="grid grid-cols-[120px_1fr] gap-px border-t border-border-subtle bg-bg-elevated/80 md:grid-cols-[170px_1fr]"
+                      >
+                        <div className="flex items-start px-4 py-4">
+                          <span className={`inline-flex rounded-md border px-2.5 py-1 font-mono text-[11px] font-bold tracking-wider ${row.border} ${row.bg} ${row.color}`}>
+                            {row.tag}
+                          </span>
+                        </div>
+                        <div className="px-4 py-4 text-sm leading-relaxed text-fg-muted md:text-base">
+                          <strong className="font-semibold text-fg">{row.criteriaLead}</strong>{" "}
+                          {row.criteriaRest}
+                        </div>
+                      </div>
+                    ))}
+                  </div>
                 </div>
-              </div>
+              </EvidenceToggle>
             </li>
 
             {/* ─── Act 03 — Adaptive Evolvement Loop ─── */}
@@ -725,70 +706,64 @@ export default function HomePage() {
                   </p>
                 </div>
               </div>
-              <div className="border-t border-data-4/15 bg-bg/40 px-4 py-4 md:px-6 md:py-6">
-                <div className="mb-3 flex items-baseline justify-between">
-                  <span className="font-mono text-[11px] font-semibold uppercase tracking-[0.16em] text-fg-dim">
-                    Table 2: The Evolvement Loop Transition Matrix
-                  </span>
-                  <span className="font-mono text-[10px] uppercase tracking-wider text-data-4">
-                    Adaptive Evolvement Loop
-                  </span>
-                </div>
-                <div className="overflow-hidden rounded-2xl border border-border-subtle bg-border-subtle">
-                  <div className="hidden grid-cols-[1fr_1fr_1fr_1.2fr] bg-bg-raised/70 px-4 py-3 font-mono text-[11px] font-semibold uppercase tracking-[0.14em] text-fg-dim md:grid">
-                    <div>Adjudication Verdict</div>
-                    <div>Diagnostic Signal</div>
-                    <div>Evolution Action</div>
-                    <div>Strategic Rationale</div>
-                  </div>
-                  {EVOLVEMENT_TRANSITIONS.map((row) => (
-                    <div
-                      key={`${row.verdictLead}-${row.verdictRest}-${row.signal ?? row.signalTag}`}
-                      className="grid gap-3 border-t border-border-subtle bg-bg-elevated/80 px-4 py-4 text-sm leading-relaxed text-fg-muted md:grid-cols-[1fr_1fr_1fr_1.2fr] md:gap-4"
-                    >
-                      <div>
-                        <div className="font-mono text-[10px] uppercase tracking-wider text-fg-dim md:hidden">
-                          Adjudication Verdict
-                        </div>
-                        <strong className="font-semibold text-fg">{row.verdictLead}</strong>
-                        {row.verdictRest}
-                      </div>
-                      <div>
-                        <div className="font-mono text-[10px] uppercase tracking-wider text-fg-dim md:hidden">
-                          Diagnostic Signal
-                        </div>
-                        {row.signalTag ? (
-                          <>
-                            <span className={`inline-flex rounded-md border px-2.5 py-1 font-mono text-[11px] font-bold tracking-wide ${row.signalBorder} ${row.signalBg} ${row.signalColor}`}>
-                              {row.signalTag}
-                            </span>
-                            {row.signalRest}
-                          </>
-                        ) : (
-                          row.signal
-                        )}
-                      </div>
-                      <div>
-                        <div className="font-mono text-[10px] uppercase tracking-wider text-fg-dim md:hidden">
-                          Evolution Action
-                        </div>
-                        <span className={`inline-flex rounded-md border px-2.5 py-1 font-mono text-[11px] tracking-wide ${row.actionBorder} ${row.actionBg} ${row.actionColor} ${row.actionBold ? "font-bold" : "font-semibold"}`}>
-                          {row.action}
-                        </span>
-                        <div className={`mt-1 font-mono text-xs ${row.detailColor}`}>
-                          ({row.detail})
-                        </div>
-                      </div>
-                      <div>
-                        <div className="font-mono text-[10px] uppercase tracking-wider text-fg-dim md:hidden">
-                          Strategic Rationale
-                        </div>
-                        {row.rationale}
-                      </div>
+              <EvidenceToggle eyebrow="Table 2: The Evolvement Loop Transition Matrix" label="table">
+                <div className="px-4 pb-4 md:px-6 md:pb-6">
+                  <div className="overflow-hidden rounded-2xl border border-border-subtle bg-border-subtle">
+                    <div className="hidden grid-cols-[1fr_1fr_1fr_1.2fr] bg-bg-raised/70 px-4 py-3 font-mono text-[11px] font-semibold uppercase tracking-[0.14em] text-fg-dim md:grid">
+                      <div>Adjudication Verdict</div>
+                      <div>Diagnostic Signal</div>
+                      <div>Evolution Action</div>
+                      <div>Strategic Rationale</div>
                     </div>
-                  ))}
+                    {EVOLVEMENT_TRANSITIONS.map((row) => (
+                      <div
+                        key={`${row.verdictLead}-${row.verdictRest}-${row.signal ?? row.signalTag}`}
+                        className="grid gap-3 border-t border-border-subtle bg-bg-elevated/80 px-4 py-4 text-sm leading-relaxed text-fg-muted md:grid-cols-[1fr_1fr_1fr_1.2fr] md:gap-4"
+                      >
+                        <div>
+                          <div className="font-mono text-[10px] uppercase tracking-wider text-fg-dim md:hidden">
+                            Adjudication Verdict
+                          </div>
+                          <strong className="font-semibold text-fg">{row.verdictLead}</strong>
+                          {row.verdictRest}
+                        </div>
+                        <div>
+                          <div className="font-mono text-[10px] uppercase tracking-wider text-fg-dim md:hidden">
+                            Diagnostic Signal
+                          </div>
+                          {row.signalTag ? (
+                            <>
+                              <span className={`inline-flex rounded-md border px-2.5 py-1 font-mono text-[11px] font-bold tracking-wide ${row.signalBorder} ${row.signalBg} ${row.signalColor}`}>
+                                {row.signalTag}
+                              </span>
+                              {row.signalRest}
+                            </>
+                          ) : (
+                            row.signal
+                          )}
+                        </div>
+                        <div>
+                          <div className="font-mono text-[10px] uppercase tracking-wider text-fg-dim md:hidden">
+                            Evolution Action
+                          </div>
+                          <span className={`inline-flex rounded-md border px-2.5 py-1 font-mono text-[11px] tracking-wide ${row.actionBorder} ${row.actionBg} ${row.actionColor} ${row.actionBold ? "font-bold" : "font-semibold"}`}>
+                            {row.action}
+                          </span>
+                          <div className={`mt-1 font-mono text-xs ${row.detailColor}`}>
+                            ({row.detail})
+                          </div>
+                        </div>
+                        <div>
+                          <div className="font-mono text-[10px] uppercase tracking-wider text-fg-dim md:hidden">
+                            Strategic Rationale
+                          </div>
+                          {row.rationale}
+                        </div>
+                      </div>
+                    ))}
+                  </div>
                 </div>
-              </div>
+              </EvidenceToggle>
             </li>
           </ol>
         </div>
