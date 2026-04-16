@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, BookOpen, Code2, Network, Scale, Trophy } from "lucide-react";
 import { getLeaderboard, getModelMeta, getBattles, getMetadata, getTopologyTreeIds } from "@/lib/data";
+import { publicAssetPath } from "@/lib/site";
 
 /* ── Information tree — the signature background visual ── */
 
@@ -518,7 +519,7 @@ export default function HomePage() {
               </span>
             </div>
             <Image
-              src="/images/how-it-works/framework.png"
+              src={publicAssetPath("/images/how-it-works/framework.png")}
               alt="Framework overview: Examiner constructs an information tree, generates questions and rubrics, the two agents respond, and the Examiner grades and refines the next round."
               width={1600}
               height={420}
@@ -607,7 +608,7 @@ export default function HomePage() {
                   </span>
                 </div>
                 <Image
-                  src="/images/how-it-works/task_generation.png"
+                  src={publicAssetPath("/images/how-it-works/task_generation.png")}
                   alt="Task generation example: the Examiner transforms topological web structures into complex research queries."
                   width={1864}
                   height={726}

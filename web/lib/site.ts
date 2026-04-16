@@ -19,3 +19,9 @@ export const MODEL_SUBMISSION_BODY = [
 
 export const MODEL_SUBMISSION_MAILTO =
   `mailto:${MODEL_SUBMISSION_EMAIL}?subject=${encodeURIComponent(MODEL_SUBMISSION_SUBJECT)}&body=${encodeURIComponent(MODEL_SUBMISSION_BODY)}`;
+
+export const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+
+export function publicAssetPath(path: `/${string}`) {
+  return `${BASE_PATH}${path}`;
+}
